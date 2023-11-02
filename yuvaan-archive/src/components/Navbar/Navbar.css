@@ -1,0 +1,254 @@
+nav {
+  margin: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.logo img {
+  width: 100px;
+  height: 100px;
+  margin-top: 2rem;
+  margin-left: 3rem;
+}
+
+.navigation {
+  margin-top: 4rem;
+  position: relative;
+  width: 425px;
+  height: 70px;
+  align-items: center;
+  border-radius: 10px;
+  margin-right: 5rem;
+}
+
+.navigation ul {
+  display: flex;
+  width: 500px;
+}
+
+.navigation ul li {
+  position: relative;
+  width: 70px;
+  height: 70px;
+  list-style: none;
+  z-index: 1;
+}
+
+.navigation ul li a {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+  font-weight: 500;
+}
+
+.navigation ul li a .icon {
+  position: relative;
+  display: block;
+  line-height: 75px;
+  font-size: 1.5em;
+  text-align: center;
+  fill: rgba(255, 255, 255, 0.85);
+  transition: 0.5s;
+  width: 30px;
+}
+
+.navigation ul li.active a .icon {
+  transform: translateY(-32px);
+}
+
+.navigation ul li a .text {
+  position: absolute;
+  color: white;
+  font-weight: 400;
+  font-size: 0.75em;
+  letter-spacing: 0.05em;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: 0.5s;
+}
+
+.navigation ul li.active a .text {
+  opacity: 1;
+  transform: translateY(15px);
+}
+
+.navigation ul li a .circle {
+  position: absolute;
+  display: block;
+  width: 55px;
+  height: 55px;
+  background: transparent;
+  border-radius: 50%;
+  border: 2px solid white;
+  transform: translateY(-37px) scale(0);
+}
+.navigation ul li.active a .circle {
+  transition: 0.5s;
+  transition-delay: 0.5s;
+  transform: translateY(-37px) scale(1);
+}
+.indicator {
+  position: absolute;
+  top: -50%;
+  width: 70px;
+  height: 70px;
+  background: rgba(0, 0, 0, 0.01);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+}
+.indicator::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -22px;
+  width: 20px;
+  height: 20px;
+  background: transparent;
+  border-top-right-radius: 20px;
+}
+.indicator::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -22px;
+  width: 20px;
+  height: 20px;
+  background: transparent;
+  border-top-left-radius: 20px;
+}
+.navigation ul li:nth-child(1).active ~ .indicator {
+  transform: translateX(calc(70px * 0));
+}
+.navigation ul li:nth-child(2).active ~ .indicator {
+  transform: translateX(calc(70px * 1));
+}
+.navigation ul li:nth-child(3).active ~ .indicator {
+  transform: translateX(calc(70px * 2));
+}
+.navigation ul li:nth-child(4).active ~ .indicator {
+  transform: translateX(calc(70px * 3));
+}
+.navigation ul li:nth-child(5).active ~ .indicator {
+  transform: translateX(calc(70px * 4));
+}
+.navigation ul li:nth-child(6).active ~ .indicator {
+  transform: translateX(calc(70px * 5));
+}
+
+@media only screen and (max-width: 480px) {
+  .logo img {
+    width: 50px;
+    height: 50px;
+    margin-top: 1.5rem;
+    margin-left: 0.5rem;
+  }
+
+  .navigation {
+    margin-left: 4rem;
+    margin-top: 1.5rem;
+    margin-right: 0.2rem;
+  }
+
+  .navigation ul li a .circle {
+    visibility: hidden;
+  }
+
+  .navigation ul li {
+    width: 40px;
+    height: 40px;
+  }
+
+  .navigation ul li a .icon {
+    font-size: 0.5em;
+    width: 25px;
+    opacity: 0.5;
+  }
+
+  .navigation ul li.active a .text {
+    opacity: 0;
+  }
+
+  .navigation ul li.active a .icon {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .logo img {
+    width: 40px;
+    height: 40px;
+    margin-top: 1.5rem;
+    margin-left: 0.5rem;
+  }
+
+  .navigation {
+    margin-left: 2rem;
+    margin-top: 1rem;
+    margin-right: 0.2rem;
+  }
+
+  .navigation ul li {
+    width: 32px;
+    height: 32px;
+  }
+
+  .navigation ul li a .icon {
+    font-size: 0.5em;
+    width: 20px;
+    opacity: 0.5;
+  }
+}
+
+@media only screen and (min-width:480px) and (max-width: 580px) {
+  .logo img {
+    width: 80px;
+    height: 80px;
+    margin-top: 1rem;
+    margin-left: 1rem;
+  }
+
+  .navigation {
+    margin-left: 5rem;
+    margin-top: 2rem;
+    margin-right: 0.2rem;
+  }
+
+  .navigation ul li a .circle {
+    visibility: hidden;
+  }
+
+  .navigation ul li {
+    width: 50px;
+    height: 50px;
+  }
+
+  .navigation ul li a .icon {
+    font-size: 0.5em;
+    width: 30px;
+    opacity: 0.5;
+  }
+
+  .navigation ul li.active a .text {
+    opacity: 0;
+  }
+
+  .navigation ul li.active a .icon {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

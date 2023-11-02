@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "MedievalSharp", cursive;
+}
+
+.btn {
+  padding: 1rem;
+  border: none;
+  overflow: hidden;
+}
+
+.view-btn {
+  display: block;
+  margin: auto;
+  margin-top: 5rem;
+  border-radius: 0.25rem;
+  background-color: black;
+  color: white;
+  border: 2px solid white;
+}
+
+
+.view-btn:hover {
+  border-radius: 0.25rem;
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+}
+
+
+.navbar {
+  position: relative;
+}
+
+
+@media only screen and (max-width: 480px) {
+  .btn {
+    padding: 0.5rem;
+    font-size: 13px;
+  }
+  
+}

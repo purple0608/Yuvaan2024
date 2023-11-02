@@ -1,0 +1,137 @@
+body {
+  margin: 0;
+  background-color: black;
+}
+
+.preview-header {
+  color: white;
+  font-size: 55px;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 40rem;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  -webkit-box-reflect: below 0px
+    linear-gradient(transparent, rgba(1, 1, 1, 0.2), rgba(1, 1, 1, 0.2));
+}
+
+.mt-2 {
+  margin-top: 2rem;
+}
+
+.mb-5 {
+  margin-bottom: 5rem;
+}
+
+@keyframes clouds-loop-1 {
+  to {
+    background-position: -1000px 0;
+  }
+}
+
+@keyframes clouds-loop-2 {
+  to {
+    background-position: -1000px 0;
+  }
+}
+
+@keyframes clouds-loop-3 {
+  to {
+    background-position: -1579px 0;
+  }
+}
+
+.clouds {
+  opacity: 0.25;
+  pointer-events: none;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+}
+
+.clouds-1,
+.clouds-2,
+.clouds-3 {
+  background-repeat: repeat-x;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 500px;
+}
+
+.clouds-1 {
+  background-image: url("https://s.cdpn.io/15514/clouds_2.png");
+  animation: clouds-loop-1 10s infinite linear;
+}
+
+.clouds-2 {
+  background-image: url("https://s.cdpn.io/15514/clouds_1.png");
+  animation: clouds-loop-2 50s infinite linear;
+}
+
+.clouds-3 {
+  background-image: url("https://s.cdpn.io/15514/clouds_3.png");
+  animation: clouds-loop-3 50s infinite linear;
+}
+
+#container {
+  width: 100%;
+  position: relative;
+}
+
+.dot {
+  width: 3px;
+  height: 3px;
+  background-color: rgba(212, 212, 0);
+  box-shadow: 0px 0px 10px 2px #ff5500;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 2;
+}
+
+.preview-container {
+  padding-top: 10rem;
+}
+
+@media only screen and (max-width: 480px) {
+  .preview-header {
+    font-size: 36px;
+    margin-bottom: 10rem;
+  }
+
+  .swiper-slide {
+    width: 20rem;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .preview-header {
+    font-size: 30px;
+    margin-bottom: 5rem;
+  }
+
+  #container {
+    width: 50%;
+  }
+  .swiper-slide {
+    width: 15rem;
+  }
+
+}
