@@ -1,0 +1,30 @@
+@import url("../fonts/fonts.css");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+  cursor: url("../utils/cursor.png"), auto;
+}
+
+button:hover,
+a:hover {
+  cursor: url("../utils/cursor-pointer.png"), auto;
+}
+
+*::selection {
+  color: #fff;
+  background-color: #000;
+}
+
+::selection {
+  background-color: #0b372dbb;
+}
+
+body {
+  background: #120c00;
+  width: 100vw;
+  overflow-x: hidden;
+}

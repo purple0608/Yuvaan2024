@@ -1,0 +1,62 @@
+@font-face {
+  font-family: "enchantedBold";
+  src:
+    local("BeaufortforLOL-Bold"),
+    url("./BeaufortForLoL-TTF/BeaufortforLOL-Bold.ttf") format("truetype"),
+    url("./BeaufortForLoL-OTF/BeaufortforLOL-Bold.otf") format("opentype");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "enchantedMedium";
+  src:
+    local("BeaufortforLOL-Medium"),
+    url("./BeaufortForLoL-TTF/BeaufortforLOL-Medium.ttf") format("truetype"),
+    url("./BeaufortForLoL-OTF/BeaufortforLOL-Medium.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "enchantedRegular";
+  src:
+    local("BeaufortforLOL-Regular"),
+    url("./BeaufortForLoL-TTF/BeaufortforLOL-Regular.ttf") format("truetype"),
+    url("./BeaufortForLoL-OTF/BeaufortforLOL-Regular.otf") format("opentype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "enchantedLight";
+  src:
+    local("BeaufortforLOL-Light"),
+    url("./BeaufortForLoL-TTF/BeaufortforLOL-Light.ttf") format("truetype"),
+    url("./BeaufortForLoL-OTF/BeaufortforLOL-Light.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "SpiegelBold";
+  src:
+    url("./Spiegel-TTF/Spiegel_TT_Bold.ttf") format("truetype"),
+    url("./Spiegel-OTF/Spiegel-Bold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "SpiegelRegular";
+  src:
+    local("Spiegel_TT_Regular"),
+    url("./Spiegel-TTF/Spiegel_TT_Regular.ttf") format("truetype"),
+    url("./Spiegel-OTF/Spiegel-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "YellowMagician";
+  src:
+    local("YellowMagician"),
+    url("./YellowMagician.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "WitchCraft";
+  src:
+    local("WitchCraft"),
+    url("./WitchCraft.otf") format("truetype");
+}

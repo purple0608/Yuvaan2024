@@ -1,0 +1,196 @@
+.tlparent {
+  display: flex;
+  flex-direction: column;
+  background-image: url("/src/assets/events/images_cards/map.png");
+  height: 1800px;
+  background-size: cover;
+  background-position: right;
+  align-items: center;
+  justify-content: center;
+}
+
+.svg-container {
+  margin-top: 400px;
+  width: 80vw;
+  height: auto;
+}
+
+.cloud1-top {
+  position: absolute;
+  overflow: hidden;
+  width: 1300px;
+  transform: translate(-50%, -50%);
+  z-index: 24;
+  left: calc(50% - 200px);
+  top: calc(50% + 450px);
+}
+
+.cloud2-top {
+  position: absolute;
+  overflow: hidden;
+  width: 1500px;
+  transform: translate(-50%, -50%);
+  z-index: 24;
+  left: calc(50% + 500px);
+  top: calc(50% + 500px);
+}
+
+.cloud3-top {
+  position: absolute;
+  overflow: hidden;
+  width: 1500px;
+  transform: translate(-50%, -50%);
+  z-index: 24;
+  left: calc(50% - 1000px);
+  top: calc(50% + 500px);
+}
+
+.cloud4-top {
+  position: absolute;
+  overflow: hidden;
+  width: 1900px;
+  transform: translate(-50%, -50%);
+  z-index: 24;
+  left: calc(50% - 500px);
+  top: calc(50% + 650px);
+}
+
+.cloud5-top {
+  position: absolute;
+  overflow: hidden;
+  width: 1900px;
+  transform: translate(-50%, -50%);
+  z-index: 24;
+  left: calc(50% + 700px);
+  top: calc(50% + 700px);
+}
+
+.cloud6-top {
+  position: absolute;
+  overflow: hidden;
+  width: 1900px;
+  transform: translate(-50%, -50%);
+  z-index: 24;
+  left: calc(50% + 700px);
+  top: calc(50% + 900px);
+}
+
+.cloud7-top {
+  position: absolute;
+  overflow: hidden;
+  width: 1900px;
+  transform: translate(-50%, -50%);
+  z-index: 24;
+  left: calc(50%);
+  top: calc(50% + 750px);
+}
+
+.cloud8-top {
+  position: absolute;
+  overflow: hidden;
+  width: 1900px;
+  transform: translate(-50%, -50%);
+  z-index: 24;
+  left: calc(50%);
+  top: calc(50% + 950px);
+}
+
+.cloud9-top {
+  position: absolute;
+  overflow: hidden;
+  width: 1900px;
+  transform: translate(-50%, -50%);
+  z-index: 24;
+  left: calc(50% - 700px);
+  top: calc(50% + 900px);
+}
+
+.cloud1-bottom {
+  position: absolute;
+  overflow: hidden;
+  width: 1300px;
+  transform: translate(-50%, -50%);
+  z-index: 24;
+  left: calc(50% - 200px);
+  top: calc(50% + 2150px);
+}
+
+.cloud2-bottom {
+  position: absolute;
+  overflow: hidden;
+  width: 1500px;
+  transform: translate(-50%, -50%);
+  z-index: 24;
+  left: calc(50% + 500px);
+  top: calc(50% + 2200px);
+}
+
+.cloud3-bottom {
+  position: absolute;
+  overflow: hidden;
+  width: 1500px;
+  transform: translate(-50%, -50%);
+  z-index: 24;
+  left: calc(50% - 1000px);
+  top: calc(50% + 2200px);
+}
+
+.cloud4-bottom {
+  position: absolute;
+  overflow: hidden;
+  width: 1900px;
+  transform: translate(-50%, -50%);
+  z-index: 24;
+  left: calc(50% - 500px);
+  top: calc(50% + 2350px);
+}
+
+.cloud5-bottom {
+  position: absolute;
+  overflow: hidden;
+  width: 1900px;
+  transform: translate(-50%, -50%);
+  z-index: 24;
+  left: calc(50% + 700px);
+  top: calc(50% + 2350px);
+}
+
+.cloud6-bottom {
+  position: absolute;
+  overflow: hidden;
+  width: 1900px;
+  transform: translate(-50%, -50%);
+  z-index: 24;
+  left: calc(50% + 700px);
+  top: calc(50% + 2500px);
+}
+
+.cloud7-bottom {
+  position: absolute;
+  overflow: hidden;
+  width: 1900px;
+  transform: translate(-50%, -50%);
+  z-index: 24;
+  left: calc(50%);
+  top: calc(50% + 2550px);
+}
+
+.cloud8-bottom {
+  position: absolute;
+  overflow: hidden;
+  width: 1900px;
+  transform: translate(-50%, -50%);
+  z-index: 24;
+  left: calc(50%);
+  top: calc(50% + 2550px);
+}
+
+.cloud9-bottom {
+  position: absolute;
+  overflow: hidden;
+  width: 1900px;
+  transform: translate(-50%, -50%);
+  z-index: 24;
+  left: calc(50% - 700px);
+  top: calc(50% + 2650px);
+}
