@@ -1,6 +1,6 @@
 import gsap from "gsap";
 import { useEffect, useState, useRef, useCallback } from "react";
-import "/src/assets/style/Mountains.css";
+import "/src/assets/events/Mountains.css";
 
 function Mountains() {
   const [dimensions, setDimensions] = useState({

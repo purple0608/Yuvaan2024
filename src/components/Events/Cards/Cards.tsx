@@ -1,7 +1,7 @@
 import { MutableRefObject, useLayoutEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/all";
-import "/src/assets/style/Cards.css";
+import "/src/assets/events/Cards.css";
 import { Data, EventData } from "../../../assets/events/data";
 
 

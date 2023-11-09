@@ -1,4 +1,4 @@
-@import url("../fonts/fonts.css");
+@import url("./fonts/fonts.css");
 
 *,
 *::before,
@@ -6,12 +6,13 @@
   margin: 0;
   border: 0;
   box-sizing: border-box;
-  cursor: url("../utils/cursor.png"), auto;
+  cursor: url("./utils/cursor.png"), auto;
+  user-select: none;
 }
 
 button:hover,
 a:hover {
-  cursor: url("../utils/cursor-pointer.png"), auto;
+  cursor: url("./utils/cursor-pointer.png"), auto;
 }
 
 *::selection {

@@ -1,6 +1,6 @@
 import { useLayoutEffect, useRef } from "react";
 import { gsap } from "gsap/all";
-import "/src/assets/style/Timeline.css";
+import "/src/assets/events/Timeline.css";
 
 function Timeline() {
   const top_clouds_ref = useRef<HTMLDivElement | null>(null);
