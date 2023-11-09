@@ -21,7 +21,7 @@
 ```
 - '/' refers to the root of this project
 
-## Assets(Images and other static content) 
+## Assets(Images, Css and other static content) 
 
 - To be placed in `/src/assets/<page name>`
 - In case asset is being used in multiple pages, place it in `/src/assets/utils`
