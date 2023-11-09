@@ -1,17 +1,51 @@
 import { useLayoutEffect, useRef } from "react";
-import { gsap } from "gsap/all";
+import { gsap, ScrollTrigger } from "gsap/all";
 import "/src/assets/events/Timeline.css";
 
 function Timeline() {
   const top_clouds_ref = useRef<HTMLDivElement | null>(null);
   const bottom_clouds_ref = useRef<HTMLDivElement | null>(null);
-
+  gsap.registerPlugin(ScrollTrigger);
   useLayoutEffect(() => {
     const clouds: NodeListOf<HTMLElement> =
-      top_clouds_ref.current?.querySelectorAll(".clouds")!;
+      document.querySelectorAll(".clouds")!;
     const top_clouds = Array.from(clouds);
     let ctx = gsap.context(() => {
-      let tloud_tl = gsap.timeline();
+    	const scrollTrigger = (el: HTMLElement) => {
+		return {
+			trigger: el,
+			start: "top 35%",
+			end: "+=600",
+			scrub: true,
+		}
+	}
+
+	top_clouds.forEach((el: HTMLElement)=>{
+		if (el.offsetLeft< 500){
+		gsap.to(el, {
+			scrollTrigger: scrollTrigger(el),
+			top: el.offsetTop - 200,
+			left: el.offsetLeft - 200,
+			width: el.offsetWidth + 200,
+			height: el.offsetHeight + 200,
+		})	
+		} else if (el.offsetLeft> 700){
+		gsap.to(el, {
+			scrollTrigger: scrollTrigger(el),
+			top: el.offsetTop - 200,
+			right: (1000 - el.offsetLeft) + 600,
+			width: el.offsetWidth + 200,
+			height: el.offsetHeight + 200,
+		})	
+		}else {
+		gsap.to(el, {
+			scrollTrigger: scrollTrigger(el),
+			top: el.offsetTop - 200,
+			width: el.offsetWidth + 200,
+			height: el.offsetHeight + 200,
+		})	
+		}
+	});
     });
 
     return () => ctx.revert();
@@ -25,7 +59,7 @@ function Timeline() {
           alt="clouds"
           className="clouds cloud1-top"
         />
-        <img
+       <img
           src="/src/assets/events/clouds/cloud2.png"
           alt="clouds"
           className="clouds cloud2-top"
@@ -65,7 +99,7 @@ function Timeline() {
           alt="clouds"
           className="clouds cloud9-top"
         />
-      </div>
+     </div>
 
       <div className="tlparent">
         <div className="svg-container">

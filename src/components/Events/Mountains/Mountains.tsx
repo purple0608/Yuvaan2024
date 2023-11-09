@@ -8,19 +8,40 @@ function Mountains() {
     height: window.innerHeight,
   });
   const mount = useRef<HTMLElement | null>(null);
-  const [parallaxElements, setParallaxElements] = useState<HTMLElement[]>([]);
+  const [parallaxElements, setParallaxElements] = useState<HTMLElement[]>(Array.from(document.querySelectorAll(".parallax")));
 
   useEffect(() => {
-    if (mount.current) {
       const elements: NodeListOf<HTMLElement> =
-        mount.current.querySelectorAll(".parallax");
+        document.querySelectorAll(".parallax");
       setParallaxElements(Array.from(elements));
-    }
-  }, [mount]);
+  }, []);
+
+  useEffect(() => {
+  	const handleLoad = () => {
+		document.querySelectorAll<HTMLElement>(".parallax").forEach((el: HTMLElement) => {
+			gsap.from(el, {
+				top: 1000 ,
+				duration: 2.5,
+			});	
+		});
+		window.scrollTo(0,0);
+	}; 
+        window.addEventListener("load", handleLoad);
+
+	return () => {
+		window.removeEventListener("load", handleLoad);
+	}
+
+
+  },[parallaxElements]);
 
   useEffect(() => {
     let mc = mount.current;
+    
     function handleParallax(e: MouseEvent) {
+    	if(e.clientY + scrollY> mc?.offsetHeight! + 100) {
+		return 
+	}
       const xValue = e.clientX - dimensions.width;
       const yValue = e.clientY - dimensions.height;
 
@@ -39,17 +60,16 @@ function Mountains() {
         xTo(-xValue * speedx);
         yTo(-yValue * speedy * 0.5);
 
-        //el.style.transform = `translateX(calc(-50% + ${-xValue * speedx}px)) translateY(calc(-50% + ${-yValue * speedy * 0.5}px)) perspective(2300px) translateZ(${zValue * speedz}px)`;
       });
     }
 
     if (mc) {
-      mc.addEventListener("mousemove", handleParallax);
+      window.addEventListener("mousemove", handleParallax);
     }
 
     return () => {
       if (mc) {
-        mc.removeEventListener("mousemove", handleParallax);
+        window.removeEventListener("mousemove", handleParallax);
       }
     };
   }, [dimensions, parallaxElements]);
@@ -85,6 +105,7 @@ function Mountains() {
           data-speedz="0"
           data-speedx="0.3"
           data-speedy="0.38"
+          data-distance="-800"
           className="parallax glow"
           alt="glow"
         />
@@ -93,6 +114,7 @@ function Mountains() {
           data-speedz="0"
           data-speedx="0.195"
           data-speedy="0.32"
+          data-distance="200"
           className="parallax fog-7"
           alt="fog-7"
         />
@@ -101,6 +123,7 @@ function Mountains() {
           data-speedz="0"
           data-speedx="0.25"
           data-speedy="0.305"
+          data-distance="300"
           className="parallax mountain-10"
           alt="mountain-10"
         />
@@ -109,6 +132,7 @@ function Mountains() {
           data-speedz="0"
           data-speedx="0.125"
           data-speedy="0.28"
+          data-distance="300"
           className="parallax fog-6"
           alt="fog-6"
         />
@@ -117,6 +141,7 @@ function Mountains() {
           data-speedz="0.15"
           data-speedx="0.1"
           data-speedy="0.155"
+          data-distance="400"
           className="parallax mountain-9"
           alt=""
         />
@@ -125,6 +150,7 @@ function Mountains() {
           data-speedz="0"
           data-speedx="0.16"
           data-speedy="0.11"
+          data-distance="500"
           className="parallax mountain-8"
           alt=""
         />
@@ -133,6 +159,7 @@ function Mountains() {
           data-speedz="0"
           data-speedx="0.1"
           data-speedy="0.32"
+          data-distance="200"
           className="parallax mountain-7"
           alt=""
         />
@@ -157,6 +184,7 @@ function Mountains() {
           data-speedz="0.05"
           data-speedx="0.065"
           data-speedy="0.05"
+          data-distance="800"
           className="parallax mountain-6"
           alt="parallax mountain-6"
         />
@@ -165,6 +193,7 @@ function Mountains() {
           data-speedz="0"
           data-speedx="0.135"
           data-speedy="0.0135"
+          data-distance="1000"
           className="parallax fog-4"
           alt="parallax fog-4"
         />
@@ -173,6 +202,7 @@ function Mountains() {
           data-speedz="0.13"
           data-speedx="0.08"
           data-speedy="0.08"
+          data-distance="1000"
           className="parallax mountain-5"
           alt="parallax mountain-5"
         />
@@ -181,6 +211,7 @@ function Mountains() {
           data-speedz="0"
           data-speedx="0.11"
           data-speedy="0.018"
+          data-distance="1200"
           className="parallax fog-3"
           alt="parallax fog-3"
         />
@@ -189,6 +220,7 @@ function Mountains() {
           data-speedz="0.35"
           data-speedx="0.059"
           data-speedy="0.024"
+          data-distance="200"
           className="parallax mountain-4"
           alt="parallax mountain-4"
         />

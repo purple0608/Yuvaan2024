@@ -22,7 +22,7 @@
   transform: translate(-50%, -50%);
   z-index: 24;
   left: calc(50% - 200px);
-  top: calc(50% + 450px);
+  top: calc(50% + 500px);
 }
 
 .cloud2-top {
@@ -31,8 +31,8 @@
   width: 1500px;
   transform: translate(-50%, -50%);
   z-index: 24;
-  left: calc(50% + 500px);
-  top: calc(50% + 500px);
+  left: calc(50% - 700px);
+  top: calc(50% + 550px);
 }
 
 .cloud3-top {
@@ -42,7 +42,7 @@
   transform: translate(-50%, -50%);
   z-index: 24;
   left: calc(50% - 1000px);
-  top: calc(50% + 500px);
+  top: calc(50% + 550px);
 }
 
 .cloud4-top {
@@ -52,7 +52,7 @@
   transform: translate(-50%, -50%);
   z-index: 24;
   left: calc(50% - 500px);
-  top: calc(50% + 650px);
+  top: calc(50% + 700px);
 }
 
 .cloud5-top {
@@ -62,7 +62,7 @@
   transform: translate(-50%, -50%);
   z-index: 24;
   left: calc(50% + 700px);
-  top: calc(50% + 700px);
+  top: calc(50% + 650px);
 }
 
 .cloud6-top {
@@ -72,7 +72,7 @@
   transform: translate(-50%, -50%);
   z-index: 24;
   left: calc(50% + 700px);
-  top: calc(50% + 900px);
+  top: calc(50% + 950px);
 }
 
 .cloud7-top {
@@ -81,8 +81,8 @@
   width: 1900px;
   transform: translate(-50%, -50%);
   z-index: 24;
-  left: calc(50%);
-  top: calc(50% + 750px);
+  left: calc(50% - 300px);
+  top: calc(50% + 900px);
 }
 
 .cloud8-top {
@@ -92,7 +92,7 @@
   transform: translate(-50%, -50%);
   z-index: 24;
   left: calc(50%);
-  top: calc(50% + 950px);
+  top: calc(50% + 1000px);
 }
 
 .cloud9-top {
@@ -102,7 +102,7 @@
   transform: translate(-50%, -50%);
   z-index: 24;
   left: calc(50% - 700px);
-  top: calc(50% + 900px);
+  top: calc(50% + 950px);
 }
 
 .cloud1-bottom {
@@ -121,7 +121,7 @@
   width: 1500px;
   transform: translate(-50%, -50%);
   z-index: 24;
-  left: calc(50% + 500px);
+  left: calc(50% - 700px);
   top: calc(50% + 2200px);
 }
 
@@ -171,7 +171,7 @@
   width: 1900px;
   transform: translate(-50%, -50%);
   z-index: 24;
-  left: calc(50%);
+  left: calc(50% - 300px);
   top: calc(50% + 2550px);
 }
 

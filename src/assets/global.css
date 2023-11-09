@@ -8,6 +8,11 @@
   box-sizing: border-box;
   cursor: url("./utils/cursor.png"), auto;
   user-select: none;
+  scrollbar-width: 0;
+}
+
+*::-webkit-scrollbar{
+	display: none;
 }
 
 button:hover,
