@@ -8,7 +8,6 @@
   box-sizing: border-box;
   cursor: url("./utils/cursor.png"), auto;
   user-select: none;
-  pointer-events: none;
 }
 
 button:hover,
