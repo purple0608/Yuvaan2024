@@ -1,0 +1,11 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" width="60" height="60">
+	<title>diamond-svg</title>
+	<defs>
+		<image  width="54" height="54" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADYAAAA2CAMAAAC7m5rvAAAAAXNSR0IB2cksfwAAAfhQTFRFAAAAx6ptx6prx6ptx6lsx6hqx6lrx6lqx6hox6lpx6hox6dnxqlpxqlox6hnx6dlxqdox6dmx6dlx6djxqZmx6dkx6Zjx6VixqZjx6Zix6Zhx6VfxqZhx6Zgx6Vfx6RfxqZgx6Vex6RbxqRex6Rdx6Rcx6RaxqNcx6Rbx6Rax6JYxqNbx6NZx6NYx6JXHUg9HUg9xqNYx6NXx6JWx6JVxqNWx6JVyKJVx6JTHUg9xqFUyKJUyKFTx6BSHUg9x6FTyKFSyKFRx59PHUg9x6FRyKBQyKBPx59NHUg9x59QyKBOyKBNx59LHUg9JFhLHUg9x59NyJ9Mx59KI1ZJHUg9x55LyJ9LyJ5Kx51IIlJGKWJTKWNVHUk+HUg9yJ5JyJ5Ix51HIE9DJ19RLm1dK2ZXH0xAHUg9x55IyJ5HyJ1Gx5xFH0xBJlxPLGlZx55GyJ1FyJ1Ex5xCJVpMLWxcx5xFyJxDyJxCHUg9NX1rI1VJx5tDyJxBx5o/HUg9Lm5eHUg9x5tByJtAyJs/x5o9xqlsHUg9L3BgMXRjJVtOHUg9x5xAyJs+x5k9xqlrHUg9NXxqJ15QHUk9HUg9HUg9M3loKGFSHUg9HUg9HUg9LWpbIVJGK2dYKmRVHUg9HUg9HUg9HUg9HUg9HUg9HUg9HUg9HUg9x5tAx5s9A6iRrwAAAKh0Uk5TAJ+f//+f//+f//+foKD/n6D//5+g//+foP//n6D//5+g/5+g//+foP//n6D//5//zaD//5+g//+f+qD//5++oP//n4Gg//+fRaD//58J/xWg/5//UqD//5//////jv//n///////y6D//5////+g//+f//+g///9//+g/5/A/wqg//+foHr///9Gn/+goLD///+Dc///vzf7/////+8HskR2gDm9+aCgZ592HgAAAjpJREFUeJyd1PlfDkEcwPFvrniQCkl4SELIdCBHSqVEfPW4kiK1ipzleOwjUgmVKHeOHDn6N9vd2d125tlj5plfnn125/16XjszzwfAcyTN8X7mo+bOm5+QWpC8MCG1KLRYXi1ZGgqlLJNWAKkpaenLpRXAivSVGaukFUBmxuqsNdIKYG3WuvB6aQWwIRzO3iitAHKyN+VullYAW3K35m2TVgDb83bk7xRVpMC+XZhfVLxLUGnDfrC7eE/JXhG1jzBuf8mB0oPBqowQ1pWXHqqoDFJVhPDucEV1zRF/VUtIvDtac6zuuJ86YcxHpO6kNaW+LhI55a2MRSSn0XJnrPtnI+cazvurRrzQhNhsXF+0XcOllst+qhXbFOUKYrvxrcN6drXlWud1b3UDbyrauIXYyi7M7c47Xd1eqhnvKsa4h9jIuvtdD6LdceqhuYgaUVUdIsZY9yga7XnMqSdOpaq9hqML+tSa09fTP/AMBh0VfT6rXujspXYxRNWwvX4j/QOvRgFeOyr6hjr9zcZUdUz7GMe3+q13vAJwVvT97O990N/tI92CT/GKrehnw8WQrmQT3YAJN8VV1DwkXxR9v7+yx5lRXEXNY/JN2+2Yr+Iqasxtx+/m0nsrrqLmUQlWXEXd/qauiqvopKV+BCiuoj+p+hWouIr+1tWUgOIq+oeQv0KKr+g/QeVR0UDlWlEB5VJRIRVXUUHFVVRYMRWVUI6KSim7opLKrKi0ohWVV7Si8grgf0IKYNpHzQDJTfQNDStsiQAAAABJRU5ErkJggg=="/>
+	</defs>
+	<style>
+	</style>
+	<g id="Layer_1">
+		<use id="Layer" href="#img1" x="3" y="3"/>
+	</g>
+</svg>
