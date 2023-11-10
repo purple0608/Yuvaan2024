@@ -7,9 +7,10 @@ import Events from "./components/Events/Events";
 import Gallery from "./components/Gallery/Gallery";
 import Sponsors from "./components/Sponsors/Sponsors";
 
+
 const App = () => {
   return (
-    <Router>
+    <Router basename="Yuvaan2024">
       <Routes>
         <Route path="Yuvaan2024/" element={<Main_page />} />
         <Route path="Yuvaan2024/sponsors" element={<Sponsors />} />
