@@ -299,3 +299,7 @@ main {
   /* cubic-bezier(.2,.56,.25,.98); */
 }
 
+.navbar{
+  z-index: 101;
+}
+

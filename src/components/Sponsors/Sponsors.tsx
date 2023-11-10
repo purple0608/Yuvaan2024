@@ -6,6 +6,7 @@ import oil from "../../assets/sponsors/image/oil.png";
 import sbi from "../../assets/sponsors/image/image1.png";
 import prag from "../../assets/sponsors/image/prag1.png";
 import gplus from "../../assets/sponsors/image/gplus1.png";
+import Navbar from "../Navbar/Navbar";
 // import Image from "./image/cardBackground.avif";
 // import firefly from "./image/firefly.png";
 // import { gsap } from "gsap";
@@ -58,6 +59,7 @@ function Sponsors() {
 
     return (
         <div>
+            <Navbar />
             <div className="sponsors-wrapper" ref={mount}>
                 <div className="sponsors-content">
                     <header className="sponsors-header">
