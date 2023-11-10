@@ -1,17 +1,18 @@
 import { useLayoutEffect, useRef } from "react";
-import { gsap, ScrollTrigger } from "gsap/all";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "/src/assets/events/Timeline.css";
 
 function Timeline() {
   const top_clouds_ref = useRef<HTMLDivElement | null>(null);
   const bottom_clouds_ref = useRef<HTMLDivElement | null>(null);
-  gsap.registerPlugin(ScrollTrigger);
   useLayoutEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
     const clouds: NodeListOf<HTMLElement> =
       document.querySelectorAll(".clouds")!;
     const top_clouds = Array.from(clouds);
-    let ctx = gsap.context(() => {
-    	const scrollTrigger = (el: HTMLElement) => {
+    const ctx = gsap.context(() => {
+    const scrollTrigger = (el: HTMLElement) => {
 		return {
 			trigger: el,
 			start: "top 35%",
@@ -27,7 +28,7 @@ function Timeline() {
 			top: el.offsetTop - 200,
 			left: el.offsetLeft - 200,
 			width: el.offsetWidth + 200,
-			height: el.offsetHeight + 200,
+			// height: el.offsetHeight + 200,
 		})	
 		} else if (el.offsetLeft> 700){
 		gsap.to(el, {
@@ -35,14 +36,14 @@ function Timeline() {
 			top: el.offsetTop - 200,
 			right: (1000 - el.offsetLeft) + 600,
 			width: el.offsetWidth + 200,
-			height: el.offsetHeight + 200,
+			// height: el.offsetHeight + 200,
 		})	
 		}else {
 		gsap.to(el, {
 			scrollTrigger: scrollTrigger(el),
 			top: el.offsetTop - 200,
 			width: el.offsetWidth + 200,
-			height: el.offsetHeight + 200,
+			// height: el.offsetHeight + 200,
 		})	
 		}
 	});

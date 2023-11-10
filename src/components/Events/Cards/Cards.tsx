@@ -82,7 +82,7 @@ function Cards() {
           start: "top top",
           end: "+=12000",
           scrub: true,
-          markers: true,
+          // markers: true,
           snap: {
             snapTo: [0.15, 0.5, 0.85],
             duration: 1,
