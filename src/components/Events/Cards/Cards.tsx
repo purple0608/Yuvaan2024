@@ -131,7 +131,7 @@ function Cards() {
               ref={hero as MutableRefObject<HTMLDivElement>}
             >
               <div className="titleBox">
-              <p className="title"> {heroData.title} </p>
+              <p className="etitle"> {heroData.title} </p>
               <img className="sword" src="/src/assets/events/images_cards/sword.png" alt="sword"/>
               </div>
               <div className="grid description">

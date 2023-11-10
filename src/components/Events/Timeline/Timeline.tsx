@@ -9,7 +9,7 @@ function Timeline() {
   useLayoutEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
     const clouds: NodeListOf<HTMLElement> =
-      document.querySelectorAll(".clouds")!;
+      document.querySelectorAll(".eClouds")!;
     const top_clouds = Array.from(clouds);
     const ctx = gsap.context(() => {
     const scrollTrigger = (el: HTMLElement) => {
@@ -25,7 +25,7 @@ function Timeline() {
 		if (el.offsetLeft< 500){
 		gsap.to(el, {
 			scrollTrigger: scrollTrigger(el),
-			top: el.offsetTop - 200,
+			// top: el.offsetTop - 200,
 			left: el.offsetLeft - 200,
 			width: el.offsetWidth + 200,
 			// height: el.offsetHeight + 200,
@@ -33,7 +33,7 @@ function Timeline() {
 		} else if (el.offsetLeft> 700){
 		gsap.to(el, {
 			scrollTrigger: scrollTrigger(el),
-			top: el.offsetTop - 200,
+			// top: el.offsetTop - 200,
 			right: (1000 - el.offsetLeft) + 600,
 			width: el.offsetWidth + 200,
 			// height: el.offsetHeight + 200,
@@ -41,7 +41,7 @@ function Timeline() {
 		}else {
 		gsap.to(el, {
 			scrollTrigger: scrollTrigger(el),
-			top: el.offsetTop - 200,
+			// top: el.offsetTop - 200,
 			width: el.offsetWidth + 200,
 			// height: el.offsetHeight + 200,
 		})	
@@ -54,51 +54,51 @@ function Timeline() {
 
   return (
     <>
-      <div className="clouds-gang clouds-top" ref={top_clouds_ref}>
+      <div className="eClouds-gang clouds-top" ref={top_clouds_ref}>
         <img
           src="/src/assets/events/clouds/cloud1.png"
           alt="clouds"
-          className="clouds cloud1-top"
+          className="eClouds cloud1-top"
         />
        <img
           src="/src/assets/events/clouds/cloud2.png"
           alt="clouds"
-          className="clouds cloud2-top"
+          className="eClouds cloud2-top"
         />
         <img
           src="/src/assets/events/clouds/cloud3.png"
           alt="clouds"
-          className="clouds cloud3-top"
+          className="eClouds cloud3-top"
         />
         <img
           src="/src/assets/events/clouds/cloud4.png"
           alt="clouds"
-          className="clouds cloud4-top"
+          className="eClouds cloud4-top"
         />
         <img
           src="/src/assets/events/clouds/cloud5.png"
           alt="clouds"
-          className="clouds cloud5-top"
+          className="eClouds cloud5-top"
         />
         <img
           src="/src/assets/events/clouds/cloud6.png"
           alt="clouds"
-          className="clouds cloud6-top"
+          className="eClouds cloud6-top"
         />
         <img
           src="/src/assets/events/clouds/cloud7.png"
           alt="clouds"
-          className="clouds cloud7-top"
+          className="eClouds cloud7-top"
         />
         <img
           src="/src/assets/events/clouds/cloud8.png"
           alt="clouds"
-          className="clouds cloud8-top"
+          className="eClouds cloud8-top"
         />
         <img
           src="/src/assets/events/clouds/cloud10.png"
           alt="clouds"
-          className="clouds cloud9-top"
+          className="eClouds cloud9-top"
         />
      </div>
 
@@ -120,51 +120,51 @@ function Timeline() {
         </div>
       </div>
 
-      <div className="clouds-gang clouds-bottom" ref={bottom_clouds_ref}>
+      <div className="eClouds-gang clouds-bottom" ref={bottom_clouds_ref}>
         <img
           src="/src/assets/events/clouds/cloud1.png"
           alt="clouds"
-          className="clouds cloud1-bottom"
+          className="eClouds cloud1-bottom"
         />
         <img
           src="/src/assets/events/clouds/cloud2.png"
           alt="clouds"
-          className="clouds cloud2-bottom"
+          className="eClouds cloud2-bottom"
         />
         <img
           src="/src/assets/events/clouds/cloud3.png"
           alt="clouds"
-          className="clouds cloud3-bottom"
+          className="eClouds cloud3-bottom"
         />
         <img
           src="/src/assets/events/clouds/cloud4.png"
           alt="clouds"
-          className="clouds cloud4-bottom"
+          className="eClouds cloud4-bottom"
         />
         <img
           src="/src/assets/events/clouds/cloud5.png"
           alt="clouds"
-          className="clouds cloud5-bottom"
+          className="eClouds cloud5-bottom"
         />
         <img
           src="/src/assets/events/clouds/cloud6.png"
           alt="clouds"
-          className="clouds cloud6-bottom"
+          className="eClouds cloud6-bottom"
         />
         <img
           src="/src/assets/events/clouds/cloud7.png"
           alt="clouds"
-          className="clouds cloud7-bottom"
+          className="eClouds cloud7-bottom"
         />
         <img
           src="/src/assets/events/clouds/cloud8.png"
           alt="clouds"
-          className="clouds cloud8-bottom"
+          className="eClouds cloud8-bottom"
         />
         <img
           src="/src/assets/events/clouds/cloud10.png"
           alt="clouds"
-          className="clouds cloud9-bottom"
+          className="eClouds cloud9-bottom"
         />
       </div>
     </>

@@ -10,7 +10,7 @@ import {
 export const data = [
   {
     id: "2",
-    link: "#",
+    link: "/events",
     text: "Events",
     icon: <CalendarIcon />,
   },
@@ -22,7 +22,7 @@ export const data = [
   },
   {
     id: "4",
-    link: "#",
+    link: "/gallery",
     text: "Gallery",
     icon: <CameraIcon />,
   },

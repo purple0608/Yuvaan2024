@@ -6,7 +6,7 @@ import { ScrollToPlugin } from 'gsap/ScrollToPlugin';
 
 
 import '/src/assets/main_page/main_page.css'
-
+import Navbar from "../Navbar/Navbar";
 function Main_page() {
   
   
@@ -78,7 +78,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   return (
     <>
-  
+   <Navbar className={isClicked ? "navbar" : "navbar"} />
 <div className="wrapper">
   <div className="content">
     <header className="header">

@@ -19,7 +19,7 @@ const NavBar = () => {
         <div className="navigation">
           <ul>
             <li className="list active">
-              <a href="#">
+              <a href="/">
                 <span className="icon">
                   <HomeIcon />
                 </span>
