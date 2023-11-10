@@ -16,7 +16,7 @@ export const data = [
   },
   {
     id: "3",
-    link: "#",
+    link: "/Yuvaan2024/sponsors",
     text: "Sponsors",
     icon: <CashIcon />,
   },
