@@ -1,12 +1,10 @@
 import "./assets/global.css";
-import Gallery from "./components/Gallery/Gallery"
-
-function App() {
+import Main_page from "./components/Home/Main_page"; function App() {
   return (
     <>
-      <Gallery />
+    <Main_page/>40ead0330fb5c53d9cd33bca49f0b2288b72:src/App.tsx
     </>
   )
 }
 
-export default App
+export default App;
