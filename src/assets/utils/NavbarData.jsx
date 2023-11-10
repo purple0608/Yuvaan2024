@@ -10,7 +10,7 @@ import {
 export const data = [
   {
     id: "2",
-    link: "#",
+    link: "/Yuvaan2024/events",
     text: "Events",
     icon: <CalendarIcon />,
   },
@@ -22,7 +22,7 @@ export const data = [
   },
   {
     id: "4",
-    link: "#",
+    link: "/Yuvaan2024/gallery",
     text: "Gallery",
     icon: <CameraIcon />,
   },

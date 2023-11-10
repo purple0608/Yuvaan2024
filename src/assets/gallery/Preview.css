@@ -1,13 +1,12 @@
-* {
-  margin: 0;
+
+.ronits-div {
   padding: 0;
-}
-body {
+  margin: 0;
   background-color: rgb(33, 28, 28);
   background-image: url("background.jpg");
   background-repeat: no-repeat;
   background-size: cover; /* or background-size: cover; depending on your preference */
-  height: 130vh;
+  height: 120vh;
 }
 
 .swiper {

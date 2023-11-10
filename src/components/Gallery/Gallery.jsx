@@ -12,7 +12,7 @@ function Gallery() {
   };
 
   return (
-    <>
+    <div className="ronits-div">
       <Navbar className={isClicked ? "navbar" : "navbar"} />
       {isClicked ? <Timeline /> : <Preview />}
       {isClicked ? (
@@ -22,7 +22,7 @@ function Gallery() {
           View More
         </button>
       )}
-    </>
+    </div>
   );
 }
 
