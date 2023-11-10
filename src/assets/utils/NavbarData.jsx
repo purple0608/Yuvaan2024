@@ -10,19 +10,19 @@ import {
 export const data = [
   {
     id: "2",
-    link: "#",
+    link: "/Yuvaan2024/events",
     text: "Events",
     icon: <CalendarIcon />,
   },
   {
     id: "3",
-    link: "#",
+    link: "/Yuvaan2024/sponsors",
     text: "Sponsors",
     icon: <CashIcon />,
   },
   {
     id: "4",
-    link: "#",
+    link: "/Yuvaan2024/gallery",
     text: "Gallery",
     icon: <CameraIcon />,
   },

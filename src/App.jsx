@@ -1,14 +1,23 @@
+import React from "react";
 import "./assets/global.css";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Main_page from "./components/Home/Main_page";
-import Contact from './components/Contact/Contact.tsx';
+import Events from "./components/Events/Events";
+import Gallery from "./components/Gallery/Gallery";
+import Sponsors from "./components/Sponsors/Sponsors";
 
-function App() {
+
+const App = () => {
   return (
-    <>
-      {/* <Main_page/>40ead0330fb5c53d9cd33bca49f0b2288b72:src/App.tsx */}
-      <Contact/>
-    </>
-  )
-}
-
+    <Router basename="Yuvaan2024">
+      <Routes>
+        <Route path="Yuvaan2024/" element={<Main_page />} />
+        <Route path="Yuvaan2024/sponsors" element={<Sponsors />} />
+        <Route path="Yuvaan2024/events" element={<Events />} />
+        <Route path="Yuvaan2024/gallery" element={<Gallery />} />
+      </Routes>
+    </Router>
+  );
+};
 export default App;
+
