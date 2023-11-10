@@ -7,13 +7,14 @@ import Gallery from "./components/Gallery/Gallery";
 
 
 
+
 const App = () => {
   return (
     <Router>
       <Routes>
         <Route path="/" element={<Main_page />} />
-        <Route path="/events" element={<Events />} />
-        <Route path="/gallery" element={<Gallery />} />
+        <Route path="events" element={<Events />} />
+        <Route path="gallery" element={<Gallery />} />
       </Routes>
     </Router>
   );
