@@ -10,11 +10,11 @@ import Gallery from "./components/Gallery/Gallery";
 
 const App = () => {
   return (
-    <Router>
+    <Router basename="Yuvaan2024">
       <Routes>
-        <Route path="/Yuvaan2024" element={<Main_page />} />
-        <Route path="/Yuvaan2024/events" element={<Events />} />
-        <Route path="/Yuvaan2024/gallery" element={<Gallery />} />
+        <Route path="/" element={<Main_page />} />
+        <Route path="events" element={<Events />} />
+        <Route path="gallery" element={<Gallery />} />
       </Routes>
     </Router>
   );
