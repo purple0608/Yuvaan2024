@@ -19,7 +19,12 @@ const Preview =() => {
         <div className="clouds-2"></div>
         <div className="clouds-3"></div>
       </div>
-      <h1 className="preview-header">Past Events</h1>
+      <div className="img_div mb-2">
+        <img src="src/components/Preview/PastEvents.png" alt="" />
+      </div>
+      <div className="img_div mb-5">
+        <img src="src/components/Preview/downline.png" alt="" />
+      </div>
       <div className="swiper mySwiper">
         <div className="swiper-wrapper">
           {EventImgData.map((item) => {

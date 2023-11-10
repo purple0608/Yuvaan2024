@@ -1,13 +1,13 @@
-body {
+* {
   margin: 0;
-  background-color: black;
+  padding: 0;
 }
-
-.preview-header {
-  color: white;
-  font-size: 55px;
-  text-align: center;
-  margin-bottom: 5rem;
+body {
+  background-color: rgb(33, 28, 28);
+  background-image: url("background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; /* or background-size: cover; depending on your preference */
+  height: 130vh;
 }
 
 .swiper {
@@ -17,15 +17,12 @@ body {
 
 .swiper-slide {
   background-position: center;
-  background-size: cover;
   width: 40rem;
 }
 
 .swiper-slide img {
   display: block;
   width: 100%;
-  -webkit-box-reflect: below 0px
-    linear-gradient(transparent, rgba(1, 1, 1, 0.2), rgba(1, 1, 1, 0.2));
 }
 
 .mt-2 {
@@ -36,21 +33,25 @@ body {
   margin-bottom: 5rem;
 }
 
+.mb-2 {
+  margin-bottom: 2rem;
+}
+
 @keyframes clouds-loop-1 {
   to {
-    background-position: -1000px 0;
+    background-position: -1500px 0;
   }
 }
 
 @keyframes clouds-loop-2 {
   to {
-    background-position: -1000px 0;
+    background-position: -1500px 0;
   }
 }
 
 @keyframes clouds-loop-3 {
   to {
-    background-position: -1579px 0;
+    background-position: -1500px 0;
   }
 }
 
@@ -92,10 +93,13 @@ body {
 }
 
 #container {
-  width: 100%;
+  width: 100vw;
   position: relative;
 }
-
+.img_div {
+  display: flex;
+  justify-content: center;
+}
 .dot {
   width: 3px;
   height: 3px;
@@ -110,6 +114,17 @@ body {
   padding-top: 10rem;
 }
 
+@media only screen and (max-width: 900px) {
+  .preview-container {
+    padding-top: 15rem;
+  }
+
+  .swiper-slide {
+    background-position: center;
+    width: 40rem;
+  }
+}
+
 @media only screen and (max-width: 480px) {
   .preview-header {
     font-size: 36px;
@@ -117,7 +132,17 @@ body {
   }
 
   .swiper-slide {
+    width: 22.5rem;
+  }
+
+  .img_div img {
     width: 20rem;
+  }
+  .preview-container {
+    padding-top: 12rem;
+  }
+  .body {
+    height: 120vh;
   }
 }
 
@@ -133,5 +158,13 @@ body {
   .swiper-slide {
     width: 15rem;
   }
+  .body {
+    height: 120vh;
+  }
+}
 
+@media only screen and (max-height: 680px) {
+  .body {
+    height: 180vh !important;
+  }
 }
