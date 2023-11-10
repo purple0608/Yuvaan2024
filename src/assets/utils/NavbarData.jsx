@@ -34,7 +34,7 @@ export const data = [
   },
   {
     id: "6",
-    link: "#",
+    link: "contact",
     text: "Contact Us",
     icon: <CallIcon />,
   },

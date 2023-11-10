@@ -5,6 +5,7 @@ import Main_page from "./components/Home/Main_page";
 import Events from "./components/Events/Events";
 import Gallery from "./components/Gallery/Gallery";
 import Sponsors from "./components/Sponsors/Sponsors";
+import Contact from "./components/Contact/Contact";
 
 
 
@@ -18,6 +19,7 @@ const App = () => {
         <Route path="events" element={<Events />} />
         <Route path="gallery" element={<Gallery />} />
         <Route path="sponsors" element={<Sponsors />} />
+        <Route path="contact" element={<Contact />} />
       </Routes>
     </Router>
   );
