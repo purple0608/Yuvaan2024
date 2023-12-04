@@ -1,6 +1,6 @@
 import React from "react";
 import "./assets/global.css";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { HashRouter as Router, Route, Routes } from "react-router-dom";
 import Main_page from "./components/Home/Main_page";
 import Events from "./components/Events/Events";
 import Gallery from "./components/Gallery/Gallery";
