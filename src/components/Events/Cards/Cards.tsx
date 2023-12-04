@@ -102,7 +102,7 @@ function Cards() {
           .set(hero.current!, {
             css: {
               backgroundImage: () => {
-		return "url(/src/assets/events/images_cards/hero" + i + ".jpg)";
+		return "url(../assets/events/images_cards/hero" + i + ".jpg)";
               },
             },
           })
