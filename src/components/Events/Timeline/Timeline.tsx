@@ -3,6 +3,15 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "/src/assets/events/Timeline.css";
 import cloud1 from "/src/assets/events/clouds/cloud1.png"; 
+import cloud2 from "/src/assets/events/clouds/cloud2.png"; 
+import cloud3 from "/src/assets/events/clouds/cloud3.png"; 
+import cloud4 from "/src/assets/events/clouds/cloud4.png"; 
+import cloud5 from "/src/assets/events/clouds/cloud5.png"; 
+import cloud6 from "/src/assets/events/clouds/cloud6.png"; 
+import cloud7 from "/src/assets/events/clouds/cloud7.png"; 
+import cloud8 from "/src/assets/events/clouds/cloud8.png"; 
+import cloud9 from "/src/assets/events/clouds/cloud9.png"; 
+import cloud10 from "/src/assets/events/clouds/cloud10.png"; 
 
 function Timeline() {
   const top_clouds_ref = useRef<HTMLDivElement | null>(null);
@@ -62,42 +71,42 @@ function Timeline() {
           className="eClouds cloud1-top"
         />
        <img
-          src="/src/assets/events/clouds/cloud2.png"
+          src={cloud2}
           alt="clouds"
           className="eClouds cloud2-top"
         />
         <img
-          src="/src/assets/events/clouds/cloud3.png"
+          src={cloud3}
           alt="clouds"
           className="eClouds cloud3-top"
         />
         <img
-          src="/src/assets/events/clouds/cloud4.png"
+          src={cloud4}
           alt="clouds"
           className="eClouds cloud4-top"
         />
         <img
-          src="/src/assets/events/clouds/cloud5.png"
+          src={cloud5}
           alt="clouds"
           className="eClouds cloud5-top"
         />
         <img
-          src="/src/assets/events/clouds/cloud6.png"
+          src={cloud6}
           alt="clouds"
           className="eClouds cloud6-top"
         />
         <img
-          src="/src/assets/events/clouds/cloud7.png"
+          src={cloud7}
           alt="clouds"
           className="eClouds cloud7-top"
         />
         <img
-          src="/src/assets/events/clouds/cloud8.png"
+          src={cloud8}
           alt="clouds"
           className="eClouds cloud8-top"
         />
         <img
-          src="/src/assets/events/clouds/cloud10.png"
+          src={cloud10}
           alt="clouds"
           className="eClouds cloud9-top"
         />
@@ -121,54 +130,54 @@ function Timeline() {
         </div>
       </div>
 
-      <div className="eClouds-gang clouds-bottom" ref={bottom_clouds_ref}>
+<div className="eClouds-gang clouds-bottom" ref={bottom_clouds_ref}>
         <img
-          src="/src/assets/events/clouds/cloud1.png"
+          src={cloud1}
           alt="clouds"
           className="eClouds cloud1-bottom"
         />
         <img
-          src="/src/assets/events/clouds/cloud2.png"
+          src={cloud2}
           alt="clouds"
           className="eClouds cloud2-bottom"
         />
         <img
-          src="/src/assets/events/clouds/cloud3.png"
+          src={cloud3}
           alt="clouds"
           className="eClouds cloud3-bottom"
         />
         <img
-          src="/src/assets/events/clouds/cloud4.png"
+          src={cloud4}
           alt="clouds"
           className="eClouds cloud4-bottom"
         />
         <img
-          src="/src/assets/events/clouds/cloud5.png"
+          src={cloud5}
           alt="clouds"
           className="eClouds cloud5-bottom"
         />
         <img
-          src="/src/assets/events/clouds/cloud6.png"
+          src={cloud6}
           alt="clouds"
           className="eClouds cloud6-bottom"
         />
         <img
-          src="/src/assets/events/clouds/cloud7.png"
+          src={cloud7}
           alt="clouds"
           className="eClouds cloud7-bottom"
         />
         <img
-          src="/src/assets/events/clouds/cloud8.png"
+          src={cloud8}
           alt="clouds"
           className="eClouds cloud8-bottom"
         />
         <img
-          src="/src/assets/events/clouds/cloud10.png"
+          src={cloud10}
           alt="clouds"
           className="eClouds cloud9-bottom"
         />
       </div>
-    </>
+          </>
   );
 }
 

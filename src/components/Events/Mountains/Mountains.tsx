@@ -2,6 +2,32 @@ import gsap from "gsap";
 import { useEffect, useState, useRef, useCallback } from "react";
 import "/src/assets/events/Mountains.css";
 
+import background from "/src/assets/events/images_parallax/background.png";
+import glow from "/src/assets/events/images_parallax/glow.png";
+import fog_7 from "/src/assets/events/images_parallax/fog_7.png";
+import mountain_10 from "/src/assets/events/images_parallax/mountain_10.png";
+import fog_6 from "/src/assets/events/images_parallax/fog_6.png";
+import mountain_9 from "/src/assets/events/images_parallax/mountain_9.png";
+import mountain_8 from "/src/assets/events/images_parallax/mountain_8.png";
+import mountain_7 from "/src/assets/events/images_parallax/mountain_7.png";
+import events_font from "/src/assets/events/clouds/events_font.png";
+import decorator_hr_lg from "/src/assets/utils/decorator-hr-lg.png";
+import mountain_6 from "/src/assets/events/images_parallax/mountain_6.png";
+import fog_4 from "/src/assets/events/images_parallax/fog_4.png";
+import mountain_5 from "/src/assets/events/images_parallax/mountain_5.png";
+import fog_3 from "/src/assets/events/images_parallax/fog_3.png";
+import mountain_4  from "/src/assets/events/images_parallax/mountain_4.png";
+import mountain_3 from "/src/assets/events/images_parallax/mountain_3.png";
+import fog_2 from "/src/assets/events/images_parallax/fog_2.png";
+import mountain_2 from "/src/assets/events/images_parallax/mountain_2.png";
+import mountain_1 from "/src/assets/events/images_parallax/mountain_1.png";
+import fog_1 from "/src/assets/events/images_parallax/fog_1.png";
+import left_fireflies from "/src/assets/events/images_parallax/left_fireflies.png";
+import right_fireflies from "/src/assets/events/images_parallax/right_fireflies.png";
+import fireflies_3 from "/src/assets/events/images_parallax/fireflies_3.png";
+import fireflies_4 from "/src/assets/events/images_parallax/fireflies_4.png";
+import fireflies_5 from "/src/assets/events/images_parallax/fireflies_5.png";
+
 function Mountains() {
   const [dimensions, setDimensions] = useState({
     width: window.innerWidth,
@@ -92,7 +118,7 @@ function Mountains() {
     <div>
       <main ref={mount}>
         <img
-          src="/src/assets/events/images_parallax/background.png"
+          src={background}
           data-speedz="0"
           data-speedx="0.3"
           data-speedy="0.38"
@@ -101,7 +127,7 @@ function Mountains() {
           alt="background"
         />
         <img
-          src="/src/assets/events/images_parallax/glow.png"
+          src={glow}
           data-speedz="0"
           data-speedx="0.3"
           data-speedy="0.38"
@@ -110,7 +136,7 @@ function Mountains() {
           alt="glow"
         />
         <img
-          src="/src/assets/events/images_parallax/fog_7.png"
+          src={fog_7}
           data-speedz="0"
           data-speedx="0.195"
           data-speedy="0.32"
@@ -119,7 +145,7 @@ function Mountains() {
           alt="fog-7"
         />
         <img
-          src="/src/assets/events/images_parallax/mountain_10.png"
+          src={mountain_10}
           data-speedz="0"
           data-speedx="0.25"
           data-speedy="0.305"
@@ -128,7 +154,7 @@ function Mountains() {
           alt="mountain-10"
         />
         <img
-          src="/src/assets/events/images_parallax/fog_6.png"
+          src={fog_6}
           data-speedz="0"
           data-speedx="0.125"
           data-speedy="0.28"
@@ -137,7 +163,7 @@ function Mountains() {
           alt="fog-6"
         />
         <img
-          src="/src/assets/events/images_parallax/mountain_9.png"
+          src={mountain_9}
           data-speedz="0.15"
           data-speedx="0.1"
           data-speedy="0.155"
@@ -146,7 +172,7 @@ function Mountains() {
           alt=""
         />
         <img
-          src="/src/assets/events/images_parallax/mountain_8.png"
+          src={mountain_8}
           data-speedz="0"
           data-speedx="0.16"
           data-speedy="0.11"
@@ -155,7 +181,7 @@ function Mountains() {
           alt=""
         />
         <img
-          src="/src/assets/events/images_parallax/mountain_7.png"
+          src={mountain_7}
           data-speedz="0"
           data-speedx="0.1"
           data-speedy="0.32"
@@ -165,12 +191,12 @@ function Mountains() {
         />
         <div data-speedz="0" data-speedx="0.7" className="text">
           <img
-            src="/src/assets/events/clouds/events_font.png"
+            src={events_font}
             alt="events-heading"
             className="events-heading"
           />
           <img
-            src="/src/assets/utils/decorator-hr-lg.png"
+            src={decorator_hr_lg}
             alt="divider"
             className="divider"
           />
@@ -180,7 +206,7 @@ function Mountains() {
         </div>
         <div data-speedx="" className="vignette"></div>
         <img
-          src="/src/assets/events/images_parallax/mountain_6.png"
+          src={mountain_6}
           data-speedz="0.05"
           data-speedx="0.065"
           data-speedy="0.05"
@@ -189,7 +215,7 @@ function Mountains() {
           alt="parallax mountain-6"
         />
         <img
-          src="/src/assets/events/images_parallax/fog_4.png"
+          src={fog_4}
           data-speedz="0"
           data-speedx="0.135"
           data-speedy="0.0135"
@@ -198,7 +224,7 @@ function Mountains() {
           alt="parallax fog-4"
         />
         <img
-          src="/src/assets/events/images_parallax/mountain_5.png"
+          src={mountain_5}
           data-speedz="0.13"
           data-speedx="0.08"
           data-speedy="0.08"
@@ -207,7 +233,7 @@ function Mountains() {
           alt="parallax mountain-5"
         />
         <img
-          src="/src/assets/events/images_parallax/fog_3.png"
+          src={fog_3}
           data-speedz="0"
           data-speedx="0.11"
           data-speedy="0.018"
@@ -216,7 +242,7 @@ function Mountains() {
           alt="parallax fog-3"
         />
         <img
-          src="/src/assets/events/images_parallax/mountain_4.png"
+          src={mountain_4}
           data-speedz="0.35"
           data-speedx="0.059"
           data-speedy="0.024"
@@ -225,7 +251,7 @@ function Mountains() {
           alt="parallax mountain-4"
         />
         <img
-          src="/src/assets/events/images_parallax/mountain_3.png"
+          src={mountain_3}
           data-speedz="0.32"
           data-speedx="0.04"
           data-speedy="0.018"
@@ -233,7 +259,7 @@ function Mountains() {
           alt="parallax mountain-3"
         />
         <img
-          src="/src/assets/events/images_parallax/fog_2.png"
+          src={fog_2}
           data-speedz="0"
           data-speedx="0.15"
           data-speedy="0.0115"
@@ -241,7 +267,7 @@ function Mountains() {
           alt="parallax fog-2"
         />
         <img
-          src="/src/assets/events/images_parallax/mountain_2.png"
+          src={mountain_2}
           data-speedz="0.42"
           data-speedx="0.0235"
           data-speedy="0.013"
@@ -249,7 +275,7 @@ function Mountains() {
           alt="parallax mountain-2"
         />
         <img
-          src="/src/assets/events/images_parallax/mountain_1.png"
+          src={mountain_1}
           data-speedz="0.53"
           data-speedx="0.027"
           data-speedy="0.018"
@@ -257,7 +283,7 @@ function Mountains() {
           alt="parallax mountain-1"
         />
         <img
-          src="/src/assets/events/images_parallax/fog_1.png"
+          src={fog_1}
           data-speedz="0.5"
           data-speedx="0.12"
           data-speedy="0.12"
@@ -265,7 +291,7 @@ function Mountains() {
           alt="parallax fog-1"
         />
         <img
-          src="/src/assets/events/images_parallax/left_fireflies.png"
+          src={left_fireflies}
           data-speedz="0.5"
           data-speedx="0.027"
           data-speedy="0.018"
@@ -273,7 +299,7 @@ function Mountains() {
           alt="parallax fireflies left"
         />
         <img
-          src="/src/assets/events/images_parallax/right_fireflies.png"
+          src={right_fireflies}
           data-speedz="0.5"
           data-speedx="0.04"
           data-speedy="0.018"
@@ -281,7 +307,7 @@ function Mountains() {
           alt="parallax fireflies right"
         />
         <img
-          src="/src/assets/events/images_parallax/fireflies_3.png"
+          src={fireflies_3}
           data-speedz="0.5"
           data-speedx="0.0235"
           data-speedy="0.013"
@@ -289,7 +315,7 @@ function Mountains() {
           alt="parallax fireflies"
         />
         <img
-          src="/src/assets/events/images_parallax/fireflies_4.png"
+          src={fireflies_4}
           data-speedz="0.5"
           data-speedx="0.059"
           data-speedy="0.024"
@@ -297,7 +323,7 @@ function Mountains() {
           alt="parallax fireflies"
         />
         <img
-          src="/src/assets/events/images_parallax/fireflies_5.png"
+          src={fireflies_5}
           data-speedz="0.5"
           data-speedx="0.16"
           data-speedy="0.11"

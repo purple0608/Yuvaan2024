@@ -2,6 +2,8 @@ import { MutableRefObject, useLayoutEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/all";
 import "/src/assets/events/Cards.css";
+import divider from "/src/assets/utils/decorator-hr.png";
+import sword from "/src/assets/events/images_cards/sword.png";
 import { Data, EventData } from "../../../assets/events/data";
 
 
@@ -132,7 +134,7 @@ function Cards() {
             >
               <div className="titleBox">
               <p className="etitle"> {heroData.title} </p>
-              <img className="sword" src="/src/assets/events/images_cards/sword.png" alt="sword"/>
+              <img className="sword" src={sword} alt="sword"/>
               </div>
               <div className="grid description">
                 <div className="grid-item logo" />
@@ -160,7 +162,7 @@ function Cards() {
               </button>
             </div>
             <img
-              src="/src/assets/utils/decorator-hr.png"
+              src={divider}
               className="divider"
               alt="scroll_down"
             />
