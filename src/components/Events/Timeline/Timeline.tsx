@@ -2,6 +2,7 @@ import { useLayoutEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "/src/assets/events/Timeline.css";
+import cloud1 from "/src/assets/events/clouds/cloud1.png""; 
 
 function Timeline() {
   const top_clouds_ref = useRef<HTMLDivElement | null>(null);
@@ -56,7 +57,7 @@ function Timeline() {
     <>
       <div className="eClouds-gang clouds-top" ref={top_clouds_ref}>
         <img
-          src="/src/assets/events/clouds/cloud1.png"
+          src={cloud1}
           alt="clouds"
           className="eClouds cloud1-top"
         />
