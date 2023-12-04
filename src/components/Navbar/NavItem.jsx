@@ -1,11 +1,12 @@
+import {Link} from "react-router-dom";
 export const NavItem = ({ id, link, text, icon }) => {
   return (
     <li className="list">
-      <a href={link}>
+      <Link to={link}>
         <span className="icon">{icon}</span>
         <span className="text">{text}</span>
         <span className="circle"></span>
-      </a>
+      </Link>
     </li>
   );
 };

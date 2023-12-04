@@ -1,6 +1,6 @@
 import React from "react";
 import "./assets/global.css";
-import { HashRouter as Router, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import Main_page from "./components/Home/Main_page";
 import Events from "./components/Events/Events";
 import Gallery from "./components/Gallery/Gallery";
@@ -13,7 +13,6 @@ import Contact from "./components/Contact/Contact";
 
 const App = () => {
   return (
-    <Router >
       <Routes>
         <Route path="/" element={<Main_page />} />
         <Route path="events" element={<Events />} />
@@ -21,7 +20,6 @@ const App = () => {
         <Route path="sponsors" element={<Sponsors />} />
         <Route path="contact" element={<Contact />} />
       </Routes>
-    </Router>
   );
 };
 export default App;

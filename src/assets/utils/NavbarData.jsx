@@ -10,19 +10,19 @@ import {
 export const data = [
   {
     id: "2",
-    link: "events",
+    link: "/events",
     text: "Events",
     icon: <CalendarIcon />,
   },
   {
     id: "3",
-    link: "sponsors",
+    link: "/sponsors",
     text: "Sponsors",
     icon: <CashIcon />,
   },
   {
     id: "4",
-    link: "gallery",
+    link: "/gallery",
     text: "Gallery",
     icon: <CameraIcon />,
   },
@@ -34,7 +34,7 @@ export const data = [
   },
   {
     id: "6",
-    link: "contact",
+    link: "/contact",
     text: "Contact Us",
     icon: <CallIcon />,
   },
