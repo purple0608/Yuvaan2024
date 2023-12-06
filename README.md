@@ -26,7 +26,7 @@
 
 - To be placed in `/src/assets/<page name>`
 - In case asset is being used in multiple pages, place it in `/src/assets/utils`
-- YOUR CSS SHOULD NOT AFFECT HTML UNINTENTIONALLY.To ensure this, Use component specific css, for example , if you are working in <component-name> and you want class <class-name> then rename class to <component-name>-<class-name>. Do not apply css on html tags.
+- YOUR CSS SHOULD NOT AFFECT HTML UNINTENTIONALLY.To ensure this, Use component specific css, for example , if you are working in _component-name_ and you want class _class-name_ then rename class to _component-name-class-name_. Do not apply css on html tags.
 
 ## Fonts
 
