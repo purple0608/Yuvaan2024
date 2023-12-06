@@ -1,45 +1,42 @@
 import { EventData } from "../../../assets/events/data";
+import sword from "/src/assets/events/images_cards/sword.png";
+import divider from "/src/assets/utils/decorator-hr.png";
 function Card(props) {
   const data: EventData = props.data;
-  console.log(data)
+  console.log(data);
   return (
-    <div className="card" style={{backgroundImage:"url("+data.bg+")"}}>
-      <div className="titleBox">
-        <p className="title"> {data.title} </p>
-        <img
-          className="sword"
-          src="/src/assets/events/images_cards/sword.png"
-          alt="sword"
-        />
+    <div
+      className="event-card"
+      style={{ backgroundImage: "url(" + data.bg + ")" }}
+    >
+      <div className="event-titleBox">
+        <p className="event-title"> {data.title} </p>
+        <img className="event-sword" src={sword} alt="sword" />
       </div>
-      <div className="grid description">
-        <div className="grid-item logo" />
-        <div className="grid-item data">
-          <p className="desc-header"> Date </p>
-          <p className="date">{data.date}</p>
+      <div className="event-grid event-description">
+        <div className="event-grid-item event-logo" />
+        <div className="event-grid-item event-data">
+          <p className="event-desc-header"> Date </p>
+          <p className="event-date">{data.date}</p>
         </div>
-        <div className="grid-item logo" />
-        <div className="grid-item data">
-          <p className="desc-header"> Time </p>
-          <p className="time">{data.time} </p>
+        <div className="event-grid-item event-logo" />
+        <div className="event-grid-item event-data">
+          <p className="event-desc-header"> Time </p>
+          <p className="event-date">{data.time}</p>
         </div>
-        <div className="grid-item logo" />
-        <div className="grid-item data">
-          <p className="desc-header"> Venue </p>
-          <p className="venue">{data.venue}</p>
+        <div className="event-grid-item event-logo" />
+        <div className="event-grid-item event-data">
+          <p className="event-desc-header"> Venue </p>
+          <p className="event-date">{data.venue}</p>
         </div>
-        <div className="grid-item data full">
-          <p className="info">{data.info}</p>
+        <div className="event-grid-item event-data event-full">
+          <p className="event-info">{data.info}</p>
         </div>
       </div>
-      <button type="button" className="register-button">
+      <button type="button" className="event-register-button">
         Register
       </button>
-      <img
-        src="/src/assets/utils/decorator-hr.png"
-        className="divider"
-        alt="scroll_down"
-      />
+      <img src={divider} className="event-divider" alt="scroll_down" />
     </div>
   );
 }

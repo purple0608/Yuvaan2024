@@ -110,19 +110,14 @@ function Cards() {
   }, [dimensions]);
 
   return (
-    <div className="page">
-      <div className="pinWrapper" ref={pinWrap}>
-        <center>
-          <div
-            id="hero"
-            className="hero"
-            ref={hero as MutableRefObject<HTMLDivElement>}
-          >
-            <Card data={heroData} />
-          </div>
-        </center>
+    <div className="event-pinWrapper" ref={pinWrap}>
+      <div
+        id="hero"
+        className="hero"
+        ref={hero as MutableRefObject<HTMLDivElement>}
+      >
+        <Card data={heroData} />
       </div>
-      <div className="space" />
     </div>
   );
 }
