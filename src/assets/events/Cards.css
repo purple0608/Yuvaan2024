@@ -17,34 +17,37 @@
   background-position: center center;
   /*transform: rotateY(90deg);*/
   height: 100vh;
-  max-height: 110vh;
   width: 100vw;
-  max-width: 110vw;
   align-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 .card > * {
   opacity: 0;
+  -moz-transition: 0.7s;
   transition: 0.7s;
 }
 .card > * > * {
+  -moz-transition: 0.7s;
   transition: 0.7s;
 }
 
-.card > .titleBox{
+.card > .titleBox {
   padding-top: 1vh;
   position: relative;
-  display:flex;
+  display: flex;
   flex-direction: column;
+  align-self: left;
 }
 
-.card > .titleBox > .sword{
-  width:500px;
+.card > .titleBox > .sword {
+  width: 500px;
   justify-content: left;
 }
 
-.card > .titleBox > .etitle {
-  padding-left: 2vh;
+.card > .titleBox > .title {
   color: rgb(200, 155, 60);
   color: white;
   font-family: WitchCraft;
@@ -63,13 +66,10 @@
 }
 
 .card > .description {
-  position: relative;
-  left: calc(50vw - 400px);
-  width: 450px;
+  width: 30vw;
   background-color: rgba(0, 0, 0, 0.47);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(20px);
-  border: 2px solid #c89b3c;
   text-align: start;
   font-family: SpiegelRegular;
   color: #a09b8c;
@@ -78,6 +78,10 @@
   grid-template-columns: 1fr 39fr;
   grid-row-gap: 2vh;
   grid-column-gap: 0.1vw;
+  border: 3px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to bottom, #c89b3c, #785a28);
+  align-self: flex-end;
 }
 
 .card > .description:hover {
@@ -92,7 +96,11 @@
   height: 42px;
   width: 42px;
   transition: background-image 0.7s;
-  -moz-transition: background-image 0.7s;
+  -webkit-transition: all 0.7s linear;
+  -moz-transition: all 0.7s linear;
+  -ms-transition: all 0.7s linear;
+  -o-transition: all 0.7s linear;
+  transition: all 0.7s linear;
 }
 
 .description:hover .logo {
@@ -120,38 +128,28 @@
   color: rgb(200, 155, 60);
 }
 
-.card > .register-wrapper {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-image: linear-gradient(to bottom, #c89b3c, #785a28);
-  width: 202px;
-  height: 72px;
-  top: 30px;
-}
-
-.register-wrapper > .register-button {
-  width: 198px;
-  height: 68px;
+.card > .register-button {
+  width: 200px;
+  height: 70px;
+  align-self: center;
   font-size: 32px;
   font-family: enchantedRegular;
   padding: 12px 32px;
   background-color: rgb(30, 35, 40);
   color: rgb(200, 155, 60);
+  border: 3px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to bottom, #c89b3c, #785a28);
   transition: 0.5s;
 }
 
-.register-wrapper > .register-button:hover {
+.card > .register-button:hover {
   background-color: rgb(50, 55, 60);
   color: whitesmoke;
 }
 
 .card > .divider {
-  position: relative;
-  top: 15vh;
-  width: 40vw;
+  align-self: center;
 }
 
 @media screen and (max-width: 1028px) and (min-width: 0px) {
