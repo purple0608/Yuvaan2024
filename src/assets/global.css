@@ -9,6 +9,8 @@
   box-sizing: border-box;
   cursor: url("./utils/cursor.png"), auto;
   user-select: none;
+  overflow-x: hidden;
+  overflow-y: visible;
   scrollbar-width: 0;
 }
 

@@ -6,7 +6,7 @@ import { ScrollToPlugin } from 'gsap/ScrollToPlugin';
 
 
 import '/src/assets/main_page/main_page.css'
-import Navbar from "../Navbar/Navbar";
+import Navbar from '/src/components/Navbar/Navbar'
 function Main_page() {
   
   
