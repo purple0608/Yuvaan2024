@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState,useEffect } from "react";
 import { EventImgData } from "../../../assets/gallery/EventImgData";
 import "./Preview.css";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -48,18 +48,17 @@ const Preview = () => {
         </svg>
       )}
       <div id="container"></div>
+      <div className="clouds">
+        <div className="clouds-1"></div>
+        <div className="clouds-2"></div>
+        <div className="clouds-3"></div>
+      </div>
       <div className="past-events">
         <img src="src/components/Gallery/Preview/PastEvents.png" alt="" />
       </div>
       <div className="downline">
         <img src="src/components/Gallery/Preview/downline.png" alt="" />
       </div>
-      <div className="clouds">
-        <div className="clouds-1"></div>
-        <div className="clouds-2"></div>
-        <div className="clouds-3"></div>
-      </div>
-
       <Swiper
         style={{
           "--swiper-pagination-color": "#d4af37",

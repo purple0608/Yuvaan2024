@@ -1,0 +1,80 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+#firefly {
+  margin: 0 2rem;
+}
+
+.dot {
+  width: 4px;
+  height: 4px;
+  position: absolute;
+  background-color: #d4af37;
+  box-shadow: 0px 0px 10px 2px #fffb00;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.arrows {
+  z-index: 3;
+  width: 60px;
+  height: 72px;
+  position: fixed;
+  left: 50%;
+  bottom: 4%;
+}
+
+.arrows path {
+  stroke: #d4af37;
+  fill: transparent;
+  stroke-width: 5px;
+  animation: arrow 2s infinite;
+  -webkit-animation: arrow 2s infinite;
+}
+
+@keyframes arrow {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes arrow /*Safari and Chrome*/ {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.arrows path.a1 {
+  animation-delay: -1s;
+  -webkit-animation-delay: -1s; /* Safari 和 Chrome */
+}
+
+.arrows path.a2 {
+  animation-delay: -0.5s;
+  -webkit-animation-delay: -0.5s; /* Safari 和 Chrome */
+}
+
+.arrows path.a3 {
+  animation-delay: 0s;
+  -webkit-animation-delay: 0s; /* Safari 和 Chrome */
+}

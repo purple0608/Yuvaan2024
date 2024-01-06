@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import React, { useEffect } from "react";
 import { TimelineEffect } from "./TimelineEffect";
 import { Item }  from "./Item";
 import { GalleryData } from "../../../assets/gallery/GalleryData";

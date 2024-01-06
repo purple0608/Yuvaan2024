@@ -4,8 +4,8 @@ body {
 
 .preview-container {
   margin: 0;
-  padding: 0;
   margin-top: 10rem;
+  padding: 0;
 }
 
 @keyframes clouds-loop-1 {
@@ -127,7 +127,6 @@ body {
   padding: 1rem;
   border: none;
   overflow: hidden;
-  cursor: pointer;
 }
 
 .view-btn {
@@ -135,17 +134,12 @@ body {
   margin: auto;
   margin-top: 2rem;
   border-radius: 0.5rem;
-  background-color: rgba(220, 220, 220, 1);
+  background-color: rgb(230, 230, 230);
   color: #d4af37;
   font-weight: bold;
   font-size: 18px;
-  border: 4px solid #d4af37;
+  border: 2px solid #d4af37;
   margin-bottom: 1rem;
-  opacity: 0.85;
-}
-
-.view-btn:hover {
-  opacity: 1;
 }
 
 .downline {
@@ -248,64 +242,3 @@ body {
 }
 
 
-.arrows {
-  z-index: 3;
-  width: 60px;
-  height: 72px;
-  position: fixed;
-  left: 50%;
-  bottom: 4%;
-}
-
-.arrows path {
-  stroke: #d4af37;
-  fill: transparent;
-  stroke-width: 5px;
-  animation: arrow 2s infinite;
-  -webkit-animation: arrow 2s infinite;
-}
-
-@keyframes arrow {
-  0% {
-    opacity: 0;
-  }
-  40% {
-    opacity: 1;
-  }
-  80% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-@-webkit-keyframes arrow /*Safari and Chrome*/ {
-  0% {
-    opacity: 0;
-  }
-  40% {
-    opacity: 1;
-  }
-  80% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-.arrows path.a1 {
-  animation-delay: -1s;
-  -webkit-animation-delay: -1s; /* Safari 和 Chrome */
-}
-
-.arrows path.a2 {
-  animation-delay: -0.5s;
-  -webkit-animation-delay: -0.5s; /* Safari 和 Chrome */
-}
-
-.arrows path.a3 {
-  animation-delay: 0s;
-  -webkit-animation-delay: 0s; /* Safari 和 Chrome */
-}
