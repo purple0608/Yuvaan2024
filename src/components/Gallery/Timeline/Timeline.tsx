@@ -1,8 +1,8 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import { TimelineEffect } from "./TimelineEffect";
 import { Item }  from "./Item";
 import { GalleryData } from "../../../assets/gallery/GalleryData";
-import "/src/assets/gallery/Timeline.css";
+import "./Timeline.css";
 
 const Timeline: React.FC = () => {
   useEffect(() => {

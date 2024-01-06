@@ -1,40 +1,23 @@
-import { useEffect } from "react";
 import { data } from "../../assets/utils/NavbarData";
-import { HomeIcon } from "/src/assets/utils/icons";
 import { NavItem } from "./NavItem";
 import "/src/assets/utils/Navbar.css";
-import { NavBarEffect } from "./NavBarEffect";
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
-  useEffect(() => {
-    NavBarEffect();
-  }, []);
-
   return (
-    <nav>
-      <div className="navbar">
-        <div className="logo">
-          <img src="../../../public/logo.png" alt="" />
-        </div>
-        <div className="navigation">
-          <ul>
-            <li className="list active">
-              <a href="/">
-                <span className="icon">
-                  <HomeIcon />
-                </span>
-
-                <span className="text">Home</span>
-                <span className="circle"></span>
-              </a>
-            </li>
-            {data.map((item, index) => {
-              return <NavItem {...item} key={item.id} />;
-            })}
-            <div className="indicator"></div>
-          </ul>
-        </div>
+    <nav className="nav">
+      <div className="logo">
+        <img src="./src/assets/utils/logo.png" alt="" />
       </div>
+      <ul className="list">
+        {data.map((item, index) => {
+          return (
+            <Link to={`/${item.link}`} className="link">
+              <NavItem {...item} key={index} />
+            </Link>
+          );
+        })}
+      </ul>
     </nav>
   );
 };

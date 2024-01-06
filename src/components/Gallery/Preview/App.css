@@ -1,0 +1,18 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+#firefly {
+  margin: 0 2rem;
+}
+
+.dot {
+  width: 4px;
+  height: 4px;
+  position: absolute;
+  background-color: #d4af37;
+  box-shadow: 0px 0px 10px 2px #fffb00;
+  border-radius: 50%;
+  z-index: 2;
+}
