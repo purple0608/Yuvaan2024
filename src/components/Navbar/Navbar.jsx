@@ -1,23 +1,26 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../../assets/utils/Navbar.css';
-import {
-  HomeIcon,
-  CashIcon,
-  CalendarIcon,
-  CameraIcon,
-} from '../../assets/utils/icons';
+import HomeIcon from "@mui/icons-material/Home";
+import CallIcon from "@mui/icons-material/Call";
+import GroupIcon from "@mui/icons-material/Group";
+import EventIcon from "@mui/icons-material/Event";
+import AccountBalanceWalletIcon from "@mui/icons-material/AccountBalanceWallet";
+import CameraIcon from "@mui/icons-material/Camera";
 
 const NavBar = () => {
   const navItems = [
-    { to: '/', text: 'Home', icon: HomeIcon },
-    { to: '/events', text: 'Events', icon: CalendarIcon },
-    { to: '/sponsors', text: 'Sponsors', icon: CashIcon },
-    { to: '/timeline', text: 'Gallery', icon: CameraIcon },
+    { to: "/", text: "Home", icon: HomeIcon },
+    { to: "/events", text: "Events", icon: EventIcon },
+    { to: "/sponsors", text: "Sponsors", icon: AccountBalanceWalletIcon },
+    { to: "/gallery", text: "Gallery", icon: CameraIcon },
+    { to: "/team", text: "Team", icon: GroupIcon },
+    { to: "/contact", text: "Contact", icon: CallIcon },
   ];
 
+
   return (
-    <nav className="navb">
+    <nav className="nav">
       <div className="nav-logo">
         <img src="./src/assets/utils/logo.png" alt="yuvaan" />
       </div>
@@ -25,7 +28,7 @@ const NavBar = () => {
         {navItems.map((item, index) => (
           <Link to={item.to} className="nav-link" key={index}>
             <li className="nav-list-item">
-              <span className="nav-icon">{item.icon()}</span>
+              <div className='nav-icon'>{<item.icon />}</div>
               <div className="nav-text">{item.text}</div>
             </li>
           </Link>

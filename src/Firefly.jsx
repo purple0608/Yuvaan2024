@@ -44,7 +44,7 @@ const Fireflies = () => {
     return Math.random() * max;
   }
 
-  return <div id="container" />;
+  return <div className="container"/>;
 };
 
 export default Fireflies;

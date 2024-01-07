@@ -1,6 +1,5 @@
 import React, { useState,useEffect } from "react";
 import { EventImgData } from "../../../assets/gallery/EventImgData";
-import "./Preview.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -13,6 +12,7 @@ import {
   Keyboard,
 } from "swiper/modules";
 import { Link } from "react-router-dom";
+import "/src/assets/gallery/Preview.css";
 
 const Preview = () => {
   const [isArrowVisible, setIsArrowVisible] = useState(true);
@@ -22,7 +22,7 @@ const Preview = () => {
       const scrollY = window.scrollY;
 
       // Set a threshold value based on your requirements
-      const threshold = 200;
+      const threshold = 150;
 
       // Toggle arrow visibility based on scroll position
       setIsArrowVisible(scrollY < threshold);
@@ -36,6 +36,7 @@ const Preview = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
   const isDesktop = window.innerWidth >= 1024;
 
   return (
@@ -46,17 +47,17 @@ const Preview = () => {
           <path className="a2" d="M0 20 L30 52 L60 20"></path>
           <path className="a3" d="M0 40 L30 72 L60 40"></path>
         </svg>
-      )}
-      <div id="container"></div>
+      )}   
+      <div className="container"></div>
       <div className="clouds">
         <div className="clouds-1"></div>
         <div className="clouds-2"></div>
         <div className="clouds-3"></div>
       </div>
-      <div className="past-events">
+      <div className="preview_past-events">
         <img src="src/components/Gallery/Preview/PastEvents.png" alt="" />
       </div>
-      <div className="downline">
+      <div className="preview_downline">
         <img src="src/components/Gallery/Preview/downline.png" alt="" />
       </div>
       <Swiper
@@ -88,13 +89,13 @@ const Preview = () => {
         }}
         loop={true}
         navigation={true}
-        modules={[Keyboard, Autoplay, EffectCoverflow, Pagination, Navigation]}
+        modules={[Keyboard,Autoplay, EffectCoverflow, Pagination, Navigation]}
         className="banner"
       >
         {EventImgData?.map((item, index) => {
           return (
             <SwiperSlide key={index}>
-              <img src={item.src} alt="event " />
+              <img src={item.src} alt="event" />
             </SwiperSlide>
           );
         })}
