@@ -1,70 +1,87 @@
+import image1 from "/src/assets/gallery/images/1.JPG";
+import image2 from "/src/assets/gallery/images/2.JPG";
+import image3 from "/src/assets/gallery/images/3.JPG";
+import image4 from "/src/assets/gallery/images/4.JPG";
+import image6 from "/src/assets/gallery/images/6.JPG";
+import image7 from "/src/assets/gallery/images/7.JPG";
+import image9 from "/src/assets/gallery/images/9.JPG";
+import image10 from "/src/assets/gallery/images/10.JPG";
+import image12 from "/src/assets/gallery/images/12.JPG";
+import image14 from "/src/assets/gallery/images/14.JPG";
+import image16 from "/src/assets/gallery/images/16.JPG";
+import image17 from "/src/assets/gallery/images/17.JPG";
+import image18 from "/src/assets/gallery/images/18.JPG";
+import image19 from "/src/assets/gallery/images/19.JPG";
+import image20 from "/src/assets/gallery/images/20.JPG";
+import image21 from "/src/assets/gallery/images/21.JPG";
+import image22 from "/src/assets/gallery/images/22.JPG";
 export const EventImgData = [
   {
     id: "1",
-    src: "./images/1.JPG",
+    src: image1,
   },
   {
     id: "2",
-    src: "./images/2.JPG",
+    src: image2,
   },
   {
     id: "3",
-    src: "./images/3.JPG",
+    src: image3,
   },
   {
     id: "4",
-    src: "./images/4.JPG",
+    src: image4,
   },
   {
     id: "6",
-    src: "./images/6.JPG",
+    src: image6,
   },
   {
     id: "7",
-    src: "./images/7.JPG",
+    src: image7,
   },
   {
     id: "9",
-    src: "./images/9.JPG",
+    src: image9,
   },
   {
     id: "10",
-    src: "./images/10.JPG",
+    src: image10,
   },
   {
     id: "12",
-    src: "./images/12.JPG",
+    src: image12,
   },
   {
     id: "13",
-    src: "./images/14.JPG",
+    src: image14,
   },
   {
     id: "15",
-    src: "./images/16.JPG",
+    src: image16,
   },
   {
     id: "17",
-    src: "./images/17.JPG",
+    src: image17,
   },
   {
     id: "18",
-    src: "./images/18.JPG",
+    src: image18,
   },
   {
     id: "19",
-    src: "./images/19.JPG",
+    src: image19,
   },
   {
     id: "20",
-    src: "./images/20.JPG",
+    src: image20,
   },
   {
     id: "21",
-    src: "./images/21.JPG",
+    src: image21,
   },
   {
     id: "22",
-    src: "./images/22.JPG",
+    src: image22,
   },
 ];
