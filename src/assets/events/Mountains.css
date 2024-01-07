@@ -103,7 +103,7 @@ main {
 }
 
 .divider {
-  width: 1300px;
+  width: 75vw;
 }
 
 .text2 {
@@ -299,7 +299,30 @@ main {
   /* cubic-bezier(.2,.56,.25,.98); */
 }
 
-.navbar{
+.navbar {
   z-index: 101;
 }
 
+@media only screen and (min-width: 1824px) {
+  /* big screen */
+}
+
+@media only screen and (min-width: 1224px) {
+  /* laptop */
+}
+
+@media only screen and (max-width: 1224px) {
+  /* tablets or mobiles */
+  .events-heading {
+    width: 90vw;
+    height: auto;
+  }
+
+  .text2 {
+  }
+
+  .text2 p {
+    font-weight: 50;
+    font-size: 5vw;
+  }
+}

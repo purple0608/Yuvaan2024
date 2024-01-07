@@ -1,19 +1,19 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import '../../assets/utils/Navbar.css';
+import React from "react";
+import { Link } from "react-router-dom";
+import "../../assets/utils/Navbar.css";
 import {
   HomeIcon,
   CashIcon,
   CalendarIcon,
   CameraIcon,
-} from '../../assets/utils/icons';
+} from "../../assets/utils/icons";
 
 const NavBar = () => {
   const navItems = [
-    { to: '/', text: 'Home', icon: HomeIcon },
-    { to: '/events', text: 'Events', icon: CalendarIcon },
-    { to: '/sponsors', text: 'Sponsors', icon: CashIcon },
-    { to: '/timeline', text: 'Gallery', icon: CameraIcon },
+    { to: "/", text: "Home", icon: HomeIcon },
+    { to: "/events", text: "Events", icon: CalendarIcon },
+    { to: "/sponsors", text: "Sponsors", icon: CashIcon },
+    { to: "/timeline", text: "Gallery", icon: CameraIcon },
   ];
 
   return (

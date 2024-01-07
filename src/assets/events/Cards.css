@@ -1,6 +1,7 @@
 .event-pinWrapper {
   height: 100vh;
   width: 100vw;
+  top: 0px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -8,7 +9,7 @@
 }
 
 .event-card {
-  background-size: 1920px 1080px;
+  background-size: auto 100vh;
   background-position: center center;
   /*transform: rotateY(90deg);*/
   height: 100vh;
@@ -147,7 +148,15 @@
   align-self: center;
 }
 
-@media screen and (max-width: 1028px) and (min-width: 0px) {
+@media only screen and (min-width: 1824px) {
+  /* big screen */
+}
+
+@media only screen and (min-width: 1224px) {
+  /* laptop */
+}
+
+@media only screen and (max-width: 1224px) {
   .event-card {
     display: flex;
     flex-direction: column;
@@ -159,5 +168,14 @@
   .event-card > .event-register-wrapper,
   .event-card > .event-divider {
     position: static;
+    width: auto;
+  }
+
+  .event-card > .event-titleBox > .event-title {
+    font-size: 15vw;
+  }
+
+  .event-card > .event-titleBox > .event-sword {
+    width: 50vw;
   }
 }
