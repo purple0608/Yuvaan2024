@@ -1,7 +1,7 @@
 import { useLayoutEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import "/src/assets/events/Timeline.css";
+import "/src/assets/events/Map.css";
 import cloud1 from "/src/assets/events/clouds/cloud1.png"; 
 import cloud2 from "/src/assets/events/clouds/cloud2.png"; 
 import cloud3 from "/src/assets/events/clouds/cloud3.png"; 
@@ -12,8 +12,9 @@ import cloud7 from "/src/assets/events/clouds/cloud7.png";
 import cloud8 from "/src/assets/events/clouds/cloud8.png"; 
 import cloud9 from "/src/assets/events/clouds/cloud9.png"; 
 import cloud10 from "/src/assets/events/clouds/cloud10.png"; 
+import MapItems from "./MapItems";
 
-function Timeline() {
+function Map() {
   const top_clouds_ref = useRef<HTMLDivElement | null>(null);
   const bottom_clouds_ref = useRef<HTMLDivElement | null>(null);
   useLayoutEffect(() => {
@@ -63,122 +64,112 @@ function Timeline() {
   }, [top_clouds_ref]);
 
   return (
-    <>
-      <div className="eClouds-gang clouds-top" ref={top_clouds_ref}>
+    <div className="map">
+      <div className="eClouds-gang map-clouds-top" ref={top_clouds_ref}>
         <img
           src={cloud1}
           alt="clouds"
-          className="eClouds cloud1-top"
+          className="eClouds map-cloud1-top"
         />
        <img
           src={cloud2}
           alt="clouds"
-          className="eClouds cloud2-top"
+          className="eClouds map-cloud2-top"
         />
         <img
           src={cloud3}
           alt="clouds"
-          className="eClouds cloud3-top"
+          className="eClouds map-cloud3-top"
         />
         <img
           src={cloud4}
           alt="clouds"
-          className="eClouds cloud4-top"
+          className="eClouds map-cloud4-top"
         />
         <img
           src={cloud5}
           alt="clouds"
-          className="eClouds cloud5-top"
+          className="eClouds map-cloud5-top"
         />
         <img
           src={cloud6}
           alt="clouds"
-          className="eClouds cloud6-top"
+          className="eClouds map-cloud6-top"
         />
         <img
           src={cloud7}
           alt="clouds"
-          className="eClouds cloud7-top"
+          className="eClouds map-cloud7-top"
         />
         <img
           src={cloud8}
           alt="clouds"
-          className="eClouds cloud8-top"
+          className="eClouds map-cloud8-top"
         />
         <img
           src={cloud10}
           alt="clouds"
-          className="eClouds cloud9-top"
+          className="eClouds map-cloud9-top"
         />
-     </div>
+     </div> 
 
-      <div className="tlparent">
-        <div className="svg-container">
-          <svg
-            id="path-svg"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 250 250"
-          >
-            <path
-              id="curvedPath"
-              d="M10 10 C 10 10, 460 30, 40 80 C 40 80, -120 120, 105 140C 105 140, 460 160, 10 220"
-              stroke="rgba(255,255,255,0.6)"
-              fill="transparent"
-              strokeDasharray="5, 5"
-            />
-          </svg>
+      <div className="map-tlparent">
+        <div className="map-container">
+          <MapItems/>
+          
         </div>
+        
       </div>
 
-<div className="eClouds-gang clouds-bottom" ref={bottom_clouds_ref}>
+<div className="eClouds-gang map-clouds-bottom" ref={bottom_clouds_ref}>
         <img
           src={cloud1}
           alt="clouds"
-          className="eClouds cloud1-bottom"
+          className="eClouds map-cloud1-bottom"
         />
         <img
           src={cloud2}
           alt="clouds"
-          className="eClouds cloud2-bottom"
+          className="eClouds map-cloud2-bottom"
         />
         <img
           src={cloud3}
           alt="clouds"
-          className="eClouds cloud3-bottom"
+          className="eClouds map-cloud3-bottom"
         />
         <img
           src={cloud4}
           alt="clouds"
-          className="eClouds cloud4-bottom"
+          className="eClouds map-cloud4-bottom"
         />
         <img
           src={cloud5}
           alt="clouds"
-          className="eClouds cloud5-bottom"
+          className="eClouds map-cloud5-bottom"
         />
         <img
           src={cloud6}
           alt="clouds"
-          className="eClouds cloud6-bottom"
+          className="eClouds map-cloud6-bottom"
         />
         <img
           src={cloud7}
           alt="clouds"
-          className="eClouds cloud7-bottom"
+          className="eClouds map-cloud7-bottom"
         />
         <img
           src={cloud8}
           alt="clouds"
-          className="eClouds cloud8-bottom"
+          className="eClouds map-cloud8-bottom"
         />
         <img
           src={cloud10}
           alt="clouds"
-          className="eClouds cloud9-bottom"
+          className="eClouds map-cloud9-bottom"
         />
       </div>
-          </>
+          </div>
   );
 }
 
-export default Timeline;
+export default Map;

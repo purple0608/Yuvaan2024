@@ -36,8 +36,6 @@ a:hover {
   background-color: #0b372dbb;
 }
 
-body {
-  background: #120c00;
-  width: 100vw;
-  overflow-x: hidden;
+.link{
+  text-decoration: none;
 }

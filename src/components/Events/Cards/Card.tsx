@@ -3,7 +3,6 @@ import sword from "/src/assets/events/images_cards/sword.png";
 import divider from "/src/assets/utils/decorator-hr.png";
 function Card(props) {
   const data: EventData = props.data;
-  console.log(data);
   return (
     <div
       className="event-card"

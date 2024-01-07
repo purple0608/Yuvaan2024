@@ -1,40 +1,38 @@
-import { useEffect } from "react";
-import { data } from "../../assets/utils/NavbarData";
-import { HomeIcon } from "/src/assets/utils/icons";
-import { NavItem } from "./NavItem";
-import "/src/assets/utils/Navbar.css";
-import { NavBarEffect } from "./NavBarEffect";
+import React from "react";
+import { Link } from "react-router-dom";
+import "../../assets/utils/Navbar.css";
+import HomeIcon from "@mui/icons-material/Home";
+import CallIcon from "@mui/icons-material/Call";
+import GroupIcon from "@mui/icons-material/Group";
+import EventIcon from "@mui/icons-material/Event";
+import AccountBalanceWalletIcon from "@mui/icons-material/AccountBalanceWallet";
+import CameraIcon from "@mui/icons-material/Camera";
 
 const NavBar = () => {
-  useEffect(() => {
-    NavBarEffect();
-  }, []);
+  const navItems = [
+    { to: "/", text: "Home", icon: HomeIcon },
+    { to: "/events", text: "Events", icon: EventIcon },
+    { to: "/sponsors", text: "Sponsors", icon: AccountBalanceWalletIcon },
+    { to: "/gallery", text: "Gallery", icon: CameraIcon },
+    { to: "/team", text: "Team", icon: GroupIcon },
+    { to: "/contact", text: "Contact", icon: CallIcon },
+  ];
 
   return (
-    <nav>
-      <div className="navbar">
-        <div className="logo">
-          <img src="../../../public/logo.png" alt="" />
-        </div>
-        <div className="navigation">
-          <ul>
-            <li className="list active">
-              <a href="/">
-                <span className="icon">
-                  <HomeIcon />
-                </span>
-
-                <span className="text">Home</span>
-                <span className="circle"></span>
-              </a>
-            </li>
-            {data.map((item, index) => {
-              return <NavItem {...item} key={item.id} />;
-            })}
-            <div className="indicator"></div>
-          </ul>
-        </div>
+    <nav className="nav">
+      <div className="nav-logo">
+        <img src="./src/assets/utils/logo.png" alt="yuvaan" />
       </div>
+      <ul className="nav-list">
+        {navItems.map((item, index) => (
+          <Link to={item.to} className="nav-link" key={index}>
+            <li className="nav-list-item">
+              <div className="nav-icon">{<item.icon />}</div>
+              <div className="nav-text">{item.text}</div>
+            </li>
+          </Link>
+        ))}
+      </ul>
     </nav>
   );
 };

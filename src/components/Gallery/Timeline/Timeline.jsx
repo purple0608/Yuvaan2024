@@ -3,13 +3,16 @@ import { TimelineEffect } from "./TimelineEffect";
 import { Item }  from "./Item";
 import { GalleryData } from "../../../assets/gallery/GalleryData";
 import "/src/assets/gallery/Timeline.css";
+import Navbar from '../../Navbar/Navbar'
 
-const Timeline: React.FC = () => {
+const Timeline= () => {
   useEffect(() => {
     TimelineEffect({});
   }, []);
 
   return (
+    <>
+    <Navbar />
     <div id="timeline-1" className="timeline-container">
       <div className="timeline-header">
         <h2 className="timeline-header__title">Cultural Events</h2>
@@ -20,6 +23,7 @@ const Timeline: React.FC = () => {
         })}
       </div>
     </div>
+  </>
   );
 };
 
