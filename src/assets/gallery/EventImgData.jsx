@@ -1,20 +1,20 @@
-import image1 from "/src/assets/gallery/images/1.JPG";
-import image2 from "/src/assets/gallery/images/2.JPG";
-import image3 from "/src/assets/gallery/images/3.JPG";
-import image4 from "/src/assets/gallery/images/4.JPG";
-import image6 from "/src/assets/gallery/images/6.JPG";
-import image7 from "/src/assets/gallery/images/7.JPG";
-import image9 from "/src/assets/gallery/images/9.JPG";
-import image10 from "/src/assets/gallery/images/10.JPG";
-import image12 from "/src/assets/gallery/images/12.JPG";
-import image14 from "/src/assets/gallery/images/14.JPG";
-import image16 from "/src/assets/gallery/images/16.JPG";
-import image17 from "/src/assets/gallery/images/17.JPG";
-import image18 from "/src/assets/gallery/images/18.JPG";
-import image19 from "/src/assets/gallery/images/19.JPG";
-import image20 from "/src/assets/gallery/images/20.JPG";
-import image21 from "/src/assets/gallery/images/21.JPG";
-import image22 from "/src/assets/gallery/images/22.JPG";
+import image1 from "/src/assets/gallery/images/1.jpg";
+import image2 from "/src/assets/gallery/images/2.jpg";
+import image3 from "/src/assets/gallery/images/3.jpg";
+import image4 from "/src/assets/gallery/images/4.jpg";
+import image6 from "/src/assets/gallery/images/6.jpg";
+import image7 from "/src/assets/gallery/images/7.jpg";
+import image9 from "/src/assets/gallery/images/9.jpg";
+import image10 from "/src/assets/gallery/images/10.jpg";
+import image12 from "/src/assets/gallery/images/12.jpg";
+import image14 from "/src/assets/gallery/images/14.jpg";
+import image16 from "/src/assets/gallery/images/16.jpg";
+import image17 from "/src/assets/gallery/images/17.jpg";
+import image18 from "/src/assets/gallery/images/18.jpg";
+import image19 from "/src/assets/gallery/images/19.jpg";
+import image20 from "/src/assets/gallery/images/20.jpg";
+import image21 from "/src/assets/gallery/images/21.jpg";
+import image22 from "/src/assets/gallery/images/22.jpg";
 export const EventImgData = [
   {
     id: "1",
