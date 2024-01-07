@@ -1,4 +1,4 @@
-import React, { useState,useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { EventImgData } from "../../../assets/gallery/EventImgData";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -47,7 +47,7 @@ const Preview = () => {
           <path className="a2" d="M0 20 L30 52 L60 20"></path>
           <path className="a3" d="M0 40 L30 72 L60 40"></path>
         </svg>
-      )}   
+      )}
       <div className="container"></div>
       <div className="clouds">
         <div className="clouds-1"></div>
@@ -89,7 +89,7 @@ const Preview = () => {
         }}
         loop={true}
         navigation={true}
-        modules={[Keyboard,Autoplay, EffectCoverflow, Pagination, Navigation]}
+        modules={[Keyboard, Autoplay, EffectCoverflow, Pagination, Navigation]}
         className="banner"
       >
         {EventImgData?.map((item, index) => {
