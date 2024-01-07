@@ -10,14 +10,15 @@ import Timeline from "./components/Gallery/Timeline/Timeline";
 
 const App = () => {
   return (
-      <Routes>
-        <Route path="/" element={<Main_page />} />
-        <Route path="events" element={<Events />} />
-        <Route path="/timeline" element={ <Timeline />} />  
-      <Route path="/gallery" element={ <Preview /> } />
-        <Route path="sponsors" element={<Sponsors />} />
-        <Route path="contact" element={<Contact />} />
-      </Routes>
+    <Routes>
+      <Route path="/" element={<Main_page />} />
+      <Route path="events" element={<Events />} />
+      <Route path="/timeline" element={<Timeline />} />
+      <Route path="/gallery" element={<Preview />} />
+      <Route path="sponsors" element={<Sponsors />} />
+      <Route path="contact" element={<Contact />} />
+    </Routes>
   );
 };
 export default App;
+
