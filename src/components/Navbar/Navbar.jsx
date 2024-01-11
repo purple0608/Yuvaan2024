@@ -7,6 +7,7 @@ import GroupIcon from "@mui/icons-material/Group";
 import EventIcon from "@mui/icons-material/Event";
 import AccountBalanceWalletIcon from "@mui/icons-material/AccountBalanceWallet";
 import CameraIcon from "@mui/icons-material/Camera";
+import logo from "/src/assets/utils/logo.png";
 
 const NavBar = () => {
   const navItems = [
@@ -21,7 +22,7 @@ const NavBar = () => {
   return (
     <nav className="nav">
       <div className="nav-logo">
-        <img src="./src/assets/utils/logo.png" alt="yuvaan" />
+        <img src={logo} alt="yuvaan" />
       </div>
       <ul className="nav-list">
         {navItems.map((item, index) => (
