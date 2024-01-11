@@ -4,6 +4,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+import pastEvents from "/src/components/Gallery/Preview/PastEvents.png";
+import downline from "/src/components/Gallery/Preview/downline.png";
 import {
   EffectCoverflow,
   Autoplay,
@@ -55,10 +57,10 @@ const Preview = () => {
         <div className="clouds-3"></div>
       </div>
       <div className="preview_past-events">
-        <img src="src/components/Gallery/Preview/PastEvents.png" alt="" />
+        <img src={pastEvents} alt="" />
       </div>
       <div className="preview_downline">
-        <img src="src/components/Gallery/Preview/downline.png" alt="" />
+        <img src={downline} alt="" />
       </div>
       <Swiper
         style={{
