@@ -78,6 +78,7 @@
   border-image-slice: 1;
   border-image-source: linear-gradient(to bottom, #c89b3c, #785a28);
   align-self: flex-end;
+  margin-right: 20px;
 }
 
 .event-card > .event-description:hover {
@@ -148,19 +149,12 @@
   align-self: center;
 }
 
-@media only screen and (min-width: 1824px) {
-  /* big screen */
-}
-
-@media only screen and (min-width: 1224px) {
-  /* laptop */
-}
 
 @media only screen and (max-width: 1224px) {
   .event-card {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
   }
 
@@ -168,14 +162,33 @@
   .event-card > .event-register-wrapper,
   .event-card > .event-divider {
     position: static;
-    width: auto;
+    width: 90vw;
   }
 
   .event-card > .event-titleBox > .event-title {
     font-size: 15vw;
+    margin-top: 10vw;
   }
 
-  .event-card > .event-titleBox > .event-sword {
-    width: 50vw;
+  .event-card > .event-titleBox{
+    display:flex;
+    align-items: center;
   }
+  .event-card > .event-titleBox > .event-sword {
+    width: 60vw;
+  }
+
+  .event-data{
+    font-size: 16px;
+  }
+
+  .event-card > .event-register-button{
+    font-size: 20px;
+    width: 140px;
+    height: 57px;
+    margin: 10px 0px;
+  }
+
+  
 }
+
