@@ -300,7 +300,11 @@ main {
 }
 
 .navbar {
-  z-index: 101;
+  z-index: 200;
+}
+
+.nav-icon{
+  color:#FCF6BA;
 }
 
 @media only screen and (min-width: 1824px) {
