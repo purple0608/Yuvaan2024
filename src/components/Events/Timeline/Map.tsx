@@ -115,7 +115,7 @@ function Map() {
 
       <div className="map-tlparent">
         <div className="map-container">
-          <MapItems/>
+          {/* <MapItems/> */}
           
         </div>
         
