@@ -14,22 +14,19 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
+    "gsap": "^3.12.4",
     "@emotion/react": "^11.11.3",
     "@emotion/styled": "^11.11.0",
     "@mui/icons-material": "^5.15.3",
-    "gsap": "^3.12.4",
     "normalize.css": "^8.0.1",
     "prettier": "^3.1.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-player": "^2.14.1",
     "react-router-dom": "^6.21.1",
-    "react-scroll": "^1.9.0",
     "swiper": "^11.0.5",
     "typescript": "^5.3.3"
   },
   "devDependencies": {
-    "@types/node": "^20.11.0",
     "@types/react": "^18.2.47",
     "@types/react-dom": "^18.2.18",
     "@typescript-eslint/eslint-plugin": "^6.18.0",

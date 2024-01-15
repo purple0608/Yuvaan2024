@@ -1,27 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;700;900&display=swap');
-body{
-  cursor: url('../public/cursor.png'),auto;
-}
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Dancing Script', cursive, sans-serif;
-; /* Replace 'CursiveFontName' with the actual cursive font you want to use */
-}
+
+
 :root {
   --scrollTop: 0;
   --index: calc(1vw + 1vh);
   --transition: transform 0.75s cubic-bezier(0.075, 0.5, 0, 1);
 }
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-
 
 .header {
   position: relative;
@@ -40,78 +24,82 @@ body{
   background-position: center;
 }
 
-
-
-
-
-/* Add this CSS to your existing stylesheet */
-
-/* ... your existing CSS ... */
-
-/* Add this CSS for the stag photo */
-
-  
-
-
-
-body, html {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-}
-
-.video-container {
+.layers {
+  display: flex;
   position: relative;
-  width: 100%;
-  height: 0;
-  padding-bottom: 50%; /* 16:9 aspect ratio (9 / 16 * 100) */
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
   overflow: hidden;
-}
-
-.video-background {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-@media (max-width: 768px) {
-  .video-container {
-    height: 50vh; /* Adjust for smaller screens */
-  }
-}
-.centered-content {
-  position: absolute;
-  top: 75%;
-  left: 52%;
-  transform: translate(-50%, -50%);
   text-align: center;
-  z-index: 1; /* Ensure the centered content is above the video */
-  /* box-shadow: 0 0 20px rgba(255, 223, 0, 0.8); */
 }
 
-.centered-image {
-  max-width: 100%; /* Ensure the image doesn't exceed the container width */
-  max-height: 100%; 
-  animation: fadeInUp 1.5s ease-out forwards; /* Ensure the image doesn't exceed the container height */
-}
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(50px); /* Move the image down by 50 pixels initially */
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0); /* Bring the image back to its original position */
-  }
+.layer-base {
+  background-image: url(../../assets/main_page/images/imag2.jpg);
+  will-change: transform;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+  transform: translateY(calc(var(--scrollTop) / 1.6));
+  background-size: cover;
+  background-position: center;
+  transition: var(--transition);
 }
 
-@media (max-width: 768px) {
-  .image-container {
-    height: auto;
-  }
+.layer-middle {
+  background-image: url(../../assets/main_page/images/merged.png);
+  will-change: transform;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  transform: translateY(calc(var(--scrollTop) / 2.5));
+  background-size: cover;
+  background-position: center;
+  transition: var(--transition);
 }
+  
+.layer-front {
+  background-image: url(../../assets/main_page/images/trunck.png);
+  will-change: transform;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  transform: translateY(calc(var(--scrollTop) / 5.7));
+  background-size: cover;
+  background-position: center;
+  transition: var(--transition);
+}
+
+.layer-title {
+  will-change: transform;
+  position: relative;
+  z-index: 1;
+  color: #e7e7e0;
+  transform: translateY(calc(var(--scrollTop) / 2));
+  transition: var(--transition);
+  text-shadow: 0 0 15px #9d822b;
+  text-transform: uppercase;
+  font-family: 'MedievalSharp', cursive;
+  font-weight: 900;
+}
+
+.title {
+  margin-bottom: 80px;
+  font-size: calc(var(--index) * 2.65);
+  letter-spacing: calc(var(--index) / 2.25);
+  font-family: 'MedievalSharp', cursive
+}
+
+.subtitle {
+  margin-top: calc(var(--index) * -0.75);
+  font-size: calc(var(--index) / 1.175);
+  letter-spacing: calc(var(--index) / 3.5);
+  font-family: 'MedievalSharp', cursive
+}
+
 .article {
   position: relative;
   display: flex;
@@ -119,10 +107,10 @@ body, html {
   align-items: center;
   min-height: 100vh;
   background-color: transparent;
-  background-image: url('https://i.ibb.co/ryQdX3b/dungeon.jpg');
+  background-image: url(../../assets/main_page/images/2.jpeg);
   background-size: cover;
   background-position: center;
-  color: #e7e7e0;
+  color: black;
   text-align: center;
   top: -1px;
   z-index: 10;
@@ -150,66 +138,21 @@ body, html {
   will-change: transform;
 }
 
-
-
-#Bottom {
-    background-image:url(https://cdn-hogwartslegacy.warnerbrosgames.com/home/bg-bottom-m.jpg);
-}
-
-@media (min-width: 992px){
-    .webp #Bottom {
-        background-image:url(https://cdn-hogwartslegacy.warnerbrosgames.com/home/bg-bottom.webp);
-    }
-    .no-webp #Bottom {
-        background-image:url(https://cdn-hogwartslegacy.warnerbrosgames.com/home/bg-bottom.jpg);
-    }
-}
-.page-container {
-  position: relative;
-}
-
-.cover-image-sequence {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
-}
-
-.cover-image-sequence img {
+.copy {
   position: absolute;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  opacity: 0;
-  transition: opacity 1s ease;
+  bottom: calc(var(--index) * 2.5);
+  opacity: 0.45;
+  font-size: calc(var(--index) * 0.75);
+  letter-spacing: calc(var(--index) / 37.5);
 }
 
-.cover-image-sequence img.active {
-  opacity: 1;
-}
 
-.small-image-container {
-  position: absolute;
-  top: 11%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 2; /* Make sure it's above the cover images */
-}
-
-.small-image {
-  width: 0px; /* Set your desired width */
-  height: auto; /* Maintain aspect ratio */
-}
-body {
-  margin: 0;
-  overflow: hidden;
-}
-
-#background-video {
-  width: 100%;
-  height: 100vh;      
-  object-fit: cover;
-  overflow: hidden;
-  display: flex;
-  
+.dot{
+  width:4px;
+  height:4px;
+  position:absolute;
+  background-color:gold;
+  box-shadow:0px 0px 10px 2px gold;
+  border-radius: 20px;
+  z-index:2;
 }
