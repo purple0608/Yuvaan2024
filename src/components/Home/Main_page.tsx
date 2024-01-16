@@ -7,6 +7,7 @@ import video from '/src/assets/main_page/images/background_video.mp4';
 import Navbar from '/src/components/Navbar/Navbar';
 import Page2 from '/src/components/Home/Component1/Page2';
 import MyVideo from './Component1/MyVideo';
+import MainMap from './OpeningMap/MainMap';
 
 
 
@@ -39,7 +40,7 @@ function Main_page() {
           
         </div>
       </div>
-      <Page2 />
+      <MainMap/>
     </>
   );
 }
