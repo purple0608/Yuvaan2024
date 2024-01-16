@@ -5,7 +5,7 @@ export default class MapSide extends PureComponent {
   render() {
     const { side, isback, map } = this.props;
     const clsMap = `fp-front fp-map${map}`;
-    const clsSide = `fp-map-side side-${side}`;
+    const clsSide = `fp-map-side fp-side-${side}`;
     return (
       <div className={clsSide}>
         <div className={clsMap} />
