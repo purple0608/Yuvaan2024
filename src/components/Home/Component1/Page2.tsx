@@ -28,21 +28,21 @@ const Page2: React.FC = () => {
   return (
     <>
     
-    <div className="page-container">
-      <div className="small-image-container">
+    <div className="fp-page-container">
+      <div className="fp-small-image-container">
         <img
           src="/src/assets/main_page/images/mm.jpeg"
           alt="Small Image"
-          className="small-image"
+          className="fp-small-image"
         />
       </div>
-      <div className="cover-image-sequence">
+      <div className="fp-cover-image-sequence">
         {images.map((image, index) => (
           <img
             key={index}
             src={image}
             alt={`Image ${index + 1}`}
-            className={index === currentImageIndex ? 'active' : ''}
+            className={index === currentImageIndex ? 'fp-active' : ''}
           />
         ))}
       </div>

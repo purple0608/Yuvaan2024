@@ -2,32 +2,32 @@
 body{
   cursor: url('../public/cursor.png'),auto;
 }
-* {
+ /* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Dancing Script', cursive, sans-serif;
 ; /* Replace 'CursiveFontName' with the actual cursive font you want to use */
-}
+/* }
 :root {
   --scrollTop: 0;
   --index: calc(1vw + 1vh);
   --transition: transform 0.75s cubic-bezier(0.075, 0.5, 0, 1);
 }
 
-* {
+ {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
+}  */
 
 
 
-.header {
+.fp-header {
   position: relative;
 }
 
-.header::after {
+.fp-header::after {
   content: '';
   position: absolute;
   bottom: calc(var(--index) * -4.5);
@@ -53,14 +53,7 @@ body{
   
 
 
-
-body, html {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-}
-
-.video-container {
+.fp-video-container {
   position: relative;
   width: 100%;
   height: 0;
@@ -68,7 +61,7 @@ body, html {
   overflow: hidden;
 }
 
-.video-background {
+.fp-video-background {
   position: absolute;
   top: 0;
   left: 0;
@@ -77,11 +70,11 @@ body, html {
   object-fit: cover;
 }
 @media (max-width: 768px) {
-  .video-container {
+  .fp-video-container {
     height: 50vh; /* Adjust for smaller screens */
   }
 }
-.centered-content {
+.fp-centered-content {
   position: absolute;
   top: 75%;
   left: 52%;
@@ -91,7 +84,7 @@ body, html {
   /* box-shadow: 0 0 20px rgba(255, 223, 0, 0.8); */
 }
 
-.centered-image {
+.fp-centered-image {
   max-width: 100%; /* Ensure the image doesn't exceed the container width */
   max-height: 100%; 
   animation: fadeInUp 1.5s ease-out forwards; /* Ensure the image doesn't exceed the container height */
@@ -108,11 +101,11 @@ body, html {
 }
 
 @media (max-width: 768px) {
-  .image-container {
+  .fp-image-container {
     height: auto;
   }
 }
-.article {
+.fp-article {
   position: relative;
   display: flex;
   justify-content: center;
@@ -129,7 +122,7 @@ body, html {
   
   font-family: 'MedievalSharp', cursive
 }
-.article-title {
+.fp-article-title {
   text-transform: uppercase;
   font-size: calc(var(--index) * 1.8);
   letter-spacing: calc(var(--index) / 7.5);
@@ -137,7 +130,7 @@ body, html {
   transition: var(--transition);
   will-change: transform;
 }
-.article-text {
+.fp-article-text {
   max-width: calc(var(--index) * 30);
   font-size: calc(var(--index) * 0.9);
   margin-top: calc(var(--index) / 1.25);
@@ -146,36 +139,36 @@ body, html {
   will-change: transform;
   font-size: 25px;
 }
-.content {
+.fp-content {
   will-change: transform;
 }
 
 
 
-#Bottom {
+#fp-Bottom {
     background-image:url(https://cdn-hogwartslegacy.warnerbrosgames.com/home/bg-bottom-m.jpg);
 }
 
 @media (min-width: 992px){
-    .webp #Bottom {
+    .fp-webp #Bottom {
         background-image:url(https://cdn-hogwartslegacy.warnerbrosgames.com/home/bg-bottom.webp);
     }
-    .no-webp #Bottom {
+    .fp-no-webp #Bottom {
         background-image:url(https://cdn-hogwartslegacy.warnerbrosgames.com/home/bg-bottom.jpg);
     }
 }
-.page-container {
+.fp-page-container {
   position: relative;
 }
 
-.cover-image-sequence {
+.fp-cover-image-sequence {
   position: relative;
   width: 100%;
   height: 100vh;
   overflow: hidden;
 }
 
-.cover-image-sequence img {
+.fp-cover-image-sequence img {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -184,11 +177,11 @@ body, html {
   transition: opacity 1s ease;
 }
 
-.cover-image-sequence img.active {
+.fp-cover-image-sequence img.active {
   opacity: 1;
 }
 
-.small-image-container {
+.fp-small-image-container {
   position: absolute;
   top: 11%;
   left: 50%;
@@ -196,16 +189,13 @@ body, html {
   z-index: 2; /* Make sure it's above the cover images */
 }
 
-.small-image {
+.fp-small-image {
   width: 0px; /* Set your desired width */
   height: auto; /* Maintain aspect ratio */
 }
-body {
-  margin: 0;
-  overflow: hidden;
-}
 
-#background-video {
+
+#fp-background-video {
   width: 100%;
   height: 100vh;      
   object-fit: cover;

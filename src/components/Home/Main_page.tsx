@@ -23,15 +23,15 @@ function Main_page() {
   return (
     <>
       <Navbar className={isClicked ? 'navbar' : 'navbar'} />
-      <div className="wrapper" ref={wrapperRef}>
-        <div className="content" ref={contentRef}>
+      <div className="fp-wrapper" ref={wrapperRef}>
+        <div className="fp-content" ref={contentRef}>
           
-            <div className="wrapper">
-              <div className="video-container">
+            <div className="fp-wrapper">
+              <div className="fp-video-container">
                 <MyVideo />
 
-                <div className="centered-content">
-                  <img src={text} alt="Centered Image" className="centered-image" />
+                <div className="fp-centered-content">
+                  <img src={text} alt="Centered Image" className="fp-centered-image" />
                 </div>
                 
               </div>
