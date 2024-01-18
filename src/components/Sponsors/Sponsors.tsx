@@ -103,7 +103,7 @@
 import { useEffect, useLayoutEffect, useState, useRef } from 'react';
 import '../../assets/sponsors/App.css';
 import Card1 from './card';
-import apl from "../../assets/sponsors/image/APL1.png";
+import apl from "../../assets/sponsors/image/apl1.png";
 import oil from "../../assets/sponsors/image/oil india.png";
 import sbi from "../../assets/sponsors/image/SBI1.jpg";
 import baroda from "../../assets/sponsors/image/bankOfBaroda1.png";
