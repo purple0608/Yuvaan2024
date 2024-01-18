@@ -1,20 +1,128 @@
+// import { useEffect, useLayoutEffect, useState, useRef } from 'react';
+// import '../../assets/sponsors/App.css';
+// import Card1 from './card';
+// import apl from "../../assets/sponsors/image/apl.png";
+// import oil from "../../assets/sponsors/image/oil.png";
+// import sbi from "../../assets/sponsors/image/image1.png";
+// import prag from "../../assets/sponsors/image/prag1.png";
+// import gplus from "../../assets/sponsors/image/gplus1.png";
+// import Navbar from "../Navbar/Navbar";
+// // import Image from "./image/cardBackground.avif";
+// // import firefly from "./image/firefly.png";
+// // import { gsap } from "gsap";
+
+
+
+// function useDebounce(func: Function, delay) {
+//     const [timer, setTimer] = useState<ReturnType<typeof setTimeout>>(); //Create timer state
+
+//     const debouncedFunction = ((...args) => {
+//         const newTimer = setTimeout(() => {
+//             func(...args);
+//         }, delay);
+//         clearTimeout(timer);
+//         setTimer(newTimer);
+//     }) as Function;
+
+//     return debouncedFunction;
+// }
+
+
+// function Sponsors() {
+
+//     const mount = useRef<HTMLDivElement>(null);
+//     const [dimensions, setDimensions] = useState({ width: window.innerWidth, height: window.innerHeight });
+
+//     const handleResize = () => {
+//         setDimensions({ width: window.innerWidth, height: window.innerHeight });
+//     }
+
+//     useEffect(() => {
+//         window.addEventListener('resize', () => { useDebounce(handleResize, 300) })
+
+//         return () => {
+//             window.removeEventListener('resize', () => { useDebounce(handleResize, 300) })
+//         }
+//     }, []);
+
+//     useLayoutEffect(() => {
+//         if (dimensions.width <= 1280) {
+//             mount.current?.querySelectorAll(".card1")
+//         }
+//     }, [dimensions]);
+
+//     const styles = {
+//         cardContainer: {
+//             backgroundImage: `url(${Image})`
+//         }
+//     };
+
+//     return (
+//         <div>
+//             <Navbar />
+//             <div className="sponsors-wrapper" ref={mount}>
+//                 <div className="sponsors-content">
+//                     <header className="sponsors-header">
+//                         <div className="sponsors-layers">
+//                             <div className="sponsors-layer-title">
+//                                 <div className="sponsors-subtitle">Past Sponsors</div>
+//                             </div>
+//                             <div className="sponsors-layer sponsors-layer-base"></div>
+//                             <div className="sponsors-layer sponsors-layer-middle"></div>
+//                             <div className="sponsors-layer sponsors-layer-front"></div>
+//                         </div>
+//                     </header>
+//                     <div className='sponsor' >
+//                         <article className="sponsors-article">
+//                             <Card1 image={oil} imageAlt="Oil India Limited" title="Title Sponsor" class="sponsors-titleCard" />
+//                         </article>
+//                         <div className='sponsors-hex' >
+//                             <article className="sponsors-article">
+//                                 <Card1 image={sbi} imageAlt="SBI" title="Banking Partner" class="sponsors-card" />
+//                                 <Card1 image={prag} imageAlt="Prag News" title="Media Partner" class="sponsors-card" />
+//                                 <Card1 image={gplus} imageAlt="gplus" title="Media Partner" class="sponsors-card" />
+//                                 <Card1 image={apl} imageAlt="APL" title="Media Partner" class="sponsors-card" />
+//                             </article>
+//                             <article className="sponsors-article">
+//                                 <Card1 image={sbi} imageAlt="SBI" title="Banking Partner" class="sponsors-card" />
+//                                 <Card1 image={prag} imageAlt="Prag News" title="Media Partner" class="sponsors-card" />
+//                                 <Card1 image={gplus} imageAlt="gplus" title="Media Partner" class="sponsors-card" />
+//                                 <Card1 image={apl} imageAlt="APL" title="Media Partner" class="sponsors-card" />
+//                             </article>
+//                         </div>
+//                     </div>
+//                 </div>
+//             </div>
+//         </div>
+
+//     );
+// }
+
+// export default Sponsors;
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 import { useEffect, useLayoutEffect, useState, useRef } from 'react';
 import '../../assets/sponsors/App.css';
 import Card1 from './card';
-import apl from "../../assets/sponsors/image/apl.png";
-import oil from "../../assets/sponsors/image/oil.png";
-import sbi from "../../assets/sponsors/image/image1.png";
-import prag from "../../assets/sponsors/image/prag1.png";
+import apl from "../../assets/sponsors/image/APL1.png";
+import oil from "../../assets/sponsors/image/oil india.png";
+import sbi from "../../assets/sponsors/image/SBI1.jpg";
+import baroda from "../../assets/sponsors/image/bankOfBaroda1.png";
+import fatBelly from "../../assets/sponsors/image/fatBelly1.png";
+import pizzaHut from "../../assets/sponsors/image/pizzahut1.png";
+import bingo from "../../assets/sponsors/image/bingo1.png";
+import gail from "../../assets/sponsors/image/gail1.png";
+import innovation from "../../assets/sponsors/image/innovation1.png";
+import amtron from "../../assets/sponsors/image/amtron1.jpg";
+import tcs from "../../assets/sponsors/image/tcs1.png";
+import pragnews from "../../assets/sponsors/image/pragNews1.png";
 import gplus from "../../assets/sponsors/image/gplus1.png";
+import Nxm from "../../assets/sponsors/image/9xm1.png";
+import zoom from "../../assets/sponsors/image/zoom1.jpg";
+import royal from "../../assets/sponsors/image/royal1.png";
 import Navbar from "../Navbar/Navbar";
-// import Image from "./image/cardBackground.avif";
-// import firefly from "./image/firefly.png";
-// import { gsap } from "gsap";
 
-
-
-function useDebounce(func: Function, delay) {
-    const [timer, setTimer] = useState<ReturnType<typeof setTimeout>>(); //Create timer state
+function useDebounce(func, delay) {
+    const [timer, setTimer] = useState();
 
     const debouncedFunction = ((...args) => {
         const newTimer = setTimeout(() => {
@@ -27,75 +135,108 @@ function useDebounce(func: Function, delay) {
     return debouncedFunction;
 }
 
-
 function Sponsors() {
-
-    const mount = useRef<HTMLDivElement>(null);
+    const mount = useRef(null);
     const [dimensions, setDimensions] = useState({ width: window.innerWidth, height: window.innerHeight });
 
-    const handleResize = () => {
+    const handleResize = useDebounce(() => {
         setDimensions({ width: window.innerWidth, height: window.innerHeight });
-    }
+    }, 300);
 
     useEffect(() => {
-        window.addEventListener('resize', () => { useDebounce(handleResize, 300) })
+        window.addEventListener('resize', handleResize);
 
         return () => {
-            window.removeEventListener('resize', () => { useDebounce(handleResize, 300) })
-        }
-    }, []);
+            window.removeEventListener('resize', handleResize);
+        };
+    }, [handleResize]);
 
     useLayoutEffect(() => {
+        const sponsorHex = mount.current?.querySelector('.sponsors-hex');
+
         if (dimensions.width <= 1280) {
-            mount.current?.querySelectorAll(".card1")
+            // Add your specific responsive adjustments here
+            sponsorHex?.classList.add('responsive-hex');
+        } else {
+            sponsorHex?.classList.remove('responsive-hex');
         }
     }, [dimensions]);
 
-    const styles = {
-        cardContainer: {
-            backgroundImage: `url(${Image})`
-        }
-    };
-
     return (
-        <div>
-            <Navbar />
-            <div className="sponsors-wrapper" ref={mount}>
-                <div className="sponsors-content">
-                    <header className="sponsors-header">
-                        <div className="sponsors-layers">
-                            <div className="sponsors-layer-title">
-                                <div className="sponsors-subtitle">Past Sponsors</div>
+                <div>
+                    <Navbar />
+                    <div className="sponsors-wrapper" ref={mount}>
+                        <div className="sponsors-content">
+                            <header className="sponsors-header">
+                                <div className="sponsors-layers">
+                                    <div className="sponsors-layer-title">
+                                        <div className="sponsors-subtitle">Past Sponsors</div>
+                                    </div>
+                                    <div className="sponsors-layer sponsors-layer-base"></div>
+                                    <div className="sponsors-layer sponsors-layer-middle"></div>
+                                    <div className="sponsors-layer sponsors-layer-front"></div>
+                                </div>
+                            </header>
+                            <div className='sponsor'>
+                                <div className='sponsors-hex' >
+                                <article className="sponsors-article">
+                                <h3 className="sponsors-article-title">Title Sponsor</h3>
+                                <div className='sponsors-image' >
+                                    <Card1 image={oil} imageAlt="Oil India Limited" title="Title Sponsor" class="sponsors-titleCard" />
+                                </div>
+                                </article>
+                                    <article className="sponsors-article">
+                                        <h3 className="sponsors-article-title">Banking Partner</h3>
+                                        <div className='sponsors-image' >
+                                        <Card1 image={sbi} imageAlt="SBI" title="Banking Partner" class="sponsors-card" />
+                                        <Card1 image={baroda} imageAlt="Prag News" title="Media Partner" class="sponsors-card" />
+                                        </div>
+                                    </article>
+                                    <article className="sponsors-article">
+                                        <h3 className="sponsors-article-title">Food Partner</h3>
+                                        <div className='sponsors-image' >
+                                        <Card1 image={fatBelly} imageAlt="SBI" title="Banking Partner" class="sponsors-card" />
+                                        <Card1 image={pizzaHut} imageAlt="Prag News" title="Media Partner" class="sponsors-card" />
+                                        <Card1 image={bingo} imageAlt="gplus" title="Media Partner" class="sponsors-card" />
+                                        </div>
+                                    </article>
+                                    <article className="sponsors-article">
+                                        <h3 className="sponsors-article-title">Energy Partner</h3>
+                                        <div className='sponsors-image' >
+                                        <Card1 image={apl} imageAlt="SBI" title="Banking Partner" class="sponsors-card" />
+                                        <Card1 image={gail} imageAlt="Prag News" title="Media Partner" class="sponsors-card" />
+                                        </div>
+                                    </article>
+                                    <article className="sponsors-article">
+                                        <h3 className="sponsors-article-title">Tech Partner</h3>
+                                        <div className='sponsors-image' >
+                                        <Card1 image={innovation} imageAlt="SBI" title="Banking Partner" class="sponsors-card" />
+                                        <Card1 image={amtron} imageAlt="Prag News" title="Media Partner" class="sponsors-card" />
+                                        <Card1 image={tcs} imageAlt="gplus" title="Media Partner" class="sponsors-card" />
+                                        </div>
+                                    </article>
+                                    <article className="sponsors-article">
+                                        <h3 className="sponsors-article-title">Media Partner</h3>
+                                        <div className='sponsors-image' >
+                                        <Card1 image={pragnews} imageAlt="SBI" title="Banking Partner" class="sponsors-card" />
+                                        <Card1 image={gplus} imageAlt="Prag News" title="Media Partner" class="sponsors-card" />
+                                        <Card1 image={Nxm} imageAlt="gplus" title="Media Partner" class="sponsors-card" />
+                                        </div>
+                                    </article>
+                                    <article className="sponsors-article">
+                                        <h3 className="sponsors-article-title">AutoMobile Partner</h3>
+                                        <div className='sponsors-image' >
+                                        <Card1 image={zoom} imageAlt="SBI" title="Banking Partner" class="sponsors-card" />
+                                        <Card1 image={royal} imageAlt="Prag News" title="Media Partner" class="sponsors-card" />
+                                        </div>
+                                    </article>
+                                </div>
                             </div>
-                            <div className="sponsors-layer sponsors-layer-base"></div>
-                            <div className="sponsors-layer sponsors-layer-middle"></div>
-                            <div className="sponsors-layer sponsors-layer-front"></div>
-                        </div>
-                    </header>
-                    <div className='sponsor' >
-                        <article className="sponsors-article">
-                            <Card1 image={oil} imageAlt="Oil India Limited" title="Title Sponsor" class="sponsors-titleCard" />
-                        </article>
-                        <div className='sponsors-hex' >
-                            <article className="sponsors-article">
-                                <Card1 image={sbi} imageAlt="SBI" title="Banking Partner" class="sponsors-card" />
-                                <Card1 image={prag} imageAlt="Prag News" title="Media Partner" class="sponsors-card" />
-                                <Card1 image={gplus} imageAlt="gplus" title="Media Partner" class="sponsors-card" />
-                                <Card1 image={apl} imageAlt="APL" title="Media Partner" class="sponsors-card" />
-                            </article>
-                            <article className="sponsors-article">
-                                <Card1 image={sbi} imageAlt="SBI" title="Banking Partner" class="sponsors-card" />
-                                <Card1 image={prag} imageAlt="Prag News" title="Media Partner" class="sponsors-card" />
-                                <Card1 image={gplus} imageAlt="gplus" title="Media Partner" class="sponsors-card" />
-                                <Card1 image={apl} imageAlt="APL" title="Media Partner" class="sponsors-card" />
-                            </article>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-
-    );
+        
+            );
 }
 
 export default Sponsors;
