@@ -8,56 +8,56 @@ main {
 
 .bg-img {
   position: absolute;
-  width: 194.44%;
+  width: 2800px;
   transform: translate3d(-50%, -50%, 0);
-  top: 1.86%;
+  top: calc(50% - 390px);
   left: calc(50% - 110px);
   z-index: 1;
 }
 
 .glow {
   position: absolute;
-  width: 125%;
+  width: 1800px;
   transform: translate3d(-50%, -50%, 0);
-  top: 56.94%;
-  left: 50.69%;
+  top: calc(50% + 100px);
+  left: calc(50% + 10px);
   z-index: 1;
 }
 
 .fog-7 {
   position: absolute;
   z-index: 2;
-  width: 131.94%;
+  width: 1900px;
   transform: translate3d(-50%, -50%, 0);
-  top: 43.05%;
-  left: 70.83%;
+  top: calc(50% - 100px);
+  left: calc(50% + 300px);
 }
 
 .mountain-10 {
   position: absolute;
   z-index: 3;
-  width: 61.94%;
+  width: 892px;
   transform: translate3d(-50%, -50%, 0);
-  top: 45.20%;
-  left: 65.97%;
+  top: calc(50% - 69px);
+  left: calc(50% + 230px);
 }
 
 .fog-6 {
   position: absolute;
   z-index: 4;
-  width: 111.80%;
+  width: 1610px;
   transform: translate3d(-50%, -50%, 0);
-  top: 44.09%;
-  left: 50.69%;
+  top: calc(50% - 85px);
+  left: calc(50% + 10px);
 }
 
 .mountain-9 {
   position: absolute;
   z-index: 5;
-  width: 32.63%;
-  top: 57.84%;
+  width: 470px;
+  top: calc(50% + 113px);
   transform: translate3d(-50%, -50%, 0);
-  left: 18.26%;
+  left: calc(50% - 457px);
 }
 
 .mountain-8 {
@@ -299,7 +299,7 @@ main {
   /* cubic-bezier(.2,.56,.25,.98); */
 }
 
-.navbar {
+.nav {
   z-index: 200;
 }
 
@@ -307,6 +307,13 @@ main {
   color:#FCF6BA;
 }
 
+@media only screen and (min-width: 1824px) {
+  /* big screen */
+}
+
+@media only screen and (min-width: 1224px) {
+  /* laptop */
+}
 
 @media only screen and (max-width: 1224px) {
   /* tablets or mobiles */

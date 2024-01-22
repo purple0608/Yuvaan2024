@@ -27,7 +27,7 @@
 
 #hr {
   position: absolute;
-  top: 5%;
+  top: 27%;
   width:68%;
   transition: all 0.1s ease-in-out;
   filter: drop-shadow(0 0 10px rgba(255, 215, 0, 0.3));
@@ -132,13 +132,13 @@
 
 .card_l {
   position: absolute;
-  top: 25%;
+  top: 35%;
   left: 23%;
 }
 
 .card_r {
   position: absolute;
-  top: 25%;
+  top: 35%;
   right: 23%;
 }
 
@@ -240,4 +240,9 @@
 
 .map_frame {
   border-radius: 0.6rem;
+}
+
+.contact_us{
+  position: absolute;
+  top:3%;
 }
