@@ -5,7 +5,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import pastEvents from "/src/components/Gallery/Preview/PastEvents.png";
-import downline from "/src/components/Gallery/Preview/downline.png";
+import downline from "/src/assets/utils/decorator-hr-lg.png";
 import {
   EffectCoverflow,
   Autoplay,
@@ -60,7 +60,7 @@ const Preview = () => {
         <img src={pastEvents} alt="" />
       </div>
       <div className="preview_downline">
-        <img src={downline} alt="" />
+        <img src={downline} alt="" className="preview-divider" />
       </div>
       <Swiper
         style={{
