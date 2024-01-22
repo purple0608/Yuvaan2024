@@ -160,6 +160,10 @@ body {
   justify-content: center;
 }
 
+.preview-divider{
+  width:70rem;
+}
+
 @media only screen and (max-width: 375px) {
   .swiper-slide img {
     width: 18rem;
@@ -191,7 +195,7 @@ body {
   }
 
   .preview_downline img {
-    width: 15rem;
+    width: 40rem;
   }
 
   .preview_past-events img {
@@ -216,7 +220,7 @@ body {
   }
 
   .preview_downline img {
-    width: 20rem;
+    width: 70rem;
   }
 
   .preview_past-events img {

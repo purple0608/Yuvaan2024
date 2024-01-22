@@ -1,9 +1,11 @@
 import React from 'react'
 import '/src/assets/contact/contact.css'
+import contact_us from '../../assets/contact/images/contact.png'
 
 export default function Contact() {
   return (
 <div id="top_div">
+<img src={contact_us} alt="contact_us" className='contact_us'/>
         <img id ="hr" src="/src/assets/contact/images/decorator-hr-lg.png" alt="Hr-Ruler"/>
                 <div className="card card_l contact_card">
                     <div className="card-body">
