@@ -1,12 +1,16 @@
 import React from 'react'
 import '/src/assets/contact/contact.css'
 import contact_us from '../../assets/contact/images/contact.png'
+import divider from "/src/assets/contact/images/decorator-hr-lg.png";
+import bottom_divider from "/src/assets/contact/images/decorator-br.png";
+
+
 
 export default function Contact() {
   return (
 <div id="top_div">
 <img src={contact_us} alt="contact_us" className='contact_us'/>
-        <img id ="hr" src="/src/assets/contact/images/decorator-hr-lg.png" alt="Hr-Ruler"/>
+        <img id ="hr" src={divider} alt="Hr-Ruler"/>
                 <div className="card card_l contact_card">
                     <div className="card-body">
                         <h2 className="card-title vh2">Team Yuvaan</h2>
@@ -55,7 +59,7 @@ export default function Contact() {
                     
                 </div>
             </div>
-            <img id="br" src="/src/assets/contact/images/decorator-br.png" alt="Hr-Ruler"/>
+            <img id="br" src={bottom_divider} alt="Hr-Ruler"/>
 
     </div>
   )

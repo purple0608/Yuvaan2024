@@ -117,7 +117,6 @@
 
 .contact_card:hover {
   background-color: rgba(160, 160, 160, 0.25);
-  /* box-shadow: 0 0 30px rgba(255, 215, 0, 0.8); */
   /* box-shadow: 0 0 30px rgba(0, 255, 127, 0.5); */
   box-shadow: 0 0 40px rgba(0, 145, 95, 0.7);
 
