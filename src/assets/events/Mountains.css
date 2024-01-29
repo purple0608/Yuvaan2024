@@ -303,8 +303,8 @@ main {
   z-index: 200;
 }
 
-.nav-icon{
-  color:#FCF6BA;
+.nav-icon {
+  color: #fcf6ba;
 }
 
 @media only screen and (min-width: 1824px) {
@@ -321,7 +321,7 @@ main {
     width: 90vw;
     height: auto;
   }
-  
+
   .text2 p {
     font-weight: 50;
     font-size: 5vw;

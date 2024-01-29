@@ -9,9 +9,9 @@
 }
 
 .event-card {
-    padding-top: auto;
-    background-size: auto auto;
-    background-repeat: no-repeat;
+  padding-top: auto;
+  background-size: auto auto;
+  background-repeat: no-repeat;
   background-position: bottom center;
   height: 100vh;
   width: 100vw;
@@ -62,12 +62,12 @@
 }
 
 .event-card > .event-description {
-    width: 32.5vw;
-    height: 50vh;
+  width: 32.5vw;
+  height: 50vh;
   background-color: rgba(0, 0, 0, 0.47);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  
+
   text-align: start;
   font-family: SpiegelRegular;
   color: #a09b8c;
@@ -113,10 +113,15 @@
   align-items: start;
 }
 
+.event-goto {
+  position: absolute;
+  z-index: 1000000;
+  bottom: 0;
+}
+
 .event-description > .event-full {
-    overflow-y: scroll;
-    grid-column: 1/3;
-    
+  overflow-y: scroll;
+  grid-column: 1/3;
 }
 
 .event-data > * {
@@ -153,7 +158,6 @@
   align-self: center;
 }
 
-
 @media only screen and (max-width: 1224px) {
   .event-card {
     display: flex;
@@ -174,25 +178,22 @@
     margin-top: 10vw;
   }
 
-  .event-card > .event-titleBox{
-    display:flex;
+  .event-card > .event-titleBox {
+    display: flex;
     align-items: center;
   }
   .event-card > .event-titleBox > .event-sword {
     width: 60vw;
   }
 
-  .event-data{
+  .event-data {
     font-size: 16px;
   }
 
-  .event-card > .event-register-button{
+  .event-card > .event-register-button {
     font-size: 20px;
     width: 140px;
     height: 57px;
     margin: 10px 0px;
   }
-
-  
 }
-

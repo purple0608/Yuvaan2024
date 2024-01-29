@@ -13,16 +13,16 @@ import cloud8 from "/src/assets/events/clouds/cloud8.png";
 import cloud9 from "/src/assets/events/clouds/cloud9.png";
 import cloud10 from "/src/assets/events/clouds/cloud10.png";
 import MapItems from "./MapItems";
+import { useGSAP } from "@gsap/react";
 
-function Map() {
-  const top_clouds_ref = useRef<HTMLDivElement | null>(null);
-  const bottom_clouds_ref = useRef<HTMLDivElement | null>(null);
-  useLayoutEffect(() => {
-    gsap.registerPlugin(ScrollTrigger);
-    const clouds: NodeListOf<HTMLElement> =
-      document.querySelectorAll(".eClouds")!;
-    const top_clouds = Array.from(clouds);
-    const ctx = gsap.context(() => {
+function Map({ timeline }: { timeline: GSAPTimeline }) {
+  const clouds_ref = useRef<HTMLDivElement | null>(null);
+  useGSAP(
+    () => {
+      gsap.registerPlugin(ScrollTrigger);
+      const clouds: NodeListOf<HTMLElement> =
+        document.querySelectorAll(".eClouds")!;
+      const top_clouds = Array.from(clouds);
       const scrollTrigger = (el: HTMLElement) => {
         return {
           trigger: el,
@@ -36,36 +36,29 @@ function Map() {
         if (el.offsetLeft < 500) {
           gsap.to(el, {
             scrollTrigger: scrollTrigger(el),
-            // top: el.offsetTop - 200,
             left: el.offsetLeft - 200,
             width: el.offsetWidth + 200,
-            // height: el.offsetHeight + 200,
           });
         } else if (el.offsetLeft > 700) {
           gsap.to(el, {
             scrollTrigger: scrollTrigger(el),
-            // top: el.offsetTop - 200,
             right: 1000 - el.offsetLeft + 600,
             width: el.offsetWidth + 200,
-            // height: el.offsetHeight + 200,
           });
         } else {
           gsap.to(el, {
             scrollTrigger: scrollTrigger(el),
-            // top: el.offsetTop - 200,
             width: el.offsetWidth + 200,
-            // height: el.offsetHeight + 200,
           });
         }
       });
-    });
-
-    return () => ctx.revert();
-  }, [top_clouds_ref]);
+    },
+    { scope: clouds_ref },
+  );
 
   return (
-    <div className="events-map">
-      <div className="eClouds-gang events-map-clouds-top" ref={top_clouds_ref}>
+    <div className="events-map" ref={clouds_ref}>
+      <div className="eClouds-gang events-map-clouds-top">
         <img
           src={cloud1}
           alt="clouds"
@@ -115,14 +108,11 @@ function Map() {
 
       <div className="events-map-tlparent">
         <div className="events-map-container">
-          <MapItems />
+          <MapItems timeline={timeline} />
         </div>
       </div>
 
-      <div
-        className="eClouds-gang events-map-clouds-bottom"
-        ref={bottom_clouds_ref}
-      >
+      <div className="eClouds-gang events-map-clouds-bottom">
         <img
           src={cloud1}
           alt="clouds"

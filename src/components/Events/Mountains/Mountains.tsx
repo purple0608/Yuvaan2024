@@ -16,7 +16,7 @@ import mountain_6 from "/src/assets/events/images_parallax/mountain_6.png";
 import fog_4 from "/src/assets/events/images_parallax/fog_4.png";
 import mountain_5 from "/src/assets/events/images_parallax/mountain_5.png";
 import fog_3 from "/src/assets/events/images_parallax/fog_3.png";
-import mountain_4  from "/src/assets/events/images_parallax/mountain_4.png";
+import mountain_4 from "/src/assets/events/images_parallax/mountain_4.png";
 import mountain_3 from "/src/assets/events/images_parallax/mountain_3.png";
 import fog_2 from "/src/assets/events/images_parallax/fog_2.png";
 import mountain_2 from "/src/assets/events/images_parallax/mountain_2.png";
@@ -34,40 +34,42 @@ function Mountains() {
     height: window.innerHeight,
   });
   const mount = useRef<HTMLElement | null>(null);
-  const [parallaxElements, setParallaxElements] = useState<HTMLElement[]>(Array.from(document.querySelectorAll(".parallax")));
+  const [parallaxElements, setParallaxElements] = useState<HTMLElement[]>(
+    Array.from(document.querySelectorAll(".parallax")),
+  );
 
   useEffect(() => {
-      const elements: NodeListOf<HTMLElement> =
-        document.querySelectorAll(".parallax");
-      setParallaxElements(Array.from(elements));
+    const elements: NodeListOf<HTMLElement> =
+      document.querySelectorAll(".parallax");
+    setParallaxElements(Array.from(elements));
   }, []);
 
   useEffect(() => {
-  	const handleLoad = () => {
-		document.querySelectorAll<HTMLElement>(".parallax").forEach((el: HTMLElement) => {
-			gsap.from(el, {
-				top: 1000 ,
-				duration: 2.5,
-			});	
-		});
-		window.scrollTo(0,0);
-	}; 
-        window.addEventListener("load", handleLoad);
+    const handleLoad = () => {
+      document
+        .querySelectorAll<HTMLElement>(".parallax")
+        .forEach((el: HTMLElement) => {
+          gsap.from(el, {
+            top: 1000,
+            duration: 2.5,
+          });
+        });
+      window.scrollTo(0, 0);
+    };
+    window.addEventListener("load", handleLoad);
 
-	return () => {
-		window.removeEventListener("load", handleLoad);
-	}
-
-
-  },[parallaxElements]);
+    return () => {
+      window.removeEventListener("load", handleLoad);
+    };
+  }, [parallaxElements]);
 
   useEffect(() => {
     let mc = mount.current;
-    
+
     function handleParallax(e: MouseEvent) {
-    	if(e.clientY + scrollY> mc?.offsetHeight! + 100) {
-		return 
-	}
+      if (e.clientY + scrollY > mc?.offsetHeight! + 100) {
+        return;
+      }
       const xValue = e.clientX - dimensions.width;
       const yValue = e.clientY - dimensions.height;
 
@@ -85,7 +87,6 @@ function Mountains() {
         const xTo = gsap.quickTo(el, "x", { duration: 0.5, ease: "power3" });
         xTo(-xValue * speedx);
         yTo(-yValue * speedy * 0.5);
-
       });
     }
 
@@ -195,11 +196,7 @@ function Mountains() {
             alt="events-heading"
             className="events-heading"
           />
-          <img
-            src={decorator_hr_lg}
-            alt="divider"
-            className="divider"
-          />
+          <img src={decorator_hr_lg} alt="divider" className="divider" />
         </div>
         <div data-speedz="0" data-speedx="0.7" className="text2">
           <p>The brave men did not kill dragons the brave men rode them.</p>

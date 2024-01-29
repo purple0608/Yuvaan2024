@@ -1,12 +1,8 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;700;900&display=swap');
-
-
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;700;900&display=swap");
 
 .sponsors-wrapper {
   overflow-x: hidden;
 }
-
 
 .sponsors-layers {
   height: 100vh;
@@ -22,11 +18,11 @@
 }
 
 .sponsors-header::after {
-  content: '';
+  content: "";
   position: absolute;
   z-index: 100;
   width: 100%;
-  background-image: url('https://i.ibb.co/DM2Knwf/ground.png');
+  background-image: url("https://i.ibb.co/DM2Knwf/ground.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -43,7 +39,7 @@
 }
 
 .sponsors-layer-base {
-  background-image: url('./image/back-layer.jpg');
+  background-image: url("./image/back-layer.jpg");
   position: absolute;
   height: 100%;
   width: 100vw;
@@ -79,7 +75,6 @@
   font-weight: 900;
 }
 
-
 .sponsors-article {
   color: rgb(212, 177, 100);
 
@@ -105,14 +100,12 @@
   font-size: 40px;
 }
 
-
 .sponsors-article-content {
   margin: 20px;
   border: 5px solid;
   border-image-slice: 1;
   border-image-source: linear-gradient(to bottom, #c89b3c, #785a28);
 }
-
 
 .sponsors-copy {
   position: absolute;
@@ -140,9 +133,8 @@
   .sponsors-article-content {
     width: 75vw;
     padding: 10px 0;
-    align-self: center
-  } 
-  
+    align-self: center;
+  }
 
   .sponsors-article-title {
     font-size: 30px;
@@ -169,6 +161,6 @@
     align-items: center;
   }
 }
-.navbar{
-  z-index:100;
+.navbar {
+  z-index: 100;
 }

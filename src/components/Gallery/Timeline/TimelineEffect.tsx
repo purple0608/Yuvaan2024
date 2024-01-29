@@ -4,7 +4,7 @@ export const TimelineEffect: React.FC = ({}) => {
   const selectors = {
     id: document.getElementById("timeline-1"),
     items: document.querySelectorAll(
-      ".timeline-item"
+      ".timeline-item",
     ) as NodeListOf<HTMLElement>,
     activeClass: "timeline-item--active",
     img: ".timeline__img",

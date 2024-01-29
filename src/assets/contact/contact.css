@@ -28,7 +28,7 @@
 #hr {
   position: absolute;
   top: 27%;
-  width:68%;
+  width: 68%;
   transition: all 0.1s ease-in-out;
   filter: drop-shadow(0 0 10px rgba(255, 215, 0, 0.3));
 }
@@ -241,7 +241,7 @@
   border-radius: 0.6rem;
 }
 
-.contact_us{
+.contact_us {
   position: absolute;
-  top:3%;
+  top: 3%;
 }
