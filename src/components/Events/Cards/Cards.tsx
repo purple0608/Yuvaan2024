@@ -9,7 +9,6 @@ import { useGSAP } from "@gsap/react";
 import Map from "../Timeline/Map";
 
 function Cards() {
-  const isMobile = window.innerWidth <= 768;
   const data: EventData[] = Data;
   gsap.registerPlugin(ScrollTrigger);
   const [dimensions, setDimensions] = useState({
@@ -24,9 +23,9 @@ function Cards() {
   };
 
   useLayoutEffect(() => {
-    window.addEventListener("resize", debounce(handleResize, 300));
+    window.addEventListener("resize", debounce(handleResize, 50));
     return () =>
-      window.removeEventListener("resize", debounce(handleResize, 300));
+      window.removeEventListener("resize", debounce(handleResize, 50));
   }, []);
 
   const [heroData, setHeroData] = useState(data[0]);
@@ -108,11 +107,11 @@ function Cards() {
 
   return (
     <>
-      {!isMobile && <Map timeline={tl} />}
+       <Map timeline={tl} />
       <div className="event-pinWrapper" ref={pinWrap}>
         <div
           id="hero"
-          className="hero"
+          className="event-hero"
           ref={hero as MutableRefObject<HTMLDivElement>}
         >
           <Card data={heroData} />
