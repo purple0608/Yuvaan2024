@@ -55,7 +55,7 @@ class MainSlider extends React.Component {
                     collaboration for real-world problem-solving.{" "}
                   </p>
                   <a href="https://georgerahul24.github.io/MUN-Website-2024/">
-                    <button>Read More</button>
+                    <button>View</button>
                   </a>
                 </div>
               </li>
@@ -77,7 +77,7 @@ class MainSlider extends React.Component {
                     expression within the student community.{" "}
                   </p>
                   <a href="#">
-                    <button>Read More</button>
+                    <button>View</button>
                   </a>
                 </div>
               </li>
@@ -99,7 +99,7 @@ class MainSlider extends React.Component {
                     brand exposure and visibility.{" "}
                   </p>
                   <a href="#/sponsors">
-                    <button>Read More</button>
+                    <button>View</button>
                   </a>
                 </div>
               </li>
@@ -121,7 +121,7 @@ class MainSlider extends React.Component {
                     orchestrate a vibrant cultural celebration at IIIT Guwahati.{" "}
                   </p>
                   <a href="#/teams">
-                    <button>Read More</button>
+                    <button>View</button>
                   </a>
                 </div>
               </li>
@@ -144,7 +144,7 @@ class MainSlider extends React.Component {
                     of culture and expression.{" "}
                   </p>
                   <a href="#/events">
-                    <button>Read More</button>
+                    <button>View</button>
                   </a>
                 </div>
               </li>
