@@ -15,7 +15,7 @@ const NavBar = () => {
     { to: "/events", text: "Events", icon: EventIcon },
     { to: "/sponsors", text: "Sponsors", icon: AccountBalanceWalletIcon },
     { to: "/gallery", text: "Gallery", icon: CameraIcon },
-    { to: "/team", text: "Team", icon: GroupIcon },
+    { to: "/teams", text: "Teams", icon: GroupIcon },
     { to: "/contact", text: "Contact", icon: CallIcon },
   ];
 
