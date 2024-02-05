@@ -19,6 +19,8 @@ import zoom from "../../assets/sponsors/image/zoom1.jpg";
 import royal from "../../assets/sponsors/image/royal1.png";
 import downline from "/src/assets/utils/decorator-hr-lg.png";
 import sponsors_heading from "../../assets/sponsors/image/sponsors.png"
+import sponsors_pdf from "./sponsors_pdf.tsx";
+import ImageSlider from "./Sponsors_ImageSlider.tsx";
 
 function useDebounce(func, delay) {
     const [timer, setTimer] = useState();
@@ -69,8 +71,8 @@ function Sponsors() {
                                 <div className="sponsors-layers">
                                     <div className="sponsors-layer-title">
                                         <div className="sponsors-subtitle">
-                                            <img src={sponsors_heading} alt="sponsors heading"/>
-                                            <img src={downline} alt="downline"/>
+                                            <img src={sponsors_heading} alt="sponsors heading" className='sponsors_heading' />
+                                            <img src={downline} alt="downline" className='sponsors_downline'/>
 
                                         </div>
                                     </div>
@@ -83,9 +85,10 @@ function Sponsors() {
                                 <div className='sponsors-hex' >
                                 <article className="sponsors-article">
                                 <h3 className="sponsors-article-title">Title Sponsor</h3>
-                                <div className='sponsors-image' >
+                                 <div className='sponsors-image' >
                                     <Card1 image={oil} imageAlt="Oil India Limited" title="Title Sponsor" class="sponsors-titleCard" />
-                                </div>
+                                 </div>
+                                 {/* <ImageSlider images={sponsors_pdf} /> */}
                                 </article>
                                     <article className="sponsors-article">
                                         <h3 className="sponsors-article-title">Banking Partner</h3>
