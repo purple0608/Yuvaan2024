@@ -1,9 +1,8 @@
 import React from "react";
 import "/src/assets/contact/contact.css";
-import contactHeadImg from "./assets/contact/images/contact.png";
-import hrImg from "./assets/contact/images/decorator-hr-1g-png";
-import brImg from "./assets/contact/images/decorator-br-png";
-
+import contactHeadImg from "/src/assets/contact/images/contact-logo.png";
+import hrImg from "/src/assets/contact/images/decorator-hr-lg.png";
+import brImg from "/src/assets/contact/images/decorator-br.png";
 
 const Contact = () => {
   return (
@@ -13,11 +12,11 @@ const Contact = () => {
           <div className="container-fluid header-witcher">
             <img
               id="contact-head"
-              src={`contact-head-img`}
+              src={contactHeadImg}
               alt="contact-heading"
             />
 
-            <img id="hr" src={`hr-img`} alt="Hr-Ruler" />
+            <img id="hr" src={hrImg} alt="Hr-Ruler" />
           </div>
           <div className="screen-witcher">
             <div className="screen-header-witcher">
@@ -54,31 +53,43 @@ const Contact = () => {
                   <h2>Prateek : 83510 81196</h2>
                 </div>
                 <div>
-                  <a href="https://instagram.com/yuvaan_iiitg?igshid=OGQ5ZDc2ODk2ZA==">
+                  <a
+                    href="https://instagram.com/yuvaan_iiitg?igshid=OGQ5ZDc2ODk2ZA=="
+                    target="_blank"
+                  >
                     <i
                       className="font-text fa-brands fa-instagram"
                       style={{ color: "#f0e88e" }}
                     ></i>
                   </a>
-                  <a href="https://www.facebook.com/profile.php?id=100089883182489&mibextid=ZbWKwL">
+                  <a
+                    href="https://www.facebook.com/profile.php?id=100089883182489&mibextid=ZbWKwL"
+                    target="_blank"
+                  >
                     <i
                       className="font-text fa-brands fa-facebook"
                       style={{ color: "#f0e88e" }}
                     ></i>
                   </a>
-                  <a href="https://youtube.com/@yuvaaniiitg1478?feature=shared">
+                  <a
+                    href="https://youtube.com/@yuvaaniiitg1478?feature=shared"
+                    target="_blank"
+                  >
                     <i
                       className="font-text fa-brands fa-youtube"
                       style={{ color: "#f0e88e" }}
                     ></i>
                   </a>
-                  <a href="https://www.linkedin.com/company/yuvaaniiitg/">
+                  <a
+                    href="https://www.linkedin.com/company/yuvaaniiitg/"
+                    target="_blank"
+                  >
                     <i
                       className="font-text fa-brands fa-linkedin"
                       style={{ color: "#f0e88e" }}
                     ></i>
                   </a>
-                  <a href="mailto:yuvaan@iiitg.ac.in">
+                  <a href="mailto:yuvaan@iiitg.ac.in" target="_blank">
                     <i
                       className="font-text fa-solid fa-envelope"
                       style={{ color: "#f0e88e" }}
@@ -101,7 +112,6 @@ const Contact = () => {
                     <input
                       className="app-form-control-witcher"
                       placeholder="NAME"
-                      //   value="Krisantus Wanandi"
                     />
                   </div>
                   <div className="app-form-group-witcher">
@@ -130,7 +140,7 @@ const Contact = () => {
             </div>
           </div>
           <div className="container-fluid credits-witcher">
-            <img id="br" src={`br-img`} alt="Hr-Ruler" />
+            <img id="br" src={brImg} alt="Hr-Ruler" />
           </div>
         </div>
       </div>
