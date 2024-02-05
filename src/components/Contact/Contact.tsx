@@ -10,11 +10,7 @@ const Contact = () => {
       <div className="background-witcher">
         <div className="container-witcher">
           <div className="container-fluid header-witcher">
-            <img
-              id="contact-head"
-              src={contactHeadImg}
-              alt="contact-heading"
-            />
+            <img id="contact-head" src={contactHeadImg} alt="contact-heading" />
 
             <img id="hr" src={hrImg} alt="Hr-Ruler" />
           </div>
@@ -133,7 +129,14 @@ const Contact = () => {
                     />
                   </div>
                   <div className="app-form-group-witcher buttons-witcher">
-                    <button className="app-form-button-witcher">SEND</button>
+                    <button
+                      className="app-form-button-witcher"
+                      onClick={() =>
+                        (window.location.href = "mailto:yuvaan@iiitg.ac.in")
+                      }
+                    >
+                      SEND
+                    </button>
                   </div>
                 </div>
               </div>
