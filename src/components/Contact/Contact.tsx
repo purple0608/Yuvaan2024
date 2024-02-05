@@ -1,5 +1,8 @@
 import React from "react";
 import "/src/assets/contact/contact.css";
+import contactHeadImg from "/src/assets/contact/images/contact-logo.png";
+import hrImg from "/src/assets/contact/images/decorator-hr-lg.png";
+import brImg from "/src/assets/contact/images/decorator-br.png";
 
 const Contact = () => {
   return (
@@ -7,17 +10,9 @@ const Contact = () => {
       <div className="background-witcher">
         <div className="container-witcher">
           <div className="container-fluid header-witcher">
-            <img
-              id="contact-head"
-              src="/src/assets/contact/images/contact.png"
-              alt="contact-heading"
-            />
+            <img id="contact-head" src={contactHeadImg} alt="contact-heading" />
 
-            <img
-              id="hr"
-              src="/src/assets/contact/images/decorator-hr-lg.png"
-              alt="Hr-Ruler"
-            />
+            <img id="hr" src={hrImg} alt="Hr-Ruler" />
           </div>
           <div className="screen-witcher">
             <div className="screen-header-witcher">
@@ -40,47 +35,57 @@ const Contact = () => {
                   <span>US</span>
                 </div>
                 <div className="app-contact-witcher">
-                  <h2>Media & Publicity</h2>
+                  <h1>Media & Publicity</h1>
                 </div>
                 <div className="app-contact-witcher">
-                  Roshan Raj : 97715 29248
+                  <h2>Roshan Raj : 97715 29248</h2>
+                  <h2>Sunny Mallik : 81086 39641</h2>
                 </div>
                 <div className="app-contact-witcher">
-                  Sunny Mallik : 81086 39641
+                  <h1>PR & Marketing</h1>
                 </div>
                 <div className="app-contact-witcher">
-                  <h2>PR & Marketing</h2>
+                  <h2>Tashyab Raj : 93342 82666</h2>
+                  <h2>Prateek : 83510 81196</h2>
                 </div>
-                <div className="app-contact-witcher">
-                  Tashyab Raj : 93342 82666
-                </div>
-                <div className="app-contact-witcher">Prateek : 83510 81196</div>
                 <div>
-                  <a href="https://instagram.com/yuvaan_iiitg?igshid=OGQ5ZDc2ODk2ZA==">
+                  <a
+                    href="https://instagram.com/yuvaan_iiitg?igshid=OGQ5ZDc2ODk2ZA=="
+                    target="_blank"
+                  >
                     <i
                       className="font-text fa-brands fa-instagram"
                       style={{ color: "#f0e88e" }}
                     ></i>
                   </a>
-                  <a href="https://www.facebook.com/profile.php?id=100089883182489&mibextid=ZbWKwL">
+                  <a
+                    href="https://www.facebook.com/profile.php?id=100089883182489&mibextid=ZbWKwL"
+                    target="_blank"
+                  >
                     <i
                       className="font-text fa-brands fa-facebook"
                       style={{ color: "#f0e88e" }}
                     ></i>
                   </a>
-                  <a href="https://youtube.com/@yuvaaniiitg1478?feature=shared">
+                  <a
+                    href="https://youtube.com/@yuvaaniiitg1478?feature=shared"
+                    target="_blank"
+                  >
                     <i
                       className="font-text fa-brands fa-youtube"
                       style={{ color: "#f0e88e" }}
                     ></i>
                   </a>
-                  <a href="https://www.linkedin.com/company/yuvaaniiitg/">
+                  <a
+                    href="https://www.linkedin.com/company/yuvaaniiitg/"
+                    target="_blank"
+                  >
                     <i
                       className="font-text fa-brands fa-linkedin"
                       style={{ color: "#f0e88e" }}
                     ></i>
                   </a>
-                  <a href="mailto:yuvaan@iiitg.ac.in">
+                  <a href="mailto:yuvaan@iiitg.ac.in" target="_blank">
                     <i
                       className="font-text fa-solid fa-envelope"
                       style={{ color: "#f0e88e" }}
@@ -103,7 +108,6 @@ const Contact = () => {
                     <input
                       className="app-form-control-witcher"
                       placeholder="NAME"
-                      //   value="Krisantus Wanandi"
                     />
                   </div>
                   <div className="app-form-group-witcher">
@@ -125,18 +129,21 @@ const Contact = () => {
                     />
                   </div>
                   <div className="app-form-group-witcher buttons-witcher">
-                    <button className="app-form-button-witcher">SEND</button>
+                    <button
+                      className="app-form-button-witcher"
+                      onClick={() =>
+                        (window.location.href = "mailto:yuvaan@iiitg.ac.in")
+                      }
+                    >
+                      SEND
+                    </button>
                   </div>
                 </div>
               </div>
             </div>
           </div>
           <div className="container-fluid credits-witcher">
-            <img
-              id="br"
-              src="/src/assets/contact/images/decorator-br.png"
-              alt="Hr-Ruler"
-            />
+            <img id="br" src={brImg} alt="Hr-Ruler" />
           </div>
         </div>
       </div>
