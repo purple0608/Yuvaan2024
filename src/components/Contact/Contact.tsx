@@ -43,15 +43,15 @@ const Contact = () => {
                   <h1>Media & Publicity</h1>
                 </div>
                 <div className="app-contact-witcher">
-                  <h3>Roshan Raj : 97715 29248</h3>
-                  <h3>Sunny Mallik : 81086 39641</h3>
+                  <h2>Roshan Raj : 97715 29248</h2>
+                  <h2>Sunny Mallik : 81086 39641</h2>
                 </div>
                 <div className="app-contact-witcher">
                   <h1>PR & Marketing</h1>
                 </div>
                 <div className="app-contact-witcher">
-                  <h3>Tashyab Raj : 93342 82666</h3>
-                  <h3>Prateek : 83510 81196</h3>
+                  <h2>Tashyab Raj : 93342 82666</h2>
+                  <h2>Prateek : 83510 81196</h2>
                 </div>
                 <div>
                   <a href="https://instagram.com/yuvaan_iiitg?igshid=OGQ5ZDc2ODk2ZA==">
