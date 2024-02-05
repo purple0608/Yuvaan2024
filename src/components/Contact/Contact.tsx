@@ -1,5 +1,9 @@
 import React from "react";
 import "/src/assets/contact/contact.css";
+import contactHeadImg from "./assets/contact/images/contact.png";
+import hrImg from "./assets/contact/images/decorator-hr-1g-png";
+import brImg from "./assets/contact/images/decorator-br-png";
+
 
 const Contact = () => {
   return (
@@ -9,15 +13,11 @@ const Contact = () => {
           <div className="container-fluid header-witcher">
             <img
               id="contact-head"
-              src="/src/assets/contact/images/contact.png"
+              src={`contact-head-img`}
               alt="contact-heading"
             />
 
-            <img
-              id="hr"
-              src="/src/assets/contact/images/decorator-hr-lg.png"
-              alt="Hr-Ruler"
-            />
+            <img id="hr" src={`hr-img`} alt="Hr-Ruler" />
           </div>
           <div className="screen-witcher">
             <div className="screen-header-witcher">
@@ -40,21 +40,19 @@ const Contact = () => {
                   <span>US</span>
                 </div>
                 <div className="app-contact-witcher">
-                  <h2>Media & Publicity</h2>
+                  <h1>Media & Publicity</h1>
                 </div>
                 <div className="app-contact-witcher">
-                  Roshan Raj : 97715 29248
+                  <h3>Roshan Raj : 97715 29248</h3>
+                  <h3>Sunny Mallik : 81086 39641</h3>
                 </div>
                 <div className="app-contact-witcher">
-                  Sunny Mallik : 81086 39641
+                  <h1>PR & Marketing</h1>
                 </div>
                 <div className="app-contact-witcher">
-                  <h2>PR & Marketing</h2>
+                  <h3>Tashyab Raj : 93342 82666</h3>
+                  <h3>Prateek : 83510 81196</h3>
                 </div>
-                <div className="app-contact-witcher">
-                  Tashyab Raj : 93342 82666
-                </div>
-                <div className="app-contact-witcher">Prateek : 83510 81196</div>
                 <div>
                   <a href="https://instagram.com/yuvaan_iiitg?igshid=OGQ5ZDc2ODk2ZA==">
                     <i
@@ -132,11 +130,7 @@ const Contact = () => {
             </div>
           </div>
           <div className="container-fluid credits-witcher">
-            <img
-              id="br"
-              src="/src/assets/contact/images/decorator-br.png"
-              alt="Hr-Ruler"
-            />
+            <img id="br" src={`br-img`} alt="Hr-Ruler" />
           </div>
         </div>
       </div>
