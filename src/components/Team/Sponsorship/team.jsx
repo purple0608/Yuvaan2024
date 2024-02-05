@@ -1,4 +1,18 @@
 import React from "react";
+import Navya from "../../../assets/teams/Sponsorship/Navya.jpg";
+import Abhishek from "../../../assets/teams/Sponsorship/Abhishek Kumar.jpg";
+import Adi from "../../../assets/teams/Sponsorship/Aditya Srivastava.jpg";
+import Ankur from "../../../assets/teams/Sponsorship/Ankur Srivastava.jpg";
+import Aryan from "../../../assets/teams/Sponsorship/Aryan Choudhari.jpg";
+import Dinakar from "../../../assets/teams/Sponsorship/Dinakar.jpg";
+import Harinarayan from "../../../assets/teams/Sponsorship/Harinarayan.jpg";
+import Harshit from "../../../assets/teams/Sponsorship/Harshit Prajapati.jpg";
+import Kart from "../../../assets/teams/Sponsorship/Kartik Sehgal.jpg";
+import Kunsh from "../../../assets/teams/Sponsorship/Kunsh Taneja.jpg";
+import Madhur from "../../../assets/teams/Sponsorship/Madhur Jain.jpg";
+import  Pallela from "../../../assets/teams/Sponsorship/Pallela.jpg";
+import Rit from "../../../assets/teams/Sponsorship/Ritik Raj.jpg";
+import Ubaid from "../../../assets/teams/Sponsorship/Ubaid Abbas.jpg";  
 import "../team.css"; // Make sure to import or include your CSS file
 
 const Team = () => {
@@ -11,14 +25,14 @@ const Team = () => {
         <div className="et-card">
           <div className="et-imgBox">
             <img
-              src="https://images.unsplash.com/photo-1611695434398-4f4b330623e6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2OTMxMzk5OTd8&ixlib=rb-4.0.3&q=80&w=400"
+              src={Navya}
               alt="some image"
             />
           </div>
           <div className="et-details">
             <h2>
-              Rita Brown <br />
-              <span>London, UK</span>
+              Navya <br />
+              <span>Team Head</span>
             </h2>
           </div>
         </div>
@@ -33,7 +47,7 @@ const Team = () => {
           <div className="et-details">
             <h2>
               James Nelson <br />
-              <span>San Francisco, US</span>
+              <span>Team Head</span>
             </h2>
           </div>
         </div>
@@ -41,14 +55,14 @@ const Team = () => {
         <div className="et-card">
           <div className="et-imgBox">
             <img
-              src="https://images.unsplash.com/photo-1589156191108-c762ff4b96ab?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2OTMxMzk5NTF8&ixlib=rb-4.0.3&q=80&w=400"
+              src={Abhishek}
               alt="some image"
             />
           </div>
           <div className="et-details">
             <h2>
-              Christine McKay <br />
-              <span>New York, US</span>
+              Abhishek Kumar <br />
+              <span>Team Member</span>
             </h2>
           </div>
         </div>
@@ -56,14 +70,14 @@ const Team = () => {
         <div className="et-card">
           <div className="et-imgBox">
             <img
-              src="https://images.unsplash.com/photo-1557053908-4793c484d06f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2OTMxMzk5NTF8&ixlib=rb-4.0.3&q=80&w=400"
+              src={Adi}
               alt="some image"
             />
           </div>
           <div className="et-details">
             <h2>
-              Rita Brown <br />
-              <span>London, UK</span>
+              Aditya Srivastava <br />
+              <span>Team Member</span>
             </h2>
           </div>
         </div>
@@ -71,14 +85,14 @@ const Team = () => {
         <div className="et-card">
           <div className="et-imgBox">
             <img
-              src="https://images.unsplash.com/photo-1557053908-4793c484d06f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2OTMxMzk5NTF8&ixlib=rb-4.0.3&q=80&w=400"
+              src={Ankur}
               alt="some image"
             />
           </div>
           <div className="et-details">
             <h2>
-              Rita Brown <br />
-              <span>London, UK</span>
+              Ankur Srivastava <br />
+              <span>Team Member</span>
             </h2>
           </div>
         </div>
@@ -86,14 +100,14 @@ const Team = () => {
         <div className="et-card">
           <div className="et-imgBox">
             <img
-              src="https://images.unsplash.com/photo-1557053908-4793c484d06f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2OTMxMzk5NTF8&ixlib=rb-4.0.3&q=80&w=400"
+              src={Aryan}
               alt="some image"
             />
           </div>
           <div className="et-details">
             <h2>
-              Rita Brown <br />
-              <span>London, UK</span>
+              Aryan Choudhari <br />
+              <span>Team Member</span>
             </h2>
           </div>
         </div>
@@ -101,14 +115,14 @@ const Team = () => {
         <div className="et-card">
           <div className="et-imgBox">
             <img
-              src="https://images.unsplash.com/photo-1557053908-4793c484d06f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2OTMxMzk5NTF8&ixlib=rb-4.0.3&q=80&w=400"
+              src={Dinakar}
               alt="some image"
             />
           </div>
           <div className="et-details">
             <h2>
-              Rita Brown <br />
-              <span>London, UK</span>
+              Dinakar <br />
+              <span>Team Member</span>
             </h2>
           </div>
         </div>
@@ -116,15 +130,15 @@ const Team = () => {
         <div className="et-card">
           <div className="et-imgBox">
             <img
-              src="https://images.unsplash.com/photo-1557053908-4793c484d06f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2OTMxMzk5NTF8&ixlib=rb-4.0.3&q=80&w=400"
+              src={Harinarayan}
               alt="some image"
               
             />
           </div>
           <div className="et-details">
             <h2>
-              Rita Brown <br />
-              <span>London, UK</span>
+              Harinarayan <br />
+              <span>Team Member</span>
             </h2>
           </div>
         </div>
@@ -132,14 +146,14 @@ const Team = () => {
         <div className="et-card">
           <div className="et-imgBox">
             <img
-              src="https://images.unsplash.com/photo-1557053908-4793c484d06f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2OTMxMzk5NTF8&ixlib=rb-4.0.3&q=80&w=400"
+              src={Harshit}
               alt="some image"
             />
           </div>
           <div className="et-details">
             <h2>
-              Rita Brown <br />
-              <span>London, UK</span>
+              Harshit Prajapati <br />
+              <span>Team Member</span>
             </h2>
           </div>
         </div>
@@ -147,14 +161,14 @@ const Team = () => {
         <div className="et-card">
           <div className="et-imgBox">
             <img
-              src="https://images.unsplash.com/photo-1557053908-4793c484d06f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2OTMxMzk5NTF8&ixlib=rb-4.0.3&q=80&w=400"
+              src={Kart}
               alt="some image"
             />
           </div>
           <div className="et-details">
             <h2>
-              Rita Brown <br />
-              <span>London, UK</span>
+              Kartik Sehgal <br />
+              <span>Team Member</span>
             </h2>
           </div>
         </div>
@@ -162,14 +176,14 @@ const Team = () => {
         <div className="et-card">
           <div className="et-imgBox">
             <img
-              src="https://images.unsplash.com/photo-1557053908-4793c484d06f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2OTMxMzk5NTF8&ixlib=rb-4.0.3&q=80&w=400"
+              src={Kunsh}
               alt="some image"
             />
           </div>
           <div className="et-details">
             <h2>
-              Rita Brown <br />
-              <span>London, UK</span>
+              Kunsh Taneja <br />
+              <span>Team Member</span>
             </h2>
           </div>
         </div>
@@ -177,14 +191,14 @@ const Team = () => {
         <div className="et-card">
           <div className="et-imgBox">
             <img
-              src="https://images.unsplash.com/photo-1557053908-4793c484d06f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2OTMxMzk5NTF8&ixlib=rb-4.0.3&q=80&w=400"
+              src={Madhur}
               alt="some image"
             />
           </div>
           <div className="et-details">
             <h2>
-              Rita Brown <br />
-              <span>London, UK</span>
+              Madhur Jain <br />
+              <span>Team Member</span>
             </h2>
           </div>
         </div>
@@ -192,14 +206,14 @@ const Team = () => {
         <div className="et-card">
           <div className="et-imgBox">
             <img
-              src="https://images.unsplash.com/photo-1557053908-4793c484d06f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2OTMxMzk5NTF8&ixlib=rb-4.0.3&q=80&w=400"
+              src={Pallela}
               alt="some image"
             />
           </div>
           <div className="et-details">
             <h2>
-              Rita Brown <br />
-              <span>London, UK</span>
+              Pallela <br />
+              <span>Team Member</span>
             </h2>
           </div>
         </div>
@@ -207,14 +221,14 @@ const Team = () => {
         <div className="et-card">
           <div className="et-imgBox">
             <img
-              src="https://images.unsplash.com/photo-1557053908-4793c484d06f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2OTMxMzk5NTF8&ixlib=rb-4.0.3&q=80&w=400"
+              src={Rit}
               alt="some image"
             />
           </div>
           <div className="et-details">
             <h2>
-              Rita Brown <br />
-              <span>London, UK</span>
+              Ritik Raj <br />
+              <span>Team Member</span>
             </h2>
           </div>
         </div>
@@ -222,14 +236,14 @@ const Team = () => {
         <div className="et-card">
           <div className="et-imgBox">
             <img
-              src="https://images.unsplash.com/photo-1557053908-4793c484d06f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2OTMxMzk5NTF8&ixlib=rb-4.0.3&q=80&w=400"
+              src={Ubaid}
               alt="some image"
             />
           </div>
           <div className="et-details">
             <h2>
-              Rita Brown <br />
-              <span>London, UK</span>
+              Ubaid Abbas <br />
+              <span>Team Member</span>
             </h2>
           </div>
         </div>
