@@ -1,445 +1,467 @@
 .fp-App {
-    font-family: sans-serif;
-    text-align: center;
-    overflow-x: visible;
-  }
-  
+  font-family: sans-serif;
+  text-align: center;
+  overflow-x: visible;
+  background: url("../../../assets/main_page/images/half.JPG") center/cover  repeat;
+}
 
-  aside.fp-context {
-    text-align: center;
-    color: #fff;
-    line-height: 1.7;
-  }
-  aside.fp-context a {
-    text-decoration: none;
-    color: #fff;
-    padding: 3px 0;
-    border-bottom: 1px dashed;
-  }
-  aside.fp-context a:hover {
-    border-bottom: 1px solid;
-  }
-  aside.fp-context .fp-explanation {
-    max-width: 700px;
-    margin: 6em auto 0;
-  }
-  
-  footer {
-    text-align: center;
-    margin: 4em auto;
-    width: 100%;
-  }
-  footer a {
-    text-decoration: none;
-    display: inline-block;
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-    background: transparent;
-    border: 1px dashed #fff;
-    color: #fff;
-    margin: 5px;
-  }
-  footer a:hover {
-    background: rgba(255, 255, 255, 0.1);
-  }
-  footer a .fp-icons {
-    margin-top: 12px;
-    display: inline-block;
-    font-size: 20px;
-  }
-  
-  .fp-main-content {
-    text-align: center;
-    margin: 4em auto;
-  }
-  
-  .fp-map-base {
-    width: 306px;
-    height: 600px;
-    margin: auto;
-    background: url("https://rawcdn.githack.com/aakashapoorv/Marauder-Map-in-React/38904ba2bd14605682c10e56bd306597fb334c22/public/img/9.png") center center/cover;
-    position: relative;
-    display: inline-block;
-  }
-  
-  .fp-map-flap {
-    transform-style: preserve-3d;
-    position: absolute;
-    width: 100%;
-    height: 25%;
-    margin: auto;
-    left: 0;
-    right: 0;
-    transition: 0.5s ease;
-    top: 25%;
-  }
-  .fp-map-flap__front,
-  .fp-map-flap__back {
-    backface-visibility: hidden;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-  }
-  .fp-map-flap__back {
-    transform: scale(-1) rotateY(180deg);
-  }
-  .fp-map-flap.fp-flap--1 {
-    box-shadow: 0 -1px 6px rgba(97, 83, 73, 0.5);
-  }
-  .fp-map-flap.fp-flap--1 .fp-map-flap__front {
-    background: url("https://rawcdn.githack.com/aakashapoorv/Marauder-Map-in-React/38904ba2bd14605682c10e56bd306597fb334c22/public/img/mini-1.png") center left/cover;
-  }
-  .fp-map-flap.fp-flap--1 .fp-map-flap__back {
-    background: url("https://rawcdn.githack.com/aakashapoorv/Marauder-Map-in-React/38904ba2bd14605682c10e56bd306597fb334c22/public/img/mini-3.png") -3px 0 / cover;
-  }
-  .fp-map-flap.fp-flap--2 {
-    box-shadow: 0 1px 6px rgba(97, 83, 73, 0.5);
-    top: 50%;
-  }
-  .fp-map-flap.fp-flap--2 .fp-map-flap__front {
-    background: url("https://rawcdn.githack.com/aakashapoorv/Marauder-Map-in-React/38904ba2bd14605682c10e56bd306597fb334c22/public/img/mini-2.png") center left/cover;
-  }
-  .fp-map-flap.fp-flap--2 .fp-map-flap__back {
-    background: url("https://rawcdn.githack.com/aakashapoorv/Marauder-Map-in-React/38904ba2bd14605682c10e56bd306597fb334c22/public/img/mini-4.png") -3px 0 / cover;
-  }
-  
-  .fp-map-side {
-    height: 600px;
-    width: 152px;
-    position: absolute;
-    transform-style: preserve-3d;
-    transition: 0.3s ease;
-  }
-  .fp-map-side .fp-front,
-  .fp-map-side .fp-back {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    background-repeat: no-repeat;
-    background-position: left top;
-    background-size: cover;
-    background-image: var(--image);
-    backface-visibility: hidden;
-  }
-  .fp-map-side .fp-back {
-    background-image: url(https://rawcdn.githack.com/aakashapoorv/Marauder-Map-in-React/38904ba2bd14605682c10e56bd306597fb334c22/public/img/back.png);
-  }
-  
-  .fp-map-side {
-    top: 0;
-  }
-  .fp-map-side.fp-side-1 {
-    left: 0;
-    margin-left: 1.5px;
-  }
-  .fp-map-side.fp-side-2 {
-    left: 50%;
-    margin-left: -2px;
-  }
-  .fp-map-side.fp-side-3 {
-    left: 0;
-    margin-left: 3px;
-  }
-  .fp-map-side.fp-side-3 .fp-back {
-    transform: rotateY(180deg);
-  }
-  .fp-map-side.fp-side-4 {
-    left: 50%;
-    margin-left: -1px;
-  }
-  .fp-map-side.fp-side-4 .fp-back {
-    transform: rotateY(180deg);
-  }
-  .fp-map-side.fp-side-5 {
-    left: 0;
-  }
-  .fp-map-side.fp-side-5 .fp-back {
-    background-image: url(https://rawcdn.githack.com/aakashapoorv/Marauder-Map-in-React/38904ba2bd14605682c10e56bd306597fb334c22/public/img/1.png);
-  }
-  .fp-map-side.fp-side-6 {
-    left: 50%;
-  }
-  .fp-map-side.fp-side-6 .fp-front {
-    background-size: 99.5%;
-  }
-  .fp-map-side.fp-side-6 .fp-back {
-    background-image: url(https://rawcdn.githack.com/aakashapoorv/Marauder-Map-in-React/38904ba2bd14605682c10e56bd306597fb334c22/public/img/17.png);
-  }
-  
-  .fp-scroll-name {
-    position: absolute;
-    bottom: 105px;
-    left: -60px;
-    width: 150px;
-    height: 30px;
-    font: 15px Satisfy, cursive;
-    text-align: center;
-    background: url("https://rawcdn.githack.com/aakashapoorv/Marauder-Map-in-React/38904ba2bd14605682c10e56bd306597fb334c22/public/img/scroll.svg") center center/cover;
-    z-index: 10;
-    color: #615349;
-    cursor: default;
-    opacity: 0;
-  }
-  .fp-scroll-name p {
-    display: inline-block;
-    margin: 4px 0 0 15px;
-  }
-  
-  .fp-footstep {
-    position: absolute;
-    background: #615349;
-    width: 6px;
-    height: 12px;
-    border-radius: 80% 80% 70% 70%/130% 130% 25% 25%;
-    z-index: 10;
-    opacity: 0;
-  }
-  .fp-footstep:before {
-    content: "";
-    position: absolute;
-    border-radius: 6px;
-    width: 5px;
-    height: 5px;
-    top: 110%;
-    left: 0px;
-    background: #615349;
-    border-radius: 0 0 100% 100%;
-  }
-  .fp-footstep.fp-left {
-    transform: rotate(5deg);
-  }
-  .fp-footstep.fp-right {
-    transform: rotate(-3deg) translateY(15px) translateX(10px);
-  }
-  
-  .fp-footsteps-1 .fp-footstep.fp-left {
-    bottom: 150px;
-    left: 18px;
-    transform: rotate(35deg);
-  }
-  .fp-footsteps-1 .fp-footstep.fp-right {
-    bottom: 150px;
-    left: 28px;
-    transform: rotate(30deg);
-  }
-  
-  .fp-footsteps-2 .fp-footstep.fp-left {
-    bottom: 285px;
-    left: 280px;
-    transform: rotate(-90deg);
-  }
-  .fp-footsteps-2 .fp-footstep.fp-right {
-    bottom: 275px;
-    left: 285px;
-    transform: rotate(-85deg);
-  }
-  .fp-footsteps-2 .fp-scroll-name {
-    bottom: 300px;
-    left: 220px;
-  }
-  
-  .fp-instructions {
-    text-align: center;
-    color: #fff;
-  }
-  .fp-instructions p {
-    margin-bottom: 8px;
-    line-height: 1.3;
-  }
-  
-  .fp-toggle-map {
-    border: 2px solid;
-    margin: 30px auto 0;
-    background: transparent;
-    font: 34px "Lobster Two", cursive;
-    padding: 8px 30px;
-    cursor: pointer;
-    position: relative;
-    color: #fff;
-  }
-  .fp-toggle-map:before {
-    content: "";
-    position: absolute;
-    width: calc(100% - 8px);
-    height: 51px;
-    left: 2px;
-    top: 2px;
-    border: 2px solid;
-  }
-  .fp-toggle-map:hover:before {
-    width: 100%;
-    height: 100%;
-    transition: 0.3s ease;
-    left: -2px;
-    top: -2px;
-    right: auto;
-  }
-  .fp-toggle-map:focus {
-    outline: none;
-  }
-  
-  .fp-map-base.fp-active .fp-flap--1 {
-    transform: rotateX(180deg);
-    transform-origin: top center;
-    transition: 0.6s transform 1.5s;
-  }
-  .fp-map-base.fp-active .fp-flap--2 {
-    transform: rotateX(180deg);
-    transform-origin: bottom center;
-    transition: 0.6s transform 1.8s;
-  }
-  .fp-map-base.fp-active .fp-side-1 {
-    transform-origin: center left;
-    transform: rotateY(180deg) skewY(2deg);
-    transition: 0.5s all ease-in-out 0.6s;
-  }
-  .fp-map-base.fp-active .fp-side-1 .fp-front {
-    transform: rotateY(180deg);
-  }
-  .fp-map-base.fp-active .fp-side-2 {
-    transform: rotateY(180deg) skewY(-2deg);
-    transform-origin: center right;
-    transition: 0.5s all ease-in-out 0.6s;
-  }
-  .fp-map-base.fp-active .fp-side-2 .fp-front {
-    transform: rotateY(180deg);
-  }
-  .fp-map-base.fp-active .fp-side-3 {
-    left: -50%;
-    transform: skewY(2deg) translateX(-100%);
-    top: 8px;
-    transition: 0.5s transform ease 0.8s, 0.3s left ease 0.8s, 0.5s top ease 0.8s;
-  }
-  .fp-map-base.fp-active .fp-side-4 {
-    left: 100%;
-    transform: skewY(-2deg) translateX(100%);
-    top: 8px;
-    margin-left: -7px;
-    transition: 0.5s transform ease 0.8s, 0.3s left ease 0.8s, 0.5s top ease 0.8s,
-      0.5s margin ease 0.8s;
-  }
-  .fp-map-base.fp-active .fp-side-5 {
-    left: -100%;
-    transform-origin: center left;
-    transform: rotateY(180deg);
-    transition: 0.5s transform, 0.7s left 0.8s, 0.2s margin 0.8s;
-    top: 0px;
-    margin-left: 4px;
-  }
-  .fp-map-base.fp-active .fp-side-5 .fp-front {
-    transform: rotateY(180deg);
-    transition: 0.1s transform;
-  }
-  .fp-map-base.fp-active .fp-side-6 {
-    left: 150%;
-    transform: rotateY(180deg);
-    transform-origin: center right;
-    margin-left: -8px;
-    transition: 0.5s transform 0.3s, 0.7s left 0.8s, 0.5s top 0.8s,
-      0.5s margin 0.8s;
-  }
-  .fp-map-base.fp-active .fp-side-6 .fp-front {
-    transform: rotateY(180deg);
-    transition: 0.1s transform;
-  }
-  .fp-map-base.fp-active .fp-footstep,
-  .fp-map-base.fp-active .fp-scroll-name {
-    opacity: 1;
-    transition: 0.5s opacity 2.5s;
-  }
-  .fp-map-base.fp-active .fp-footsteps-1 .fp-footstep {
-    animation: 15s footsteps-1 ease 3s forwards;
-  }
-  .fp-map-base.fp-active .fp-footsteps-1 .fp-scroll-name {
-    animation: 15s scroll-1 ease 3s forwards;
-  }
-  .fp-map-base.fp-active .fp-footsteps-2 .fp-footstep {
-    animation: 15s footsteps-2 ease 3.2s forwards;
-  }
-  .fp-map-base.fp-active .fp-footsteps-2 .fp-scroll-name {
-    animation: 15s scroll-2 ease 3.2s forwards;
-  }
-  
-  .fp-map8 {
-    --image: url("https://rawcdn.githack.com/aakashapoorv/Marauder-Map-in-React/38904ba2bd14605682c10e56bd306597fb334c22/public/img/8.png");
-  }
-  .fp-map18 {
-    --image: url("https://rawcdn.githack.com/aakashapoorv/Marauder-Map-in-React/38904ba2bd14605682c10e56bd306597fb334c22/public/img/18.png");
-  }
-  .fp-map7 {
-    --image: url("https://rawcdn.githack.com/aakashapoorv/Marauder-Map-in-React/38904ba2bd14605682c10e56bd306597fb334c22/public/img/7.png");
-  }
-  .fp-map10 {
-    --image: url("https://rawcdn.githack.com/aakashapoorv/Marauder-Map-in-React/38904ba2bd14605682c10e56bd306597fb334c22/public/img/10.png");
-  }
-  .fp-map6 {
-    --image: url("https://rawcdn.githack.com/aakashapoorv/Marauder-Map-in-React/38904ba2bd14605682c10e56bd306597fb334c22/public/img/6.png");
-  }
-  .fp-map11 {
-    --image: url("https://rawcdn.githack.com/aakashapoorv/Marauder-Map-in-React/38904ba2bd14605682c10e56bd306597fb334c22/public/img/11.png");
-  }
-  
-  @keyframes footsteps-1 {
-    10% {
-      transform: translate(8px, -15px) rotate(30deg);
-    }
-    20% {
-      transform: translate(30px, -45px) rotate(30deg);
-    }
-    30% {
-      transform: translate(40px, -75px) rotate(20deg);
-    }
-    40% {
-      transform: translate(45px, -100px) rotate(10deg);
-    }
-    50% {
-      transform: translate(50px, -125px) rotate(10deg);
-    }
-    60% {
-      transform: translate(50px, -135px) rotate(10deg);
-    }
-    100% {
-      transform: translate(50px, -135px) rotate(20deg);
-    }
-  }
-  @keyframes footsteps-2 {
-    80% {
-      transform: translate(-170px, -25px) rotate(-90deg);
-    }
-    100% {
-      transform: translate(-180px, -25px) rotate(-90deg);
-    }
-  }
-  @keyframes scroll-1 {
-    10% {
-      transform: translate(8px, -15px);
-    }
-    20% {
-      transform: translate(30px, -45px);
-    }
-    30% {
-      transform: translate(40px, -75px);
-    }
-    40% {
-      transform: translate(45px, -100px);
-    }
-    50% {
-      transform: translate(50px, -125px);
-    }
-    60% {
-      transform: translate(50px, -135px);
-    }
-    100% {
-      transform: translate(50px, -135px);
-    }
-  }
-  @keyframes scroll-2 {
-    80% {
-      transform: translate(-170px, -25px);
-    }
-    100% {
-      transform: translate(-180px, -25px);
-    }
-  }
-  
+aside.fp-context {
+  text-align: center;
+  color: #fff;
+  line-height: 1.7;
+}
+aside.fp-context a {
+  text-decoration: none;
+  color: #fff;
+  padding: 3px 0;
+  border-bottom: 1px dashed;
+}
+aside.fp-context a:hover {
+  border-bottom: 1px solid;
+}
+aside.fp-context .fp-explanation {
+  max-width: 700px;
+  margin: 6em auto 0;
+}
+
+footer {
+  text-align: center;
+  margin: 4em auto;
+  width: 100%;
+}
+
+footer a {
+  text-decoration: none;
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: transparent;
+  border: 1px dashed #fff;
+  color: #fff;
+  margin: 5px;
+}
+footer a:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+footer a .fp-icons {
+  margin-top: 12px;
+  display: inline-block;
+  font-size: 20px;
+}
+
+.fp-main-content {
+  text-align: center;
+  /* margin: 4rem auto; */
+}
+
+.fp-map-base {
+  width: 306px;
+  height: 600px;
+  margin: auto;
+  background: url("https://rawcdn.githack.com/aakashapoorv/Marauder-Map-in-React/38904ba2bd14605682c10e56bd306597fb334c22/public/img/9.png")
+    center center/cover;
+  position: relative;
+  display: inline-block;
+}
+
+.fp-map-flap {
+  transform-style: preserve-3d;
+  position: absolute;
+  width: 100%;
+  height: 25%;
+  margin: auto;
+  left: 0;
+  right: 0;
+  transition: 0.5s ease;
+  top: 25%;
+}
+.fp-map-flap__front,
+.fp-map-flap__back {
+  backface-visibility: hidden;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.fp-map-flap__back {
+  transform: scale(-1) rotateY(180deg);
+}
+.fp-map-flap.fp-flap--1 {
+  box-shadow: 0 -1px 6px rgba(97, 83, 73, 0.5);
+}
+.fp-map-flap.fp-flap--1 .fp-map-flap__front {
+  background: url("https://rawcdn.githack.com/aakashapoorv/Marauder-Map-in-React/38904ba2bd14605682c10e56bd306597fb334c22/public/img/mini-1.png")
+    center left/cover;
+}
+.fp-map-flap.fp-flap--1 .fp-map-flap__back {
+  background: url("https://rawcdn.githack.com/aakashapoorv/Marauder-Map-in-React/38904ba2bd14605682c10e56bd306597fb334c22/public/img/mini-3.png") -3px
+    0 / cover;
+}
+.fp-map-flap.fp-flap--2 {
+  box-shadow: 0 1px 6px rgba(97, 83, 73, 0.5);
+  top: 50%;
+}
+.fp-map-flap.fp-flap--2 .fp-map-flap__front {
+  background: url("https://rawcdn.githack.com/aakashapoorv/Marauder-Map-in-React/38904ba2bd14605682c10e56bd306597fb334c22/public/img/mini-2.png")
+    center left/cover;
+}
+.fp-map-flap.fp-flap--2 .fp-map-flap__back {
+  background: url("https://rawcdn.githack.com/aakashapoorv/Marauder-Map-in-React/38904ba2bd14605682c10e56bd306597fb334c22/public/img/mini-4.png") -3px
+    0 / cover;
+}
+
+.fp-map-side {
+  height: 600px;
+  width: 152px;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: 0.3s ease;
+}
+.fp-map-side .fp-front,
+.fp-map-side .fp-back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: cover;
+  background-image: var(--image);
+  backface-visibility: hidden;
+}
+.fp-map-side .fp-back {
+  background-image: url(https://rawcdn.githack.com/aakashapoorv/Marauder-Map-in-React/38904ba2bd14605682c10e56bd306597fb334c22/public/img/back.png);
+}
+
+.fp-map-side {
+  top: 0;
+}
+.fp-map-side.fp-side-1 {
+  left: 0;
+  margin-left: 1.5px;
+}
+.fp-map-side.fp-side-2 {
+  left: 50%;
+  margin-left: -2px;
+}
+.fp-map-side.fp-side-3 {
+  left: 0;
+  margin-left: 3px;
+}
+.fp-map-side.fp-side-3 .fp-back {
+  transform: rotateY(180deg);
+}
+.fp-map-side.fp-side-4 {
+  left: 50%;
+  margin-left: -1px;
+}
+.fp-map-side.fp-side-4 .fp-back {
+  transform: rotateY(180deg);
+}
+.fp-map-side.fp-side-5 {
+  left: 0;
+}
+.fp-map-side.fp-side-5 .fp-back {
+  background-image: url(https://rawcdn.githack.com/aakashapoorv/Marauder-Map-in-React/38904ba2bd14605682c10e56bd306597fb334c22/public/img/1.png);
+}
+.fp-map-side.fp-side-6 {
+  left: 50%;
+}
+.fp-map-side.fp-side-6 .fp-front {
+  background-size: 99.5%;
+}
+.fp-map-side.fp-side-6 .fp-back {
+  background-image: url(https://rawcdn.githack.com/aakashapoorv/Marauder-Map-in-React/38904ba2bd14605682c10e56bd306597fb334c22/public/img/17.png);
+}
+
+.fp-scroll-name {
+  position: absolute;
+  bottom: 105px;
+  left: -60px;
+  width: 150px;
+  height: 30px;
+  font:
+    15px Satisfy,
+    cursive;
+  text-align: center;
+  background: url("https://rawcdn.githack.com/aakashapoorv/Marauder-Map-in-React/38904ba2bd14605682c10e56bd306597fb334c22/public/img/scroll.svg")
+    center center/cover;
+  z-index: 10;
+  color: #615349;
+  cursor: default;
+  opacity: 0;
+}
+.fp-scroll-name p {
+  display: inline-block;
+  margin: 4px 0 0 15px;
+}
+
+.fp-footstep {
+  position: absolute;
+  background: #615349;
+  width: 6px;
+  height: 12px;
+  border-radius: 80% 80% 70% 70%/130% 130% 25% 25%;
+  z-index: 10;
+  opacity: 0;
+}
+.fp-footstep:before {
+  content: "";
+  position: absolute;
+  border-radius: 6px;
+  width: 5px;
+  height: 5px;
+  top: 110%;
+  left: 0px;
+  background: #615349;
+  border-radius: 0 0 100% 100%;
+}
+.fp-footstep.fp-left {
+  transform: rotate(5deg);
+}
+.fp-footstep.fp-right {
+  transform: rotate(-3deg) translateY(15px) translateX(10px);
+}
+
+.fp-footsteps-1 .fp-footstep.fp-left {
+  bottom: 150px;
+  left: 18px;
+  transform: rotate(35deg);
+}
+.fp-footsteps-1 .fp-footstep.fp-right {
+  bottom: 150px;
+  left: 28px;
+  transform: rotate(30deg);
+}
+
+.fp-footsteps-2 .fp-footstep.fp-left {
+  bottom: 285px;
+  left: 280px;
+  transform: rotate(-90deg);
+}
+.fp-footsteps-2 .fp-footstep.fp-right {
+  bottom: 275px;
+  left: 285px;
+  transform: rotate(-85deg);
+}
+.fp-footsteps-2 .fp-scroll-name {
+  bottom: 300px;
+  left: 220px;
+}
+
+.fp-instructions {
+  text-align: center;
+  color: #fff;
+}
+.fp-instructions p {
+  margin-bottom: 8px;
+  line-height: 1.3;
+}
+
+.fp-toggle-map {
+  border: 2px solid;
+  margin: 30px auto 0;
+  background: transparent;
+  font:
+    34px "Lobster Two",
+    cursive;
+  padding: 8px 30px;
+  cursor: pointer;
+  position: relative;
+  color: #fff;
+}
+.fp-toggle-map:before {
+  content: "";
+  position: absolute;
+  width: calc(100% - 8px);
+  height: 51px;
+  left: 2px;
+  top: 2px;
+  border: 2px solid;
+}
+.fp-toggle-map:hover:before {
+  width: 100%;
+  height: 100%;
+  transition: 0.3s ease;
+  left: -2px;
+  top: -2px;
+  right: auto;
+}
+.fp-toggle-map:focus {
+  outline: none;
+}
+
+.fp-map-base.fp-active .fp-flap--1 {
+  transform: rotateX(180deg);
+  transform-origin: top center;
+  transition: 0.6s transform 1.5s;
+}
+.fp-map-base.fp-active .fp-flap--2 {
+  transform: rotateX(180deg);
+  transform-origin: bottom center;
+  transition: 0.6s transform 1.8s;
+}
+.fp-map-base.fp-active .fp-side-1 {
+  transform-origin: center left;
+  transform: rotateY(180deg) skewY(2deg);
+  transition: 0.5s all ease-in-out 0.6s;
+}
+.fp-map-base.fp-active .fp-side-1 .fp-front {
+  transform: rotateY(180deg);
+}
+.fp-map-base.fp-active .fp-side-2 {
+  transform: rotateY(180deg) skewY(-2deg);
+  transform-origin: center right;
+  transition: 0.5s all ease-in-out 0.6s;
+}
+.fp-map-base.fp-active .fp-side-2 .fp-front {
+  transform: rotateY(180deg);
+}
+.fp-map-base.fp-active .fp-side-3 {
+  left: -50%;
+  transform: skewY(2deg) translateX(-100%);
+  top: 8px;
+  transition:
+    0.5s transform ease 0.8s,
+    0.3s left ease 0.8s,
+    0.5s top ease 0.8s;
+}
+.fp-map-base.fp-active .fp-side-4 {
+  left: 100%;
+  transform: skewY(-2deg) translateX(100%);
+  top: 8px;
+  margin-left: -7px;
+  transition:
+    0.5s transform ease 0.8s,
+    0.3s left ease 0.8s,
+    0.5s top ease 0.8s,
+    0.5s margin ease 0.8s;
+}
+.fp-map-base.fp-active .fp-side-5 {
+  left: -100%;
+  transform-origin: center left;
+  transform: rotateY(180deg);
+  transition:
+    0.5s transform,
+    0.7s left 0.8s,
+    0.2s margin 0.8s;
+  top: 0px;
+  margin-left: 4px;
+}
+.fp-map-base.fp-active .fp-side-5 .fp-front {
+  transform: rotateY(180deg);
+  transition: 0.1s transform;
+}
+.fp-map-base.fp-active .fp-side-6 {
+  left: 150%;
+  transform: rotateY(180deg);
+  transform-origin: center right;
+  margin-left: -8px;
+  transition:
+    0.5s transform 0.3s,
+    0.7s left 0.8s,
+    0.5s top 0.8s,
+    0.5s margin 0.8s;
+}
+.fp-map-base.fp-active .fp-side-6 .fp-front {
+  transform: rotateY(180deg);
+  transition: 0.1s transform;
+}
+.fp-map-base.fp-active .fp-footstep,
+.fp-map-base.fp-active .fp-scroll-name {
+  opacity: 1;
+  transition: 0.5s opacity 2.5s;
+}
+.fp-map-base.fp-active .fp-footsteps-1 .fp-footstep {
+  animation: 15s footsteps-1 ease 3s forwards;
+}
+.fp-map-base.fp-active .fp-footsteps-1 .fp-scroll-name {
+  animation: 15s scroll-1 ease 3s forwards;
+}
+.fp-map-base.fp-active .fp-footsteps-2 .fp-footstep {
+  animation: 15s footsteps-2 ease 3.2s forwards;
+}
+.fp-map-base.fp-active .fp-footsteps-2 .fp-scroll-name {
+  animation: 15s scroll-2 ease 3.2s forwards;
+}
+
+.fp-map8 {
+  --image: url("https://rawcdn.githack.com/aakashapoorv/Marauder-Map-in-React/38904ba2bd14605682c10e56bd306597fb334c22/public/img/8.png");
+}
+.fp-map18 {
+  --image: url("https://rawcdn.githack.com/aakashapoorv/Marauder-Map-in-React/38904ba2bd14605682c10e56bd306597fb334c22/public/img/18.png");
+}
+.fp-map7 {
+  --image: url("https://rawcdn.githack.com/aakashapoorv/Marauder-Map-in-React/38904ba2bd14605682c10e56bd306597fb334c22/public/img/7.png");
+}
+.fp-map10 {
+  --image: url("https://rawcdn.githack.com/aakashapoorv/Marauder-Map-in-React/38904ba2bd14605682c10e56bd306597fb334c22/public/img/10.png");
+}
+.fp-map6 {
+  --image: url("https://rawcdn.githack.com/aakashapoorv/Marauder-Map-in-React/38904ba2bd14605682c10e56bd306597fb334c22/public/img/6.png");
+}
+.fp-map11 {
+  --image: url("https://rawcdn.githack.com/aakashapoorv/Marauder-Map-in-React/38904ba2bd14605682c10e56bd306597fb334c22/public/img/11.png");
+}
+
+@keyframes footsteps-1 {
+  10% {
+    transform: translate(8px, -15px) rotate(30deg);
+  }
+  20% {
+    transform: translate(30px, -45px) rotate(30deg);
+  }
+  30% {
+    transform: translate(40px, -75px) rotate(20deg);
+  }
+  40% {
+    transform: translate(45px, -100px) rotate(10deg);
+  }
+  50% {
+    transform: translate(50px, -125px) rotate(10deg);
+  }
+  60% {
+    transform: translate(50px, -135px) rotate(10deg);
+  }
+  100% {
+    transform: translate(50px, -135px) rotate(20deg);
+  }
+}
+@keyframes footsteps-2 {
+  80% {
+    transform: translate(-170px, -25px) rotate(-90deg);
+  }
+  100% {
+    transform: translate(-180px, -25px) rotate(-90deg);
+  }
+}
+@keyframes scroll-1 {
+  10% {
+    transform: translate(8px, -15px);
+  }
+  20% {
+    transform: translate(30px, -45px);
+  }
+  30% {
+    transform: translate(40px, -75px);
+  }
+  40% {
+    transform: translate(45px, -100px);
+  }
+  50% {
+    transform: translate(50px, -125px);
+  }
+  60% {
+    transform: translate(50px, -135px);
+  }
+  100% {
+    transform: translate(50px, -135px);
+  }
+}
+@keyframes scroll-2 {
+  80% {
+    transform: translate(-170px, -25px);
+  }
+  100% {
+    transform: translate(-180px, -25px);
+  }
+}

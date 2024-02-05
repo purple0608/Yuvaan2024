@@ -105,6 +105,7 @@ body{
     height: auto;
   }
 }
+
 .fp-article {
   position: relative;
   display: flex;
@@ -143,7 +144,23 @@ body{
   will-change: transform;
 }
 
-
+.fp-shade {
+  /* background-image: linear-gradient(
+    to right,
+    #011914,
+    #011914,
+    #011914,
+    #011914,
+    #98cdb7,
+    #98cdb7,
+    #98cdb7,
+    #98cdb7,
+    #011a12,
+    #011a12,
+    #011a12
+  ); */
+  
+}
 
 #fp-Bottom {
     background-image:url(https://cdn-hogwartslegacy.warnerbrosgames.com/home/bg-bottom-m.jpg);
