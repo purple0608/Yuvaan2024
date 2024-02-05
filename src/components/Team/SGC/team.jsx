@@ -8,7 +8,7 @@ const Team = () => {
       <h1 className="title" style={{color: 'white',
           textAlign: 'center'}}>Student Gymkhana Council</h1>
 
-        <div className="et-card">
+        {/* <div className="et-card">
           <div className="et-imgBox">
             <img
               src="https://images.unsplash.com/photo-1611695434398-4f4b330623e6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2OTMxMzk5OTd8&ixlib=rb-4.0.3&q=80&w=400"
@@ -232,7 +232,7 @@ const Team = () => {
               <span>London, UK</span>
             </h2>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

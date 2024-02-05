@@ -151,37 +151,7 @@ const Team = () => {
               <span>Team Member</span>
             </h2>
           </div>
-        </div>
-
-        <div className="et-card">
-          <div className="et-imgBox">
-            <img
-              src="https://images.unsplash.com/photo-1557053908-4793c484d06f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2OTMxMzk5NTF8&ixlib=rb-4.0.3&q=80&w=400"
-              alt="some image"
-            />
-          </div>
-          <div className="et-details">
-            <h2>
-              Rita Brown <br />
-              <span>London, UK</span>
-            </h2>
-          </div>
-        </div>
-
-        <div className="et-card">
-          <div className="et-imgBox">
-            <img
-              src="https://images.unsplash.com/photo-1557053908-4793c484d06f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2OTMxMzk5NTF8&ixlib=rb-4.0.3&q=80&w=400"
-              alt="some image"
-            />
-          </div>
-          <div className="et-details">
-            <h2>
-              Rita Brown <br />
-              <span>London, UK</span>
-            </h2>
-          </div>
-        </div>    
+        </div>   
       </div>
     </div>
   );
