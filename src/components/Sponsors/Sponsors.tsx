@@ -143,12 +143,6 @@ function Sponsors() {
                         </div>
                     </div>
                 </div>
-              </article>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
   );
 }
 
