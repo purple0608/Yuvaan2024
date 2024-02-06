@@ -11,7 +11,7 @@
 }
 
 .event-card {
-  padding-top: auto;
+  /* padding-top: auto; */
   background-size: auto 100vh;
   background-repeat: no-repeat;
   background-position: bottom center;
@@ -19,7 +19,7 @@
   width: 100vw;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
 .event-card > * {
@@ -33,7 +33,6 @@
 }
 
 .event-card > .event-titleBox {
-  padding-top: 1vh;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -61,6 +60,8 @@
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  padding-left: 7.5vw;
+  padding-top: 1vh;
 }
 
 .event-card > .event-description {
@@ -165,9 +166,8 @@
 }
 
 @media only screen and (min-width: 1500px){
-
     .event-card{
-        background-size: 100vw auto;
+        background-size: 100vw 100vh;
     }
 }
 
