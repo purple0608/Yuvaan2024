@@ -8,7 +8,8 @@ body {
   padding: 0;
 }
 
-.preview-container>*>*, .preview-container>*>*>* {
+.preview-container > * > *,
+.preview-container > * > * > * {
   overflow-x: visible;
 }
 
@@ -160,8 +161,8 @@ body {
   justify-content: center;
 }
 
-.preview-divider{
-  width:70rem;
+.preview-divider {
+  width: 70rem;
 }
 
 @media only screen and (max-width: 375px) {
@@ -182,9 +183,8 @@ body {
     border: 2px solid #d4af37;
   }
 
-
-  .btn{
-    padding: 0.75rem; 
+  .btn {
+    padding: 0.75rem;
   }
 }
 
@@ -206,12 +206,10 @@ body {
     border: 2px solid #d4af37;
   }
 
-
-  .btn{
-    padding: 0.75rem; 
+  .btn {
+    padding: 0.75rem;
   }
 }
-
 
 @media only screen and (min-width: 481px) and (max-width: 1024px) {
   .swiper-slide img {
@@ -231,9 +229,7 @@ body {
     border: 2px solid #d4af37;
   }
 
-  .btn{
-    padding: 0.75rem; 
+  .btn {
+    padding: 0.75rem;
   }
 }
-
-

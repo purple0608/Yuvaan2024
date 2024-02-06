@@ -9,7 +9,7 @@ export default class MainMap extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      active: false
+      active: false,
     };
   }
   toggleMap = () => {
@@ -20,7 +20,11 @@ export default class MainMap extends React.Component {
     return (
       <div className="fp-App">
         <div className="fp-main-content" onClick={this.toggleMap}>
-          <div className={this.state.active ? "fp-map-base fp-active" : "fp-map-base"}>
+          <div
+            className={
+              this.state.active ? "fp-map-base fp-active" : "fp-map-base"
+            }
+          >
             <FootSteps name="Yuvaan" number={1} />
             <FootSteps name="IIITG" number={2} />
             <MapFlap number={1} />

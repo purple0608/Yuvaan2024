@@ -1,6 +1,6 @@
 import React from "react";
 
-export const Item= ({ src, datatext, content }) => {
+export const Item = ({ src, datatext, content }) => {
   return (
     <div className="timeline-item" data-text={datatext}>
       <div className="timeline__content">

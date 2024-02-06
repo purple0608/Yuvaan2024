@@ -23,7 +23,7 @@ const Fireflies = () => {
         });
         Anim(elm);
       },
-      ease: Power4.easeOut, 
+      ease: Power4.easeOut,
     });
   }
 
@@ -44,7 +44,7 @@ const Fireflies = () => {
     return Math.random() * max;
   }
 
-  return <div className="container"/>;
+  return <div className="container" />;
 };
 
 export default Fireflies;

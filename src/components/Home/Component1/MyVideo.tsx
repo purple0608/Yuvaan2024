@@ -1,3 +1,4 @@
+
 import React, { useEffect, useRef, useState } from 'react';
 import video1 from '/src/assets/main_page/images/background_video.mp4';
 import video2 from '/src/assets/main_page/images/Mang.mp4';

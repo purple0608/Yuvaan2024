@@ -4,11 +4,11 @@
 }
 
 nav {
-  font-family:SpiegelRegular ;
+  font-family: SpiegelRegular;
   z-index: 2;
   position: fixed;
   top: 2%;
-  color: rgb(200, 155, 60);;
+  color: rgb(200, 155, 60);
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -37,11 +37,11 @@ nav {
     transition: 0.5s ease-in;
 
     &:hover {
-      .nav-icon{
-        color:#BF953F;
+      .nav-icon {
+        color: #bf953f;
       }
       .nav-text {
-        color:#FCF6BA;
+        color: #fcf6ba;
         visibility: visible;
       }
     }

@@ -18,5 +18,5 @@ export default class MapSide extends PureComponent {
 MapSide.propTypes = {
   side: PropTypes.number.isRequired,
   map: PropTypes.number.isRequired,
-  isback: PropTypes.bool.isRequired
+  isback: PropTypes.bool.isRequired,
 };

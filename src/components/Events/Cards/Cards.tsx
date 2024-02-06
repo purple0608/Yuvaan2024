@@ -1,16 +1,12 @@
-import {
-  memo,
-  MutableRefObject,
-  useLayoutEffect,
-  useRef,
-  useState,
-} from "react";
+import { MutableRefObject, useLayoutEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/all";
 import "/src/assets/events/Cards.css";
 import { Data, EventData } from "../../../assets/events/data";
 import { debounce } from "../../../assets/utils/Debounce.ts";
 import Card from "./Card.tsx";
+import { useGSAP } from "@gsap/react";
+import Map from "../Timeline/Map";
 
 function Cards() {
   const data: EventData[] = Data;
@@ -25,10 +21,11 @@ function Cards() {
       width: window.innerWidth,
     });
   };
+
   useLayoutEffect(() => {
-    window.addEventListener("resize", debounce(handleResize, 300));
+    window.addEventListener("resize", debounce(handleResize, 50));
     return () =>
-      window.removeEventListener("resize", debounce(handleResize, 300));
+      window.removeEventListener("resize", debounce(handleResize, 50));
   }, []);
 
   const [heroData, setHeroData] = useState(data[0]);
@@ -42,37 +39,37 @@ function Cards() {
     }
   };
 
-  useLayoutEffect(() => {
-    const little_heroes = hero.current?.children[0].children;
-    const showSetting = {
-      rotateY: 0,
-      width: dimensions.width,
-      height: dimensions.height,
-      opacity: 1,
-    };
-    const showSettingSpecial = (i: number) => {
-      return {
+  useGSAP(
+    () => {
+      const showSetting = {
         rotateY: 0,
         width: dimensions.width,
         height: dimensions.height,
         opacity: 1,
-        onReverseComplete: handleHeroChange,
-        onReverseCompleteParams: [i - 1],
       };
-    };
-
-    const hideSetting = (i: number) => {
-      return {
-        rotateY: 90,
-        width: 600,
-        height: 600,
-        opacity: 0,
-        onComplete: handleHeroChange,
-        onCompleteParams: [i],
+      const showSettingSpecial = (i: number) => {
+        return {
+          rotateY: 0,
+          width: dimensions.width,
+          height: dimensions.height,
+          opacity: 1,
+          onReverseComplete: handleHeroChange,
+          onReverseCompleteParams: [i - 1],
+        };
       };
-    };
 
-    let ctx = gsap.context(() => {
+      const hideSetting = (i: number) => {
+        return {
+          rotateY: 90,
+          width: 600,
+          height: 600,
+          opacity: 0,
+          onComplete: handleHeroChange,
+          onCompleteParams: [i],
+        };
+      };
+
+      const little_heroes = hero.current?.children[0].children;
       tl.current = gsap.timeline({
         scrollTrigger: {
           trigger: hero.current,
@@ -82,8 +79,8 @@ function Cards() {
           scrub: true,
           snap: {
             snapTo: [0.15, 0.5, 0.85],
-            duration: 1,
-            delay: 0.001,
+            duration: 0.5,
+            delay: 0,
             ease: "power1.inOut",
           },
         },
@@ -104,21 +101,23 @@ function Cards() {
         }
         tl.current.to(hero.current!, hideSetting(i + 1));
       }
-    }, hero.current!);
-
-    return () => ctx.revert();
-  }, [dimensions]);
+    },
+    { scope: hero },
+  );
 
   return (
-    <div className="event-pinWrapper" ref={pinWrap}>
-      <div
-        id="hero"
-        className="hero"
-        ref={hero as MutableRefObject<HTMLDivElement>}
-      >
-        <Card data={heroData} />
+    <>
+       <Map timeline={tl} />
+      <div className="event-pinWrapper" ref={pinWrap}>
+        <div
+          id="hero"
+          className="event-hero"
+          ref={hero as MutableRefObject<HTMLDivElement>}
+        >
+          <Card data={heroData} />
+        </div>
       </div>
-    </div>
+    </>
   );
 }
-export default memo(Cards);
+export default Cards;
