@@ -19,8 +19,9 @@ import Nxm from "../../assets/sponsors/image/9xm1.png";
 import zoom from "../../assets/sponsors/image/zoom1.jpg";
 import royal from "../../assets/sponsors/image/royal1.png";
 import downline from "/src/assets/utils/decorator-hr-lg.png";
-import sponsors_heading from "../../assets/sponsors/image/sponsors.png";
-
+import sponsors_heading from "../../assets/sponsors/image/sponsors.png"
+import sponsors_pdf from "./sponsors_pdf.tsx";
+import ImageSlider from "./Sponsors_ImageSlider.tsx";
 function useDebounce(func, delay) {
   const [timer, setTimer] = useState();
 
@@ -65,154 +66,82 @@ function Sponsors() {
     }
   }, [dimensions]);
 
-  return (
-    <div>
-      <div className="sponsors-wrapper" ref={mount}>
-        <div className="sponsors-content">
-          <header className="sponsors-header">
-            <div className="sponsors-layers">
-              <div className="sponsors-layer-title">
-                <div className="sponsors-subtitle">
-                  <img src={sponsors_heading} alt="sponsors heading" />
-                  <img src={downline} alt="downline" />
-                </div>
-              </div>
-              <div className="sponsors-layer sponsors-layer-base"></div>
-              <div className="sponsors-layer sponsors-layer-middle"></div>
-              <div className="sponsors-layer sponsors-layer-front"></div>
-            </div>
-          </header>
-          <div className="sponsor">
-            <div className="sponsors-hex">
-              <article className="sponsors-article">
-                <h3 className="sponsors-article-title">Title Sponsor</h3>
-                <div className="sponsors-image">
-                  <Card1
-                    image={oil}
-                    imageAlt="Oil India Limited"
-                    title="Title Sponsor"
-                    class="sponsors-titleCard"
-                  />
-                </div>
-              </article>
-              <article className="sponsors-article">
-                <h3 className="sponsors-article-title">Banking Partner</h3>
-                <div className="sponsors-image">
-                  <Card1
-                    image={sbi}
-                    imageAlt="SBI"
-                    title="Banking Partner"
-                    class="sponsors-card"
-                  />
-                  <Card1
-                    image={baroda}
-                    imageAlt="Prag News"
-                    title="Media Partner"
-                    class="sponsors-card"
-                  />
-                </div>
-              </article>
-              <article className="sponsors-article">
-                <h3 className="sponsors-article-title">Food Partner</h3>
-                <div className="sponsors-image">
-                  <Card1
-                    image={fatBelly}
-                    imageAlt="SBI"
-                    title="Banking Partner"
-                    class="sponsors-card"
-                  />
-                  <Card1
-                    image={pizzaHut}
-                    imageAlt="Prag News"
-                    title="Media Partner"
-                    class="sponsors-card"
-                  />
-                  <Card1
-                    image={bingo}
-                    imageAlt="gplus"
-                    title="Media Partner"
-                    class="sponsors-card"
-                  />
-                </div>
-              </article>
-              <article className="sponsors-article">
-                <h3 className="sponsors-article-title">Energy Partner</h3>
-                <div className="sponsors-image">
-                  <Card1
-                    image={apl}
-                    imageAlt="SBI"
-                    title="Banking Partner"
-                    class="sponsors-card"
-                  />
-                  <Card1
-                    image={gail}
-                    imageAlt="Prag News"
-                    title="Media Partner"
-                    class="sponsors-card"
-                  />
-                </div>
-              </article>
-              <article className="sponsors-article">
-                <h3 className="sponsors-article-title">Tech Partner</h3>
-                <div className="sponsors-image">
-                  <Card1
-                    image={innovation}
-                    imageAlt="SBI"
-                    title="Banking Partner"
-                    class="sponsors-card"
-                  />
-                  <Card1
-                    image={amtron}
-                    imageAlt="Prag News"
-                    title="Media Partner"
-                    class="sponsors-card"
-                  />
-                  <Card1
-                    image={tcs}
-                    imageAlt="gplus"
-                    title="Media Partner"
-                    class="sponsors-card"
-                  />
-                </div>
-              </article>
-              <article className="sponsors-article">
-                <h3 className="sponsors-article-title">Media Partner</h3>
-                <div className="sponsors-image">
-                  <Card1
-                    image={pragnews}
-                    imageAlt="SBI"
-                    title="Banking Partner"
-                    class="sponsors-card"
-                  />
-                  <Card1
-                    image={gplus}
-                    imageAlt="Prag News"
-                    title="Media Partner"
-                    class="sponsors-card"
-                  />
-                  <Card1
-                    image={Nxm}
-                    imageAlt="gplus"
-                    title="Media Partner"
-                    class="sponsors-card"
-                  />
-                </div>
-              </article>
-              <article className="sponsors-article">
-                <h3 className="sponsors-article-title">AutoMobile Partner</h3>
-                <div className="sponsors-image">
-                  <Card1
-                    image={zoom}
-                    imageAlt="SBI"
-                    title="Banking Partner"
-                    class="sponsors-card"
-                  />
-                  <Card1
-                    image={royal}
-                    imageAlt="Prag News"
-                    title="Media Partner"
-                    class="sponsors-card"
-                  />
+    return (
+                <div>
+                    <div className="sponsors-wrapper" ref={mount}>
+                        <div className="sponsors-content">
+                            <header className="sponsors-header">
+                                <div className="sponsors-layers">
+                                    <div className="sponsors-layer-title">
+                                        <div className="sponsors-subtitle">
+                                            <img src={sponsors_heading} alt="sponsors heading" className='sponsors_heading' />
+                                            <img src={downline} alt="downline" className='sponsors_downline'/>
+
+                                        </div>
+                                    </div>
+                                    <div className="sponsors-layer sponsors-layer-base"></div>
+                                    <div className="sponsors-layer sponsors-layer-middle"></div>
+                                    <div className="sponsors-layer sponsors-layer-front"></div>
+                                </div>
+                            </header>
+                            <div className='sponsor'>
+                                <div className='sponsors-hex' >
+                                <article className="sponsors-article">
+                                <h3 className="sponsors-article-title">Title Sponsor</h3>
+                                 <div className='sponsors-image' >
+                                    <Card1 image={oil} imageAlt="Oil India Limited" title="Title Sponsor" class="sponsors-titleCard" />
+                                 </div>
+                                 {/* <ImageSlider images={sponsors_pdf} /> */}
+                                </article>
+                                    <article className="sponsors-article">
+                                        <h3 className="sponsors-article-title">Banking Partner</h3>
+                                        <div className='sponsors-image' >
+                                        <Card1 image={sbi} imageAlt="SBI" title="Banking Partner" class="sponsors-card" />
+                                        <Card1 image={baroda} imageAlt="Prag News" title="Media Partner" class="sponsors-card" />
+                                        </div>
+                                    </article>
+                                    <article className="sponsors-article">
+                                        <h3 className="sponsors-article-title">Food Partner</h3>
+                                        <div className='sponsors-image' >
+                                        <Card1 image={fatBelly} imageAlt="SBI" title="Banking Partner" class="sponsors-card" />
+                                        <Card1 image={pizzaHut} imageAlt="Prag News" title="Media Partner" class="sponsors-card" />
+                                        <Card1 image={bingo} imageAlt="gplus" title="Media Partner" class="sponsors-card" />
+                                        </div>
+                                    </article>
+                                    <article className="sponsors-article">
+                                        <h3 className="sponsors-article-title">Energy Partner</h3>
+                                        <div className='sponsors-image' >
+                                        <Card1 image={apl} imageAlt="SBI" title="Banking Partner" class="sponsors-card" />
+                                        <Card1 image={gail} imageAlt="Prag News" title="Media Partner" class="sponsors-card" />
+                                        </div>
+                                    </article>
+                                    <article className="sponsors-article">
+                                        <h3 className="sponsors-article-title">Tech Partner</h3>
+                                        <div className='sponsors-image' >
+                                        <Card1 image={innovation} imageAlt="SBI" title="Banking Partner" class="sponsors-card" />
+                                        <Card1 image={amtron} imageAlt="Prag News" title="Media Partner" class="sponsors-card" />
+                                        <Card1 image={tcs} imageAlt="gplus" title="Media Partner" class="sponsors-card" />
+                                        </div>
+                                    </article>
+                                    <article className="sponsors-article">
+                                        <h3 className="sponsors-article-title">Media Partner</h3>
+                                        <div className='sponsors-image' >
+                                        <Card1 image={pragnews} imageAlt="SBI" title="Banking Partner" class="sponsors-card" />
+                                        <Card1 image={gplus} imageAlt="Prag News" title="Media Partner" class="sponsors-card" />
+                                        <Card1 image={Nxm} imageAlt="gplus" title="Media Partner" class="sponsors-card" />
+                                        </div>
+                                    </article>
+                                    <article className="sponsors-article">
+                                        <h3 className="sponsors-article-title">AutoMobile Partner</h3>
+                                        <div className='sponsors-image' >
+                                        <Card1 image={zoom} imageAlt="SBI" title="Banking Partner" class="sponsors-card" />
+                                        <Card1 image={royal} imageAlt="Prag News" title="Media Partner" class="sponsors-card" />
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
               </article>
             </div>

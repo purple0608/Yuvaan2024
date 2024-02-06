@@ -2,6 +2,7 @@
   font-family: sans-serif;
   text-align: center;
   overflow-x: visible;
+  background: url("../../../assets/main_page/images/half.JPG") center/cover  repeat;
 }
 
 aside.fp-context {
@@ -50,7 +51,7 @@ footer a .fp-icons {
 
 .fp-main-content {
   text-align: center;
-  margin: 4em auto;
+  /* margin: 4rem auto; */
 }
 
 .fp-map-base {

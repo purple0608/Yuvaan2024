@@ -1,113 +1,154 @@
 import React from "react";
 import "/src/assets/contact/contact.css";
-import contact_us from "../../assets/contact/images/contact.png";
-import divider from "/src/assets/contact/images/decorator-hr-lg.png";
-import bottom_divider from "/src/assets/contact/images/decorator-br.png";
+import contactHeadImg from "/src/assets/contact/images/contact-logo.png";
+import hrImg from "/src/assets/contact/images/decorator-hr-lg.png";
+import brImg from "/src/assets/contact/images/decorator-br.png";
 
-// import { react } from 'react'
-// import "/src/assets/contact/contact.css";
-// import Navbar from "../Navbar/Navbar";
-
-export default function Contact() {
+const Contact = () => {
   return (
-      //  <Navbar className={isClicked ? "navbar" : "navbar"} />
-    <div id="top_div">
-      <img
-        id="contact-head"
-        src="/src/assets/contact/images/contact-head-lg.png"
-        alt="contact-heading"
-      />
-      
-      <img
-        id="hr"
-        src="/src/assets/contact/images/decorator-hr-lg.png"
-        alt="Hr-Ruler"
-      />
+    <div className="wrapper">
+      <div className="background-witcher">
+        <div className="container-witcher">
+          <div className="container-fluid header-witcher">
+            <img id="contact-head" src={contactHeadImg} alt="contact-heading" />
 
-      <div className="row">
-        <div className="container-vasu card_l col-lg-6 col-md-6 col-sm-10">
-          {" "}
-          <form className="form-vasu vasu">
-            <h2 className="h2-vasu my-4">Team Yuvaan</h2>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3583.5414847605402!2d91.55941587552647!3d26.08123727715258!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x375a5987e09da847%3A0xfc90e6da1b4547c1!2sIndian%20Institute%20of%20Information%20Technology%20Guwahati%20(IIITG)!5e0!3m2!1sen!2sin!4v1701586239868!5m2!1sen!2sin"
-              width="250"
-              height="160"
-              style={{ border: "0", borderRadius: "8px", margin: "20px 0" }}
-              allowFullScreen
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-            ></iframe>
-            <a href="https://instagram.com/yuvaan_iiitg?igshid=OGQ5ZDc2ODk2ZA==">
-              <i
-                className="font-text fa-brands fa-instagram"
-                style={{ color: "#f0e88e" }}
-              ></i>
-            </a>
-            <a href="https://www.facebook.com/profile.php?id=100089883182489&mibextid=ZbWKwL">
-              <i
-                className="font-text fa-brands fa-facebook"
-                style={{ color: "#f0e88e" }}
-              ></i>
-            </a>
-            <a href="https://youtube.com/@yuvaaniiitg1478?feature=shared">
-              <i
-                className="font-text fa-brands fa-youtube"
-                style={{ color: "#f0e88e" }}
-              ></i>
-            </a>
-            <a href="https://www.linkedin.com/company/yuvaaniiitg/">
-              <i
-                className="font-text fa-brands fa-linkedin"
-                style={{ color: "#f0e88e" }}
-              ></i>
-            </a>
-          </form>
-          <div className="drops-vasu">
-            <div className="drop-vasu drop-vasu-1"></div>
-            <div className="drop-vasu drop-vasu-2"></div>
-            <div className="drop-vasu drop-vasu-3"></div>
-            <div className="drop-vasu drop-vasu-4"></div>
-            <div className="drop-vasu drop-vasu-5"></div>
+            <img id="hr" src={hrImg} alt="Hr-Ruler" />
           </div>
-        </div>
-        <div className="container-vasu card_r col-lg-6 col-md-6 col-sm-10 order-lg-2 order-md-2 order-sm-2">
-          <form className="form-vasu vasu">
-            <h2 className="h2-vasu my-4">Send Us Your Query</h2>
-            <br />
-            <input type="text" placeholder="Name" className="vasu my-2" />
-            <br />
-            <input type="email" placeholder="Mail" className="vasu my-2" />
-            <br />
-            {/* <label htmlFor={'message'}>Your Message:</label> */}
-            <textarea
-              className="vasu my-2"
-              id="message"
-              name="message"
-              rows={8}
-              cols={32}
-              placeholder="Type your message here..."
-            ></textarea>
-            <br />
-            <input type="button" value="Send" className="vasu" />
-            <br />
-          </form>
+          <div className="screen-witcher">
+            <div className="screen-header-witcher">
+              <div className="screen-header-left-witcher">
+                <div className="screen-header-button-witcher close-witcher"></div>
+                <div className="screen-header-button-witcher maximize-witcher"></div>
+                <div className="screen-header-button-witcher minimize-witcher"></div>
+              </div>
+              <div className="screen-header-right-witcher">
+                <div className="screen-header-ellipsis-witcher"></div>
+                <div className="screen-header-ellipsis-witcher"></div>
+                <div className="screen-header-ellipsis-witcher"></div>
+              </div>
+            </div>
 
-          <div className="drop-vasu">
-            <div className="drop-vasu drop-vasu-6"></div>
-            <div className="drop-vasu drop-vasu-7"></div>
-            <div className="drop-vasu drop-vasu-8"></div>
-            <div className="drop-vasu drop-vasu-9"></div>
-            <div className="drop-vasu drop-vasu-10"></div>
+            <div className="screen-body-witcher">
+              <div className="screen-body-item-witcher left-witcher">
+                <div className="app-title-witcher">
+                  <span>CONTACT</span>
+                  <span>US</span>
+                </div>
+                <div className="app-contact-witcher">
+                  <h1>Media & Publicity</h1>
+                </div>
+                <div className="app-contact-witcher">
+                  <h2>Roshan Raj : 97715 29248</h2>
+                  <h2>Sunny Mallik : 81086 39641</h2>
+                </div>
+                <div className="app-contact-witcher">
+                  <h1>PR & Marketing</h1>
+                </div>
+                <div className="app-contact-witcher">
+                  <h2>Tashyab Raj : 93342 82666</h2>
+                  <h2>Prateek : 83510 81196</h2>
+                </div>
+                <div>
+                  <a
+                    href="https://instagram.com/yuvaan_iiitg?igshid=OGQ5ZDc2ODk2ZA=="
+                    target="_blank"
+                  >
+                    <i
+                      className="font-text fa-brands fa-instagram"
+                      style={{ color: "#f0e88e" }}
+                    ></i>
+                  </a>
+                  <a
+                    href="https://www.facebook.com/profile.php?id=100089883182489&mibextid=ZbWKwL"
+                    target="_blank"
+                  >
+                    <i
+                      className="font-text fa-brands fa-facebook"
+                      style={{ color: "#f0e88e" }}
+                    ></i>
+                  </a>
+                  <a
+                    href="https://youtube.com/@yuvaaniiitg1478?feature=shared"
+                    target="_blank"
+                  >
+                    <i
+                      className="font-text fa-brands fa-youtube"
+                      style={{ color: "#f0e88e" }}
+                    ></i>
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/company/yuvaaniiitg/"
+                    target="_blank"
+                  >
+                    <i
+                      className="font-text fa-brands fa-linkedin"
+                      style={{ color: "#f0e88e" }}
+                    ></i>
+                  </a>
+                  <a href="mailto:yuvaan@iiitg.ac.in" target="_blank">
+                    <i
+                      className="font-text fa-solid fa-envelope"
+                      style={{ color: "#f0e88e" }}
+                    ></i>
+                  </a>
+                  <a
+                    href="https://maps.app.goo.gl/HDoNK72bgKrZncbs5"
+                    target="_blank"
+                  >
+                    <i
+                      className="font-text fa-solid fa-location-dot"
+                      style={{ color: "#f0e88e" }}
+                    ></i>
+                  </a>
+                </div>
+              </div>
+              <div className="screen-body-item-witcher">
+                <div className="app-form-witcher">
+                  <div className="app-form-group-witcher">
+                    <input
+                      className="app-form-control-witcher"
+                      placeholder="NAME"
+                    />
+                  </div>
+                  <div className="app-form-group-witcher">
+                    <input
+                      className="app-form-control-witcher"
+                      placeholder="EMAIL"
+                    />
+                  </div>
+                  <div className="app-form-group-witcher">
+                    <input
+                      className="app-form-control-witcher"
+                      placeholder="CONTACT NO"
+                    />
+                  </div>
+                  <div className="app-form-group-witcher message-witcher">
+                    <input
+                      className="app-form-control-witcher"
+                      placeholder="MESSAGE"
+                    />
+                  </div>
+                  <div className="app-form-group-witcher buttons-witcher">
+                    <button
+                      className="app-form-button-witcher"
+                      onClick={() =>
+                        (window.location.href = "mailto:yuvaan@iiitg.ac.in")
+                      }
+                    >
+                      SEND
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="container-fluid credits-witcher">
+            <img id="br" src={brImg} alt="Hr-Ruler" />
           </div>
         </div>
       </div>
-
-      <img
-        id="br"
-        src="/src/assets/contact/images/decorator-br.png"
-        alt="Hr-Ruler"
-      />
     </div>
   );
-}
+};
+
+export default Contact;
