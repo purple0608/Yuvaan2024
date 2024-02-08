@@ -74,6 +74,25 @@ body {
   z-index: 1; /* Ensure the centered content is above the video */
   /* box-shadow: 0 0 20px rgba(255, 223, 0, 0.8); */
 }
+.fp-centered-above {
+  position: absolute;
+  top: 62%;
+  left: 52%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 1; /* Ensure the centered content is above the video */
+  /* box-shadow: 0 0 20px rgba(255, 223, 0, 0.8); */
+}
+.fp-centered-below {
+  position: absolute;
+  top: 90%;
+  left: 52%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 1; /* Ensure the centered content is above the video */
+  /* box-shadow: 0 0 20px rgba(255, 223, 0, 0.8); */
+}
+
 
 .fp-centered-image {
   max-width: 100%; /* Ensure the image doesn't exceed the container width */
