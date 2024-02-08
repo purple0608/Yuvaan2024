@@ -5,7 +5,7 @@ import symphony from "./images_cards/symphony4.jpg";
 import riff from "./images_cards/riff4.jpg";
 import trivia from "./images_cards/trivizaquiz1.jpg";
 import mun from "./images_cards/mun1.png";
-import movie from "./images_cards/hero2.jpg";
+import movie from "./images_cards/movemania2.jpg";
 import cosplay from "./images_cards/cosplay.jpg";
 
 export interface EventData {

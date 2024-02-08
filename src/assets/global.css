@@ -22,6 +22,10 @@ a:hover {
   cursor: url("./utils/cursor-pointer.png"), auto;
 }
 
+button > *:hover, a > *:hover {
+  cursor: url("./utils/cursor-pointer.png"), auto;
+}
+
 body {
   max-width: 100vw;
   overflow-x: clip;
