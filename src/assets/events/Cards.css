@@ -12,7 +12,7 @@
 
 .event-card {
   /* padding-top: auto; */
-  background-size: auto 100vh;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom center;
   height: 100vh;
@@ -40,7 +40,7 @@
 }
 
 .event-card > .event-titleBox > .event-sword {
-  width: 400px;
+  width: 22vw;
   justify-content: left;
 }
 
@@ -49,7 +49,7 @@
   color: white;
   font-family: WitchCraft;
   text-align: left;
-  font-size: 5.5em;
+  font-size: 5em;
   text-transform: uppercase;
   background: -webkit-linear-gradient(
     #deca7b 60%,
@@ -151,6 +151,7 @@
   border-image-source: linear-gradient(to bottom, #c89b3c, #785a28);
   transition: 0.5s;
   text-align: center;
+
 }
 
 .event-global-timeline-button {
@@ -169,7 +170,7 @@
   text-align: center;
     position: fixed;
     bottom: 5vh;
-    right: 5vw;
+    left: 3vw;
     z-index: 100;
 }
 
