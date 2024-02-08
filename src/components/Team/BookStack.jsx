@@ -1,9 +1,11 @@
 import React from "react";
-import Web_Cre from "../../assets/teams/gallery/Web_Cre.jpg";
-import Event from "../../assets/teams/gallery/EVENTMANAGE.jpg";
-import Media from "../../assets/teams/gallery/MEDIAnP.jpg";
-import Sponsors from "../../assets/teams/gallery/SPONSOR.jpg";
-import PCR from "../../assets/teams/gallery/PCR.jpg";
+import Web_Cre from "../../assets/teams/gallery/Tech.jpg";
+import Event from "../../assets/teams/gallery/EM.jpg";
+import Media from "../../assets/teams/gallery/MnP.jpg";
+import Sponsors from "../../assets/teams/gallery/SP.jpg";
+import PCR from "../../assets/teams/gallery/PR.jpg";
+import faculty from "../../assets/teams/gallery/Facult Advisors.jpg";
+import sgc from "../../assets/teams/gallery/SGC.jpg";
 import "./style.css"; // Make sure to create a CSS file for your component styles
 
 // const Book = ({ imageSrc, title, ribbon }) => (
@@ -128,14 +130,14 @@ const Flipbook = () => (
     <ul className="tp-align">
       <li>
         <Book
-          imageSrc="https://s.cdpn.io/13060/book1.jpg"
+          imageSrc={faculty}
           title="Faculty Advisors"
           teamSlug="faculty-advisors"
         />
       </li>
       <li>
         <Book
-          imageSrc="https://s.cdpn.io/13060/book1.jpg"
+          imageSrc={sgc}
           title="Student Gymkhana Council"
           teamSlug="student-gymkhana-council"
         />

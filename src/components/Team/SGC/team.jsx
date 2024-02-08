@@ -1,4 +1,7 @@
 import React from "react";
+import Ashutosh from "../../../assets/teams/SGC/AP.jpg";
+import Bhanu from "../../../assets/teams/SGC/Bhanu Prakash.jpeg";
+import Pari from "../../../assets/teams/SGC/Pari Tiwari.jpeg";
 import "../team.css"; // Make sure to import or include your CSS file
 
 const Team = () => {
@@ -8,17 +11,17 @@ const Team = () => {
       <h1 className="title" style={{color: 'white',
           textAlign: 'center'}}>Student Gymkhana Council</h1>
 
-        {/* <div className="et-card">
+        <div className="et-card">
           <div className="et-imgBox">
             <img
-              src="https://images.unsplash.com/photo-1611695434398-4f4b330623e6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2OTMxMzk5OTd8&ixlib=rb-4.0.3&q=80&w=400"
+              src={Ashutosh}
               alt="some image"
             />
           </div>
           <div className="et-details">
             <h2>
-              Rita Brown <br />
-              <span>London, UK</span>
+              Ashutosh Pandey <br />
+              <span><b>President</b></span>
             </h2>
           </div>
         </div>
@@ -26,14 +29,14 @@ const Team = () => {
         <div className="et-card">
           <div className="et-imgBox">
             <img
-              src="https://images.unsplash.com/photo-1611695434398-4f4b330623e6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2OTMxMzk5OTd8&ixlib=rb-4.0.3&q=80&w=400"
+              src={Bhanu}
               alt="some image"
             />
           </div>
           <div className="et-details">
             <h2>
-              James Nelson <br />
-              <span>San Francisco, US</span>
+              Bhanu Prakash <br />
+              <span><b>Vice President</b></span>
             </h2>
           </div>
         </div>
@@ -41,198 +44,19 @@ const Team = () => {
         <div className="et-card">
           <div className="et-imgBox">
             <img
-              src="https://images.unsplash.com/photo-1589156191108-c762ff4b96ab?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2OTMxMzk5NTF8&ixlib=rb-4.0.3&q=80&w=400"
+              src={Pari}
               alt="some image"
             />
           </div>
           <div className="et-details">
             <h2>
-              Christine McKay <br />
-              <span>New York, US</span>
+              Pari Tiwari <br />
+              <span><b>General Secretary</b> - </span>
+          
+              <span>Cultural Board</span>
             </h2>
           </div>
         </div>
-
-        <div className="et-card">
-          <div className="et-imgBox">
-            <img
-              src="https://images.unsplash.com/photo-1557053908-4793c484d06f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2OTMxMzk5NTF8&ixlib=rb-4.0.3&q=80&w=400"
-              alt="some image"
-            />
-          </div>
-          <div className="et-details">
-            <h2>
-              Rita Brown <br />
-              <span>London, UK</span>
-            </h2>
-          </div>
-        </div>
-
-        <div className="et-card">
-          <div className="et-imgBox">
-            <img
-              src="https://images.unsplash.com/photo-1557053908-4793c484d06f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2OTMxMzk5NTF8&ixlib=rb-4.0.3&q=80&w=400"
-              alt="some image"
-            />
-          </div>
-          <div className="et-details">
-            <h2>
-              Rita Brown <br />
-              <span>London, UK</span>
-            </h2>
-          </div>
-        </div>
-
-        <div className="et-card">
-          <div className="et-imgBox">
-            <img
-              src="https://images.unsplash.com/photo-1557053908-4793c484d06f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2OTMxMzk5NTF8&ixlib=rb-4.0.3&q=80&w=400"
-              alt="some image"
-            />
-          </div>
-          <div className="et-details">
-            <h2>
-              Rita Brown <br />
-              <span>London, UK</span>
-            </h2>
-          </div>
-        </div>
-
-        <div className="et-card">
-          <div className="et-imgBox">
-            <img
-              src="https://images.unsplash.com/photo-1557053908-4793c484d06f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2OTMxMzk5NTF8&ixlib=rb-4.0.3&q=80&w=400"
-              alt="some image"
-            />
-          </div>
-          <div className="et-details">
-            <h2>
-              Rita Brown <br />
-              <span>London, UK</span>
-            </h2>
-          </div>
-        </div>
-
-        <div className="et-card">
-          <div className="et-imgBox">
-            <img
-              src="https://images.unsplash.com/photo-1557053908-4793c484d06f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2OTMxMzk5NTF8&ixlib=rb-4.0.3&q=80&w=400"
-              alt="some image"
-              
-            />
-          </div>
-          <div className="et-details">
-            <h2>
-              Rita Brown <br />
-              <span>London, UK</span>
-            </h2>
-          </div>
-        </div>
-
-        <div className="et-card">
-          <div className="et-imgBox">
-            <img
-              src="https://images.unsplash.com/photo-1557053908-4793c484d06f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2OTMxMzk5NTF8&ixlib=rb-4.0.3&q=80&w=400"
-              alt="some image"
-            />
-          </div>
-          <div className="et-details">
-            <h2>
-              Rita Brown <br />
-              <span>London, UK</span>
-            </h2>
-          </div>
-        </div>
-
-        <div className="et-card">
-          <div className="et-imgBox">
-            <img
-              src="https://images.unsplash.com/photo-1557053908-4793c484d06f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2OTMxMzk5NTF8&ixlib=rb-4.0.3&q=80&w=400"
-              alt="some image"
-            />
-          </div>
-          <div className="et-details">
-            <h2>
-              Rita Brown <br />
-              <span>London, UK</span>
-            </h2>
-          </div>
-        </div>
-
-        <div className="et-card">
-          <div className="et-imgBox">
-            <img
-              src="https://images.unsplash.com/photo-1557053908-4793c484d06f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2OTMxMzk5NTF8&ixlib=rb-4.0.3&q=80&w=400"
-              alt="some image"
-            />
-          </div>
-          <div className="et-details">
-            <h2>
-              Rita Brown <br />
-              <span>London, UK</span>
-            </h2>
-          </div>
-        </div>
-
-        <div className="et-card">
-          <div className="et-imgBox">
-            <img
-              src="https://images.unsplash.com/photo-1557053908-4793c484d06f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2OTMxMzk5NTF8&ixlib=rb-4.0.3&q=80&w=400"
-              alt="some image"
-            />
-          </div>
-          <div className="et-details">
-            <h2>
-              Rita Brown <br />
-              <span>London, UK</span>
-            </h2>
-          </div>
-        </div>
-
-        <div className="et-card">
-          <div className="et-imgBox">
-            <img
-              src="https://images.unsplash.com/photo-1557053908-4793c484d06f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2OTMxMzk5NTF8&ixlib=rb-4.0.3&q=80&w=400"
-              alt="some image"
-            />
-          </div>
-          <div className="et-details">
-            <h2>
-              Rita Brown <br />
-              <span>London, UK</span>
-            </h2>
-          </div>
-        </div>
-
-        <div className="et-card">
-          <div className="et-imgBox">
-            <img
-              src="https://images.unsplash.com/photo-1557053908-4793c484d06f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2OTMxMzk5NTF8&ixlib=rb-4.0.3&q=80&w=400"
-              alt="some image"
-            />
-          </div>
-          <div className="et-details">
-            <h2>
-              Rita Brown <br />
-              <span>London, UK</span>
-            </h2>
-          </div>
-        </div>
-
-        <div className="et-card">
-          <div className="et-imgBox">
-            <img
-              src="https://images.unsplash.com/photo-1557053908-4793c484d06f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2OTMxMzk5NTF8&ixlib=rb-4.0.3&q=80&w=400"
-              alt="some image"
-            />
-          </div>
-          <div className="et-details">
-            <h2>
-              Rita Brown <br />
-              <span>London, UK</span>
-            </h2>
-          </div>
-        </div> */}
       </div>
     </div>
   );

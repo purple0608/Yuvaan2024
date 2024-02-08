@@ -1,10 +1,10 @@
 .et-box {
     display: flex;
-	justify-content: center;
-	align-items: center;
+    justify-content: center;
+    align-items: center;
     gap: 32px;
-	flex-wrap: wrap;
-	padding: 32px;
+    flex-wrap: wrap;
+    padding: 32px;
     margin-top: 10%;
 }
 
@@ -53,7 +53,13 @@
 }
 
 .et-card:hover .et-imgBox {
-    bottom: 75px;
+    
+}
+
+.et-card:hover .et-details {
+    opacity: 1;
+    z-index: 1;
+    background-color: white;
 }
 
 .et-card .et-imgBox img {
@@ -70,6 +76,8 @@
     right: 10px;
     bottom: 10px;
     height: 55px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
 }
 
 .et-card .et-details h2 {
