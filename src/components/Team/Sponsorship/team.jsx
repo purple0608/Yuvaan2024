@@ -23,7 +23,17 @@ const Team = () => {
         <h1 className="title" style={{ color: "white", textAlign: "center" }}>
           Sponsors
         </h1>
-
+        <div className="et-card">
+          <div className="et-imgBox">
+            <img src={Pulkit} alt="some image" />
+          </div>
+          <div className="et-details">
+            <h2>
+              Pulkit Bharti <br />
+              <span>Team Head</span>
+            </h2>
+          </div>
+        </div>
         <div className="et-card">
           <div className="et-imgBox">
             <img src={Navya} alt="some image" />
@@ -43,18 +53,6 @@ const Team = () => {
           <div className="et-details">
             <h2>
               Abhishek Kumar <br />
-              <span>Team Member</span>
-            </h2>
-          </div>
-        </div>
-
-        <div className="et-card">
-          <div className="et-imgBox">
-            <img src={Pulkit} alt="some image" />
-          </div>
-          <div className="et-details">
-            <h2>
-              Pulkit Bharti <br />
               <span>Team Member</span>
             </h2>
           </div>

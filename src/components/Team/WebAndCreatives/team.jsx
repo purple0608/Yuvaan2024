@@ -31,7 +31,7 @@ const Team = () => {
             </div>
             <div className="et-details">
               <h2>
-                AMAN <br />
+                Aman Yadav<br />
                 <span>Team Head</span>
               </h2>
             </div>
@@ -43,7 +43,7 @@ const Team = () => {
             </div>
             <div className="et-details">
               <h2>
-                Nandini <br />
+                Nandini Thakur<br />
                 <span>Team Head</span>
               </h2>
             </div>
@@ -55,7 +55,7 @@ const Team = () => {
             </div>
             <div className="et-details">
               <h2>
-                Anant <br />
+                Anant Sharma<br />
                 <span>Team Member</span>
               </h2>
             </div>
