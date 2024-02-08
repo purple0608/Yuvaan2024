@@ -11,7 +11,7 @@
 
 .timeline__content-desc {
   margin: 0;
-  font-size: 20px;
+  font-size: 24px;
   box-sizing: border-box;
   color: rgba(255, 255, 255, 0.75);
   line-height: 25px;
@@ -87,7 +87,7 @@
   width: 100%;
   position: absolute;
   border-left: 5px solid white;
-  top: 70%;
+  top: 50%;
   margin-top: -20px;
   padding-left: 13px;
   opacity: 0;
@@ -111,7 +111,7 @@
   filter: blur(0px);
 }
 .timeline-item--active:before {
-  top: 70%;
+  top: 50%;
   opacity: 1;
 }
 .timeline-item--active .timeline__content-title {
@@ -132,7 +132,7 @@
   .timeline-item {
     align-self: baseline !important;
     width: 100%;
-    padding: 0px 30px 250px 75px;
+    padding: 20px 30px 250px 75px;
   }
 
   .timeline-item:before {
