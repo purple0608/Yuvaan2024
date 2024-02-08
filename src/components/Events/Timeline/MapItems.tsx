@@ -10,7 +10,7 @@ const mapData1 = [
     time: "12:00pm-01:00pm",
     event: "Yuvaans Got Talent (R1)",
     flag: 1,
-    link: "https://unstop.com/p/yuvaans-got-talent-yuvaan24-indian-institute-of-information-technology-iiit-guwahati-890544",
+    link: "start-3",
   },
   { time: "01:00pm-01:30pm", event: "Whimsical Debate", flag: 0 },
   {
@@ -30,22 +30,22 @@ const mapData2 = [
     time: "10:00am-12:00pm",
     event: "Treasure Hunt (R1)",
     flag: 1,
-    link: "https://unstop.com/p/treasure-hunt-yuvaan24-indian-institute-of-information-technology-iiit-guwahati-891123",
+    link: "display-1",
   },
   { time: "12:00pm-01:00pm", event: "Clay Modelling Workshop", flag: 0 },
   {
     time: "02:00pm-03:00pm",
     event: "Treasure Hunt (R2)",
     flag: 1,
-    link: "start-1",
+    link: "display-1",
   },
-  { time: "02:30pm-04:00pm", event: "Trivia Quiz", flag: 1, link: "https://unstop.com/p/trivia-quiz-yuvaan24-indian-institute-of-information-technology-iiit-guwahati-895352" },
+  { time: "02:30pm-04:00pm", event: "Trivia Quiz", flag: 1, link: "start-8" },
   { time: "03:00pm-04:30pm", event: "Symphony (R2)", flag: 1, link: "start-4" },
   {
     time: "04:00pm-05:30pm",
     event: "Cosplay",
     flag: 1,
-    link: "https://unstop.com/events/cosplay-indian-institute-of-information-technology-iiit-guwahati-895338",
+    link: "start-7",
   },
   {
     time: "05:00pm-06:30pm",
@@ -57,20 +57,19 @@ const mapData2 = [
 ];
 
 const mapData3 = [
-  { time: "10:00am-12:00pm", event: "Mock CID (R1)", flag: 1, link: "https://unstop.com/p/mock-cid-yuvaan24-indian-institute-of-information-technology-iiit-guwahati-891072" },
+  { time: "10:00am-12:00pm", event: "Mock CID (R1)", flag: 1, link: "start-2" },
   { time: "12:00pm-01:30pm", event: "Script & Act", flag: 0 ,link:"https://unstop.com/p/script-act-yuvaan24-indian-institute-of-information-technology-iiit-guwahati-891193"},
   { time: "02:00pm-03:30pm", event: "LIC Quiz", flag: 0 ,link:"https://unstop.com/p/liclifestyle-information-culture-quiz-yuvaan24-indian-institute-of-information-technology-iiit-guwahati-894625"},
   { time: "02:00pm-04:00pm", event: "Mock CID (R2)", flag: 1, link: "start-2" },
-  { time: "02:30pm-04:00pm", event: "Trivia Quiz", flag: 1, link: "https://unstop.com/p/trivia-quiz-yuvaan24-indian-institute-of-information-technology-iiit-guwahati-895352" },
+  { time: "02:30pm-04:00pm", event: "Trivia Quiz", flag: 1, link: "start-8" },
   { time: "03:00pm-04:00pm", event: "Riff (R2)", flag: 1, link: "start-5" },
   { time: "04:00pm-05:00pm", event: "Filmy Dance Fusion", flag: 0 ,link:"https://unstop.com/p/the-bolly-beatsolo-indian-institute-of-information-technology-iiit-guwahati-891187"},
   { time: "05:00pm-06:00pm", event: "Open Mic", flag: 0 ,link:"https://unstop.com/p/open-mic-solo-indian-institute-of-information-technology-iiit-guwahati-891179"},
 ];
 
 const MapItems = ({ timeline }: { timeline: GSAPTimeline }) => {
-  gsap.registerPlugin(ScrollToPlugin);
+    gsap.registerPlugin(ScrollToPlugin);
   const handleSeekButton = (label: string) => {
-    console.log(" handling seek");
     gsap.to(window, {
       duration: 0.2,
       scrollTo: {
@@ -81,7 +80,9 @@ const MapItems = ({ timeline }: { timeline: GSAPTimeline }) => {
   const handleClick = (flag: number, link: string) => {
     console.log("handling click");
     if (flag == 1) {
-      handleSeekButton(link);
+        handleSeekButton(link);
+    }else {
+        window.open(link, '_blank').focus()
     }
   };
   return (
