@@ -41,7 +41,7 @@ class MainSlider extends React.Component {
                 className="item"
                 style={{
                   backgroundImage: `url(${Mun})`,
-                  backgroundSize: "contain",
+                  //backgroundSize: "contain",
                   backgroundPosition: "center center",
                 }}
               >
