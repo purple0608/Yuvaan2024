@@ -94,8 +94,8 @@ export const Data: EventData[] = [
   },
   {
     title: "Model united Nations",
-    date: "dd:mm:yyyy",
-    time: "hh:mmpm/am",
+    date: "02:03:2024-03:03:2024",
+    time: "09:00am-05:00pm",
     venue: "IIITG Academic Block",
     info: "",
     link: "https://georgerahul24.github.io/MUN-Website-2024/",
