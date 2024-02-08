@@ -9,7 +9,7 @@ function Card(props) {
       style={{ backgroundImage: "url(" + data.bg + ")" }}
     >
       <div className="event-titleBox">
-        <p className="event-title"> {data.title} </p>
+        <div className="event-title"> {data.title} </div>
         <img className="event-sword" src={sword} alt="sword" />
       </div>
       <div className="event-grid event-description">

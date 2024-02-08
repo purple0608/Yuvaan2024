@@ -3,7 +3,7 @@
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import React from "react";
+// import React from "react";
 
 const ImageSlider = ({ images }) => {
 	const settings = {
@@ -17,10 +17,9 @@ const ImageSlider = ({ images }) => {
 	};
 	return (
 		<>
-			<div className="tag">
-				<h1>Image Gallery</h1>
+			<div className="sponsors-tag">
 			</div>
-			<div className="sponsors_imgslider">
+			<div >
 				<Slider {...settings}>
 					{images.map((item) => (
 						<div key={item.id}>

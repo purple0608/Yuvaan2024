@@ -194,7 +194,7 @@
 #events-map-ul1 {
   list-style: none;
   position: relative;
-  top: 5rem;
+  top: 10rem;
   width: 100%;
   display: flex;
   overflow: visible;
@@ -210,6 +210,19 @@
   width: 100vw;
   display: flex;
   overflow: visible;
+  justify-content: space-evenly;
+  padding: 0px 10px;
+}
+
+#events-map-ul3 {
+  list-style: none;
+  position: relative;
+  top: 20rem;
+  width: 100vw;
+  display: flex;
+  overflow: visible;
+  justify-content: space-evenly;
+  padding: 0px 10px;
 }
 
 .events-map-container {
@@ -243,10 +256,23 @@
   border-top: 6px dashed rgb(228, 220, 220);
 }
 
+#events-map-ul3:before {
+  content: "";
+  position: absolute;
+  width: 100vw;
+  height: 10px;
+  top: 0;
+  left: 0;
+  border: none;
+  border-top: 6px dashed rgb(228, 220, 220);
+}
+
+
 #events-map-l {
-  color: black;
-  background-color: rgba(200, 200, 200, 0.2);
+  color: #F1ECE2;
+  background-color: rgba(0, 0, 0, 0.8);
   backdrop-filter: blur(8px);
+  font-family: EnchantedLight ;
   margin: 7px 5px;
   padding: 10px 10px;
   overflow: visible;

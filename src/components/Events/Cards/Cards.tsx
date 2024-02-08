@@ -75,10 +75,10 @@ function Cards() {
           trigger: hero.current,
           pin: pinWrap.current,
           start: "top top",
-          end: "+=12000",
+          end: "+=18000",
           scrub: true,
           snap: {
-            snapTo: [0.15, 0.5, 0.85],
+              snapTo: [0.08, 0.2, 0.36, 0.5, 0.65, 0.8],
             duration: 0.5,
             delay: 0,
             ease: "power1.inOut",
@@ -87,7 +87,7 @@ function Cards() {
       });
       tl.current.data = heroData;
 
-      for (let i = 1; i < 4; i++) {
+      for (let i = 1; i <= 7; i++) {
         tl.current
           .addLabel("start-" + i)
           .to(hero.current!, showSettingSpecial(i))
