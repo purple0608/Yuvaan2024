@@ -21,5 +21,5 @@ export default class FootSteps extends PureComponent {
 
 FootSteps.propTypes = {
   name: PropTypes.string.isRequired,
-  number: PropTypes.number.isRequired
+  number: PropTypes.number.isRequired,
 };

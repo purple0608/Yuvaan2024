@@ -1,4 +1,15 @@
 import React from "react";
+import Prateek from "../../../assets/teams/pcr/Prateek.jpg";
+import Tashyab from "../../../assets/teams/pcr/Tashyab Raj.jpg";
+import Akshat from "../../../assets/teams/pcr/Akshat Lohia.jpg";
+import Arya from "../../../assets/teams/pcr/Arya Sahu.jpg";
+import Deepanika from "../../../assets/teams/pcr/Deepanika Gupta.jpg";
+import Mukund from "../../../assets/teams/pcr/Mukund.jpg";
+import Nikhil from "../../../assets/teams/pcr/Nikhil Vasudevan.jpg";
+import Nisha from "../../../assets/teams/pcr/Nisha.jpg";
+import Prakriti from "../../../assets/teams/pcr/Prakriti Rani.jpg";
+import Srishty from "../../../assets/teams/pcr/Srishty.jpg";
+import Vamika from "../../../assets/teams/pcr/Vamika.jpg";
 import "../team.css"; // Make sure to import or include your CSS file
 
 const Team = () => {
@@ -11,14 +22,14 @@ const Team = () => {
         <div className="et-card">
           <div className="et-imgBox">
             <img
-              src="https://images.unsplash.com/photo-1611695434398-4f4b330623e6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2OTMxMzk5OTd8&ixlib=rb-4.0.3&q=80&w=400"
+              src={Prateek}
               alt="some image"
             />
           </div>
           <div className="et-details">
             <h2>
-              Rita Brown <br />
-              <span>London, UK</span>
+              Prateek <br />
+              <span>Team Head</span>
             </h2>
           </div>
         </div>
@@ -26,14 +37,14 @@ const Team = () => {
         <div className="et-card">
           <div className="et-imgBox">
             <img
-              src="https://images.unsplash.com/photo-1611695434398-4f4b330623e6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2OTMxMzk5OTd8&ixlib=rb-4.0.3&q=80&w=400"
+              src={Tashyab}
               alt="some image"
             />
           </div>
           <div className="et-details">
             <h2>
-              James Nelson <br />
-              <span>San Francisco, US</span>
+              Tashyab Raj <br />
+              <span>Team Head</span>
             </h2>
           </div>
         </div>
@@ -41,14 +52,14 @@ const Team = () => {
         <div className="et-card">
           <div className="et-imgBox">
             <img
-              src="https://images.unsplash.com/photo-1589156191108-c762ff4b96ab?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2OTMxMzk5NTF8&ixlib=rb-4.0.3&q=80&w=400"
+              src={Akshat}
               alt="some image"
             />
           </div>
           <div className="et-details">
             <h2>
-              Christine McKay <br />
-              <span>New York, US</span>
+              Akshat Lohia <br />
+              <span>Team Member</span>
             </h2>
           </div>
         </div>
@@ -56,14 +67,14 @@ const Team = () => {
         <div className="et-card">
           <div className="et-imgBox">
             <img
-              src="https://images.unsplash.com/photo-1557053908-4793c484d06f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2OTMxMzk5NTF8&ixlib=rb-4.0.3&q=80&w=400"
+              src={Arya}
               alt="some image"
             />
           </div>
           <div className="et-details">
             <h2>
-              Rita Brown <br />
-              <span>London, UK</span>
+              Arya Sahu <br />
+              <span>Team Member</span>
             </h2>
           </div>
         </div>
@@ -71,14 +82,14 @@ const Team = () => {
         <div className="et-card">
           <div className="et-imgBox">
             <img
-              src="https://images.unsplash.com/photo-1557053908-4793c484d06f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2OTMxMzk5NTF8&ixlib=rb-4.0.3&q=80&w=400"
+              src={Deepanika}
               alt="some image"
             />
           </div>
           <div className="et-details">
             <h2>
-              Rita Brown <br />
-              <span>London, UK</span>
+              Deepanika Gupta <br />
+              <span>Team Member</span>
             </h2>
           </div>
         </div>
@@ -86,14 +97,14 @@ const Team = () => {
         <div className="et-card">
           <div className="et-imgBox">
             <img
-              src="https://images.unsplash.com/photo-1557053908-4793c484d06f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2OTMxMzk5NTF8&ixlib=rb-4.0.3&q=80&w=400"
+              src={Mukund}
               alt="some image"
             />
           </div>
           <div className="et-details">
             <h2>
-              Rita Brown <br />
-              <span>London, UK</span>
+              Mukund <br />
+              <span>Team Member</span>
             </h2>
           </div>
         </div>
@@ -101,14 +112,14 @@ const Team = () => {
         <div className="et-card">
           <div className="et-imgBox">
             <img
-              src="https://images.unsplash.com/photo-1557053908-4793c484d06f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2OTMxMzk5NTF8&ixlib=rb-4.0.3&q=80&w=400"
+              src={Nikhil}
               alt="some image"
             />
           </div>
           <div className="et-details">
             <h2>
-              Rita Brown <br />
-              <span>London, UK</span>
+              Nikhil Vasudevan <br />
+              <span>Team Member</span>
             </h2>
           </div>
         </div>
@@ -116,15 +127,15 @@ const Team = () => {
         <div className="et-card">
           <div className="et-imgBox">
             <img
-              src="https://images.unsplash.com/photo-1557053908-4793c484d06f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2OTMxMzk5NTF8&ixlib=rb-4.0.3&q=80&w=400"
+              src={Nisha}
               alt="some image"
               
             />
           </div>
           <div className="et-details">
             <h2>
-              Rita Brown <br />
-              <span>London, UK</span>
+              Nisha <br />
+              <span>Team Member</span>
             </h2>
           </div>
         </div>
@@ -132,14 +143,14 @@ const Team = () => {
         <div className="et-card">
           <div className="et-imgBox">
             <img
-              src="https://images.unsplash.com/photo-1557053908-4793c484d06f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2OTMxMzk5NTF8&ixlib=rb-4.0.3&q=80&w=400"
+              src={Prakriti}
               alt="some image"
             />
           </div>
           <div className="et-details">
             <h2>
-              Rita Brown <br />
-              <span>London, UK</span>
+              Prakriti Rani <br />
+              <span>Team Member</span>
             </h2>
           </div>
         </div>
@@ -147,14 +158,14 @@ const Team = () => {
         <div className="et-card">
           <div className="et-imgBox">
             <img
-              src="https://images.unsplash.com/photo-1557053908-4793c484d06f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2OTMxMzk5NTF8&ixlib=rb-4.0.3&q=80&w=400"
+              src={Srishty}
               alt="some image"
             />
           </div>
           <div className="et-details">
             <h2>
-              Rita Brown <br />
-              <span>London, UK</span>
+              Srishty <br />
+              <span>Team Member</span>
             </h2>
           </div>
         </div>
@@ -162,74 +173,14 @@ const Team = () => {
         <div className="et-card">
           <div className="et-imgBox">
             <img
-              src="https://images.unsplash.com/photo-1557053908-4793c484d06f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2OTMxMzk5NTF8&ixlib=rb-4.0.3&q=80&w=400"
+              src={Vamika}
               alt="some image"
             />
           </div>
           <div className="et-details">
             <h2>
-              Rita Brown <br />
-              <span>London, UK</span>
-            </h2>
-          </div>
-        </div>
-
-        <div className="et-card">
-          <div className="et-imgBox">
-            <img
-              src="https://images.unsplash.com/photo-1557053908-4793c484d06f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2OTMxMzk5NTF8&ixlib=rb-4.0.3&q=80&w=400"
-              alt="some image"
-            />
-          </div>
-          <div className="et-details">
-            <h2>
-              Rita Brown <br />
-              <span>London, UK</span>
-            </h2>
-          </div>
-        </div>
-
-        <div className="et-card">
-          <div className="et-imgBox">
-            <img
-              src="https://images.unsplash.com/photo-1557053908-4793c484d06f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2OTMxMzk5NTF8&ixlib=rb-4.0.3&q=80&w=400"
-              alt="some image"
-            />
-          </div>
-          <div className="et-details">
-            <h2>
-              Rita Brown <br />
-              <span>London, UK</span>
-            </h2>
-          </div>
-        </div>
-
-        <div className="et-card">
-          <div className="et-imgBox">
-            <img
-              src="https://images.unsplash.com/photo-1557053908-4793c484d06f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2OTMxMzk5NTF8&ixlib=rb-4.0.3&q=80&w=400"
-              alt="some image"
-            />
-          </div>
-          <div className="et-details">
-            <h2>
-              Rita Brown <br />
-              <span>London, UK</span>
-            </h2>
-          </div>
-        </div>
-
-        <div className="et-card">
-          <div className="et-imgBox">
-            <img
-              src="https://images.unsplash.com/photo-1557053908-4793c484d06f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2OTMxMzk5NTF8&ixlib=rb-4.0.3&q=80&w=400"
-              alt="some image"
-            />
-          </div>
-          <div className="et-details">
-            <h2>
-              Rita Brown <br />
-              <span>London, UK</span>
+              Vamika <br />
+              <span>Team Member</span>
             </h2>
           </div>
         </div>

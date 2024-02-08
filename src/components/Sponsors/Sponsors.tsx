@@ -1,8 +1,8 @@
-import { useEffect, useLayoutEffect, useState, useRef } from 'react';
-import '../../assets/sponsors/App.css';
-import Card1 from './card';
+import { useEffect, useLayoutEffect, useState, useRef } from "react";
+import "../../assets/sponsors/App.css";
+import Card1 from "./card";
 import apl from "../../assets/sponsors/image/apl1.png";
-import oil from "../../assets/sponsors/image/oil india.png"; 3
+import oil from "../../assets/sponsors/image/oil india.png"; 
 import sbi from "../../assets/sponsors/image/SBI1.jpg";
 import baroda from "../../assets/sponsors/image/bankOfBaroda1.png";
 import fatBelly from "../../assets/sponsors/image/fatBelly1.png";
@@ -22,47 +22,49 @@ import sponsors_heading from "../../assets/sponsors/image/sponsors.png"
 import sponsors_pdf from "./sponsors_pdf.tsx";
 import brochure from "./../../assets/sponsors/image/sponsors-pdf/Yuvaan 2024 Sponsor Brochure Single Page (4).pdf"; 
 import ImageSlider from "./Sponsors_ImageSlider.tsx";
-
 function useDebounce(func, delay) {
-    const [timer, setTimer] = useState();
+  const [timer, setTimer] = useState();
 
-    const debouncedFunction = ((...args) => {
-        const newTimer = setTimeout(() => {
-            func(...args);
-        }, delay);
-        clearTimeout(timer);
-        setTimer(newTimer);
-    }) as Function;
+  const debouncedFunction = ((...args) => {
+    const newTimer = setTimeout(() => {
+      func(...args);
+    }, delay);
+    clearTimeout(timer);
+    setTimer(newTimer);
+  }) as Function;
 
-    return debouncedFunction;
+  return debouncedFunction;
 }
 
 function Sponsors() {
-    const mount = useRef(null);
-    const [dimensions, setDimensions] = useState({ width: window.innerWidth, height: window.innerHeight });
+  const mount = useRef(null);
+  const [dimensions, setDimensions] = useState({
+    width: window.innerWidth,
+    height: window.innerHeight,
+  });
 
-    const handleResize = useDebounce(() => {
-        setDimensions({ width: window.innerWidth, height: window.innerHeight });
-    }, 300);
+  const handleResize = useDebounce(() => {
+    setDimensions({ width: window.innerWidth, height: window.innerHeight });
+  }, 300);
 
-    useEffect(() => {
-        window.addEventListener('resize', handleResize);
+  useEffect(() => {
+    window.addEventListener("resize", handleResize);
 
-        return () => {
-            window.removeEventListener('resize', handleResize);
-        };
-    }, [handleResize]);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, [handleResize]);
 
-    useLayoutEffect(() => {
-        const sponsorHex = mount.current?.querySelector('.sponsors-hex');
+  useLayoutEffect(() => {
+    const sponsorHex = mount.current?.querySelector(".sponsors-hex");
 
-        if (dimensions.width <= 1280) {
-            // Add your specific responsive adjustments here
-            sponsorHex?.classList.add('responsive-hex');
-        } else {
-            sponsorHex?.classList.remove('responsive-hex');
-        }
-    }, [dimensions]);
+    if (dimensions.width <= 1280) {
+      // Add your specific responsive adjustments here
+      sponsorHex?.classList.add("responsive-hex");
+    } else {
+      sponsorHex?.classList.remove("responsive-hex");
+    }
+  }, [dimensions]);
 
     return (
         <div>
@@ -145,10 +147,10 @@ function Sponsors() {
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
+                </div>
+                </div>
 
-    );
+  );
 }
 
 export default Sponsors;

@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;700;900&display=swap');
-body{
-  cursor: url('../public/cursor.png'),auto;
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;700;900&display=swap");
+body {
+  cursor: url("../public/cursor.png"), auto;
 }
- /* {
+/* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -21,37 +21,28 @@ body{
   box-sizing: border-box;
 }  */
 
-
-
 .fp-header {
   position: relative;
 }
 
 .fp-header::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: calc(var(--index) * -4.5);
   z-index: 100;
   width: 100%;
   height: calc(var(--index) * 10);
-  background-image: url('https://i.ibb.co/DM2Knwf/ground.png');
+  background-image: url("https://i.ibb.co/DM2Knwf/ground.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
-
-
-
-
 
 /* Add this CSS to your existing stylesheet */
 
 /* ... your existing CSS ... */
 
 /* Add this CSS for the stag photo */
-
-  
-
 
 .fp-video-container {
   position: relative;
@@ -86,17 +77,21 @@ body{
 
 .fp-centered-image {
   max-width: 100%; /* Ensure the image doesn't exceed the container width */
-  max-height: 100%; 
+  max-height: 100%;
   animation: fadeInUp 1.5s ease-out forwards; /* Ensure the image doesn't exceed the container height */
 }
 @keyframes fadeInUp {
   from {
     opacity: 0;
-    transform: translateY(50px); /* Move the image down by 50 pixels initially */
+    transform: translateY(
+      50px
+    ); /* Move the image down by 50 pixels initially */
   }
   to {
     opacity: 1;
-    transform: translateY(0); /* Bring the image back to its original position */
+    transform: translateY(
+      0
+    ); /* Bring the image back to its original position */
   }
 }
 
@@ -113,15 +108,15 @@ body{
   align-items: center;
   min-height: 100vh;
   background-color: transparent;
-  background-image: url('https://i.ibb.co/ryQdX3b/dungeon.jpg');
+  background-image: url("https://i.ibb.co/ryQdX3b/dungeon.jpg");
   background-size: cover;
   background-position: center;
   color: #e7e7e0;
   text-align: center;
   top: -1px;
   z-index: 10;
-  
-  font-family: 'MedievalSharp', cursive
+
+  font-family: "MedievalSharp", cursive;
 }
 .fp-article-title {
   text-transform: uppercase;
@@ -144,35 +139,17 @@ body{
   will-change: transform;
 }
 
-.fp-shade {
-  /* background-image: linear-gradient(
-    to right,
-    #011914,
-    #011914,
-    #011914,
-    #011914,
-    #98cdb7,
-    #98cdb7,
-    #98cdb7,
-    #98cdb7,
-    #011a12,
-    #011a12,
-    #011a12
-  ); */
-  
-}
-
 #fp-Bottom {
-    background-image:url(https://cdn-hogwartslegacy.warnerbrosgames.com/home/bg-bottom-m.jpg);
+  background-image: url(https://cdn-hogwartslegacy.warnerbrosgames.com/home/bg-bottom-m.jpg);
 }
 
-@media (min-width: 992px){
-    .fp-webp #Bottom {
-        background-image:url(https://cdn-hogwartslegacy.warnerbrosgames.com/home/bg-bottom.webp);
-    }
-    .fp-no-webp #Bottom {
-        background-image:url(https://cdn-hogwartslegacy.warnerbrosgames.com/home/bg-bottom.jpg);
-    }
+@media (min-width: 992px) {
+  .fp-webp #Bottom {
+    background-image: url(https://cdn-hogwartslegacy.warnerbrosgames.com/home/bg-bottom.webp);
+  }
+  .fp-no-webp #Bottom {
+    background-image: url(https://cdn-hogwartslegacy.warnerbrosgames.com/home/bg-bottom.jpg);
+  }
 }
 .fp-page-container {
   position: relative;
@@ -211,12 +188,10 @@ body{
   height: auto; /* Maintain aspect ratio */
 }
 
-
 #fp-background-video {
   width: 100%;
-  height: 100vh;      
+  height: 100vh;
   object-fit: cover;
   overflow: hidden;
   display: flex;
-  
 }

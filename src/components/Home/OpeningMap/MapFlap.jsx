@@ -15,5 +15,5 @@ export default class MapFlap extends PureComponent {
 }
 
 MapFlap.propTypes = {
-  number: PropTypes.number.isRequired
+  number: PropTypes.number.isRequired,
 };
