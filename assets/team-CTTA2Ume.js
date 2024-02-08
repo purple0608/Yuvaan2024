@@ -1,1 +1,0 @@
-import{j as e}from"./index-MJ7QN5Iu.js";/* empty css             */const i=()=>e.jsx("div",{children:e.jsx("div",{className:"et-box",children:e.jsx("h1",{className:"title",style:{color:"white",textAlign:"center"},children:"Student Gymkhana Council"})})});export{i as default};
