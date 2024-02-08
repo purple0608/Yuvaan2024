@@ -1,1 +1,0 @@
-import{j as e}from"./index-6XyuADlz.js";/* empty css             */const r=()=>e.jsx("div",{children:e.jsx("div",{className:"et-box",children:e.jsx("h1",{className:"title",style:{color:"white",textAlign:"center"},children:"Faculty Advisors"})})});export{r as default};
