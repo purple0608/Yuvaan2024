@@ -1,11 +1,17 @@
+.tm-main {
+  background: url("src/assets/teams/TeamBG.jpeg") center/cover repeat;
+  min-height: 100vh;
+}
+
 .et-box {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 32px;
   flex-wrap: wrap;
-  padding: 32px;
-  margin-top: 10%;
+  padding-top: 10%;
+  width: fit-content;
+  padding-left: 2%;
 }
 
 .et-card {
@@ -29,7 +35,7 @@
   border-radius: 3px;
   background: #ffffff;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
-  z-index: -1;
+  z-index: 1;
   transition: 0.5s;
 }
 
@@ -48,12 +54,14 @@
   right: 10px;
   bottom: 10px;
   background: #101010;
-  z-index: 1;
+  z-index: 3;
   transition: 0.5s;
 }
 
-.et-card:hover .et-imgBox {
-  bottom: 75px;
+.et-card:hover .et-details {
+  opacity: 1;
+  z-index: 3;
+  background-color: white;
 }
 
 .et-card .et-imgBox img {
@@ -70,6 +78,8 @@
   right: 10px;
   bottom: 10px;
   height: 55px;
+  opacity: 0;
+  transition: opacity 0.5s ease;
 }
 
 .et-card .et-details h2 {

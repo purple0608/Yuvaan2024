@@ -12,7 +12,7 @@ import "../team.css"; // Make sure to import or include your CSS file
 
 const Team = () => {
   return (
-    <div>
+    <div className="tm-main">
       <div className="et-box">
         <h1 className="title" style={{ color: "white", textAlign: "center" }}>
           Media And Publicity

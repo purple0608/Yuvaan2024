@@ -13,11 +13,12 @@ import Madhur from "../../../assets/teams/Sponsorship/Madhur Jain.jpg";
 import Pallela from "../../../assets/teams/Sponsorship/Pallela.jpg";
 import Rit from "../../../assets/teams/Sponsorship/Ritik Raj.jpg";
 import Ubaid from "../../../assets/teams/Sponsorship/Ubaid Abbas.jpg";
+import Pulkit from "../../../assets/teams/Sponsorship/Pulkit Bharti.jpg";
 import "../team.css"; // Make sure to import or include your CSS file
 
 const Team = () => {
   return (
-    <div>
+    <div className="tm-main">
       <div className="et-box">
         <h1 className="title" style={{ color: "white", textAlign: "center" }}>
           Sponsors
@@ -42,6 +43,18 @@ const Team = () => {
           <div className="et-details">
             <h2>
               Abhishek Kumar <br />
+              <span>Team Member</span>
+            </h2>
+          </div>
+        </div>
+
+        <div className="et-card">
+          <div className="et-imgBox">
+            <img src={Pulkit} alt="some image" />
+          </div>
+          <div className="et-details">
+            <h2>
+              Pulkit Bharti <br />
               <span>Team Member</span>
             </h2>
           </div>
