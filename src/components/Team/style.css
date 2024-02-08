@@ -1,4 +1,9 @@
-
+body{
+  background-image: url("src/assets/teams/TeamBG.jpeg");
+  background-repeat:no-repeat;
+  background-size: cover;
+  background-position: center;
+}
 
 ul {
   margin: 0;
@@ -13,10 +18,6 @@ a {
 
 .tp-component {
   margin-top: 10%;
-  background-image: url("src/assets/teams/TeamBG.jpeg");
-  background-repeat:no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 
 .tp-btn {
