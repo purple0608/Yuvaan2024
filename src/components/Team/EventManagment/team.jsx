@@ -19,19 +19,17 @@ const Team = () => {
   return (
     <div>
       <div className="et-box">
-      <h1 className="title" style={{color: 'white',
-          textAlign: 'center'}}>Event Management</h1>
+        <h1 className="title" style={{ color: "white", textAlign: "center" }}>
+          Event Management
+        </h1>
 
         <div className="et-card">
           <div className="et-imgBox">
-            <img
-              src={Shre}
-              alt="some image"
-            />
+            <img src={Shre} alt="some image" />
           </div>
           <div className="et-details">
             <h2>
-            Shreya Gupta <br />
+              Shreya Gupta <br />
               <span>Team Head</span>
             </h2>
           </div>
@@ -39,10 +37,7 @@ const Team = () => {
 
         <div className="et-card">
           <div className="et-imgBox">
-            <img
-              src={Sindhu}
-              alt="some image"
-            />
+            <img src={Sindhu} alt="some image" />
           </div>
           <div className="et-details">
             <h2>
@@ -54,10 +49,7 @@ const Team = () => {
 
         <div className="et-card">
           <div className="et-imgBox">
-            <img
-              src={Abhay}
-              alt="some image"
-            />
+            <img src={Abhay} alt="some image" />
           </div>
           <div className="et-details">
             <h2>
@@ -69,10 +61,7 @@ const Team = () => {
 
         <div className="et-card">
           <div className="et-imgBox">
-            <img
-              src={Kartik}
-              alt="some image"
-            />
+            <img src={Kartik} alt="some image" />
           </div>
           <div className="et-details">
             <h2>
@@ -84,10 +73,7 @@ const Team = () => {
 
         <div className="et-card">
           <div className="et-imgBox">
-            <img
-              src={Manya}
-              alt="some image"
-            />
+            <img src={Manya} alt="some image" />
           </div>
           <div className="et-details">
             <h2>
@@ -99,10 +85,7 @@ const Team = () => {
 
         <div className="et-card">
           <div className="et-imgBox">
-            <img
-              src={Naman}
-              alt="some image"
-            />
+            <img src={Naman} alt="some image" />
           </div>
           <div className="et-details">
             <h2>
@@ -114,10 +97,7 @@ const Team = () => {
 
         <div className="et-card">
           <div className="et-imgBox">
-            <img
-              src={Prajita}
-              alt="some image"
-            />
+            <img src={Prajita} alt="some image" />
           </div>
           <div className="et-details">
             <h2>
@@ -129,11 +109,7 @@ const Team = () => {
 
         <div className="et-card">
           <div className="et-imgBox">
-            <img
-              src={Ritik}
-              alt="some image"
-              
-            />
+            <img src={Ritik} alt="some image" />
           </div>
           <div className="et-details">
             <h2>
@@ -145,10 +121,7 @@ const Team = () => {
 
         <div className="et-card">
           <div className="et-imgBox">
-            <img
-              src={Sai}
-              alt="some image"
-            />
+            <img src={Sai} alt="some image" />
           </div>
           <div className="et-details">
             <h2>
@@ -160,10 +133,7 @@ const Team = () => {
 
         <div className="et-card">
           <div className="et-imgBox">
-            <img
-              src={Shruti}
-              alt="some image"
-            />
+            <img src={Shruti} alt="some image" />
           </div>
           <div className="et-details">
             <h2>
@@ -175,10 +145,7 @@ const Team = () => {
 
         <div className="et-card">
           <div className="et-imgBox">
-            <img
-              src={Smriti}
-              alt="some image"
-            />
+            <img src={Smriti} alt="some image" />
           </div>
           <div className="et-details">
             <h2>
@@ -190,10 +157,7 @@ const Team = () => {
 
         <div className="et-card">
           <div className="et-imgBox">
-            <img
-              src={Sudipto}
-              alt="some image"
-            />
+            <img src={Sudipto} alt="some image" />
           </div>
           <div className="et-details">
             <h2>
@@ -205,10 +169,7 @@ const Team = () => {
 
         <div className="et-card">
           <div className="et-imgBox">
-            <img
-              src={Vishakha}
-              alt="some image"
-            />
+            <img src={Vishakha} alt="some image" />
           </div>
           <div className="et-details">
             <h2>

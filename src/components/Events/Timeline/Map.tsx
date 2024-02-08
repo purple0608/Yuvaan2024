@@ -16,9 +16,9 @@ import MapItems from "./MapItems";
 import { useGSAP } from "@gsap/react";
 
 function Map({ timeline }: { timeline: GSAPTimeline }) {
-    const clouds_ref = useRef<HTMLDivElement | null>(null);
-    
-    const isMobile = window.innerWidth <= 768;
+  const clouds_ref = useRef<HTMLDivElement | null>(null);
+
+  const isMobile = window.innerWidth <= 768;
   useGSAP(
     () => {
       gsap.registerPlugin(ScrollTrigger);
@@ -59,7 +59,7 @@ function Map({ timeline }: { timeline: GSAPTimeline }) {
   );
 
   return (
-    <div className={isMobile? "event-void":"events-map"} ref={clouds_ref}>
+    <div className={isMobile ? "event-void" : "events-map"} ref={clouds_ref}>
       <div className="eClouds-gang events-map-clouds-top">
         <img
           src={cloud1}

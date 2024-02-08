@@ -2,7 +2,8 @@
   font-family: sans-serif;
   text-align: center;
   overflow-x: visible;
-  background: url("../../../assets/main_page/images/half.JPG") center/cover  repeat;
+  background: url("../../../assets/main_page/images/half.JPG") center/cover
+    repeat;
 }
 
 aside.fp-context {

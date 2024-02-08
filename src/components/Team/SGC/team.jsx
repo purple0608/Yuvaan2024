@@ -5,8 +5,9 @@ const Team = () => {
   return (
     <div>
       <div className="et-box">
-      <h1 className="title" style={{color: 'white',
-          textAlign: 'center'}}>Student Gymkhana Council</h1>
+        <h1 className="title" style={{ color: "white", textAlign: "center" }}>
+          Student Gymkhana Council
+        </h1>
 
         {/* <div className="et-card">
           <div className="et-imgBox">

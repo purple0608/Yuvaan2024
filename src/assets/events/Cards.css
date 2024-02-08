@@ -5,9 +5,9 @@
   display: block;
 }
 
-.event-hero{
-    width: 100%;
-    display: block;
+.event-hero {
+  width: 100%;
+  display: block;
 }
 
 .event-card {
@@ -49,7 +49,7 @@
   color: white;
   font-family: WitchCraft;
   text-align: left;
-  font-size: 5em;
+  font-size: 5.5em;
   text-transform: uppercase;
   background: -webkit-linear-gradient(
     #deca7b 60%,
@@ -65,16 +65,16 @@
 }
 
 .event-card > .event-description {
-  width: 32.5vw;
-  height: 50vh;
+  width: 30vw;
+  height: 60vh;
+  top: -20vh;
   background-color: rgba(0, 0, 0, 0.47);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-
   text-align: start;
   font-family: SpiegelRegular;
   color: #a09b8c;
-  padding: 4vh 2.5vw;
+  padding: 3vh 2vw;
   display: grid;
   grid-template-columns: 1fr 39fr;
   grid-row-gap: 2vh;
@@ -112,7 +112,6 @@
 .event-grid > .event-grid-item {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: start;
 }
 
@@ -128,6 +127,7 @@
 }
 
 .event-data > * {
+  font-size: 20px;
   font-family: SpiegelRegular;
   font-weight: 400;
 }
@@ -150,6 +150,7 @@
   border-image-slice: 1;
   border-image-source: linear-gradient(to bottom, #c89b3c, #785a28);
   transition: 0.5s;
+  text-align: center;
 }
 
 .event-card > .event-register-button:hover {
@@ -161,23 +162,27 @@
   align-self: center;
 }
 
-.event-void{
-    display:none;
+.event-void {
+  display: none;
 }
 
-@media only screen and (min-width: 1500px){
-    .event-card{
-        background-size: 100vw 100vh;
-    }
+@media only screen and (min-width: 1500px) {
+  .event-card {
+    background-size: 100vw auto;
+  }
 }
 
 @media only screen and (max-width: 1224px) {
   .event-card {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     background-size: auto 100vh;
+  }
+  .event-card > .event-description {
+    width: 27.5vw;
+    height: 50vh;
   }
 
   .event-card > .event-description,
@@ -188,24 +193,27 @@
   }
 
   .event-card > .event-titleBox > .event-title {
-    font-size: 11vw;
+    padding-left: 0;
+    font-size: 12vw;
     margin-top: 10vw;
   }
 
   .event-card > .event-titleBox {
     display: flex;
     align-items: center;
+    backdrop-filter: blur(10px);
   }
   .event-card > .event-titleBox > .event-sword {
-    width: 35vw;
+    width: 40vw;
   }
 
   .event-data {
-    font-size: 16px;
+    text-align: center;
+    font-size: 14px;
   }
 
   .event-card > .event-register-button {
-    font-size: 20px;
+    font-size: 24px;
     width: 140px;
     height: 57px;
     margin: 10px 0px;

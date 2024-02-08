@@ -69,7 +69,7 @@
 }
 
 .screen-header-witcher:hover {
-     backdrop-filter: blur(2px); /* Adjust the blur value for hover state */
+  backdrop-filter: blur(2px); /* Adjust the blur value for hover state */
   background-color: rgba(
     255,
     255,
@@ -201,9 +201,9 @@
   color: #16ff00;
 }
 
-.font-text{
-    font-size: 16px;
-    margin : 8px 8px 0 0;
+.font-text {
+  font-size: 16px;
+  margin: 8px 8px 0 0;
 }
 .credits-witcher {
   display: flex;
@@ -229,27 +229,26 @@
   height: 20px;
 }
 
-
-#contact-head{
-    width: 100%;
+#contact-head {
+  width: 100%;
 }
 
-#hr{
-    width: 80%;
+#hr {
+  width: 80%;
 }
 
-.header-witcher{
-    position: relative;
-    top: 10% !important;
-    display: flex;
+.header-witcher {
+  position: relative;
+  top: 10% !important;
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin : 1rem 0px; 
+  margin: 1rem 0px;
 }
 
-#br{
-    position: absolute;
-    bottom: 5%;
-    width: 26rem;
+#br {
+  position: absolute;
+  bottom: 5%;
+  width: 26rem;
 }

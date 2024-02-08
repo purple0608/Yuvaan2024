@@ -3,8 +3,8 @@ import Mountains from "./Mountains/Mountains";
 import usePreventZoom from "./../../assets/utils/PreventZoom.ts";
 
 function Events() {
-    usePreventZoom();
-    return (
+  usePreventZoom();
+  return (
     <div className="events-parent">
       <Mountains />
       <Cards />

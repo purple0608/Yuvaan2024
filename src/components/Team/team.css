@@ -1,89 +1,89 @@
 .et-box {
-    display: flex;
-	justify-content: center;
-	align-items: center;
-    gap: 32px;
-	flex-wrap: wrap;
-	padding: 32px;
-    margin-top: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  flex-wrap: wrap;
+  padding: 32px;
+  margin-top: 10%;
 }
 
 .et-card {
-    position: relative;
-    width: 300px;
-    height: 400px;
-    background: #ffffff;
-    border-radius: 3px;
-    margin: 0 auto;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, .2);
+  position: relative;
+  width: 300px;
+  height: 400px;
+  background: #ffffff;
+  border-radius: 3px;
+  margin: 0 auto;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
 }
 
 .et-card::before,
 .et-card::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 3px;
-    background: #ffffff;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, .2);
-    z-index: -1;
-    transition: .5s;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 3px;
+  background: #ffffff;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  z-index: -1;
+  transition: 0.5s;
 }
 
 .et-card:hover::after {
-    transform: rotate(10deg);
+  transform: rotate(10deg);
 }
 
 .et-card:hover::before {
-    transform: rotate(20deg);
+  transform: rotate(20deg);
 }
 
 .et-card .et-imgBox {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    right: 10px;
-    bottom: 10px;
-    background: #101010;
-    z-index: 1;
-    transition: .5s;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  background: #101010;
+  z-index: 1;
+  transition: 0.5s;
 }
 
 .et-card:hover .et-imgBox {
-    bottom: 75px;
+  bottom: 75px;
 }
 
 .et-card .et-imgBox img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .et-card .et-details {
-    position: absolute;
-    left: 10px;
-    right: 10px;
-    bottom: 10px;
-    height: 55px;
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  height: 55px;
 }
 
 .et-card .et-details h2 {
-    margin-top: 5px;
-    padding: 0;
-    font-weight: 900;
-    font-size: 20px;
-    color: #101010;
-    text-align: center;
-    line-height: 1.15em;
+  margin-top: 5px;
+  padding: 0;
+  font-weight: 900;
+  font-size: 20px;
+  color: #101010;
+  text-align: center;
+  line-height: 1.15em;
 }
 
 .et-card .et-details h2 span {
-    font-weight: 400;
-    font-size: 15px;
-    color: #0dac4f;
+  font-weight: 400;
+  font-size: 15px;
+  color: #0dac4f;
 }

@@ -1,14 +1,14 @@
-import React from 'react'
+import React from "react";
 
-type Props = {}
+type Props = {};
 
-export default function loader({ }: Props) {
+export default function loader({}: Props) {
   // Dark Mode
   (function () {
     window.addEventListener(
       "click",
       () => document.documentElement.classList.toggle("dark"),
-      false
+      false,
     );
 
     const prefersDark =
