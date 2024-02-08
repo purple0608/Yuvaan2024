@@ -59,7 +59,7 @@ function Map({ timeline }: { timeline: GSAPTimeline }) {
   );
 
   return (
-    <div className={isMobile ? "event-void" : "events-map"} ref={clouds_ref}>
+    <div   className={isMobile ? "event-void" : "events-map"} ref={clouds_ref}>
       <div className="eClouds-gang events-map-clouds-top">
         <img
           src={cloud1}
@@ -109,7 +109,7 @@ function Map({ timeline }: { timeline: GSAPTimeline }) {
       </div>
 
       <div className="events-map-tlparent">
-        <div className="events-map-container">
+        <div className="events-map-container" id="events-timeline">
           <MapItems timeline={timeline} />
         </div>
       </div>

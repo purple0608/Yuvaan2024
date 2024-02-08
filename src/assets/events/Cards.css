@@ -153,6 +153,26 @@
   text-align: center;
 }
 
+.event-global-timeline-button {
+    width: 200px;
+  height: 70px;
+  align-self: center;
+  font-size: 32px;
+  font-family: enchantedRegular;
+  padding: 12px 32px;
+  background-color: rgb(30, 35, 40);
+  color: rgb(200, 155, 60);
+  border: 3px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to bottom, #c89b3c, #785a28);
+  transition: 0.5s;
+  text-align: center;
+    position: fixed;
+    bottom: 5vh;
+    right: 5vw;
+    z-index: 100;
+}
+
 .event-card > .event-register-button:hover {
   background-color: rgb(50, 55, 60);
   color: whitesmoke;
