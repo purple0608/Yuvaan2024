@@ -2,11 +2,11 @@
 import React from "react";
 import { IonIcon } from "@ionic/react";
 import "./Slider.css"; // Import your CSS file
-import Mun from "../../../assets/main_page/images/MUN2.jpg";
-import Yuvaan from "../../../assets/main_page/images/YUVAAN1.jpg";
-import Sponsors from "../../../assets/main_page/images/SPONSORSHIPBANNER.jpg";
-import Teams from "../../../assets/main_page/images/TEAMS1.jpg";
-import Events from "../../../assets/main_page/images/EVENTS1.jpg";
+import Mun from "../../../assets/main_page/images/un.jpg";
+import Yuvaan from "../../../assets/main_page/images/yuvaan.png";
+import Sponsors from "../../../assets/main_page/images/sponsor.png";
+import Teams from "../../../assets/main_page/images/teams.png";
+import Events from "../../../assets/main_page/images/events.png";
 
 class MainSlider extends React.Component {
   componentDidMount() {
@@ -49,10 +49,7 @@ class MainSlider extends React.Component {
                   <h2 className="title">"MUN"</h2>
                   <p className="description">
                     {" "}
-                    Model United Nations (MUN) simulates UN sessions, allowing
-                    students to represent countries, discuss global issues, and
-                    develop skills in diplomacy, research, public speaking, and
-                    collaboration for real-world problem-solving.{" "}
+                    Yuvaan MUN provides a vibrant platform for students to hone their diplomatic skills through engaging debates and negotiations. It fosters leadership and critical thinking, shaping tomorrow's global leaders.{" "}
                   </p>
                   <a href="https://georgerahul24.github.io/MUN-Website-2024/">
                     <button>View</button>
@@ -63,7 +60,7 @@ class MainSlider extends React.Component {
                 className="item"
                 style={{
                   backgroundImage: `url(${Yuvaan})`,
-                  backgroundSize: "contain",
+                  //backgroundSize: "contain",
                   backgroundPosition: "center center",
                 }}
               >
@@ -71,10 +68,7 @@ class MainSlider extends React.Component {
                   <h2 className="title">"Yuvaan"</h2>
                   <p className="description">
                     {" "}
-                    Yuvaan Cultural Fest at IIIT Guwahati celebrates the vibrant
-                    diversity of the institute through arts, music, and
-                    performances, fostering cultural exchange and creative
-                    expression within the student community.{" "}
+                    Enter Yuvaan, IIIT Guwahati's cultural extravaganza, where the ordinary transcends into the extraordinary, igniting passions, fostering creativity, and celebrating the kaleidoscope of human expression.{" "}
                   </p>
                   <a href="#">
                     <button>View</button>
@@ -85,7 +79,7 @@ class MainSlider extends React.Component {
                 className="item"
                 style={{
                   backgroundImage: `url(${Sponsors})`,
-                  backgroundSize: "contain",
+                  //backgroundSize: "contain",
                   backgroundPosition: "center center",
                 }}
               >
@@ -93,10 +87,7 @@ class MainSlider extends React.Component {
                   <h2 className="title">"Sponsors"</h2>
                   <p className="description">
                     {" "}
-                    Sponsors provide essential support, either financial or
-                    in-kind, for events like cultural fests. Their contributions
-                    enhance the event's scale and quality, while also gaining
-                    brand exposure and visibility.{" "}
+                    Sponsors are Yuvaan's Gringotts, safeguarding its magic. Their support brings dreams to life, making Yuvaan an unforgettable experience. Yuvaan, with sponsors, truly extraordinary!{" "}
                   </p>
                   <a href="#/sponsors">
                     <button>View</button>
@@ -107,7 +98,7 @@ class MainSlider extends React.Component {
                 className="item"
                 style={{
                   backgroundImage: `url(${Teams})`,
-                  backgroundSize: "contain",
+                  //backgroundSize: "contain",
                   backgroundPosition: "center center",
                 }}
               >
@@ -115,10 +106,7 @@ class MainSlider extends React.Component {
                   <h2 className="title">"Teams"</h2>
                   <p className="description">
                     {" "}
-                    Yuvaan teams, including Faculty Advisors, Student Gymkhana
-                    Council, Web and Creatives, Event Management, Public
-                    Relations, Sponsorship, and Media, collaborate to
-                    orchestrate a vibrant cultural celebration at IIIT Guwahati.{" "}
+                    Yuvaan's teams, a vibrant mix of talent and dedication, join forces to create an awe-inspiring cultural event. Together, they inspire with their creativity, innovation, and unity. Yuvaan, assemble!{" "}
                   </p>
                   <a href="#/teams">
                     <button>View</button>
@@ -129,7 +117,7 @@ class MainSlider extends React.Component {
                 className="item"
                 style={{
                   backgroundImage: `url(${Events})`,
-                  backgroundSize: "contain",
+                  //backgroundSize: "contain",
                   backgroundPosition: "center center",
                 }}
               >
@@ -137,11 +125,7 @@ class MainSlider extends React.Component {
                   <h2 className="title">"Events"</h2>
                   <p className="description">
                     {" "}
-                    Yuvaan Cultural Fest hosts an array of dynamic events,
-                    showcasing diverse talents, cultural richness, and
-                    creativity. From performances and competitions to
-                    exhibitions, each event contributes to a vibrant celebration
-                    of culture and expression.{" "}
+                    Dive into Yuvaan's events, where cool beats collide with mystical vibes. From electrifying dance-offs to soulful poetry jams and mesmerizing music sets, it's a fantasy-filled adventure you won't want to miss.{" "}
                   </p>
                   <a href="#/events">
                     <button>View</button>
