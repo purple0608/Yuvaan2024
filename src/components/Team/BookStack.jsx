@@ -2,7 +2,7 @@ import React from "react";
 import Web_Cre from "../../assets/teams/gallery/Tech.jpg";
 import Event from "../../assets/teams/gallery/EM.jpg";
 import Media from "../../assets/teams/gallery/MnP.jpg";
-import Sponsors from "../../assets/teams/gallery/SP.jpg";
+import Sponsors from "../../assets/teams/gallery/Sp.jpg";
 import PCR from "../../assets/teams/gallery/PR.jpg";
 import faculty from "../../assets/teams/gallery/Facult Advisors.jpg";
 import sgc from "../../assets/teams/gallery/SGC.jpg";
