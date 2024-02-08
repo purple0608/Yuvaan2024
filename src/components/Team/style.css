@@ -1,4 +1,9 @@
-
+body{
+  background-image: url("src/assets/teams/TeamBG.jpeg");
+  background-repeat:no-repeat;
+  background-size: cover;
+  background-position: center;
+}
 
 ul {
   margin: 0;
@@ -120,6 +125,7 @@ a {
 .tp-book_spine li:last-child:after,
 .tp-book_spine li:last-child:before {
   background: #999;
+
 }
 
 /* page */

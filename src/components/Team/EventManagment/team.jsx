@@ -52,20 +52,20 @@ const Team = () => {
           </div>
         </div>
 
-        <div className="et-card">
-          <div className="et-imgBox">
-            <img
-              src={Abhay}
-              alt="some image"
-            />
-          </div>
-          <div className="et-details">
-            <h2>
-              Abhay Chaudhary <br />
-              <span>Team Member</span>
-            </h2>
-          </div>
-        </div>
+        {/*<div className="et-card">*/}
+        {/*  <div className="et-imgBox">*/}
+        {/*    <img*/}
+        {/*      src={Abhay}*/}
+        {/*      alt="some image"*/}
+        {/*    />*/}
+        {/*  </div>*/}
+        {/*  <div className="et-details">*/}
+        {/*    <h2>*/}
+        {/*      Abhay Chaudhary <br />*/}
+        {/*      <span>Team Member</span>*/}
+        {/*    </h2>*/}
+        {/*  </div>*/}
+        {/*</div>*/}
 
         <div className="et-card">
           <div className="et-imgBox">
