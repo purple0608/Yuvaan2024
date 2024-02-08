@@ -1,5 +1,5 @@
 .tm-main {
-  background: url("src/assets/teams/TeamBG.jpeg") center/cover repeat;
+  background: url("../../assets/teams/TeamBG.jpg") center/cover repeat;
   min-height: 100vh;
 }
 
