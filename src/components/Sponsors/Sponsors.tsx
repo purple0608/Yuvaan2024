@@ -18,7 +18,7 @@ import Nxm from "../../assets/sponsors/image/9xm1.png";
 import zoom from "../../assets/sponsors/image/zoom1.jpg";
 import royal from "../../assets/sponsors/image/royal1.png";
 import downline from "/src/assets/utils/decorator-hr-lg.png";
-import sponsors_heading from "../../assets/sponsors/image/sponsors.png"
+import sponsors_heading from "../../assets/sponsors/image/sponsors.png";
 import sponsors_pdf from "./sponsors_pdf.tsx";
 import brochure from "./../../assets/sponsors/image/sponsors-pdf/Yuvaan 2024 Sponsor Brochure Single Page (4).pdf";
 import ImageSlider from "./Sponsors_ImageSlider.tsx";

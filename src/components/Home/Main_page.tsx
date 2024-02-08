@@ -1,4 +1,5 @@
 
+
 import React, { useEffect, useRef, useState } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -14,7 +15,6 @@ import MainMap from './OpeningMap/MainMap';
 import MainSlider from './Slider/MainSlider';
 
 function Main_page() {
-
   const wrapperRef = useRef<HTMLDivElement>(null);
   const contentRef = useRef<HTMLDivElement>(null);
 
@@ -25,7 +25,6 @@ function Main_page() {
       <Navbar className={isClicked ? "navbar" : "navbar"} />
       <div className="fp-wrapper" ref={wrapperRef}>
         <div className="fp-content" ref={contentRef}>
-
           <div className="fp-wrapper">
             <div className="fp-video-container">
               <MyVideo />
@@ -33,7 +32,11 @@ function Main_page() {
                 <img src={text1} alt="Centered Image" className="fp-centered-image" />
               </div>
               <div className="fp-centered-content">
-                <img src={text} alt="Centered Image" className="fp-centered-image" />
+                <img
+                  src={text}
+                  alt="Centered Image"
+                  className="fp-centered-image"
+                />
               </div>
               <div className="fp-centered-below">
                 <img src={text2} alt="Centered Image" className="fp-centered-image" />

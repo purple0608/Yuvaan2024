@@ -120,7 +120,6 @@ const Team = () => {
               </h2>
             </div>
           </div>
-
           <div className="et-card">
             <div className="et-imgBox">
               <img src={Vasu} alt="some image" />

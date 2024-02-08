@@ -731,7 +731,6 @@ figcaption p {
     font-size: 90%;
   }
 }
-
 @media screen and (max-width: 500px) {
   .tp-align > li {
     padding: 0;

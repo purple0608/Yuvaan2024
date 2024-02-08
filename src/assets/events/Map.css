@@ -267,12 +267,11 @@
   border-top: 6px dashed rgb(228, 220, 220);
 }
 
-
 #events-map-l {
-  color: #F1ECE2;
+  color: #f1ece2;
   background-color: rgba(0, 0, 0, 0.8);
   backdrop-filter: blur(8px);
-  font-family: EnchantedLight ;
+  font-family: EnchantedLight;
   margin: 7px 5px;
   padding: 10px 10px;
   overflow: visible;

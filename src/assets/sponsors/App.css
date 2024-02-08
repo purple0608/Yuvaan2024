@@ -1,12 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;700;900&display=swap");
 
-
-.sponsors_downline{max-width: 90vw;}
-.sponsors_heading{max-width: 90vw;}
+.sponsors_downline {
+  max-width: 90vw;
+}
+.sponsors_heading {
+  max-width: 90vw;
+}
 .slick-slide img {
-    margin: auto;
-    width: 70%;
-    height: 70%;
+  margin: auto;
+  width: 70%;
+  height: 70%;
 }
 .sponsors-tag {
   text-align: center;
@@ -125,7 +128,7 @@
   font-size: calc(var(--index) * 0.75);
   letter-spacing: calc(var(--index) / 37.5);
 }
- .sponsors-register-button {
+.sponsors-register-button {
   margin-top: 50px;
   width: 200px;
   height: 70px;
@@ -146,29 +149,32 @@
   background-color: rgb(50, 55, 60);
   color: whitesmoke;
 }
-.sponsors-button{
+.sponsors-button {
   display: flex;
   justify-content: space-evenly;
 }
-
 
 @media screen and (max-width: 768px) {
   .sponsors-title {
     font-size: 24px;
   }
-  .sponsors_downline{max-width: 90vw;}
-  .sponsors_heading{max-width: 90vw;}
+  .sponsors_downline {
+    max-width: 90vw;
+  }
+  .sponsors_heading {
+    max-width: 90vw;
+  }
 
   .sponsors-subtitle {
     font-size: 14px;
   }
-  
+
   .sponsors-article {
     width: 100vw;
     justify-content: center;
     align-items: center;
   }
-  
+
   .sponsors-article-content {
     border: 0px solid;
     width: 75vw;
@@ -205,7 +211,7 @@
     justify-content: center;
     align-items: center;
   }
-  .sponsors-register-button{
+  .sponsors-register-button {
     font-size: 20px;
     width: 140px;
     height: 57px;
@@ -213,6 +219,6 @@
   }
 }
 
-.navbar{
-  z-index:100;
+.navbar {
+  z-index: 100;
 }

@@ -8,8 +8,9 @@ const Team = () => {
   return (
     <div className="tm-main">
       <div className="et-box">
-      <h1 className="title" style={{color: 'white',
-          textAlign: 'center'}}>Faculty Advisors</h1>
+        <h1 className="title" style={{ color: "white", textAlign: "center" }}>
+          Faculty Advisors
+        </h1>
 
         <div className="et-card">
           <div className="et-imgBox">
