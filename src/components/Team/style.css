@@ -11,7 +11,7 @@ a {
 }
 
 .tp-component {
-  background-image: url("src/assets/teams/TeamBG.jpeg");
+  background-image: url("../../assets/teams/TeamBG.jpg");
   background-repeat:no-repeat;
   background-size: cover;
   background-position: center;
