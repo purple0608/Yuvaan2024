@@ -45,7 +45,6 @@ const mapData2 = [
     time: "04:00pm-05:30pm",
     event: "Cosplay",
     flag: 1,
-    link: "start-3",
     link: "start-7",
   },
   {
