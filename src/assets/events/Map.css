@@ -11,218 +11,27 @@
   justify-content: center;
 }
 
-.events-map-cloud1-top {
-  position: absolute;
-  overflow: hidden;
-  width: 1300px;
-  transform: translate(-50%, -50%);
-  z-index: 24;
-  left: calc(50% - 200px);
-  top: calc(50% + 500px);
-}
-
-.events-map-cloud2-top {
-  position: absolute;
-  overflow: hidden;
-  width: 1500px;
-  transform: translate(-50%, -50%);
-  z-index: 24;
-  left: calc(50% - 700px);
-  top: calc(50% + 550px);
-}
-
-.events-map-cloud3-top {
-  position: absolute;
-  overflow: hidden;
-  width: 1500px;
-  transform: translate(-50%, -50%);
-  z-index: 24;
-  left: calc(50% - 1000px);
-  top: calc(50% + 550px);
-}
-
-.events-map-cloud4-top {
-  position: absolute;
-  overflow: hidden;
-  width: 1900px;
-  transform: translate(-50%, -50%);
-  z-index: 24;
-  left: calc(50% - 500px);
-  top: calc(50% + 700px);
-}
-
-.events-map-cloud5-top {
-  position: absolute;
-  overflow: hidden;
-  width: 1900px;
-  transform: translate(-50%, -50%);
-  z-index: 24;
-  left: calc(50% + 700px);
-  top: calc(50% + 650px);
-}
-
-.events-map-cloud6-top {
-  position: absolute;
-  overflow: hidden;
-  width: 1900px;
-  transform: translate(-50%, -50%);
-  z-index: 24;
-  left: calc(50% + 700px);
-  top: calc(50% + 950px);
-}
-
-.events-map-cloud7-top {
-  position: absolute;
-  overflow: hidden;
-  width: 1900px;
-  transform: translate(-50%, -50%);
-  z-index: 24;
-  left: calc(50% - 300px);
-  top: calc(50% + 900px);
-}
-
-.events-map-cloud8-top {
-  position: absolute;
-  overflow: hidden;
-  width: 1900px;
-  transform: translate(-50%, -50%);
-  z-index: 24;
-  left: calc(50%);
-  top: calc(50% + 1000px);
-}
-
-.events-map-cloud9-top {
-  position: absolute;
-  overflow: hidden;
-  width: 100vw;
-  transform: translate(-50%, -50%);
-  z-index: 24;
-  left: calc(50% - 700px);
-  top: calc(50% + 950px);
-}
-
-.events-map-cloud1-bottom {
-  position: absolute;
-  overflow: hidden;
-  width: 100vw;
-  transform: translate(-50%, -50%);
-  z-index: 24;
-  left: calc(50% - 200px);
-  top: calc(50% + 2150px);
-}
-
-.events-map-cloud2-bottom {
-  position: absolute;
-  overflow: hidden;
-  width: 1500px;
-  transform: translate(-50%, -50%);
-  z-index: 24;
-  left: calc(50% - 700px);
-  top: calc(50% + 2200px);
-}
-
-.events-map-cloud3-bottom {
-  position: absolute;
-  overflow: hidden;
-  width: 1500px;
-  transform: translate(-50%, -50%);
-  z-index: 24;
-  left: calc(50% - 1000px);
-  top: calc(50% + 2200px);
-}
-
-.events-map-cloud4-bottom {
-  position: absolute;
-  overflow: hidden;
-  width: 1900px;
-  transform: translate(-50%, -50%);
-  z-index: 24;
-  left: calc(50% - 500px);
-  top: calc(50% + 2350px);
-}
-
-.events-map-cloud5-bottom {
-  position: absolute;
-  overflow: hidden;
-  width: 1900px;
-  transform: translate(-50%, -50%);
-  z-index: 24;
-  left: calc(50% + 700px);
-  top: calc(50% + 2350px);
-}
-
-.events-map-cloud6-bottom {
-  position: absolute;
-  overflow: hidden;
-  width: 1900px;
-  transform: translate(-50%, -50%);
-  z-index: 24;
-  left: calc(50% + 700px);
-  top: calc(50% + 2500px);
-}
-
-.events-map-cloud7-bottom {
-  position: absolute;
-  overflow: hidden;
-  width: 1900px;
-  transform: translate(-50%, -50%);
-  z-index: 24;
-  left: calc(50% - 300px);
-  top: calc(50% + 2550px);
-}
-
-.events-map-cloud8-bottom {
-  position: absolute;
-  overflow: hidden;
-  width: 1900px;
-  transform: translate(-50%, -50%);
-  z-index: 24;
-  left: calc(50%);
-  top: calc(50% + 2550px);
-}
-
-.events-map-cloud9-bottom {
-  position: absolute;
-  overflow: hidden;
-  width: 1900px;
-  transform: translate(-50%, -50%);
-  z-index: 24;
-  left: calc(50% - 700px);
-  top: calc(50% + 2650px);
-}
-
-#events-map-ul1 {
-  list-style: none;
+.events-map-ul{
   position: relative;
-  top: 10rem;
-  width: 100%;
+  width: 100vw;
   display: flex;
   overflow: visible;
   text-align: center;
   justify-content: space-evenly;
   padding: 0px 10px;
+  flex-wrap: wrap;
+}
+
+#events-map-ul1 {
+  top: 10rem;
 }
 
 #events-map-ul2 {
-  list-style: none;
-  position: relative;
   top: 15rem;
-  width: 100vw;
-  display: flex;
-  overflow: visible;
-  justify-content: space-evenly;
-  padding: 0px 10px;
 }
 
 #events-map-ul3 {
-  list-style: none;
-  position: relative;
   top: 20rem;
-  width: 100vw;
-  display: flex;
-  overflow: visible;
-  justify-content: space-evenly;
-  padding: 0px 10px;
 }
 
 .events-map-container {

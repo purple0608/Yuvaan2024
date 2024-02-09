@@ -239,4 +239,25 @@
     height: 57px;
     margin: 10px 0px;
   }
+
+  .event-global-timeline-button {
+    width: auto;
+    height: auto;
+    bottom: 6vh;
+    left: 7vw;
+    font-size: 20px;
+  padding: 6px 6px;
+    
+  }
+  .arrow {
+                width: 24px;
+                height: 24px;
+                display: flex;
+                padding-top: 6px;
+                padding-bottom: 0px;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+                
+              }
 }

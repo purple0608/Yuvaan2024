@@ -12,8 +12,11 @@ function Events() {
     <div className="events-parent">
       <Mountains />
           <Cards />
-          <button onClick={()=>{goToTimeline()}} className={isMobile ? "event-void":"event-global-timeline-button"}>
-        Timeline
+          <button onClick={()=>{goToTimeline()}} className="event-global-timeline-button">
+          {isMobile ?
+              <svg class="arrow up" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="5 0 50 80" xml:space="preserve">
+              <polyline fill="none" stroke="#c89b3c" stroke-width="16" stroke-linecap="round" stroke-linejoin="round" points="0.375, 35.375 28.375, 0.375 58.67, 35.375 " />
+              </svg>:"Timeline"}
       </button>
     </div>
   );
