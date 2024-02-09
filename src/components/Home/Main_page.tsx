@@ -5,6 +5,9 @@ import "/src/assets/main_page/main_page.css";
 import text from "/src/assets/main_page/images/text4.png";
 import text1 from "/src/assets/main_page/images/text1.png";
 import text2 from "/src/assets/main_page/images/text3.png";
+import yuvaan from "/src/assets/main_page/images/yuvaan-head.png";
+import presents from "/src/assets/main_page/images/presents.png";
+import march from "/src/assets/main_page/images/date.png";
 
 import video from "/src/assets/main_page/images/background_video.mp4";
 import Navbar from "/src/components/Navbar/Navbar";
@@ -43,21 +46,21 @@ function Main_page() {
               <MyVideo />
               <div className="fp-centered-above">
                 <img
-                  src={text1}
+                  src={presents}
                   alt="Centered Image"
                   className="fp-centered-image"
                 />
               </div>
               <div className="fp-centered-content">
                 <img
-                  src={text}
+                  src={yuvaan}
                   alt="Centered Image"
                   className="fp-centered-image"
                 />
               </div>
               <div className="fp-centered-below">
                 <img
-                  src={text2}
+                  src={march}
                   alt="Centered Image"
                   className="fp-centered-image"
                 />

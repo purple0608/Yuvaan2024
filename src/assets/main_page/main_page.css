@@ -2,6 +2,10 @@
 body {
   cursor: url("../public/cursor.png"), auto;
 }
+
+.zoom-video {
+  transform: scale(0.8);
+}
 /* {
   margin: 0;
   padding: 0;
@@ -67,8 +71,12 @@ body {
 }
 .fp-centered-content {
   position: absolute;
+  width: 150% !important;
   top: 75%;
   left: 52%;
+  margin-top: 2rem 0;
+  margin-bottom: 2rem 0;
+  width: 30rem;
   transform: translate(-50%, -50%);
   text-align: center;
   z-index: 1; /* Ensure the centered content is above the video */
@@ -76,17 +84,20 @@ body {
 }
 .fp-centered-above {
   position: absolute;
-  top: 62%;
+  margin-bottom: 2rem 0;
+  top: 55%;
   left: 52%;
   transform: translate(-50%, -50%);
   text-align: center;
   z-index: 1; /* Ensure the centered content is above the video */
   /* box-shadow: 0 0 20px rgba(255, 223, 0, 0.8); */
 }
+
 .fp-centered-below {
   position: absolute;
-  top: 90%;
+  top: 94%;
   left: 52%;
+  width: 22rem;
   transform: translate(-50%, -50%);
   text-align: center;
   z-index: 1; /* Ensure the centered content is above the video */
