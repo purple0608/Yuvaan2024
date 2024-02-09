@@ -6,23 +6,21 @@ import Banoth from "../../../assets/teams/MnP/Banoth Sai Siddartha.jpg";
 import Hardik from "../../../assets/teams/MnP/Hardik Srivastav.jpg";
 import Ishaan from "../../../assets/teams/MnP/Ishaan Das.jpg";
 import Khushi from "../../../assets/teams/MnP/Khushi Mandal.jpg";
-import Kiran from "../../../assets/teams/MnP/Kiran Kr Rout.jpg"
+import Kiran from "../../../assets/teams/MnP/Kiran Kr Rout.jpg";
 import Rashi from "../../../assets/teams/MnP/Rashi Tiwari.jpg";
 import "../team.css"; // Make sure to import or include your CSS file
 
 const Team = () => {
   return (
-    <div>
+    <div className="tm-main">
       <div className="et-box">
-      <h1 className="title" style={{color: 'white',
-          textAlign: 'center'}}>Media And Publicity</h1>
+        <h1 className="title" style={{ color: "white", textAlign: "center" }}>
+          Media And Publicity
+        </h1>
 
         <div className="et-card">
           <div className="et-imgBox">
-            <img
-              src={Roshan}
-              alt="some image"
-            />
+            <img src={Roshan} alt="some image" />
           </div>
           <div className="et-details">
             <h2>
@@ -34,10 +32,7 @@ const Team = () => {
 
         <div className="et-card">
           <div className="et-imgBox">
-            <img
-              src={Sunny}
-              alt="some image"
-            />
+            <img src={Sunny} alt="some image" />
           </div>
           <div className="et-details">
             <h2>
@@ -49,10 +44,7 @@ const Team = () => {
 
         <div className="et-card">
           <div className="et-imgBox">
-            <img
-              src={Aditya}
-              alt="some image"
-            />
+            <img src={Aditya} alt="some image" />
           </div>
           <div className="et-details">
             <h2>
@@ -64,10 +56,7 @@ const Team = () => {
 
         <div className="et-card">
           <div className="et-imgBox">
-            <img
-              src={Banoth}
-              alt="some image"
-            />
+            <img src={Banoth} alt="some image" />
           </div>
           <div className="et-details">
             <h2>
@@ -79,10 +68,7 @@ const Team = () => {
 
         <div className="et-card">
           <div className="et-imgBox">
-            <img
-              src={Hardik}
-              alt="some image"
-            />
+            <img src={Hardik} alt="some image" />
           </div>
           <div className="et-details">
             <h2>
@@ -94,10 +80,7 @@ const Team = () => {
 
         <div className="et-card">
           <div className="et-imgBox">
-            <img
-              src={Ishaan}
-              alt="some image"
-            />
+            <img src={Ishaan} alt="some image" />
           </div>
           <div className="et-details">
             <h2>
@@ -109,10 +92,7 @@ const Team = () => {
 
         <div className="et-card">
           <div className="et-imgBox">
-            <img
-              src={Khushi}
-              alt="some image"
-            />
+            <img src={Khushi} alt="some image" />
           </div>
           <div className="et-details">
             <h2>
@@ -124,11 +104,7 @@ const Team = () => {
 
         <div className="et-card">
           <div className="et-imgBox">
-            <img
-              src={Kiran}
-              alt="some image"
-              
-            />
+            <img src={Kiran} alt="some image" />
           </div>
           <div className="et-details">
             <h2>
@@ -140,10 +116,7 @@ const Team = () => {
 
         <div className="et-card">
           <div className="et-imgBox">
-            <img
-              src={Rashi}
-              alt="some image"
-            />
+            <img src={Rashi} alt="some image" />
           </div>
           <div className="et-details">
             <h2>

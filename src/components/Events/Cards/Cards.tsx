@@ -34,8 +34,9 @@ function Cards() {
   const tl = useRef<GSAPTimeline>();
 
   const handleHeroChange = (i: number) => {
+    console.log("hero changing", i);
     if (i - 1 >= 0) {
-      setHeroData(Data[i - 1]);
+      setHeroData(data[i - 1]);
     }
   };
 
@@ -75,10 +76,10 @@ function Cards() {
           trigger: hero.current,
           pin: pinWrap.current,
           start: "top top",
-          end: "+=12000",
+          end: "+=20000",
           scrub: true,
           snap: {
-            snapTo: [0.15, 0.5, 0.85],
+            snapTo: [0.07, 0.18, 0.3, 0.42, 0.54, 0.66, 0.77, 0.88, 1],
             duration: 0.5,
             delay: 0,
             ease: "power1.inOut",
@@ -86,8 +87,7 @@ function Cards() {
         },
       });
       tl.current.data = heroData;
-
-      for (let i = 1; i < 4; i++) {
+      for (let i = 1; i <= data.length; i++) {
         tl.current
           .addLabel("start-" + i)
           .to(hero.current!, showSettingSpecial(i))
@@ -95,11 +95,14 @@ function Cards() {
         for (let j = 0; j < little_heroes?.length!; j++) {
           tl.current.to(little_heroes![j], { opacity: 1 }, "display-" + i);
         }
-        tl.current.to(hero.current!, showSetting).addLabel("end-" + i);
-        for (let j = 0; j < little_heroes?.length!; j++) {
-          tl.current.to(little_heroes![j], { opacity: 0 }, "end-" + i);
+        if (i != data.length) {
+          tl.current.to(hero.current!, showSetting).addLabel("end-" + i);
+          for (let j = 0; j < little_heroes?.length!; j++) {
+            tl.current.to(little_heroes![j], { opacity: 0 }, "end-" + i);
+          }
+
+          tl.current.to(hero.current!, hideSetting(i + 1));
         }
-        tl.current.to(hero.current!, hideSetting(i + 1));
       }
     },
     { scope: hero },
@@ -107,7 +110,7 @@ function Cards() {
 
   return (
     <>
-       <Map timeline={tl} />
+      <Map timeline={tl} />
       <div className="event-pinWrapper" ref={pinWrap}>
         <div
           id="hero"

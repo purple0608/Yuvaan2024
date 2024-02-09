@@ -18,7 +18,9 @@ const Mdia_Pub = lazy(() => import("./components/Team/MediaAndPublicity/team"));
 const Spons = lazy(() => import("./components/Team/Sponsorship/team"));
 const Fac_Adv = lazy(() => import("./components/Team/FacultyAdvisors/team"));
 const SGC = lazy(() => import("./components/Team/SGC/team"));
-const Evnt_Mngment = lazy(() => import("./components/Team/EventManagment/team"));
+const Evnt_Mngment = lazy(
+  () => import("./components/Team/EventManagment/team"),
+);
 const PCR = lazy(() => import("./components/Team/PCR/team"));
 
 const App = () => {

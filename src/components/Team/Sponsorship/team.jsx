@@ -10,24 +10,33 @@ import Harshit from "../../../assets/teams/Sponsorship/Harshit Prajapati.jpg";
 import Kart from "../../../assets/teams/Sponsorship/Kartik Sehgal.jpg";
 import Kunsh from "../../../assets/teams/Sponsorship/Kunsh Taneja.jpg";
 import Madhur from "../../../assets/teams/Sponsorship/Madhur Jain.jpg";
-import  Pallela from "../../../assets/teams/Sponsorship/Pallela.jpg";
+import Pallela from "../../../assets/teams/Sponsorship/Pallela.jpg";
 import Rit from "../../../assets/teams/Sponsorship/Ritik Raj.jpg";
-import Ubaid from "../../../assets/teams/Sponsorship/Ubaid Abbas.jpg";  
+import Ubaid from "../../../assets/teams/Sponsorship/Ubaid Abbas.jpg";
+import Pulkit from "../../../assets/teams/Sponsorship/Pulkit Bharti.jpg";
 import "../team.css"; // Make sure to import or include your CSS file
 
 const Team = () => {
   return (
-    <div>
+    <div className="tm-main">
       <div className="et-box">
-      <h1 className="title" style={{color: 'white',
-          textAlign: 'center'}}>Sponsors</h1>
-
+        <h1 className="title" style={{ color: "white", textAlign: "center" }}>
+          Sponsors
+        </h1>
         <div className="et-card">
           <div className="et-imgBox">
-            <img
-              src={Navya}
-              alt="some image"
-            />
+            <img src={Pulkit} alt="some image" />
+          </div>
+          <div className="et-details">
+            <h2>
+              Pulkit Bharti <br />
+              <span>Team Head</span>
+            </h2>
+          </div>
+        </div>
+        <div className="et-card">
+          <div className="et-imgBox">
+            <img src={Navya} alt="some image" />
           </div>
           <div className="et-details">
             <h2>
@@ -39,10 +48,7 @@ const Team = () => {
 
         <div className="et-card">
           <div className="et-imgBox">
-            <img
-              src={Abhishek}
-              alt="some image"
-            />
+            <img src={Abhishek} alt="some image" />
           </div>
           <div className="et-details">
             <h2>
@@ -54,10 +60,7 @@ const Team = () => {
 
         <div className="et-card">
           <div className="et-imgBox">
-            <img
-              src={Adi}
-              alt="some image"
-            />
+            <img src={Adi} alt="some image" />
           </div>
           <div className="et-details">
             <h2>
@@ -69,10 +72,7 @@ const Team = () => {
 
         <div className="et-card">
           <div className="et-imgBox">
-            <img
-              src={Ankur}
-              alt="some image"
-            />
+            <img src={Ankur} alt="some image" />
           </div>
           <div className="et-details">
             <h2>
@@ -84,10 +84,7 @@ const Team = () => {
 
         <div className="et-card">
           <div className="et-imgBox">
-            <img
-              src={Aryan}
-              alt="some image"
-            />
+            <img src={Aryan} alt="some image" />
           </div>
           <div className="et-details">
             <h2>
@@ -99,10 +96,7 @@ const Team = () => {
 
         <div className="et-card">
           <div className="et-imgBox">
-            <img
-              src={Dinakar}
-              alt="some image"
-            />
+            <img src={Dinakar} alt="some image" />
           </div>
           <div className="et-details">
             <h2>
@@ -114,11 +108,7 @@ const Team = () => {
 
         <div className="et-card">
           <div className="et-imgBox">
-            <img
-              src={Harinarayan}
-              alt="some image"
-              
-            />
+            <img src={Harinarayan} alt="some image" />
           </div>
           <div className="et-details">
             <h2>
@@ -130,10 +120,7 @@ const Team = () => {
 
         <div className="et-card">
           <div className="et-imgBox">
-            <img
-              src={Harshit}
-              alt="some image"
-            />
+            <img src={Harshit} alt="some image" />
           </div>
           <div className="et-details">
             <h2>
@@ -145,10 +132,7 @@ const Team = () => {
 
         <div className="et-card">
           <div className="et-imgBox">
-            <img
-              src={Kart}
-              alt="some image"
-            />
+            <img src={Kart} alt="some image" />
           </div>
           <div className="et-details">
             <h2>
@@ -160,10 +144,7 @@ const Team = () => {
 
         <div className="et-card">
           <div className="et-imgBox">
-            <img
-              src={Kunsh}
-              alt="some image"
-            />
+            <img src={Kunsh} alt="some image" />
           </div>
           <div className="et-details">
             <h2>
@@ -175,10 +156,7 @@ const Team = () => {
 
         <div className="et-card">
           <div className="et-imgBox">
-            <img
-              src={Madhur}
-              alt="some image"
-            />
+            <img src={Madhur} alt="some image" />
           </div>
           <div className="et-details">
             <h2>
@@ -190,10 +168,7 @@ const Team = () => {
 
         <div className="et-card">
           <div className="et-imgBox">
-            <img
-              src={Pallela}
-              alt="some image"
-            />
+            <img src={Pallela} alt="some image" />
           </div>
           <div className="et-details">
             <h2>
@@ -205,10 +180,7 @@ const Team = () => {
 
         <div className="et-card">
           <div className="et-imgBox">
-            <img
-              src={Rit}
-              alt="some image"
-            />
+            <img src={Rit} alt="some image" />
           </div>
           <div className="et-details">
             <h2>
@@ -220,10 +192,7 @@ const Team = () => {
 
         <div className="et-card">
           <div className="et-imgBox">
-            <img
-              src={Ubaid}
-              alt="some image"
-            />
+            <img src={Ubaid} alt="some image" />
           </div>
           <div className="et-details">
             <h2>

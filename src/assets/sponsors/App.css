@@ -1,11 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;700;900&display=swap");
 
-
-.sponsors_downline{max-width: 90vw;}
-  .sponsors_heading{max-width: 90vw;}
-  .sponsors_imgslider{
-    max-width: 80vw;
-  }
+.sponsors_downline {
+  max-width: 90vw;
+}
+.sponsors_heading {
+  max-width: 90vw;
+}
+.slick-slide img {
+  margin: auto;
+  width: 70%;
+  height: 70%;
+}
+.sponsors-tag {
+  text-align: center;
+}
 .sponsors-wrapper {
   overflow-x: hidden;
 }
@@ -120,24 +128,53 @@
   font-size: calc(var(--index) * 0.75);
   letter-spacing: calc(var(--index) / 37.5);
 }
+.sponsors-register-button {
+  margin-top: 50px;
+  width: 200px;
+  height: 70px;
+  align-self: center;
+  font-size: 32px;
+  font-family: enchantedRegular;
+  padding: 12px 32px;
+  background-color: rgb(30, 35, 40);
+  color: rgb(200, 155, 60);
+  border: 3px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to bottom, #c89b3c, #785a28);
+  transition: 0.5s;
+  text-align: center;
+}
+
+.sponsors-register-button:hover {
+  background-color: rgb(50, 55, 60);
+  color: whitesmoke;
+}
+.sponsors-button {
+  display: flex;
+  justify-content: space-evenly;
+}
 
 @media screen and (max-width: 768px) {
   .sponsors-title {
     font-size: 24px;
   }
-  .sponsors_downline{max-width: 90vw;}
-  .sponsors_heading{max-width: 90vw;}
+  .sponsors_downline {
+    max-width: 90vw;
+  }
+  .sponsors_heading {
+    max-width: 90vw;
+  }
 
   .sponsors-subtitle {
     font-size: 14px;
   }
-  
+
   .sponsors-article {
     width: 100vw;
     justify-content: center;
     align-items: center;
   }
-  
+
   .sponsors-article-content {
     border: 0px solid;
     width: 75vw;
@@ -160,6 +197,11 @@
     font-size: 12px;
   }
 
+  .slick-slide img {
+    margin: auto;
+    width: 100%;
+    height: 80%;
+  }
   .sponsors-image {
     max-width: 100%;
     height: auto;
@@ -169,7 +211,14 @@
     justify-content: center;
     align-items: center;
   }
+  .sponsors-register-button {
+    font-size: 20px;
+    width: 140px;
+    height: 57px;
+    margin: 20px 0px;
+  }
 }
-.navbar{
-  z-index:100;
+
+.navbar {
+  z-index: 100;
 }
