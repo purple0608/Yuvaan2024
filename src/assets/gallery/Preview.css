@@ -108,7 +108,7 @@ body {
 
 .swiper-slide img {
   height: 100%;
-  width: 60rem;
+  width: 45rem;
   object-fit: cover;
   border-radius: 0.5rem;
   border: 4px solid white;
@@ -161,8 +161,12 @@ body {
   justify-content: center;
 }
 
+.preview_past-events img {
+  width: 50rem;
+}
+
 .preview-divider {
-  width: 70rem;
+  width: 60rem;
 }
 
 @media only screen and (max-width: 375px) {

@@ -11,10 +11,11 @@
 
 .timeline__content-desc {
   margin: 0;
-  font-size: 24px;
+  font-size: 20px;
   box-sizing: border-box;
-  color: rgba(255, 255, 255, 0.75);
+  color: rgba(255, 255, 255, 0.5);
   line-height: 25px;
+  font-weight: 100;
   margin-top: 10px;
 }
 
@@ -132,7 +133,7 @@
   .timeline-item {
     align-self: baseline !important;
     width: 100%;
-    padding: 20px 30px 250px 75px;
+    padding: 200px 30px 250px 75px;
   }
 
   .timeline-item:before {
@@ -141,7 +142,7 @@
     margin-top: 4px !important;
     text-align: center !important;
     font-size: 20px;
-    top: 220px !important;
+    top: 120px !important;
     font-weight: 700;
     width: 100%;
     display: flex;
@@ -174,5 +175,4 @@
   .timeline-item--active .timeline__content-title {
     margin: -50px 0 20px 0;
   }
-
 }

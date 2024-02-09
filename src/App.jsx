@@ -11,6 +11,7 @@ import NavBar from "./components/Navbar/Navbar";
 import "./App.css";
 import Fireflies from "./Firefly";
 import Flipbook from "./components/Team/BookStack";
+import Loader from "./components/Loader/Loader";
 
 // Dynamic imports for team components
 const Web_Cre = lazy(() => import("./components/Team/WebAndCreatives/team"));
