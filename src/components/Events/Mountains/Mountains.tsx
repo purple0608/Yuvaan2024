@@ -1,6 +1,7 @@
 import gsap from "gsap";
-import { useEffect, useState, useRef, useCallback } from "react";
+import { useEffect, useState, useRef, useCallback, lazy } from "react";
 import "/src/assets/events/Mountains.css";
+
 
 import background from "/src/assets/events/images_parallax/background.png";
 import glow from "/src/assets/events/images_parallax/glow.png";
@@ -120,7 +121,7 @@ function Mountains() {
   return (
     <div>
       <main ref={mount}>
-        <img
+       <img
           src={background}
           data-speedz="0"
           data-speedx="0.3"

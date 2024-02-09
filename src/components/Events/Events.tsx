@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, Suspense, lazy } from "react";
 import Cards from "./Cards/Cards";
-import Mountains from "./Mountains/Mountains";
 import usePreventZoom from "./../../assets/utils/PreventZoom.ts";
 import Loader from "/src/components/loader/Loader";
+import Mountains from "./Mountains/Mountains";
 
 const event = new Event('onLoaderClose');
 
@@ -15,11 +15,11 @@ function Events() {
       behavior: "smooth",
     });
   };
-  const [loading, setLoading] = useState(true);
+   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const loadData = async () => {
-        await new Promise((resolve) => setTimeout(resolve, 5000));
+        await new Promise((resolve) => setTimeout(resolve, 3800));
         setLoading(false);
         window.dispatchEvent(event);
     };
@@ -28,8 +28,8 @@ function Events() {
 
   if (loading) {
     return <Loader />;
-  }
-  return (
+  } 
+    return (
     <div className="events-parent">
           <Mountains />
           <Cards />
@@ -39,7 +39,7 @@ function Events() {
               <polyline fill="none" stroke="#c89b3c" strokeWidth="16" strokeLinecap="round" strokeLinejoin="round" points="0.375, 35.375 28.375, 0.375 58.67, 35.375 " />
               </svg>:"Timeline"}
       </button>
-    </div>
+            </div>
   );
 }
 
