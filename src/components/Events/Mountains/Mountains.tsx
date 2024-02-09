@@ -37,6 +37,7 @@ function Mountains() {
   const [parallaxElements, setParallaxElements] = useState<HTMLElement[]>(
     Array.from(document.querySelectorAll(".parallax")),
   );
+    
 
   useEffect(() => {
     const elements: NodeListOf<HTMLElement> =
@@ -45,7 +46,8 @@ function Mountains() {
   }, []);
 
   useEffect(() => {
-    const handleLoad = () => {
+      const handleLoad = (e) =>{
+          console.log(e);
       document
         .querySelectorAll<HTMLElement>(".parallax")
         .forEach((el: HTMLElement) => {
@@ -56,10 +58,10 @@ function Mountains() {
         });
       window.scrollTo(0, 0);
     };
-    window.addEventListener("load", handleLoad);
+    window.addEventListener("onLoaderClose", handleLoad);
 
     return () => {
-      window.removeEventListener("load", handleLoad);
+      window.removeEventListener("onLoaderClose", handleLoad);
     };
   }, [parallaxElements]);
 

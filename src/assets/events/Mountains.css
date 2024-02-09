@@ -322,6 +322,26 @@ main {
     height: auto;
   }
 
+  .text {
+  position: absolute;
+  z-index: 15;
+  top: calc(50% - 160px);
+  transform: translate(-50%, -50%);
+  left: 50%;
+  text-align: center;
+  color: #fff;
+  }
+  .text2 {
+  position: absolute;
+  z-index: 100;
+  top: calc(50%);
+  transform: translate(-50%, -50%);
+  left: 50%;
+  text-align: center;
+  color: #f0e6d2;
+}
+
+
   .text2 p {
     font-weight: 50;
     font-size: 5vw;

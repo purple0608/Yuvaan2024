@@ -1,4 +1,5 @@
 import "/src/assets/events/Map.css";
+import "/src/assets/events/Clouds.css";
 import { labelToScroll } from "../../../assets/utils/GSAPScroll.ts";
 import { gsap } from "gsap";
 import { ScrollToPlugin } from "gsap/all";
@@ -85,9 +86,10 @@ const MapItems = ({ timeline }: { timeline: GSAPTimeline }) => {
         window.open(link, '_blank').focus()
     }
   };
+    const flag = window.innerWidth <= 1520;
   return (
     <>
-      <ul id="events-map-ul1">
+      <div id="events-map-ul1" className= "events-map-ul">
         {mapData1.map((item, index) => (
           <button
             key={index}
@@ -101,8 +103,8 @@ const MapItems = ({ timeline }: { timeline: GSAPTimeline }) => {
             <div>{item.event}</div>
           </button>
         ))}
-      </ul>
-      <ul id="events-map-ul2">
+      </div>
+      <div id="events-map-ul2" className= "events-map-ul">
         {mapData2.map((item, index) => (
           <button
             key={index}
@@ -116,8 +118,8 @@ const MapItems = ({ timeline }: { timeline: GSAPTimeline }) => {
             <div>{item.event}</div>
           </button>
         ))}
-      </ul>
-      <ul id="events-map-ul3">
+      </div>
+      <div id="events-map-ul3" className= "events-map-ul">
         {mapData3.map((item, index) => (
           <button
             key={index}
@@ -131,7 +133,7 @@ const MapItems = ({ timeline }: { timeline: GSAPTimeline }) => {
             <div>{item.event}</div>
           </button>
         ))}
-      </ul>
+      </div>
     </>
   );
 };
