@@ -66,8 +66,9 @@
 
 .event-card > .event-description {
   width: 30vw;
-  height: 60vh;
-  top: -20vh;
+  height: 65vh;
+  position: relative;
+  top: -5vh;
   background-color: rgba(0, 0, 0, 0.47);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
@@ -155,12 +156,12 @@
 }
 
 .event-global-timeline-button {
-    width: 200px;
-  height: 70px;
+    width: 170px;
+  height: 60px;
   align-self: center;
   font-size: 32px;
   font-family: enchantedRegular;
-  padding: 12px 32px;
+  padding: 4px 16px;
   background-color: rgb(30, 35, 40);
   color: rgb(200, 155, 60);
   border: 3px solid;

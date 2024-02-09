@@ -12,7 +12,7 @@ const Loader = () => {
             <path
               d="M0 71.0344C0 11.7849 73.6393 -15.5736 112.324 29.3037V29.3037C134.143 54.6151 171.778 58.8457 198.672 39.0103L206.818 33.002C231.973 14.4496 266.21 14.1976 291.635 32.3779V32.3779C318.355 51.4837 354.605 50.1371 379.833 29.1014L397.314 14.5252C414.946 -0.176172 439.21 -4.04721 460.54 4.43827V4.43827C484.364 13.9156 500 36.963 500 62.6028V399H0V71.0344Z"
               fill="#183D3D"
-              fill-opacity="0.5"
+              fillOpacity="0.5"
             />
           </symbol>
           <symbol id="bubbles">
@@ -36,7 +36,7 @@ const Loader = () => {
           </defs>
 
           <g className="loader">
-            <g id="liquid1-clip" clip-path="url(#circleClip)">
+            <g id="liquid1-clip" clipPath="url(#circleClip)">
               <g>
                 <use id="liquid1" href="#liquid" transform="translate(0,180)" />
                 <use
@@ -46,12 +46,12 @@ const Loader = () => {
                 />
               </g>
             </g>
-            <g id="liquid2-clip" clip-path="url(#circleClip)">
+            <g id="liquid2-clip" clipPath="url(#circleClip)">
               <g>
                 <use
                   id="liquid2"
                   href="#liquid"
-                  fill-opacity="0.15"
+                  fillOpacity="0.15"
                   transform="translate(0,175)"
                 />
                 <use

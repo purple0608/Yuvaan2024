@@ -12,7 +12,7 @@ import Page2 from "/src/components/Home/Component1/Page2";
 import MyVideo from "./Component1/MyVideo";
 import MainMap from "./OpeningMap/MainMap";
 import MainSlider from "./Slider/MainSlider";
-import Loader from "/src/components/Loader/Loader";
+import Loader from "/src/components/loader/Loader";
 
 function Main_page() {
   const wrapperRef = useRef<HTMLDivElement>(null);
