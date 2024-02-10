@@ -2,9 +2,9 @@ import React, { useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "/src/assets/main_page/main_page.css";
-import text from "/src/assets/main_page/images/text4.png";
-import text1 from "/src/assets/main_page/images/text1.png";
-import text2 from "/src/assets/main_page/images/text3.png";
+import text from "/src/assets/main_page/images/text5.png";
+import text1 from "/src/assets/main_page/images/text7.png";
+import text2 from "/src/assets/main_page/images/text6.png";
 
 import video from "/src/assets/main_page/images/background_video.mp4";
 import Navbar from "/src/components/Navbar/Navbar";

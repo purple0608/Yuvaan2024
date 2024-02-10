@@ -73,7 +73,7 @@
 }
 .fp-centered-above {
   position: absolute;
-  top: 62%;
+  top: 58%;
   left: 52%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -82,7 +82,7 @@
 }
 .fp-centered-below {
   position: absolute;
-  top: 90%;
+  top: 92%;
   left: 52%;
   transform: translate(-50%, -50%);
   text-align: center;
