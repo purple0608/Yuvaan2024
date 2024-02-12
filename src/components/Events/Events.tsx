@@ -19,9 +19,11 @@ function Events() {
 
   useEffect(() => {
     const loadData = async () => {
+
         await new Promise((resolve) => setTimeout(resolve, 5000));
         setLoading(false);
         window.dispatchEvent(event);
+
     };
     loadData();
   }, []);
