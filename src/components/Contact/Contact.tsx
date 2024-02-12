@@ -1,6 +1,6 @@
 import React from "react";
 import "/src/assets/contact/contact.css";
-import contactHeadImg from "/src/assets/contact/images/contact-logo.png";
+import contactHeadImg from "/src/assets/contact/images/contact.png";
 import hrImg from "/src/assets/contact/images/decorator-hr-lg.png";
 import brImg from "/src/assets/contact/images/decorator-br.png";
 
@@ -15,7 +15,7 @@ const Contact = () => {
             <img id="hr" src={hrImg} alt="Hr-Ruler" />
           </div>
           <div className="screen-witcher">
-            <div className="screen-header-witcher">
+            {/* <div className="screen-header-witcher">
               <div className="screen-header-left-witcher">
                 <div className="screen-header-button-witcher close-witcher"></div>
                 <div className="screen-header-button-witcher maximize-witcher"></div>
@@ -26,28 +26,40 @@ const Contact = () => {
                 <div className="screen-header-ellipsis-witcher"></div>
                 <div className="screen-header-ellipsis-witcher"></div>
               </div>
-            </div>
+            </div> */}
 
             <div className="screen-body-witcher">
               <div className="screen-body-item-witcher left-witcher">
                 <div className="app-title-witcher">
-                  <span>CONTACT</span>
-                  <span>US</span>
+                  <span>Team Yuvaan</span>
                 </div>
                 <div className="app-contact-witcher">
-                  <h1>Media & Publicity</h1>
+                  <h1 className="team-header">
+                    Media & Publicity <span className="span-emoji"></span>
+                  </h1>
+                  <h2>
+                    <span className="heads-name">Roshan Raj :</span>
+                    <span className="heads-contact"> 97715 29248</span>
+                  </h2>
+                  <h2>
+                    <span className="heads-name">Sunny Mallik :</span>
+                    <span></span>81086 39641
+                  </h2>
                 </div>
                 <div className="app-contact-witcher">
-                  <h2>Roshan Raj : 97715 29248</h2>
-                  <h2>Sunny Mallik : 81086 39641</h2>
+                  <h1 className="team-header">
+                    Public Relations <span className="span-emoji"></span>
+                  </h1>
+                  <h2>
+                    <span className="heads-name">Tashyab Raj :</span> <span></span>93342
+                    82666
+                  </h2>
+                  <h2>
+                    <span className="heads-name">Prateek :</span> <span></span> 83510 81196
+                  </h2>
                 </div>
-                <div className="app-contact-witcher">
-                  <h1>PR & Marketing</h1>
-                </div>
-                <div className="app-contact-witcher">
-                  <h2>Tashyab Raj : 93342 82666</h2>
-                  <h2>Prateek : 83510 81196</h2>
-                </div>
+              </div>
+              <div className="screen-body-item-witcher">
                 <div>
                   <a
                     href="https://instagram.com/yuvaan_iiitg?igshid=OGQ5ZDc2ODk2ZA=="
@@ -101,9 +113,34 @@ const Contact = () => {
                     ></i>
                   </a>
                 </div>
+                <div className="app-contact-witcher">
+                  <h1 className="team-header">
+                    Event Management <span className="span-emoji"></span>
+                  </h1>
+                  <h2>
+                    <span className="heads-name">Rallabandi Sindhu :</span>
+                    <span></span>91002 71716
+                  </h2>
+                  <h2>
+                    <span className="heads-name">Shreya Gupta :</span> 6284 400
+                    235
+                  </h2>
+                </div>
+                <div className="app-contact-witcher">
+                  <h1 className="team-header">
+                    Sponsorship <span className="span-emoji"></span>
+                  </h1>
+                  <h2>
+                    <span className="heads-name">Navya Dhawde :</span> 97550
+                    77877
+                  </h2>
+                  <h2>
+                    <span className="heads-name">Pulkit Bharti :</span> 63880 35
+                    327
+                  </h2>
+                </div>
               </div>
-              <div className="screen-body-item-witcher">
-                <div className="app-form-witcher">
+              {/* <div className="app-form-witcher">
                   <div className="app-form-group-witcher">
                     <input
                       className="app-form-control-witcher"
@@ -138,8 +175,7 @@ const Contact = () => {
                       SEND
                     </button>
                   </div>
-                </div>
-              </div>
+                </div> */}
             </div>
           </div>
           <div className="container-fluid credits-witcher">

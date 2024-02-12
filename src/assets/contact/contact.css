@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Tangerine:wght@700&display=swap');
+
 .wrapper {
   /* background: linear-gradient(to right, #ea1d6f 0%, #eb466b 100%); */
   font-size: 12px;
@@ -27,7 +29,7 @@
   position: relative;
   /* background: #3e3e3e; */
   border: 1px solid #ffd700; /* Thin golden border */
-
+  padding:0 10px 20px 10px;
   background:
     linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url("path/to/your/image.jpg") center/cover no-repeat;
@@ -36,15 +38,10 @@
   border-radius: 15px;
 }
 .screen-witcher:hover {
-  box-shadow: 0 0 10px #ffd700; /* Add a subtle glow effect on hover */
+  box-shadow: 0 0 10px #ffd700;
 
-  backdrop-filter: blur(2px); /* Adjust the blur value for hover state */
-  background-color: rgba(
-    255,
-    255,
-    255,
-    0.2
-  ); /* Lighter background color on hover */
+  backdrop-filter: blur(2px);
+  background-color: rgba(255, 255, 255, 0.2);
 }
 .screen-witcher:after {
   content: "";
@@ -121,7 +118,7 @@
 
 .screen-body-item-witcher {
   flex: 1;
-  padding: 50px;
+  padding: 35px;
 }
 
 .screen-body-item-witcher.left-witcher {
@@ -133,20 +130,21 @@
   display: flex;
   flex-direction: column;
   position: relative;
-  color: #ffd700;
+  color: #FFD966;
   font-size: 26px;
+  margin-bottom: 10px;
 }
 
-.app-title-witcher:after {
+/* .app-title-witcher:after {
   content: "";
   display: block;
   position: absolute;
   left: 0;
   bottom: -10px;
-  width: 25px;
+  width: 85px;
   height: 4px;
   background: #ea1d6f;
-}
+} */
 
 .app-contact-witcher {
   margin-top: auto;
@@ -202,8 +200,8 @@
 }
 
 .font-text {
-  font-size: 16px;
-  margin: 8px 8px 0 0;
+  font-size: 22px;
+  margin: 5px 12px 10px 0;
 }
 .credits-witcher {
   display: flex;
@@ -251,4 +249,35 @@
   position: absolute;
   bottom: 5%;
   width: 26rem;
+}
+
+.team-header {
+  position: relative;
+  font-family: 'Tangerine', cursive;
+  font-size: 1.6rem;
+  color: #FCFFB2;
+}
+
+/* .team-header:after{
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 35px;
+  height: 2px;
+  background: rgba(234, 29, 111, 0.5);
+} */
+
+.span-emoji{
+  font-size:18px;
+}
+
+.heads-name{
+  font-family: 'Tangerine', cursive;
+  font-size: 1rem;
+}
+
+.heads-contact{
+  font-weight: 100;
 }
