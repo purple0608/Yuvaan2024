@@ -2,7 +2,9 @@ import React, { useState, useEffect } from "react";
 import Cards from "./Cards/Cards";
 import Mountains from "./Mountains/Mountains";
 import usePreventZoom from "./../../assets/utils/PreventZoom.ts";
-import Loader from "/src/components/Loader/Loader";
+import Loader from "/src/components/loader/Loader";
+
+const event = new Event('onLoaderClose');
 
 function Events() {
   usePreventZoom();
@@ -17,8 +19,9 @@ function Events() {
 
   useEffect(() => {
     const loadData = async () => {
-      await new Promise((resolve) => setTimeout(resolve, 3000));
-      setLoading(false);
+        await new Promise((resolve) => setTimeout(resolve, 5000));
+        setLoading(false);
+        window.dispatchEvent(event);
     };
     loadData();
   }, []);
@@ -28,15 +31,13 @@ function Events() {
   }
   return (
     <div className="events-parent">
-      <Mountains />
-      <Cards />
-      <button
-        onClick={() => {
-          goToTimeline();
-        }}
-        className={isMobile ? "event-void" : "event-global-timeline-button"}
-      >
-        Timeline
+          <Mountains />
+          <Cards />
+          <button onClick={()=>{goToTimeline()}} className="event-global-timeline-button">
+          {isMobile ?
+              <svg className="arrow up" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="5 0 50 80" xmlSpace="preserve">
+              <polyline fill="none" stroke="#c89b3c" strokeWidth="16" strokeLinecap="round" strokeLinejoin="round" points="0.375, 35.375 28.375, 0.375 58.67, 35.375 " />
+              </svg>:"Timeline"}
       </button>
     </div>
   );
