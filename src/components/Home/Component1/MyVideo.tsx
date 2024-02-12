@@ -39,14 +39,7 @@ const MyVideo: React.FC = () => {
       }}
     >
       {isVideo ? (
-        <video
-          ref={videoRef}
-          autoPlay
-          loop
-          muted
-          playsInline
-          className="zoom-video"
-        >
+        <video ref={videoRef} autoPlay loop muted playsInline>
           <source
             id="video-source"
             src={window.innerWidth > 740 ? video1 : video2}
