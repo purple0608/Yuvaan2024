@@ -1,4 +1,3 @@
-import React, { useState, useEffect } from "react";
 import { EventImgData } from "../../../assets/gallery/EventImgData";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -6,6 +5,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import pastEvents from "/src/components/Gallery/Preview/PastEvents.png";
 import downline from "/src/assets/utils/decorator-hr-lg.png";
+
 import {
   EffectCoverflow,
   Autoplay,
@@ -17,39 +17,9 @@ import { Link } from "react-router-dom";
 import "/src/assets/gallery/Preview.css";
 
 const Preview = () => {
-  const [isArrowVisible, setIsArrowVisible] = useState(true);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollY = window.scrollY;
-
-      // Set a threshold value based on your requirements
-      const threshold = 150;
-
-      // Toggle arrow visibility based on scroll position
-      setIsArrowVisible(scrollY < threshold);
-    };
-
-    // Add scroll event listener
-    window.addEventListener("scroll", handleScroll);
-
-    // Clean up the event listener on component unmount
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
-  const isDesktop = window.innerWidth >= 1024;
 
   return (
     <div className="preview-container">
-      {isArrowVisible && isDesktop && (
-        <svg className="arrows">
-          <path className="a1" d="M0 0 L30 32 L60 0"></path>
-          <path className="a2" d="M0 20 L30 52 L60 20"></path>
-          <path className="a3" d="M0 40 L30 72 L60 40"></path>
-        </svg>
-      )}
       <div className="container"></div>
       <div className="clouds">
         <div className="clouds-1"></div>
@@ -80,7 +50,7 @@ const Preview = () => {
           modifier: 1,
         }}
         autoplay={{
-          delay: 5000,
+          delay: 3000,
           disableOnInteraction: false,
         }}
         pagination={{
@@ -103,7 +73,7 @@ const Preview = () => {
         })}
       </Swiper>
       <Link to={"/timeline"} className="link">
-        <button className="btn view-btn">View More</button>
+        <button className="btn view-btn">Explore</button>
       </Link>
     </div>
   );

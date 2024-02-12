@@ -2,9 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "/src/assets/main_page/main_page.css";
-import text from "/src/assets/main_page/images/text5.png";
-import text1 from "/src/assets/main_page/images/text7.png";
-import text2 from "/src/assets/main_page/images/text6.png";
+
 
 import video from "/src/assets/main_page/images/background_video.mp4";
 import Navbar from "/src/components/Navbar/Navbar";
@@ -43,21 +41,21 @@ function Main_page() {
               <MyVideo />
               <div className="fp-centered-above">
                 <img
-                  src={text1}
+                  src={presents}
                   alt="Centered Image"
                   className="fp-centered-image"
                 />
               </div>
               <div className="fp-centered-content">
                 <img
-                  src={text}
+                  src={yuvaan}
                   alt="Centered Image"
                   className="fp-centered-image"
                 />
               </div>
               <div className="fp-centered-below">
                 <img
-                  src={text2}
+                  src={march}
                   alt="Centered Image"
                   className="fp-centered-image"
                 />
