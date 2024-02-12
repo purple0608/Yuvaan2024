@@ -4,7 +4,6 @@ import contactHeadImg from "/src/assets/contact/images/contact.png";
 import hrImg from "/src/assets/contact/images/decorator-hr-lg.png";
 import brImg from "/src/assets/contact/images/decorator-br.png";
 
-
 const Contact = () => {
   return (
     <div className="wrapper">
@@ -16,7 +15,7 @@ const Contact = () => {
             <img id="hr" src={hrImg} alt="Hr-Ruler" />
           </div>
           <div className="screen-witcher">
-            <div className="screen-header-witcher">
+            {/* <div className="screen-header-witcher">
               <div className="screen-header-left-witcher">
                 <div className="screen-header-button-witcher close-witcher"></div>
                 <div className="screen-header-button-witcher maximize-witcher"></div>
@@ -27,7 +26,7 @@ const Contact = () => {
                 <div className="screen-header-ellipsis-witcher"></div>
                 <div className="screen-header-ellipsis-witcher"></div>
               </div>
-            </div>
+            </div> */}
 
             <div className="screen-body-witcher">
               <div className="screen-body-item-witcher left-witcher">
@@ -39,10 +38,12 @@ const Contact = () => {
                     Media & Publicity <span className="span-emoji"></span>
                   </h1>
                   <h2>
-                    <span className="heads-name">Roshan Raj :</span> 97715 29248
+                    <span className="heads-name">Roshan Raj :</span>
+                    <span className="heads-contact"> 97715 29248</span>
                   </h2>
                   <h2>
-                    <span className="heads-name">Sunny Mallik :</span> 81086 39641
+                    <span className="heads-name">Sunny Mallik :</span>
+                    <span></span>81086 39641
                   </h2>
                 </div>
                 <div className="app-contact-witcher">
@@ -50,10 +51,11 @@ const Contact = () => {
                     Public Relations <span className="span-emoji"></span>
                   </h1>
                   <h2>
-                    <span className="heads-name">Tashyab Raj :</span> 93342 82666
+                    <span className="heads-name">Tashyab Raj :</span> <span></span>93342
+                    82666
                   </h2>
                   <h2>
-                    <span className="heads-name">Prateek :</span> 83510 81196
+                    <span className="heads-name">Prateek :</span> <span></span> 83510 81196
                   </h2>
                 </div>
               </div>
@@ -116,10 +118,12 @@ const Contact = () => {
                     Event Management <span className="span-emoji"></span>
                   </h1>
                   <h2>
-                    <span className="heads-name">Rallabandi Sindhu :</span> 97715 29248
+                    <span className="heads-name">Rallabandi Sindhu :</span>
+                    <span></span>91002 71716
                   </h2>
                   <h2>
-                    <span className="heads-name">Shreya Gupta :</span> 81086 39641
+                    <span className="heads-name">Shreya Gupta :</span> 6284 400
+                    235
                   </h2>
                 </div>
                 <div className="app-contact-witcher">
@@ -127,10 +131,12 @@ const Contact = () => {
                     Sponsorship <span className="span-emoji"></span>
                   </h1>
                   <h2>
-                    <span className="heads-name">Navya Dhawde :</span> 93342 82666
+                    <span className="heads-name">Navya Dhawde :</span> 97550
+                    77877
                   </h2>
                   <h2>
-                    <span className="heads-name">Pulkit Bharti :</span> 83510 81196
+                    <span className="heads-name">Pulkit Bharti :</span> 63880 35
+                    327
                   </h2>
                 </div>
               </div>
