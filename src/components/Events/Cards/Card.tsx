@@ -28,7 +28,7 @@ function Card(props) {
   return (
     <div
       className="event-card"
-      style={{ backgroundImage: "url(" + data.bg + ")" }}
+      style={{ backgroundImage: "url(https://dpqe9pvop7vdk.cloudfront.net/events/"+ data.bg + ")" }}
     >
       <div className="event-titleBox">
         <div className="event-title"> {data.title} </div>

@@ -1,33 +1,32 @@
 import gsap from "gsap";
 import { useEffect, useState, useRef, useCallback, lazy } from "react";
 import "/src/assets/events/Mountains.css";
-
-
-import background from "/src/assets/events/images_parallax/background.png";
-import glow from "/src/assets/events/images_parallax/glow.png";
-import fog_7 from "/src/assets/events/images_parallax/fog_7.png";
-import mountain_10 from "/src/assets/events/images_parallax/mountain_10.png";
-import fog_6 from "/src/assets/events/images_parallax/fog_6.png";
-import mountain_9 from "/src/assets/events/images_parallax/mountain_9.png";
-import mountain_8 from "/src/assets/events/images_parallax/mountain_8.png";
-import mountain_7 from "/src/assets/events/images_parallax/mountain_7.png";
-import events_font from "/src/assets/events/clouds/events_font.png";
 import decorator_hr_lg from "/src/assets/utils/decorator-hr-lg.png";
-import mountain_6 from "/src/assets/events/images_parallax/mountain_6.png";
-import fog_4 from "/src/assets/events/images_parallax/fog_4.png";
-import mountain_5 from "/src/assets/events/images_parallax/mountain_5.png";
-import fog_3 from "/src/assets/events/images_parallax/fog_3.png";
-import mountain_4 from "/src/assets/events/images_parallax/mountain_4.png";
-import mountain_3 from "/src/assets/events/images_parallax/mountain_3.png";
-import fog_2 from "/src/assets/events/images_parallax/fog_2.png";
-import mountain_2 from "/src/assets/events/images_parallax/mountain_2.png";
-import mountain_1 from "/src/assets/events/images_parallax/mountain_1.png";
-import fog_1 from "/src/assets/events/images_parallax/fog_1.png";
-import left_fireflies from "/src/assets/events/images_parallax/left_fireflies.png";
-import right_fireflies from "/src/assets/events/images_parallax/right_fireflies.png";
-import fireflies_3 from "/src/assets/events/images_parallax/fireflies_3.png";
-import fireflies_4 from "/src/assets/events/images_parallax/fireflies_4.png";
-import fireflies_5 from "/src/assets/events/images_parallax/fireflies_5.png";
+
+const background = "https://dpqe9pvop7vdk.cloudfront.net/events/images_parallax/background.png";
+const glow = "https://dpqe9pvop7vdk.cloudfront.net/events/images_parallax/glow.png";
+const fog_7 = "https://dpqe9pvop7vdk.cloudfront.net/events/images_parallax/fog_7.png";
+const mountain_10 = "https://dpqe9pvop7vdk.cloudfront.net/events/images_parallax/mountain_10.png";
+const fog_6 = "https://dpqe9pvop7vdk.cloudfront.net/events/images_parallax/fog_6.png";
+const mountain_9 = "https://dpqe9pvop7vdk.cloudfront.net/events/images_parallax/mountain_9.png";
+const mountain_8 = "https://dpqe9pvop7vdk.cloudfront.net/events/images_parallax/mountain_8.png";
+const mountain_7 = "https://dpqe9pvop7vdk.cloudfront.net/events/images_parallax/mountain_7.png";
+const events_font = "https://dpqe9pvop7vdk.cloudfront.net/events/clouds/events_font.png";
+const mountain_6 = "https://dpqe9pvop7vdk.cloudfront.net/events/images_parallax/mountain_6.png";
+const fog_4 = "https://dpqe9pvop7vdk.cloudfront.net/events/images_parallax/fog_4.png";
+const mountain_5 = "https://dpqe9pvop7vdk.cloudfront.net/events/images_parallax/mountain_5.png";
+const fog_3 = "https://dpqe9pvop7vdk.cloudfront.net/events/images_parallax/fog_3.png";
+const mountain_4 = "https://dpqe9pvop7vdk.cloudfront.net/events/images_parallax/mountain_4.png";
+const mountain_3 = "https://dpqe9pvop7vdk.cloudfront.net/events/images_parallax/mountain_3.png";
+const fog_2 = "https://dpqe9pvop7vdk.cloudfront.net/events/images_parallax/fog_2.png";
+const mountain_2 = "https://dpqe9pvop7vdk.cloudfront.net/events/images_parallax/mountain_2.png";
+const mountain_1 = "https://dpqe9pvop7vdk.cloudfront.net/events/images_parallax/mountain_1.png";
+const fog_1 = "https://dpqe9pvop7vdk.cloudfront.net/events/images_parallax/fog_1.png";
+const left_fireflies = "https://dpqe9pvop7vdk.cloudfront.net/events/images_parallax/left_fireflies.png";
+const right_fireflies = "https://dpqe9pvop7vdk.cloudfront.net/events/images_parallax/right_fireflies.png";
+const fireflies_3 = "https://dpqe9pvop7vdk.cloudfront.net/events/images_parallax/fireflies_3.png";
+const fireflies_4 = "https://dpqe9pvop7vdk.cloudfront.net/events/images_parallax/fireflies_4.png";
+const fireflies_5 = "https://dpqe9pvop7vdk.cloudfront.net/events/images_parallax/fireflies_5.png";
 
 function Mountains() {
   const [dimensions, setDimensions] = useState({
