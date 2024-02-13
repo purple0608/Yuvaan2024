@@ -131,7 +131,13 @@
   font-size: 20px;
   font-family: SpiegelRegular;
   font-weight: 400;
+  color: #a09b8c !important;
 }
+
+.event-card > .event-description > .event-data > .event-date {
+  color: #a09b8c !important;
+}
+
 
 .event-data > .event-desc-header {
   font-family: enchantedBold;
