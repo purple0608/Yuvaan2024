@@ -2,7 +2,7 @@ import React, { useState, useEffect, Suspense, lazy } from "react";
 import Cards from "./Cards/Cards";
 import usePreventZoom from "./../../assets/utils/PreventZoom.ts";
 import Loader from "/src/components/loader/Loader";
-import Mountains from "./Mountains/Mountains";
+const Mountains = lazy(()=>import("./Mountains/Mountains"));
 
 const event = new Event('onLoaderClose');
 
@@ -17,7 +17,7 @@ function Events() {
   };
    const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
+ /* useEffect(() => {
     const loadData = async () => {
         await new Promise((resolve) => setTimeout(resolve, 7000));
         setLoading(false);
@@ -29,8 +29,9 @@ function Events() {
 
   if (loading) {
     return <Loader />;
-  } 
+  } */
     return (
+        <Suspense fallback={<Loader />}>
     <div className="events-parent">
           <Mountains />
           <Cards />
@@ -41,6 +42,7 @@ function Events() {
               </svg>:"Timeline"}
       </button>
             </div>
+            </Suspense>
   );
 }
 
