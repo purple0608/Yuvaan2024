@@ -22,6 +22,7 @@ function Events() {
         await new Promise((resolve) => setTimeout(resolve, 3800));
         setLoading(false);
         window.dispatchEvent(event);
+
     };
     loadData();
   }, []);
