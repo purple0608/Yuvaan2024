@@ -12,11 +12,10 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-function Clouds({ position }: {position: string}){
-    const isMobile = window.innerWidth <= 768;
-    if(!isMobile){
-     useGSAP(
-    () => {
+function Clouds({ position }: { position: string }) {
+  const isMobile = window.innerWidth <= 768;
+  if (!isMobile) {
+    useGSAP(() => {
       gsap.registerPlugin(ScrollTrigger);
       const clouds: NodeListOf<HTMLElement> =
         document.querySelectorAll(".eClouds")!;
@@ -50,58 +49,57 @@ function Clouds({ position }: {position: string}){
           });
         }
       });
-    },
-    { },
-     );}
-    return (
-        <div className= {"eClouds-gang events-map-clouds-"+position}>
-        <img
-          src="https://dpqe9pvop7vdk.cloudfront.net/events/clouds/cloud1.png"
-          alt="clouds"
-          className={"eClouds events-map-cloud1-"+position}
-        />
-        <img
-          src="https://dpqe9pvop7vdk.cloudfront.net/events/clouds/cloud2.png"
-          alt="clouds"
-          className={"eClouds events-map-cloud2-"+position}
-        />
-        <img
-          src="https://dpqe9pvop7vdk.cloudfront.net/events/clouds/cloud3.png"
-          alt="clouds"
-          className={"eClouds events-map-cloud3-"+position}
-        />
-        <img
-          src="https://dpqe9pvop7vdk.cloudfront.net/events/clouds/cloud4.png"
-          alt="clouds"
-          className={"eClouds events-map-cloud4-"+position}
-        />
-        <img
-          src="https://dpqe9pvop7vdk.cloudfront.net/events/clouds/cloud5.png"
-          alt="clouds"
-          className={"eClouds events-map-cloud5-"+position}
-        />
-        <img
-          src="https://dpqe9pvop7vdk.cloudfront.net/events/clouds/cloud6.png"
-          alt="clouds"
-          className={"eClouds events-map-cloud6-"+position}
-        />
-        <img
-          src="https://dpqe9pvop7vdk.cloudfront.net/events/clouds/cloud7.png"
-          alt="clouds"
-          className={"eClouds events-map-cloud7-"+position}
-        />
-        <img
-          src="https://dpqe9pvop7vdk.cloudfront.net/events/clouds/cloud8.png"
-          alt="clouds"
-          className={"eClouds events-map-cloud8-"+position}
-        />
-        <img
-          src= "https://dpqe9pvop7vdk.cloudfront.net/events/clouds/cloud10.png"
-          alt="clouds"
-          className={"eClouds events-map-cloud9-"+position}
-        />
-      </div>
-    )
+    }, {});
+  }
+  return (
+    <div className={"eClouds-gang events-map-clouds-" + position}>
+      <img
+        src="https://dpqe9pvop7vdk.cloudfront.net/events/clouds/cloud1.png"
+        alt="clouds"
+        className={"eClouds events-map-cloud1-" + position}
+      />
+      <img
+        src="https://dpqe9pvop7vdk.cloudfront.net/events/clouds/cloud2.png"
+        alt="clouds"
+        className={"eClouds events-map-cloud2-" + position}
+      />
+      <img
+        src="https://dpqe9pvop7vdk.cloudfront.net/events/clouds/cloud3.png"
+        alt="clouds"
+        className={"eClouds events-map-cloud3-" + position}
+      />
+      <img
+        src="https://dpqe9pvop7vdk.cloudfront.net/events/clouds/cloud4.png"
+        alt="clouds"
+        className={"eClouds events-map-cloud4-" + position}
+      />
+      <img
+        src="https://dpqe9pvop7vdk.cloudfront.net/events/clouds/cloud5.png"
+        alt="clouds"
+        className={"eClouds events-map-cloud5-" + position}
+      />
+      <img
+        src="https://dpqe9pvop7vdk.cloudfront.net/events/clouds/cloud6.png"
+        alt="clouds"
+        className={"eClouds events-map-cloud6-" + position}
+      />
+      <img
+        src="https://dpqe9pvop7vdk.cloudfront.net/events/clouds/cloud7.png"
+        alt="clouds"
+        className={"eClouds events-map-cloud7-" + position}
+      />
+      <img
+        src="https://dpqe9pvop7vdk.cloudfront.net/events/clouds/cloud8.png"
+        alt="clouds"
+        className={"eClouds events-map-cloud8-" + position}
+      />
+      <img
+        src="https://dpqe9pvop7vdk.cloudfront.net/events/clouds/cloud10.png"
+        alt="clouds"
+        className={"eClouds events-map-cloud9-" + position}
+      />
+    </div>
+  );
 }
 
-export default Clouds
+export default Clouds;

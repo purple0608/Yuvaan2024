@@ -25,8 +25,8 @@ export interface EventData {
   time: string;
   venue: string;
   info: string;
-    link: string;
-    forms: string[];
+  link: string;
+  forms: string[];
   bg: string;
 }
 
@@ -68,7 +68,10 @@ export const Data: EventData[] = [
     venue: "Stage",
     info: "Welcome to Symphony, an electrifying solo/group singing battle open to all music enthusiasts! Are you ready to showcase your vocal prowess or band's musical harmony? Embrace the stage, unleash your creativity, and let your music transcend boundaries. Whether you're a solo virtuoso or part of a harmonious ensemble, Symphony invites you to be part of a vibrant community celebrating the magic of music. Join us for an exhilarating journey of melodies and rhythms, where talent knows no boundaries.",
     link: "https://unstop.com/p/symphony-solo-and-duo-indian-institute-of-information-technology-iiit-guwahati-896117",
-      forms: ["https://forms.gle/etDrxF7CZ1szL2dm6", "https://forms.gle/etDrxF7CZ1szL2dm6"],
+    forms: [
+      "https://forms.gle/etDrxF7CZ1szL2dm6",
+      "https://forms.gle/etDrxF7CZ1szL2dm6",
+    ],
     bg: "images_cards/symphony4.jpg",
   },
   {

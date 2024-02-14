@@ -3,30 +3,54 @@ import { useEffect, useState, useRef, useCallback, lazy } from "react";
 import "/src/assets/events/Mountains.css";
 import decorator_hr_lg from "/src/assets/utils/decorator-hr-lg.png";
 
-const background = "https://dpqe9pvop7vdk.cloudfront.net/events/images_parallax/background.png";
-const glow = "https://dpqe9pvop7vdk.cloudfront.net/events/images_parallax/glow.png";
-const fog_7 = "https://dpqe9pvop7vdk.cloudfront.net/events/images_parallax/fog_7.png";
-const mountain_10 = "https://dpqe9pvop7vdk.cloudfront.net/events/images_parallax/mountain_10.png";
-const fog_6 = "https://dpqe9pvop7vdk.cloudfront.net/events/images_parallax/fog_6.png";
-const mountain_9 = "https://dpqe9pvop7vdk.cloudfront.net/events/images_parallax/mountain_9.png";
-const mountain_8 = "https://dpqe9pvop7vdk.cloudfront.net/events/images_parallax/mountain_8.png";
-const mountain_7 = "https://dpqe9pvop7vdk.cloudfront.net/events/images_parallax/mountain_7.png";
-const events_font = "https://dpqe9pvop7vdk.cloudfront.net/events/clouds/events_font.png";
-const mountain_6 = "https://dpqe9pvop7vdk.cloudfront.net/events/images_parallax/mountain_6.png";
-const fog_4 = "https://dpqe9pvop7vdk.cloudfront.net/events/images_parallax/fog_4.png";
-const mountain_5 = "https://dpqe9pvop7vdk.cloudfront.net/events/images_parallax/mountain_5.png";
-const fog_3 = "https://dpqe9pvop7vdk.cloudfront.net/events/images_parallax/fog_3.png";
-const mountain_4 = "https://dpqe9pvop7vdk.cloudfront.net/events/images_parallax/mountain_4.png";
-const mountain_3 = "https://dpqe9pvop7vdk.cloudfront.net/events/images_parallax/mountain_3.png";
-const fog_2 = "https://dpqe9pvop7vdk.cloudfront.net/events/images_parallax/fog_2.png";
-const mountain_2 = "https://dpqe9pvop7vdk.cloudfront.net/events/images_parallax/mountain_2.png";
-const mountain_1 = "https://dpqe9pvop7vdk.cloudfront.net/events/images_parallax/mountain_1.png";
-const fog_1 = "https://dpqe9pvop7vdk.cloudfront.net/events/images_parallax/fog_1.png";
-const left_fireflies = "https://dpqe9pvop7vdk.cloudfront.net/events/images_parallax/left_fireflies.png";
-const right_fireflies = "https://dpqe9pvop7vdk.cloudfront.net/events/images_parallax/right_fireflies.png";
-const fireflies_3 = "https://dpqe9pvop7vdk.cloudfront.net/events/images_parallax/fireflies_3.png";
-const fireflies_4 = "https://dpqe9pvop7vdk.cloudfront.net/events/images_parallax/fireflies_4.png";
-const fireflies_5 = "https://dpqe9pvop7vdk.cloudfront.net/events/images_parallax/fireflies_5.png";
+const background =
+  "https://dpqe9pvop7vdk.cloudfront.net/events/images_parallax/background.png";
+const glow =
+  "https://dpqe9pvop7vdk.cloudfront.net/events/images_parallax/glow.png";
+const fog_7 =
+  "https://dpqe9pvop7vdk.cloudfront.net/events/images_parallax/fog_7.png";
+const mountain_10 =
+  "https://dpqe9pvop7vdk.cloudfront.net/events/images_parallax/mountain_10.png";
+const fog_6 =
+  "https://dpqe9pvop7vdk.cloudfront.net/events/images_parallax/fog_6.png";
+const mountain_9 =
+  "https://dpqe9pvop7vdk.cloudfront.net/events/images_parallax/mountain_9.png";
+const mountain_8 =
+  "https://dpqe9pvop7vdk.cloudfront.net/events/images_parallax/mountain_8.png";
+const mountain_7 =
+  "https://dpqe9pvop7vdk.cloudfront.net/events/images_parallax/mountain_7.png";
+const events_font =
+  "https://dpqe9pvop7vdk.cloudfront.net/events/clouds/events_font.png";
+const mountain_6 =
+  "https://dpqe9pvop7vdk.cloudfront.net/events/images_parallax/mountain_6.png";
+const fog_4 =
+  "https://dpqe9pvop7vdk.cloudfront.net/events/images_parallax/fog_4.png";
+const mountain_5 =
+  "https://dpqe9pvop7vdk.cloudfront.net/events/images_parallax/mountain_5.png";
+const fog_3 =
+  "https://dpqe9pvop7vdk.cloudfront.net/events/images_parallax/fog_3.png";
+const mountain_4 =
+  "https://dpqe9pvop7vdk.cloudfront.net/events/images_parallax/mountain_4.png";
+const mountain_3 =
+  "https://dpqe9pvop7vdk.cloudfront.net/events/images_parallax/mountain_3.png";
+const fog_2 =
+  "https://dpqe9pvop7vdk.cloudfront.net/events/images_parallax/fog_2.png";
+const mountain_2 =
+  "https://dpqe9pvop7vdk.cloudfront.net/events/images_parallax/mountain_2.png";
+const mountain_1 =
+  "https://dpqe9pvop7vdk.cloudfront.net/events/images_parallax/mountain_1.png";
+const fog_1 =
+  "https://dpqe9pvop7vdk.cloudfront.net/events/images_parallax/fog_1.png";
+const left_fireflies =
+  "https://dpqe9pvop7vdk.cloudfront.net/events/images_parallax/left_fireflies.png";
+const right_fireflies =
+  "https://dpqe9pvop7vdk.cloudfront.net/events/images_parallax/right_fireflies.png";
+const fireflies_3 =
+  "https://dpqe9pvop7vdk.cloudfront.net/events/images_parallax/fireflies_3.png";
+const fireflies_4 =
+  "https://dpqe9pvop7vdk.cloudfront.net/events/images_parallax/fireflies_4.png";
+const fireflies_5 =
+  "https://dpqe9pvop7vdk.cloudfront.net/events/images_parallax/fireflies_5.png";
 
 function Mountains() {
   const [dimensions, setDimensions] = useState({
@@ -37,7 +61,6 @@ function Mountains() {
   const [parallaxElements, setParallaxElements] = useState<HTMLElement[]>(
     Array.from(document.querySelectorAll(".parallax")),
   );
-    
 
   useEffect(() => {
     const elements: NodeListOf<HTMLElement> =
@@ -45,15 +68,16 @@ function Mountains() {
     setParallaxElements(Array.from(elements));
   }, []);
 
-  useEffect(() => {
+  /* useEffect(() => {
       const handleLoad = (e) =>{
           console.log(e);
       document
         .querySelectorAll<HTMLElement>(".parallax")
         .forEach((el: HTMLElement) => {
-          gsap.from(el, {
-            top: 1000,
-            duration: 2.5,
+            gsap.fromTo(el,
+               {top: "75%"}, {
+            top: "65%",
+            duration: 1.5,
           });
         });
       window.scrollTo(0, 0);
@@ -63,7 +87,7 @@ function Mountains() {
     return () => {
       window.removeEventListener("onLoaderClose", handleLoad);
     };
-  }, [parallaxElements]);
+  }, [parallaxElements]);*/
 
   useEffect(() => {
     let mc = mount.current;
@@ -119,8 +143,8 @@ function Mountains() {
 
   return (
     <div>
-      <main ref={mount}>
-       <img
+      <div className="events-mountains-main" ref={mount}>
+        <img
           src={background}
           data-speedz="0"
           data-speedx="0.3"
@@ -128,15 +152,6 @@ function Mountains() {
           data-distance="-800"
           className="parallax bg-img"
           alt="background"
-        />
-        <img
-          src={glow}
-          data-speedz="0"
-          data-speedx="0.3"
-          data-speedy="0.38"
-          data-distance="-800"
-          className="parallax glow"
-          alt="glow"
         />
         <img
           src={fog_7}
@@ -329,7 +344,7 @@ function Mountains() {
           className="parallax fireflies-5"
           alt="parallax fireflies"
         />
-      </main>
+      </div>
     </div>
   );
 }

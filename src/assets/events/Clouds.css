@@ -1,241 +1,294 @@
-.events-map-cloud1-top {
+.eClouds {
   position: absolute;
   overflow: hidden;
-  width: 1300px;
-  transform: translate(-50%, -50%);
   z-index: 24;
+}
+
+.events-map-cloud1-top {
+  width: 67.77vw;
+  transform: translate(-50%, -50%);
+  left: calc(50% - 10.41666667vw);
+  top: calc(50% + 46.2962963vh);
+}
+
+.events-map-cloud2-top {
+  width: 78.125vw;
+  transform: translate(-50%, -50%);
+  left: calc(50% - 36.45833333vw);
+  top: calc(50% + 50.92592593vh);
+}
+
+.events-map-cloud3-top {
+  width: 78.125vw;
+  transform: translate(-50%, -50%);
+  left: calc(50% - 52.08333333vw);
+  top: calc(50% + 50.92592593vh);
+}
+
+.events-map-cloud4-top {
+  width: 98.95833333vw;
+  transform: translate(-50%, -50%);
+  left: calc(50% - 26.04166667vw);
+  top: calc(50% + 64.81481481vh);
+}
+
+.events-map-cloud5-top {
+  width: 98.95833333vw;
+  transform: translate(-50%, -50%);
+  left: calc(50% + 36.45833333vw);
+  top: calc(50% + 60.18518519vh);
+}
+
+.events-map-cloud6-top {
+  width: 98.95833333vw;
+  transform: translate(-50%, -50%);
+  left: calc(50% + 36.45833333vw);
+  top: calc(50% + 78.7037037vh);
+}
+
+.events-map-cloud7-top {
+  width: 98.95833333vw;
+  transform: translate(-50%, -50%);
+  left: calc(50% - 15.625vw);
+  top: calc(50% + 74.07407407vh);
+}
+
+.events-map-cloud8-top {
+  width: 98.95833333vw;
+  transform: translate(-50%, -50%);
+  left: calc(50%);
+  top: calc(50% + 74.07407407vh);
+}
+
+.events-map-cloud9-top {
+  width: 100vw;
+  transform: translate(-50%, -50%);
+  left: calc(50% - 36.45833333vw);
+  top: calc(50% + 87.96296296vh);
+}
+
+.events-map-cloud1-bottom {
+  width: 100vw;
+  transform: translate(-50%, -50%);
+  left: calc(50% - 10.41666667vw);
+  top: calc(50% + 199.0740741vh);
+}
+
+.events-map-cloud2-bottom {
+  width: 78.125vw;
+  transform: translate(-50%, -50%);
+  left: calc(50% - 36.45833333vw);
+  top: calc(50% + 203.7037037vh);
+}
+
+.events-map-cloud3-bottom {
+  width: 78.125vw;
+  transform: translate(-50%, -50%);
+  left: calc(50% - 52.08333333vw);
+  top: calc(50% + 203.7037037vh);
+}
+
+.events-map-cloud4-bottom {
+  width: 98.95833333vw;
+  transform: translate(-50%, -50%);
+  left: calc(50% - 26.04166667vw);
+  top: calc(50% + 217.5925926vh);
+}
+
+.events-map-cloud5-bottom {
+  width: 98.95833333vw;
+  transform: translate(-50%, -50%);
+  left: calc(50% + 36.45833333vw);
+  top: calc(50% + 217.5925926vh);
+}
+
+.events-map-cloud6-bottom {
+  width: 98.95833333vw;
+  transform: translate(-50%, -50%);
+  left: calc(50% + 36.45833333vw);
+  top: calc(50% + 231.4814815vh);
+}
+
+.events-map-cloud7-bottom {
+  width: 98.95833333vw;
+  transform: translate(-50%, -50%);
+  left: calc(50% - 15.625vw);
+  top: calc(50% + 236.1111111vh);
+}
+
+.events-map-cloud8-bottom {
+  width: 98.95833333vw;
+  transform: translate(-50%, -50%);
+  left: calc(50%);
+  top: calc(50% + 236.1111111vh);
+}
+
+.events-map-cloud9-bottom {
+  width: 98.95833333vw;
+  transform: translate(-50%, -50%);
+  left: calc(50% - 36.45833333vw);
+  top: calc(50% + 245.3703704vh);
+}
+
+@media only screen and (max-width: 1224px) {
+    .events-map-cloud1-top {
+  width: 67.77vw;
+  transform: translate(-50%, -50%);
   left: calc(50% - 200px);
   top: calc(50% + 500px);
 }
 
 .events-map-cloud2-top {
-  position: absolute;
-  overflow: hidden;
   width: 1500px;
   transform: translate(-50%, -50%);
-  z-index: 24;
   left: calc(50% - 700px);
   top: calc(50% + 550px);
 }
 
 .events-map-cloud3-top {
-  position: absolute;
-  overflow: hidden;
   width: 1500px;
   transform: translate(-50%, -50%);
-  z-index: 24;
   left: calc(50% - 1000px);
   top: calc(50% + 550px);
 }
 
 .events-map-cloud4-top {
-  position: absolute;
-  overflow: hidden;
   width: 1900px;
   transform: translate(-50%, -50%);
-  z-index: 24;
   left: calc(50% - 500px);
   top: calc(50% + 700px);
 }
 
 .events-map-cloud5-top {
-  position: absolute;
-  overflow: hidden;
   width: 1900px;
   transform: translate(-50%, -50%);
-  z-index: 24;
   left: calc(50% + 700px);
   top: calc(50% + 650px);
 }
 
 .events-map-cloud6-top {
-  position: absolute;
-  overflow: hidden;
   width: 1900px;
   transform: translate(-50%, -50%);
-  z-index: 24;
   left: calc(50% + 700px);
   top: calc(50% + 850px);
 }
 
 .events-map-cloud7-top {
-  position: absolute;
-  overflow: hidden;
   width: 1900px;
   transform: translate(-50%, -50%);
-  z-index: 24;
   left: calc(50% - 300px);
   top: calc(50% + 800px);
 }
 
 .events-map-cloud8-top {
-  position: absolute;
-  overflow: hidden;
   width: 1900px;
   transform: translate(-50%, -50%);
-  z-index: 24;
   left: calc(50%);
   top: calc(50% + 800px);
 }
 
 .events-map-cloud9-top {
-  position: absolute;
-  overflow: hidden;
   width: 100vw;
   transform: translate(-50%, -50%);
-  z-index: 24;
   left: calc(50% - 700px);
   top: calc(50% + 950px);
 }
 
 .events-map-cloud1-bottom {
-  position: absolute;
-  overflow: hidden;
   width: 100vw;
   transform: translate(-50%, -50%);
-  z-index: 24;
   left: calc(50% - 200px);
   top: calc(50% + 2150px);
 }
 
 .events-map-cloud2-bottom {
-  position: absolute;
-  overflow: hidden;
   width: 1500px;
   transform: translate(-50%, -50%);
-  z-index: 24;
   left: calc(50% - 700px);
   top: calc(50% + 2200px);
 }
 
 .events-map-cloud3-bottom {
-  position: absolute;
-  overflow: hidden;
   width: 1500px;
   transform: translate(-50%, -50%);
-  z-index: 24;
   left: calc(50% - 1000px);
   top: calc(50% + 2200px);
 }
 
 .events-map-cloud4-bottom {
-  position: absolute;
-  overflow: hidden;
   width: 1900px;
   transform: translate(-50%, -50%);
-  z-index: 24;
   left: calc(50% - 500px);
   top: calc(50% + 2350px);
 }
 
 .events-map-cloud5-bottom {
-  position: absolute;
-  overflow: hidden;
   width: 1900px;
   transform: translate(-50%, -50%);
-  z-index: 24;
   left: calc(50% + 700px);
   top: calc(50% + 2350px);
 }
 
 .events-map-cloud6-bottom {
-  position: absolute;
-  overflow: hidden;
-  width: 1900px;
+  width: calc((1900 * 100 / 1920) vw);
   transform: translate(-50%, -50%);
-  z-index: 24;
   left: calc(50% + 700px);
   top: calc(50% + 2500px);
 }
 
 .events-map-cloud7-bottom {
-  position: absolute;
-  overflow: hidden;
   width: 1900px;
   transform: translate(-50%, -50%);
-  z-index: 24;
   left: calc(50% - 300px);
   top: calc(50% + 2550px);
 }
 
 .events-map-cloud8-bottom {
-  position: absolute;
-  overflow: hidden;
   width: 1900px;
   transform: translate(-50%, -50%);
-  z-index: 24;
   left: calc(50%);
   top: calc(50% + 2550px);
 }
 
 .events-map-cloud9-bottom {
-  position: absolute;
-  overflow: hidden;
   width: 1900px;
   transform: translate(-50%, -50%);
-  z-index: 24;
   left: calc(50% - 700px);
   top: calc(50% + 2650px);
 }
+  .events-map-cloud5-top {
+    top: calc(50% + 50.92592593vh);
+  }
+  .events-map-cloud6-top {
+    top: calc(50% + 69.44444444vh);
+  }
+  .events-map-cloud7-top {
+    top: calc(50% + 46.2962963vh);
+  }
 
-@media only screen and (max-width: 1224px) {
-   
-.events-map-cloud5-top {
-  position: absolute;
-  overflow: hidden;
-  top: calc(50% + 550px);
-}
-.events-map-cloud6-top {
-  position: absolute;
-  overflow: hidden;
-  top: calc(50% + 750px);
-}
- .events-map-cloud7-top {
-  position: absolute;
-  overflow: hidden;
-  top: calc(50% + 500px);
-    }
+  .events-map-cloud8-top {
+    top: calc(50% + 64.81481481vh);
+  }
 
-    .events-map-cloud8-top {
-  position: absolute;
-  overflow: hidden;
-  top: calc(50% + 700px);
-    }
+  .events-map-cloud1-bottom {
+    left: calc(50% - 5.208333333vw);
+    top: calc(50% + 208.3333333vh);
+  }
 
-.events-map-cloud1-bottom {
-  position: absolute;
-  overflow: hidden;
-  left: calc(50% - 100px);
-  top: calc(50% + 2250px);
+  .events-map-cloud2-bottom {
+    left: calc(50% - 26.04166667vw);
+    top: calc(50% + 240.7407407vh);
+  }
+  .events-map-cloud4-bottom {
+    top: calc(50% + 222.2222222vh);
+  }
+  .events-map-cloud5-bottom {
+    top: calc(50% + 245.3703704vh);
+  }
+  .events-map-cloud6-bottom {
+    top: calc(50% + 240.7407407vh);
+  }
+  .events-map-cloud7-bottom {
+    top: calc(50% + 245.3703704vh);
+  }
 }
-
-.events-map-cloud2-bottom {
-  position: absolute;
-  overflow: hidden;
-  left: calc(50% - 500px);
-  top: calc(50% + 2600px);
-}
-.events-map-cloud4-bottom {
-  position: absolute;
-  overflow: hidden;
-    top: calc(50% + 2400px);
-}
-.events-map-cloud5-bottom {
-  position: absolute;
-  overflow: hidden;
-  top: calc(50% + 2650px);
-}
-.events-map-cloud6-bottom {
-  position: absolute;
-  overflow: hidden;
-  top: calc(50% + 2600px);
-}
-.events-map-cloud7-bottom {
-  position: absolute;
-  overflow: hidden;
-  top: calc(50% + 2650px);
-}
-
-}
-
-
