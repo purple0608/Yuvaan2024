@@ -90,7 +90,7 @@ export const Data: EventData[] = [
     info: "Where dreams twirl, emotions pirouette, and the stage becomes a canvas of expression, showcase your moves and jalwa in Move Mania.",
     link: "https://unstop.com/p/move-mania-indian-institute-of-information-technology-iiit-guwahati-891189",
     forms: ["https://forms.gle/kHEcAfsBbe8kpYen7"],
-    bg: "images_cards/trivizaquiz1.jpg",
+    bg: "images_cards/movemania2.jpg",
   },
   {
     title: "Cosplay",
@@ -100,7 +100,7 @@ export const Data: EventData[] = [
     info: "Participants will dress in costumes and make-up, representing characters from    anime, video games, television and film. The cosplayers will also have to act in character and put on a performance on stage.",
     link: "https://unstop.com/events/cosplay-indian-institute-of-information-technology-iiit-guwahati-895338",
     forms: [],
-    bg: "images_cards/mun1.png",
+    bg: "images_cards/cosplay.jpg",
   },
   {
     title: "Trivia Quiz",
@@ -110,7 +110,7 @@ export const Data: EventData[] = [
     info: "Embark on an enchanting adventure at Fantasy Trivia Night! Unleash your expertise on fantasy series, movies, and anime. Don't miss this magical event!",
     link: "https://unstop.com/p/trivia-quiz-yuvaan24-indian-institute-of-information-technology-iiit-guwahati-895352",
     forms: ["https://forms.gle/XDb74hiWD2zgGqxy9"],
-    bg: "images_cards/movemania2.jpg",
+    bg: "images_cards/trivizaquiz1.jpg",
   },
   {
     title: "Model united Nations",
@@ -120,6 +120,6 @@ export const Data: EventData[] = [
     info: "",
     link: "https://georgerahul24.github.io/MUN-Website-2024/",
     forms: [],
-    bg: "images_cards/cosplay.jpg",
+    bg: "images_cards/mun1.png",
   },
 ];
