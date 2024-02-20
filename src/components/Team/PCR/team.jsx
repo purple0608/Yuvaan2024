@@ -1,6 +1,6 @@
 import React from "react";
 import Prateek from "../../../assets/teams/pcr/Prateek.jpg";
-import Tashyab from "../../../assets/teams/pcr/Tashyab Raj.jpg";
+import Tashyab from "../../../assets/teams/pcr/Tashyab Raj.jpeg";
 import Akshat from "../../../assets/teams/pcr/Akshat Lohia.jpg";
 import Arya from "../../../assets/teams/pcr/Arya Sahu.jpg";
 import Deepanika from "../../../assets/teams/pcr/Deepanika Gupta.jpg";
