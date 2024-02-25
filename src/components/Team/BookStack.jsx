@@ -1,11 +1,5 @@
 import React from "react";
-import Web_Cre from "../../assets/teams/gallery/Tech.jpg";
-import Event from "../../assets/teams/gallery/EM.jpg";
-import Media from "../../assets/teams/gallery/MnP.jpg";
-import Sponsors from "../../assets/teams/gallery/Sp.jpg";
-import PCR from "../../assets/teams/gallery/PR.jpg";
-import faculty from "../../assets/teams/gallery/Facult Advisors.jpg";
-import sgc from "../../assets/teams/gallery/SGC.jpg";
+
 import "./style.css"; // Make sure to create a CSS file for your component styles
 
 ////////////////////////////////////////////////////////////////////
@@ -54,14 +48,14 @@ const Flipbook = () => (
     <ul className="tp-align">
       <li>
         <Book
-          imageSrc={faculty}
+          imageSrc="https://d1y50e2lm5xcwm.cloudfront.net/Team/gallery/Facult%20Advisors.jpg"
           title="Faculty Advisors"
           teamSlug="faculty-advisors"
         />
       </li>
       <li>
         <Book
-          imageSrc={sgc}
+          imageSrc="https://d1y50e2lm5xcwm.cloudfront.net/Team/gallery/SGC.jpg"
           title="Student Gymkhana Council"
           teamSlug="student-gymkhana-council"
         />
@@ -69,14 +63,14 @@ const Flipbook = () => (
       {/* Book 1 */}
       <li>
         <Book
-          imageSrc={Web_Cre}
+          imageSrc="https://d1y50e2lm5xcwm.cloudfront.net/Team/gallery/Tech.jpg"
           title="Web And Creatives"
           teamSlug="web-creatives"
         />
       </li>
       <li>
         <Book
-          imageSrc={Event}
+          imageSrc="https://d1y50e2lm5xcwm.cloudfront.net/Team/gallery/EM.jpg"
           title="Event Management"
           teamSlug="event-management"
         />
@@ -84,18 +78,20 @@ const Flipbook = () => (
       {/* Book 2 */}
       <li>
         <Book
-          imageSrc={PCR}
+          imageSrc="https://d1y50e2lm5xcwm.cloudfront.net/Team/gallery/PR.jpg"
           title="Public Relations"
           teamSlug="public-relation"
         />
       </li>
       {/* Book 3 */}
       <li>
-        <Book imageSrc={Sponsors} title="Sponsorship" teamSlug="sponsorship" />
+        <Book imageSrc="https://d1y50e2lm5xcwm.cloudfront.net/Team/gallery/Sp.jpg" 
+        title="Sponsorship"
+        teamSlug="sponsorship" />
       </li>
       <li>
         <Book
-          imageSrc={Media}
+          imageSrc="https://d1y50e2lm5xcwm.cloudfront.net/Team/gallery/MnP.jpg"
           title="Media And Publicity"
           teamSlug="media-publicity"
         />

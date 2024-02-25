@@ -1,7 +1,5 @@
 import React from "react";
-import Arjab from "../../../assets/teams/Faculty/Arjab.jpg";
-import David from "../../../assets/teams/Faculty/David.jpg";
-import Babita from "../../../assets/teams/Faculty/Babita.jpg";
+
 import "../team.css"; // Make sure to import or include your CSS file
 
 const Team = () => {
@@ -15,7 +13,7 @@ const Team = () => {
         <div className="et-card">
           <div className="et-imgBox">
             <img
-              src={David}
+              src="https://d1y50e2lm5xcwm.cloudfront.net/Team/Faculty/David.jpg"
               alt="some image"
             />
           </div>
@@ -30,7 +28,7 @@ const Team = () => {
         <div className="et-card">
           <div className="et-imgBox">
             <img
-              src={Babita}
+              src="https://d1y50e2lm5xcwm.cloudfront.net/Team/Faculty/Babita.jpg"
               alt="some image"
             />
           </div>
@@ -45,7 +43,7 @@ const Team = () => {
         <div className="et-card">
           <div className="et-imgBox">
             <img
-              src={Arjab}
+              src="https://d1y50e2lm5xcwm.cloudfront.net/Team/Faculty/Arjab.jpg"
               alt="some image"
             />
           </div>

@@ -1,13 +1,5 @@
 import React from "react";
-import Aman from "../../../assets/teams/web_cre/Aman.jpg";
-import Nandini from "../../../assets/teams/web_cre/Nandini.jpg";
-import Anant from "../../../assets/teams/web_cre/Anant.jpg";
-import Pallav from "../../../assets/teams/web_cre/Pallav kumar.jpg";
-import Piyush from "../../../assets/teams/web_cre/Piyush Upadhyay.jpg";
-import Ronit from "../../../assets/teams/web_cre/Ronit Chinda.jpg";
-import Saksham from "../../../assets/teams/web_cre/Saksham Jain.jpg";
-import Shreya from "../../../assets/teams/web_cre/Shreya Malik.jpg";
-import Vasu from "../../../assets/teams/web_cre/Vasu Pandey.jpg";
+
 // import Background_img from "../../../assets/teams/TeamBG.jpeg"
 import "../team.css"; // Make sure to import or include your CSS file
 
@@ -27,7 +19,7 @@ const Team = () => {
 
           <div className="et-card">
             <div className="et-imgBox">
-              <img src={Aman} alt="some image" />
+              <img src="https://d1y50e2lm5xcwm.cloudfront.net/Team/web_cre/Aman.jpg" alt="some image" />
             </div>
             <div className="et-details">
               <h2>
@@ -39,7 +31,7 @@ const Team = () => {
 
           <div className="et-card">
             <div className="et-imgBox">
-              <img src={Nandini} alt="some image" />
+              <img src="https://d1y50e2lm5xcwm.cloudfront.net/Team/web_cre/Nandini.jpg" alt="some image" />
             </div>
             <div className="et-details">
               <h2>
@@ -51,7 +43,7 @@ const Team = () => {
 
           <div className="et-card">
             <div className="et-imgBox">
-              <img src={Anant} alt="some image" />
+              <img src="https://d1y50e2lm5xcwm.cloudfront.net/Team/web_cre/Anant.jpg" alt="some image" />
             </div>
             <div className="et-details">
               <h2>
@@ -63,7 +55,7 @@ const Team = () => {
 
           <div className="et-card">
             <div className="et-imgBox">
-              <img src={Pallav} alt="some image" />
+              <img src="https://d1y50e2lm5xcwm.cloudfront.net/Team/web_cre/Pallav%20kumar.jpg" alt="some image" />
             </div>
             <div className="et-details">
               <h2>
@@ -75,7 +67,7 @@ const Team = () => {
 
           <div className="et-card">
             <div className="et-imgBox">
-              <img src={Piyush} alt="some image" />
+              <img src="https://d1y50e2lm5xcwm.cloudfront.net/Team/web_cre/Piyush%20Upadhyay.jpg" alt="some image" />
             </div>
             <div className="et-details">
               <h2>
@@ -87,7 +79,7 @@ const Team = () => {
 
           <div className="et-card">
             <div className="et-imgBox">
-              <img src={Ronit} alt="some image" />
+              <img src="https://d1y50e2lm5xcwm.cloudfront.net/Team/web_cre/Ronit%20Chinda.jpg" alt="some image" />
             </div>
             <div className="et-details">
               <h2>
@@ -99,7 +91,7 @@ const Team = () => {
 
           <div className="et-card">
             <div className="et-imgBox">
-              <img src={Saksham} alt="some image" />
+              <img src="https://d1y50e2lm5xcwm.cloudfront.net/Team/web_cre/Saksham%20Jain.jpg" alt="some image" />
             </div>
             <div className="et-details">
               <h2>
@@ -111,7 +103,7 @@ const Team = () => {
 
           <div className="et-card">
             <div className="et-imgBox">
-              <img src={Shreya} alt="some image" />
+              <img src="https://d1y50e2lm5xcwm.cloudfront.net/Team/web_cre/Shreya%20Malik.jpg" alt="some image" />
             </div>
             <div className="et-details">
               <h2>
@@ -122,7 +114,7 @@ const Team = () => {
           </div>
           <div className="et-card">
             <div className="et-imgBox">
-              <img src={Vasu} alt="some image" />
+              <img src="https://d1y50e2lm5xcwm.cloudfront.net/Team/web_cre/Vasu%20Pandey.jpg" alt="some image" />
             </div>
             <div className="et-details">
               <h2>

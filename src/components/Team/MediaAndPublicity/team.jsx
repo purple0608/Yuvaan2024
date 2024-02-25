@@ -1,13 +1,4 @@
 import React from "react";
-import Roshan from "../../../assets/teams/MnP/Roshan Raj.jpg";
-import Sunny from "../../../assets/teams/MnP/Sunny Mallick.jpg";
-import Aditya from "../../../assets/teams/MnP/Aditya Pratap.jpg";
-import Banoth from "../../../assets/teams/MnP/Banoth Sai Siddartha.jpg";
-import Hardik from "../../../assets/teams/MnP/Hardik Srivastav.jpg";
-import Ishaan from "../../../assets/teams/MnP/Ishaan Das.jpg";
-import Khushi from "../../../assets/teams/MnP/Khushi Mandal.jpg";
-import Kiran from "../../../assets/teams/MnP/Kiran Kr Rout.jpg";
-import Rashi from "../../../assets/teams/MnP/Rashi Tiwari.jpg";
 import "../team.css"; // Make sure to import or include your CSS file
 
 const Team = () => {
@@ -20,7 +11,7 @@ const Team = () => {
 
         <div className="et-card">
           <div className="et-imgBox">
-            <img src={Roshan} alt="some image" />
+            <img src="https://d1y50e2lm5xcwm.cloudfront.net/Team/MnP/Roshan%20Raj.jpg" alt="some image" />
           </div>
           <div className="et-details">
             <h2>
@@ -32,7 +23,7 @@ const Team = () => {
 
         <div className="et-card">
           <div className="et-imgBox">
-            <img src={Sunny} alt="some image" />
+            <img src="https://d1y50e2lm5xcwm.cloudfront.net/Team/MnP/Sunny%20Mallick.jpg" alt="some image" />
           </div>
           <div className="et-details">
             <h2>
@@ -44,7 +35,7 @@ const Team = () => {
 
         <div className="et-card">
           <div className="et-imgBox">
-            <img src={Aditya} alt="some image" />
+            <img src="https://d1y50e2lm5xcwm.cloudfront.net/Team/MnP/Aditya%20Pratap.jpg" alt="some image" />
           </div>
           <div className="et-details">
             <h2>
@@ -56,7 +47,7 @@ const Team = () => {
 
         <div className="et-card">
           <div className="et-imgBox">
-            <img src={Banoth} alt="some image" />
+            <img src="https://d1y50e2lm5xcwm.cloudfront.net/Team/MnP/Banoth%20Sai%20Siddartha.jpg" alt="some image" />
           </div>
           <div className="et-details">
             <h2>
@@ -68,7 +59,7 @@ const Team = () => {
 
         <div className="et-card">
           <div className="et-imgBox">
-            <img src={Hardik} alt="some image" />
+            <img src="https://d1y50e2lm5xcwm.cloudfront.net/Team/MnP/Hardik%20Srivastav.jpg" alt="some image" />
           </div>
           <div className="et-details">
             <h2>
@@ -80,7 +71,7 @@ const Team = () => {
 
         <div className="et-card">
           <div className="et-imgBox">
-            <img src={Ishaan} alt="some image" />
+            <img src="https://d1y50e2lm5xcwm.cloudfront.net/Team/MnP/Ishaan%20Das.jpg" alt="some image" />
           </div>
           <div className="et-details">
             <h2>
@@ -92,7 +83,7 @@ const Team = () => {
 
         <div className="et-card">
           <div className="et-imgBox">
-            <img src={Khushi} alt="some image" />
+            <img src="https://d1y50e2lm5xcwm.cloudfront.net/Team/MnP/Khushi%20Mandal.jpg" alt="some image" />
           </div>
           <div className="et-details">
             <h2>
@@ -104,7 +95,7 @@ const Team = () => {
 
         <div className="et-card">
           <div className="et-imgBox">
-            <img src={Kiran} alt="some image" />
+            <img src="https://d1y50e2lm5xcwm.cloudfront.net/Team/MnP/Kiran%20Kr%20Rout.jpg" alt="some image" />
           </div>
           <div className="et-details">
             <h2>
@@ -116,7 +107,7 @@ const Team = () => {
 
         <div className="et-card">
           <div className="et-imgBox">
-            <img src={Rashi} alt="some image" />
+            <img src="https://d1y50e2lm5xcwm.cloudfront.net/Team/MnP/Rashi%20Tiwari.jpg" alt="some image" />
           </div>
           <div className="et-details">
             <h2>
