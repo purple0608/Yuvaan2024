@@ -116,6 +116,7 @@ const MapItems = ({ timeline }: { timeline: GSAPTimeline }) => {
     <>
       <div id="events-map-ul1" className="events-map-ul">
         {mapData1.map((item, index) => (
+          <div className="maps-linkstack">
           <button
             key={index}
             id="events-map-l"
@@ -127,10 +128,23 @@ const MapItems = ({ timeline }: { timeline: GSAPTimeline }) => {
             <span>{item.time}</span>
             <div>{item.event}</div>
           </button>
+
+          <button
+            key={index}
+            id="events-map-IIITG"
+            onClick={() => {
+              handleClick(item.flag, item.IIITGlink);
+            }}
+          >
+            <div>IIIT-link</div>
+          </button>
+          </div>
+
         ))}
       </div>
       <div id="events-map-ul2" className="events-map-ul">
-        {mapData2.map((item, index) => (
+      {mapData2.map((item, index) => (
+          <div className="maps-linkstack">
           <button
             key={index}
             id="events-map-l"
@@ -142,10 +156,23 @@ const MapItems = ({ timeline }: { timeline: GSAPTimeline }) => {
             <span>{item.time}</span>
             <div>{item.event}</div>
           </button>
+
+          <button
+            key={index}
+            id="events-map-IIITG"
+            onClick={() => {
+              handleClick(item.flag, item.IIITGlink);
+            }}
+          >
+            <div>IIIT-link</div>
+          </button>
+          </div>
+
         ))}
       </div>
       <div id="events-map-ul3" className="events-map-ul">
-        {mapData3.map((item, index) => (
+      {mapData3.map((item, index) => (
+          <div className="maps-linkstack">
           <button
             key={index}
             id="events-map-l"
@@ -157,6 +184,18 @@ const MapItems = ({ timeline }: { timeline: GSAPTimeline }) => {
             <span>{item.time}</span>
             <div>{item.event}</div>
           </button>
+
+          <button
+            key={index}
+            id="events-map-IIITG"
+            onClick={() => {
+              handleClick(item.flag, item.IIITGlink);
+            }}
+          >
+            <div>IIIT-link</div>
+          </button>
+          </div>
+
         ))}
       </div>
     </>

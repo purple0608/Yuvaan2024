@@ -1,7 +1,7 @@
 import React, { useState, useEffect, Suspense, lazy } from "react";
 import Cards from "./Cards/Cards";
 import usePreventZoom from "./../../assets/utils/PreventZoom.ts";
-import Loader from "/src/components/loader/Loader";
+import Loader from "/src/components/LoadingPage/Loader";
 import Mountains from "./Mountains/Mountains";
 
 const event = new Event('onLoaderClose');

@@ -94,3 +94,19 @@
   font-family: "Lilita One", sans-serif;
   top: -20px;
 }
+
+
+#events-map-IIITG{
+  color: #f1ece2;
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(8px);
+  font-family: EnchantedLight;
+  margin: 0px 5px;
+  padding: 5px 10px;
+  overflow: visible;
+}
+
+.maps-linkstack{
+  display: flex;
+  flex-direction: column;
+}
