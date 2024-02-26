@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import pastEvents from "/src/components/Gallery/Preview/PastEvents.png";
+// import pastEvents from "/src/components/Gallery/Preview/PastEvents.png";
 import downline from "/src/assets/utils/decorator-hr-lg.png";
 
 import {
@@ -27,7 +27,7 @@ const Preview = () => {
         <div className="clouds-3"></div>
       </div>
       <div className="preview_past-events">
-        <img src={pastEvents} alt="" />
+        <img src="https://d1y50e2lm5xcwm.cloudfront.net/gallery/PastEvents.png" alt="" />
       </div>
       <div className="preview_downline">
         <img src={downline} alt="" className="preview-divider" />
