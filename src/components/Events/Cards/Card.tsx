@@ -3,32 +3,43 @@ import sword from "/src/assets/events/images_cards/sword.png";
 import divider from "/src/assets/utils/decorator-hr.png";
 
 function Forms(props) {
-    const mystyle = {
-                        color: "#a09b8c",
-                         textDecoration: "underline"
-    };
-    return (
-        <>
-        <div className="event-grid-item event-logo" />
-                      <div className="event-grid-item event-data">
-            <p className="event-desc-header"> Forms </p>
-            <span>
-            {props.data.forms.map(
-                (item, index)=>(
-                    <a key={index} style={mystyle} className = "event-date" target = "_blank" href={item}> Form {index+1} </a>
-                          )
-            )}</span>
-                      </div>
-</>
-    )
+  const mystyle = {
+    color: "#a09b8c",
+    textDecoration: "underline",
+  };
+  return (
+    <>
+      <div className="event-grid-item event-logo" />
+      <div className="event-grid-item event-data">
+        <p className="event-desc-header"> {props.title} </p>
+        <span>
+          {props.data.map((item, index) => (
+            <a
+              key={index}
+              style={mystyle}
+              className="event-date"
+              target="_blank"
+              href={item}
+            >
+              {" "}
+              Form {index + 1}{" "}
+            </a>
+          ))}
+        </span>
+      </div>
+    </>
+  );
 }
 
 function Card(props) {
-    const data: EventData = props.data;
+  const data: EventData = props.data;
   return (
     <div
       className="event-card"
-      style={{ backgroundImage: "url(https://dpqe9pvop7vdk.cloudfront.net/events/"+ data.bg + ")" }}
+      style={{
+        backgroundImage:
+          "url(https://dpqe9pvop7vdk.cloudfront.net/events/" + data.bg + ")",
+      }}
     >
       <div className="event-titleBox">
         <div className="event-title"> {data.title} </div>
@@ -49,12 +60,20 @@ function Card(props) {
         <div className="event-grid-item event-data">
           <p className="event-desc-header"> Venue </p>
           <p className="event-date">{data.venue}</p>
-          </div>
-          
-          {data.forms.length > 0 ? <Forms data = {data}/> : <></>}
+        </div>
+        {data.forms.length > 0 ? (
+          <Forms data={data.forms} title={"Forms"} />
+        ) : (
+          <></>
+        )}
+        {data.iiitg.length > 0 ? (
+          <Forms data={data.iiitg} title={"IIITG Forms"} />
+        ) : (
+          <></>
+        )}
         <div className="event-grid-item event-data event-full">
           <p className="event-info">{data.info}</p>
-          </div>
+        </div>
       </div>
       <a href={data.link} target="_blank" className="event-register-button">
         Register

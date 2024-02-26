@@ -25,8 +25,9 @@ export interface EventData {
   time: string;
   venue: string;
   info: string;
-    link: string;
-    forms: string[];
+  link: string;
+  forms: string[];
+  iiitg: string[];
   bg: string;
 }
 
@@ -39,6 +40,9 @@ export const Data: EventData[] = [
     info: "Treasure hunt, the idea of hunting for hidden treasures has always been exciting and adventurous. In treasure hunts, participants work in small teams to find the treasure with the help of given clues. The team who decodes the clue and finds the treasure first will win the game.",
     link: "https://unstop.com/p/treasure-hunt-yuvaan24-indian-institute-of-information-technology-iiit-guwahati-891123",
     forms: [],
+    iiitg: [
+      "https://docs.google.com/forms/d/e/1FAIpQLSeL5zSPhbVC69Z38okgvxQOSDTNGzAXuNxIhqZIBimLthtblQ/viewform",
+    ],
     bg: "images_cards/treasure.jpg",
   },
   {
@@ -49,6 +53,9 @@ export const Data: EventData[] = [
     info: "Dive into the intrigue of Mock CID, a riveting event challenging teams of 3-5 to solve a murder mystery in two gripping rounds.",
     link: "https://unstop.com/p/mock-cid-yuvaan24-indian-institute-of-information-technology-iiit-guwahati-891072",
     forms: [],
+    iiitg: [
+      "https://docs.google.com/forms/d/e/1FAIpQLSeIdV5ESatQoNH9lqGBFSIJUIvXKRKej_H0EV3It7xt0MaIWQ/viewform",
+    ],
     bg: "images_cards/cid6.jpg",
   },
   {
@@ -59,6 +66,9 @@ export const Data: EventData[] = [
     info: "Welcome to 'Yuvaan's Got Talent,' an extraordinary showcase of diverse talents! Participants will have the opportunity to present two captivating performances - one in the initial round and another in the final round. Don't miss this chance to witness incredible talents and be part of the excitement!",
     link: "https://unstop.com/p/yuvaans-got-talent-yuvaan24-indian-institute-of-information-technology-iiit-guwahati-890544",
     forms: ["https://forms.gle/KN1Zr1iMGzj12p4W9"],
+    iiitg: [
+      "https://docs.google.com/forms/d/e/1FAIpQLSddFmLU_Q9usQHz5jsV7Vu6JM79WFek-ojgXrphSMvn9mmaMQ/viewform",
+    ],
     bg: "images_cards/yuvaantalent1.jpg",
   },
   {
@@ -68,7 +78,13 @@ export const Data: EventData[] = [
     venue: "Stage",
     info: "Welcome to Symphony, an electrifying solo/group singing battle open to all music enthusiasts! Are you ready to showcase your vocal prowess or band's musical harmony? Embrace the stage, unleash your creativity, and let your music transcend boundaries. Whether you're a solo virtuoso or part of a harmonious ensemble, Symphony invites you to be part of a vibrant community celebrating the magic of music. Join us for an exhilarating journey of melodies and rhythms, where talent knows no boundaries.",
     link: "https://unstop.com/p/symphony-solo-and-duo-indian-institute-of-information-technology-iiit-guwahati-896117",
-      forms: ["https://forms.gle/etDrxF7CZ1szL2dm6", "https://forms.gle/etDrxF7CZ1szL2dm6"],
+    forms: [
+      "https://forms.gle/etDrxF7CZ1szL2dm6",
+      "https://forms.gle/etDrxF7CZ1szL2dm6",
+    ],
+    iiitg: [
+      "https://docs.google.com/forms/d/e/1FAIpQLScA2UyHpauPixJ8MdiLCCgLvsuYNB7yJmcGStD5KFWmdcSljg/viewform",
+    ],
     bg: "images_cards/symphony4.jpg",
   },
   {
@@ -79,6 +95,9 @@ export const Data: EventData[] = [
     info: 'Embark on a musical journey with "Riff" - an online instrumental competition hosted on Instagram! In Round 1, participants showcase their talent with a 1.30-minute solo performance of any genre or language, judged on factors like reel popularity and rhythm. Round 2 beckons the top contenders to an offline stage, where 5-7 finalists will captivate audiences with a 3-minute solo on their instrument of choice, sans accompaniment. Precision, passion, and musical finesse await those ready to make their mark in this symphony of talent!',
     link: "https://unstop.com/p/riff-yuvaan24-indian-institute-of-information-technology-iiit-guwahati-891048",
     forms: ["https://forms.gle/MgV2Bda9GCGVXJsi6"],
+    iiitg: [
+      "https://docs.google.com/forms/d/e/1FAIpQLSdSy3tI_oXVF0AweCsCcIJx-wAQlPVCw0umJHblQDxiHkd9_w/viewform",
+    ],
     bg: "images_cards/riff4.jpg",
   },
 
@@ -90,6 +109,9 @@ export const Data: EventData[] = [
     info: "Where dreams twirl, emotions pirouette, and the stage becomes a canvas of expression, showcase your moves and jalwa in Move Mania.",
     link: "https://unstop.com/p/move-mania-indian-institute-of-information-technology-iiit-guwahati-891189",
     forms: ["https://forms.gle/kHEcAfsBbe8kpYen7"],
+    iiitg: [
+      "https://docs.google.com/forms/d/e/1FAIpQLSc4yNJg2oIl0c-aR8yS6pC_DumstqnbwRRxWhdY8Aro7-6RUg/viewform",
+    ],
     bg: "images_cards/movemania2.jpg",
   },
   {
@@ -100,6 +122,9 @@ export const Data: EventData[] = [
     info: "Participants will dress in costumes and make-up, representing characters from    anime, video games, television and film. The cosplayers will also have to act in character and put on a performance on stage.",
     link: "https://unstop.com/events/cosplay-indian-institute-of-information-technology-iiit-guwahati-895338",
     forms: [],
+    iiitg: [
+      "https://docs.google.com/forms/d/e/1FAIpQLScMS0tlX4iZNAkqTBkcSqj6CPMN38QzLN4YPUkmtxRgub00GQ/viewform",
+    ],
     bg: "images_cards/cosplay.jpg",
   },
   {
@@ -110,6 +135,9 @@ export const Data: EventData[] = [
     info: "Embark on an enchanting adventure at Fantasy Trivia Night! Unleash your expertise on fantasy series, movies, and anime. Don't miss this magical event!",
     link: "https://unstop.com/p/trivia-quiz-yuvaan24-indian-institute-of-information-technology-iiit-guwahati-895352",
     forms: ["https://forms.gle/XDb74hiWD2zgGqxy9"],
+    iiitg: [
+      "https://docs.google.com/forms/d/e/1FAIpQLScBO6ZTjjYwg4Aw19O33Eo91RQjTWLuBJKQxeHElqsPG9WpRQ/viewform",
+    ],
     bg: "images_cards/trivizaquiz1.jpg",
   },
   {
@@ -120,6 +148,7 @@ export const Data: EventData[] = [
     info: "",
     link: "https://georgerahul24.github.io/MUN-Website-2024/",
     forms: [],
+    iiitg: [],
     bg: "images_cards/mun1.png",
   },
 ];
