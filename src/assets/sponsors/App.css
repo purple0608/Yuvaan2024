@@ -1,10 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;700;900&display=swap");
 
+#sponsors-myAnchor {
+  text-decoration: inherit;
+  color: inherit;
+}
 .sponsors_downline {
   max-width: 90vw;
 }
 .sponsors_heading {
-  max-width: 90vw;
+  max-width: 30vw;
 }
 .slick-slide img {
   margin: auto;
@@ -30,7 +34,10 @@
 .sponsors-header {
   position: relative;
 }
-
+.sponsors-icon-container{
+  margin-left: 2rem;
+  text-align: left;
+}
 .sponsors-header::after {
   content: "";
   position: absolute;
@@ -46,7 +53,7 @@
   display: flex;
   position: relative;
   height: 100vh;
-  align-items: center;
+  /* align-items:normal; */
   justify-content: center;
   overflow: hidden;
   text-align: center;
@@ -66,7 +73,7 @@
   position: absolute;
   height: 100%;
   width: 100%;
-  z-index: 2;
+  /* z-index: 2; */
   background-size: cover;
   background-position: center;
 }
@@ -75,13 +82,14 @@
   position: absolute;
   height: 100%;
   width: 100%;
-  z-index: 2;
+  /* z-index: 2; */
   background-size: cover;
   background-position: center;
 }
 
 .sponsors-layer-title {
   position: relative;
+  margin-top: 2rem;
   z-index: 1;
   color: #e7e7e0;
   text-shadow: 0 0 15px #9d822b;
