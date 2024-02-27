@@ -18,6 +18,7 @@
   box-sizing: border-box;
 }  */
 
+
 .fp-header {
   position: relative;
 }
@@ -63,6 +64,7 @@
   }
 }
 .fp-centered-content {
+  width: 60%;
   position: absolute;
   top: 75%;
   left: 52%;
@@ -72,8 +74,9 @@
   /* box-shadow: 0 0 20px rgba(255, 223, 0, 0.8); */
 }
 .fp-centered-above {
+  width: 40%;
   position: absolute;
-  top: 58%;
+  top: 56%;
   left: 52%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -81,6 +84,7 @@
   /* box-shadow: 0 0 20px rgba(255, 223, 0, 0.8); */
 }
 .fp-centered-below {
+  width:28%;
   position: absolute;
   top: 92%;
   left: 52%;

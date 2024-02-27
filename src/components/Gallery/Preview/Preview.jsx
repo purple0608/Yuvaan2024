@@ -1,3 +1,4 @@
+import React, { useEffect, useRef, useState } from "react";
 import { EventImgData } from "../../../assets/gallery/EventImgData";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -5,6 +6,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 // import pastEvents from "/src/components/Gallery/Preview/PastEvents.png";
 import downline from "/src/assets/utils/decorator-hr-lg.png";
+import Loader from "/src/components/LoadingPage/Loader";
 
 import {
   EffectCoverflow,
@@ -17,6 +19,21 @@ import { Link } from "react-router-dom";
 import "/src/assets/gallery/Preview.css";
 
 const Preview = () => {
+
+  const [isClicked, setIsClicked] = useState(false);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const loadData = async () => {
+      await new Promise((resolve) => setTimeout(resolve, 3000));
+      setLoading(false);
+    };
+    loadData();
+  }, []);
+
+  if (loading) {
+    return <Loader />;
+  }
 
   return (
     <div className="preview-container">
