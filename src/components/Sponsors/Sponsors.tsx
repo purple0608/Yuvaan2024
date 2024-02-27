@@ -2,7 +2,7 @@
 import { useEffect, useLayoutEffect, useState, useRef } from "react";
 import "../../assets/sponsors/App.css";
 import Card1 from "./card";
-import oil from "../../assets/sponsors/image/oil india.png";
+import oil from "../../assets/sponsors/image/indianoil.webp";
 import sbi from "../../assets/sponsors/image/SBI1.jpg";
 import indianBank from "../../assets/sponsors/image/Indian Bank.jpg";
 import kuber from "../../assets/sponsors/image/Kuber Techno Craft.jpg";
@@ -12,6 +12,7 @@ import happyJourney from "../../assets/sponsors/image/Happy Journey logo.jpg";
 import shantanu from "../../assets/sponsors/image/shantanu.jpg";
 import surjoy from "../../assets/sponsors/image/surjoy.jpg";
 import pragnews from "../../assets/sponsors/image/pragNews1.png";
+import derio from "../../assets/sponsors/image/DeroiTealogo.png";
 import gplus from "../../assets/sponsors/image/gplus1.png";
 import Nxm from "../../assets/sponsors/image/9xm1.png";
 import zoom from "../../assets/sponsors/image/zoom1.jpg";
@@ -21,6 +22,8 @@ import sponsors_heading from "../../assets/sponsors/image/sponsors.png";
 import sponsors_pdf from "./sponsors_pdf.tsx";
 import brochure from "./../../assets/sponsors/image/sponsors-pdf/Yuvaan 2024 Sponsor Brochure Single Page (4).pdf";
 import ImageSlider from "./Sponsors_ImageSlider.tsx";
+import add from "../../assets/sponsors/image/Add.png"
+import bhag from "../../assets/sponsors/image/Bhagwati.jpg";
 import {debounce} from "./../../assets/utils/Debounce.ts";
 
 function Sponsors() {
@@ -74,11 +77,11 @@ function Sponsors() {
                                     imageAlt="Oil India Limited" 
                                     title="Title Sponsor" 
                                     class="sponsors-Titlecard" 
-                                    url="https://www.oil-india.com/" 
+                                    url="https://iocl.com/" 
                                     head="1" 
-                                    insta="https://www.instagram.com/oilindialtd/" 
-                                    twitter="https://twitter.com/oilindialimited" 
-                                    facebook="https://www.facebook.com/OilIndiaLtd/"
+                                    insta="https://www.instagram.com/indianoilcorp/" 
+                                    twitter="https://twitter.com/indianOilcl" 
+                                    facebook="https://www.facebook.com/IndianOilCorpLimited"
                                      />
                                     <Card1 
                                     image={sbi} 
@@ -122,11 +125,6 @@ function Sponsors() {
                         </div>
                     </header>
                     <div className='sponsor'>
-                    <div className='sponsors-button'>
-                        <a href={brochure} target="_blank" rel="noopener noreferrer" className="sponsors-register-button">
-                            Brochure
-                        </a>
-                    </div>
                         <div className='sponsors-hex' >
                             <article className="sponsors-article">
                                 <h3 className="sponsors-article-title">Television Media Partner</h3>
@@ -162,14 +160,14 @@ function Sponsors() {
                             <article className="sponsors-article">
                                 <h3 className="sponsors-article-title">Branding Partner</h3>
                                 <div className='sponsors-image' >
-                                    <Card1 image={zoom} imageAlt="SBI" title="Banking Partner" class="sponsors-card" url="https://www.youtube.com/watch?v=dQw4w9WgXcQ"/>
+                                    <Card1 image={royal} imageAlt="Prag News" title="Media Partner" class="sponsors-card" />
+                                    <Card1 image={bhag} imageAlt="Prag News" title="Media Partner" class="sponsors-card" />
+                                    <Card1 image={derio} imageAlt="SBI" title="Banking Partner" class="sponsors-card" url="https://www.youtube.com/watch?v=dQw4w9WgXcQ"/>
+                                    <Card1 image={add} imageAlt="Prag News" title="Media Partner" class="sponsors-card" />
+                                    {/* <Card1 image={royal} imageAlt="Prag News" title="Media Partner" class="sponsors-card" />
                                     <Card1 image={royal} imageAlt="Prag News" title="Media Partner" class="sponsors-card" />
                                     <Card1 image={royal} imageAlt="Prag News" title="Media Partner" class="sponsors-card" />
-                                    <Card1 image={royal} imageAlt="Prag News" title="Media Partner" class="sponsors-card" />
-                                    <Card1 image={royal} imageAlt="Prag News" title="Media Partner" class="sponsors-card" />
-                                    <Card1 image={royal} imageAlt="Prag News" title="Media Partner" class="sponsors-card" />
-                                    <Card1 image={royal} imageAlt="Prag News" title="Media Partner" class="sponsors-card" />
-                                    <Card1 image={royal} imageAlt="Prag News" title="Media Partner" class="sponsors-card" />
+                                    <Card1 image={royal} imageAlt="Prag News" title="Media Partner" class="sponsors-card" /> */}
 
                                 </div>
                             </article>
@@ -183,6 +181,11 @@ function Sponsors() {
 
                         </div>
                         <ImageSlider images={sponsors_pdf} />
+                        <div className='sponsors-button'>
+                        <a href={brochure} target="_blank" rel="noopener noreferrer" className="sponsors-register-button">
+                            Brochure
+                        </a>
+                    </div>
                     </div>
                 </div>
             </div>
