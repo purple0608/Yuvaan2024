@@ -68,7 +68,15 @@ class MainSlider extends React.Component {
                   <h2 className="title">"Book Your Passes"</h2>
                   <p className="description">
                     {" "}
-                    Dive into the enchanting realms of Yuvaan's fantasy-themed fest! Get your ₹ 199 passes now for access to 25+ events, 2 pronites, and thrilling prizes worth over Rs. 1,50,000!{" "}
+                    Dive into the enchanting realms of Yuvaan's fantasy-themed fest! Get your passes at ₹199 now, to gain exclusive access to:
+                    <ul>
+                      <li> 25+ events & multiple workshops</li>
+                      <li> 2 pronites</li>
+                      <li> Exclusive MUN Ball</li>
+                      <li> Game room and much more!</li>
+                    </ul>                   
+                    
+                    {" "}
                   </p>
                   <a href="https://docs.google.com/forms/d/1RPhUSWiD6eOW_PJYiMmlens54lp2wFxuSaEGbOnLC5A/edit">
                     <button>Get Your Passes Now</button>
