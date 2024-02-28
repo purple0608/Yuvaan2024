@@ -8,7 +8,7 @@ const mapData1 = [
   { time: "11:00am-12:00pm", event: "Inaugration", flag: 0 },
   {
     time: "12:00pm-1:30pm",
-    event: "Movie Mania",
+    event: "Move Mania",
     flag: 0,
     iiitg:
       "https://docs.google.com/forms/d/e/1FAIpQLScN1xnyA4vw8gEai2cIZ8tOTIMajyqf9tgTK8wM4nGt6YejnA/viewform",
@@ -35,23 +35,25 @@ const mapData1 = [
 const mapData2 = [
   {
     time: "11:00am-1:00pm",
-    event: "Treasure Hunt (R1)",
+    event: "Treasure Hunt",
     flag: 1,
     link: "display-1",
   },
   {
     time: "02:00pm-03:00pm",
-    event: "Treasure Hunt (R2)",
+    event: "Treasure Hunt",
     flag: 1,
     link: "display-1",
   },
-  { time: "03:00pm-04:30pm", event: "Symphony (R2)", flag: 1, link: "start-4" },
+  { time: "03:00pm-04:30pm", event: "Symphony", flag: 1, link: "start-4" },
   { time: "03:30pm-05:00pm", event: "Trivia Quiz", flag: 1, link: "start-8" },
   {
     time: "04:00pm-05:00pm",
     event: "Word Weave",
     flag: 0,
     link: "https://unstop.com/p/word-weave-yuvaan24-indian-institute-of-information-technology-iiit-guwahati-891157",
+    iiitg:
+      "https://docs.google.com/forms/d/e/1FAIpQLScN1xnyA4vw8gEai2cIZ8tOTIMajyqf9tgTK8wM4nGt6YejnA/viewform",
   },
   { time: "03:00pm-06:00pm", event: "Game Room", flag: 0 },
   {
@@ -62,7 +64,7 @@ const mapData2 = [
   },
   {
     time: "05:00pm-06:00pm",
-    event: "Art Marathon",
+    event: "Artistic Burst",
     flag: 0,
     iiitg:
       "https://docs.google.com/forms/d/e/1FAIpQLSeWFmsejUDaTvOdolVDdzxS32rvWs8tbRnMKUynrCbrynJsxA/viewform",
@@ -70,8 +72,8 @@ const mapData2 = [
 ];
 
 const mapData3 = [
-  { time: "11:00am-1:00pm", event: "Mock CID (R1)", flag: 1, link: "start-2" },
-  { time: "02:00pm-03:30pm", event: "Mock CID (R2)", flag: 1, link: "start-2" },
+  { time: "11:00am-1:00pm", event: "Mock CID", flag: 1, link: "start-2" },
+  { time: "02:00pm-03:30pm", event: "Mock CID", flag: 1, link: "start-2" },
   {
     time: "03:00pm-04:00pm",
     event: "LIC Quiz",
@@ -81,7 +83,7 @@ const mapData3 = [
       "https://docs.google.com/forms/d/e/1FAIpQLSeWFmsejUDaTvOdolVDdzxS32rvWs8tbRnMKUynrCbrynJsxA/viewform",
   },
   { time: "02:30pm-04:00pm", event: "Trivia Quiz", flag: 1, link: "start-8" },
-  { time: "03:30pm-04:30pm", event: "Riff (R2)", flag: 1, link: "start-5" },
+  { time: "03:30pm-04:30pm", event: "Riff", flag: 1, link: "start-5" },
   {
     time: "03:30pm-04:30pm",
     event: "Filmy Dance Fusion",
@@ -90,7 +92,7 @@ const mapData3 = [
     iiitg:
       "https://docs.google.com/forms/d/e/1FAIpQLSd-erobOBEr4ifwCYcNQqLa0W-XkwDD5jQoMm0H9ZWr3IzH5g/viewform",
   },
-  { time: "03:30pm-06:00pm", event: "Game Room", flag: 0 },
+  { time: "03:00pm-06:00pm", event: "Game Room", flag: 0 },
   {
     time: "4:00pm-05:00pm",
     event: "Script & Act",

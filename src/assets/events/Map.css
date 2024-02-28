@@ -11,7 +11,7 @@
   justify-content: center;
 }
 
-.events-map-ul{
+.events-map-ul {
   position: relative;
   width: 100vw;
   display: flex;
@@ -27,11 +27,11 @@
 }
 
 #events-map-ul2 {
-  top: 15rem;
+  top: 12.5rem;
 }
 
 #events-map-ul3 {
-  top: 20rem;
+  top: 15rem;
 }
 
 .events-map-container {
@@ -95,8 +95,7 @@
   top: -20px;
 }
 
-
-#events-map-IIITG{
+#events-map-IIITG {
   color: #f1ece2;
   background-color: rgba(0, 0, 0, 0.8);
   backdrop-filter: blur(8px);
@@ -106,7 +105,8 @@
   overflow: visible;
 }
 
-.maps-linkstack{
+.maps-linkstack {
   display: flex;
   flex-direction: column;
 }
+

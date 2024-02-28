@@ -7,6 +7,7 @@ import GroupIcon from "@mui/icons-material/Group";
 import EventIcon from "@mui/icons-material/Event";
 import AccountBalanceWalletIcon from "@mui/icons-material/AccountBalanceWallet";
 import CameraIcon from "@mui/icons-material/Camera";
+import AccountTreeIcon from "@mui/icons-material/AccountTree";
 import logo from "/src/assets/utils/logo.png";
 
 const NavBar = () => {
@@ -17,6 +18,11 @@ const NavBar = () => {
     { to: "/gallery", text: "Gallery", icon: CameraIcon },
     { to: "/teams", text: "Teams", icon: GroupIcon },
     { to: "/contact", text: "Contact", icon: CallIcon },
+    {
+      to: "https://linktr.ee/yuvaan2024",
+      text: "Link Tree",
+      icon: AccountTreeIcon,
+    },
   ];
 
   return (
