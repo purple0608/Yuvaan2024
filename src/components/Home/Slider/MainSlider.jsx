@@ -65,13 +65,13 @@ class MainSlider extends React.Component {
                 }}
               >
                 <div className="content">
-                  <h2 className="title">"Yuvaan"</h2>
+                  <h2 className="title">"Book Your Passes"</h2>
                   <p className="description">
                     {" "}
-                    Enter Yuvaan, IIIT Guwahati's cultural extravaganza, where the ordinary transcends into the extraordinary, igniting passions, fostering creativity, and celebrating the kaleidoscope of human expression.{" "}
+                    Dive into the enchanting realms of Yuvaan's fantasy-themed fest! Get your ₹ 199 passes now for access to 25+ events, 2 pronites, and thrilling prizes worth over Rs. 1,50,000!{" "}
                   </p>
-                  <a href="#">
-                    <button>View</button>
+                  <a href="https://docs.google.com/forms/d/1RPhUSWiD6eOW_PJYiMmlens54lp2wFxuSaEGbOnLC5A/edit">
+                    <button>Get Your Passes Now</button>
                   </a>
                 </div>
               </li>
