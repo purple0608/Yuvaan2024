@@ -24,7 +24,11 @@ import brochure from "./../../assets/sponsors/image/sponsors-pdf/Yuvaan 2024 Spo
 import ImageSlider from "./Sponsors_ImageSlider.tsx";
 import add from "../../assets/sponsors/image/Add.png"
 import bhag from "../../assets/sponsors/image/Bhagwati.jpg";
-import {debounce} from "./../../assets/utils/Debounce.ts";
+import puba from "../../assets/sponsors/image/purbashree.png";
+import stuborn from "../../assets/sponsors/image/stuborn.jpeg";
+import scratch from "../../assets/sponsors/image/scratch.jpg";
+import rngdhali from "../../assets/sponsors/image/rngdhali.jpeg";
+import { debounce } from "./../../assets/utils/Debounce.ts";
 
 function Sponsors() {
     const mount = useRef(null);
@@ -69,54 +73,54 @@ function Sponsors() {
 
                                 </div>
                                 <div className='sponsors-hex1' >
-                                <article className="sponsors-article">
-                                <h3 className="sponsors-article-title">Gold Sponsor</h3>
-                                <div className='sponsors-image' >
-                                    <Card1 
-                                    image={oil} 
-                                    imageAlt="Oil India Limited" 
-                                    title="Title Sponsor" 
-                                    class="sponsors-Titlecard" 
-                                    url="https://iocl.com/" 
-                                    head="1" 
-                                    insta="https://www.instagram.com/indianoilcorp/" 
-                                    twitter="https://twitter.com/indianOilcl" 
-                                    facebook="https://www.facebook.com/IndianOilCorpLimited"
-                                     />
-                                    <Card1 
-                                    image={sbi} 
-                                    imageAlt="SBI" 
-                                    title="Title Sponsor" 
-                                    class="sponsors-Titlecard" 
-                                    url="https://www.onlinesbi.sbi/" 
-                                    head="1" 
-                                    insta="https://www.instagram.com/theofficialsbi/" 
-                                    facebook="https://www.facebook.com/StateBankOfIndia/" 
-                                    twitter="https://twitter.com/TheOfficialSBI" 
-                                    />
-                                    <Card1 
-                                    image={indianBank} 
-                                    imageAlt="Oil India Limited" 
-                                    title="Title Sponsor" 
-                                    class="sponsors-Titlecard" 
-                                    url="https://indianbank.in/" 
-                                    head="1" 
-                                    insta="https://www.instagram.com/myIndianbank/" 
-                                    facebook="https://www.facebook.com/MyIndianBank" 
-                                    twitter="https://twitter.com/myindianbank"  
-                                    />
-                                    <Card1 
-                                    image={kuber} 
-                                    imageAlt="Oil India Limited" 
-                                    title="Title Sponsor" 
-                                    class="sponsors-Titlecard" 
-                                    url="https://www.kubertechnocraft.com/" 
-                                    head="1"
+                                    <article className="sponsors-article">
+                                        <h3 className="sponsors-article-title">Gold Sponsor</h3>
+                                        <div className='sponsors-image' >
+                                            <Card1
+                                                image={oil}
+                                                imageAlt="Oil India Limited"
+                                                title="Title Sponsor"
+                                                class="sponsors-Titlecard"
+                                                url="https://iocl.com/"
+                                                head="1"
+                                                insta="https://www.instagram.com/indianoilcorp/"
+                                                twitter="https://twitter.com/indianOilcl"
+                                                facebook="https://www.facebook.com/IndianOilCorpLimited"
+                                            />
+                                            <Card1
+                                                image={sbi}
+                                                imageAlt="SBI"
+                                                title="Title Sponsor"
+                                                class="sponsors-Titlecard"
+                                                url="https://www.onlinesbi.sbi/"
+                                                head="1"
+                                                insta="https://www.instagram.com/theofficialsbi/"
+                                                facebook="https://www.facebook.com/StateBankOfIndia/"
+                                                twitter="https://twitter.com/TheOfficialSBI"
+                                            />
+                                            <Card1
+                                                image={indianBank}
+                                                imageAlt="Oil India Limited"
+                                                title="Title Sponsor"
+                                                class="sponsors-Titlecard"
+                                                url="https://indianbank.in/"
+                                                head="1"
+                                                insta="https://www.instagram.com/myIndianbank/"
+                                                facebook="https://www.facebook.com/MyIndianBank"
+                                                twitter="https://twitter.com/myindianbank"
+                                            />
+                                            <Card1
+                                                image={kuber}
+                                                imageAlt="Oil India Limited"
+                                                title="Title Sponsor"
+                                                class="sponsors-Titlecard"
+                                                url="https://www.kubertechnocraft.com/"
+                                                head="1"
 
 
-                                    />
-                                </div>
-                            </article>
+                                            />
+                                        </div>
+                                    </article>
                                 </div>
                             </div>
                             <div className="sponsors-layer sponsors-layer-base"></div>
@@ -127,43 +131,56 @@ function Sponsors() {
                     <div className='sponsor'>
                         <div className='sponsors-hex' >
                             <article className="sponsors-article">
+                                <h3 className="sponsors-article-title">Bronze Sponsor</h3>
+                                <div className='sponsors-image' >
+                                    <Card1 image={royal} imageAlt="Royal Enfield" title="Bronze Sponsors" class="sponsors-card" url="https://www.royalenfield.com/in/en/home/" />
+                                </div>
+                            </article>
+                            <article className="sponsors-article">
                                 <h3 className="sponsors-article-title">Television Media Partner</h3>
                                 <div className='sponsors-image' >
-                                <Card1 image={pragnews} imageAlt="SBI" title="Banking Partner" class="sponsors-card" url="https://pragnews.com/"/>
+                                    <Card1 image={pragnews} imageAlt="SBI" title="Banking Partner" class="sponsors-card" url="https://pragnews.com/" />
                                 </div>
                             </article>
                             <article className="sponsors-article">
                                 <h3 className="sponsors-article-title">Digital Marketing Partner</h3>
                                 <div className='sponsors-image' >
-                                <Card1 image={assamTribune} imageAlt="Assam Tribunes" title="Digital Media Partner" class="sponsors-card" url="https://assamtribune.com/"/>
+                                    <Card1 image={assamTribune} imageAlt="Assam Tribunes" title="Digital Media Partner" class="sponsors-card" url="https://assamtribune.com/" />
                                 </div>
                             </article>
                             <article className="sponsors-article">
                                 <h3 className="sponsors-article-title">Pronite Partner</h3>
                                 <div className='sponsors-image' >
-                                    <Card1 image={bharatBass} imageAlt="Bharat Bass Festival" title="Pronite Partner" class="sponsors-card" url="https://sites.google.com/bharatbassfestival.in/bharatbassfestival/home"/>
+                                    <Card1 image={bharatBass} imageAlt="Bharat Bass Festival" title="Pronite Partner" class="sponsors-card" url="https://sites.google.com/bharatbassfestival.in/bharatbassfestival/home" />
                                 </div>
                             </article>
                             <article className="sponsors-article">
                                 <h3 className="sponsors-article-title">Travel Partner</h3>
                                 <div className='sponsors-image' >
-                                    <Card1 image={happyJourney} imageAlt="Happy Journey" title="Travel Partner" class="sponsors-card"/>
+                                    <Card1 image={happyJourney} imageAlt="Happy Journey" title="Travel Partner" class="sponsors-card" />
+                                </div>
+                            </article>
+                            <article className="sponsors-article">
+                                <h3 className="sponsors-article-title">Gifting Partner</h3>
+                                <div className='sponsors-image' >
+                                    <Card1 image={puba} imageAlt="Purbashree" title="Gifting Partner" class="sponsors-card" url="https://purbashree.com/"/>
                                 </div>
                             </article>
                             <article className="sponsors-article">
                                 <h3 className="sponsors-article-title">Merchandise Partner</h3>
                                 <div className='sponsors-image' >
-                                    <Card1 image={gplus} imageAlt="Prag News" title="Media Partner" class="sponsors-card"/>
-                                    <Card1 image={Nxm} imageAlt="gplus" title="Media Partner" class="sponsors-card" url="https://aniwatch.to/watch/mob-psycho-100-101?ep=3094"/>
+                                    <Card1 image={stuborn} imageAlt="Stuborn Factory" title="Media Partner" class="sponsors-card" />
+                                    <Card1 image={scratch} imageAlt="gplus" title="Media Partner" class="sponsors-card" url="https://aniwatch.to/watch/mob-psycho-100-101?ep=3094" />
                                 </div>
                             </article>
                             <article className="sponsors-article">
                                 <h3 className="sponsors-article-title">Branding Partner</h3>
                                 <div className='sponsors-image' >
-                                    <Card1 image={royal} imageAlt="Prag News" title="Media Partner" class="sponsors-card" />
+                                    <Card1 image={rngdhali} imageAlt="Rangdhali - Dressing Desires, Bijoynagar " title="Media Partner" class="sponsors-card" />
                                     <Card1 image={bhag} imageAlt="Prag News" title="Media Partner" class="sponsors-card" />
-                                    <Card1 image={derio} imageAlt="SBI" title="Banking Partner" class="sponsors-card" url="https://www.youtube.com/watch?v=dQw4w9WgXcQ"/>
+                                    <Card1 image={derio} imageAlt="SBI" title="Banking Partner" class="sponsors-card" url="https://www.youtube.com/watch?v=dQw4w9WgXcQ" />
                                     <Card1 image={add} imageAlt="Prag News" title="Media Partner" class="sponsors-card" />
+                                    <Card1 imageAlt="Shree Gautam Construction" title="Media Partner" class="sponsors-card" />
                                     {/* <Card1 image={royal} imageAlt="Prag News" title="Media Partner" class="sponsors-card" />
                                     <Card1 image={royal} imageAlt="Prag News" title="Media Partner" class="sponsors-card" />
                                     <Card1 image={royal} imageAlt="Prag News" title="Media Partner" class="sponsors-card" />
@@ -174,7 +191,7 @@ function Sponsors() {
                             <article className="sponsors-article">
                                 <h3 className="sponsors-article-title">Alumni</h3>
                                 <div className='sponsors-image' >
-                                    <Card1 image={shantanu} imageAlt="SBI" title="Banking Partner" class="sponsors-card" url="https://www.linkedin.com/in/shantanu-singh-51365b193/?originalSubdomain=in" name="Shantanu Singh"/>
+                                    <Card1 image={shantanu} imageAlt="SBI" title="Banking Partner" class="sponsors-card" url="https://www.linkedin.com/in/shantanu-singh-51365b193/?originalSubdomain=in" name="Shantanu Singh" />
                                     <Card1 image={surjoy} imageAlt="Prag News" title="Media Partner" class="sponsors-card" url="https://www.linkedin.com/in/surjya-prakash-borthakur-b82757130/?originalSubdomain=in" name="Surjoy Borthakur" />
                                 </div>
                             </article>
@@ -182,10 +199,10 @@ function Sponsors() {
                         </div>
                         <ImageSlider images={sponsors_pdf} />
                         <div className='sponsors-button'>
-                        <a href={brochure} target="_blank" rel="noopener noreferrer" className="sponsors-register-button">
-                            Brochure
-                        </a>
-                    </div>
+                            <a href={brochure} target="_blank" rel="noopener noreferrer" className="sponsors-register-button">
+                                Brochure
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
