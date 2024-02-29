@@ -17,21 +17,21 @@ function Card(props) {
             className="sponsors-image"
           />
         </a>
-        </div >
-        <div  >
-         {props.head && (
-         <div className="sponsors-icon-container">
-          <a id="sponsors-myAnchor" href={props.insta}><InstagramIcon /></a>
-          <a id="sponsors-myAnchor" href={props.facebook}><FacebookIcon /></a>
-          <a id="sponsors-myAnchor" href={props.twitter}><XIcon /></a>
-         </div>
-         )}
-        </div>
-        <div>
-          {props.name && (
-            <h1>{props.name}</h1>
-          )}
-        </div>
+      </div >
+      <div  >
+        {props.head && (
+          <div className="sponsors-icon-container">
+            <a id="sponsors-myAnchor" href={props.insta}><InstagramIcon /></a>
+            <a id="sponsors-myAnchor" href={props.facebook}><FacebookIcon /></a>
+            <a id="sponsors-myAnchor" href={props.twitter}><XIcon /></a>
+          </div>
+        )}
+      </div>
+      <div>
+        {props.name && (
+          <h1>{props.name}</h1>
+        )}
+      </div>
 
     </div>
   );

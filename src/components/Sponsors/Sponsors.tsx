@@ -1,5 +1,6 @@
 
 import { useEffect, useLayoutEffect, useState, useRef } from "react";
+import useScreenSize from "./useScreenSize.jsx";
 import "../../assets/sponsors/App.css";
 import Card1 from "./card";
 import oil from "../../assets/sponsors/image/indianoil.webp";
@@ -27,6 +28,7 @@ import scratch from "../../assets/sponsors/image/scratch.jpg";
 import rngdhali from "../../assets/sponsors/image/rngdhali.jpeg";
 import gautam from "../../assets/sponsors/image/gautam.jpeg";
 import freestyle from "../../assets/sponsors/image/freestyle.png";
+import canara from "../../assets/sponsors/image/canarabank.jpg";
 
 import { debounce } from "./../../assets/utils/Debounce.ts";
 
@@ -60,6 +62,15 @@ function Sponsors() {
         }
     }, [dimensions]);
 
+    const screenSize = useScreenSize();
+
+    let check = 0;
+    if (screenSize.width <= 768) {
+        check = 1;
+    }
+
+
+
     return (
         <div>
             <div className="sponsors-wrapper" ref={mount}>
@@ -72,6 +83,67 @@ function Sponsors() {
                                     <img src={downline} alt="downline" className='sponsors_downline' />
 
                                 </div>
+                                {check ? null :
+                                    <div className='sponsors-hex1' >
+                                        <article className="sponsors-article">
+                                            <h3 className="sponsors-article-title">Gold Sponsor</h3>
+                                            <div className='sponsors-image' >
+                                                <Card1
+                                                    image={oil}
+                                                    imageAlt="Oil India Limited"
+                                                    title="Title Sponsor"
+                                                    class="sponsors-Titlecard"
+                                                    url="https://iocl.com/"
+                                                    head="1"
+                                                    insta="https://www.instagram.com/indianoilcorp/"
+                                                    twitter="https://twitter.com/indianOilcl"
+                                                    facebook="https://www.facebook.com/IndianOilCorpLimited"
+                                                />
+                                                <Card1
+                                                    image={sbi}
+                                                    imageAlt="SBI"
+                                                    title="Title Sponsor"
+                                                    class="sponsors-Titlecard"
+                                                    url="https://www.onlinesbi.sbi/"
+                                                    head="1"
+                                                    insta="https://www.instagram.com/theofficialsbi/"
+                                                    facebook="https://www.facebook.com/StateBankOfIndia/"
+                                                    twitter="https://twitter.com/TheOfficialSBI"
+                                                />
+                                                <Card1
+                                                    image={indianBank}
+                                                    imageAlt="Oil India Limited"
+                                                    title="Title Sponsor"
+                                                    class="sponsors-Titlecard"
+                                                    url="https://indianbank.in/"
+                                                    head="1"
+                                                    insta="https://www.instagram.com/myIndianbank/"
+                                                    facebook="https://www.facebook.com/MyIndianBank"
+                                                    twitter="https://twitter.com/myindianbank"
+                                                />
+                                                <Card1
+                                                    image={kuber}
+                                                    imageAlt="Oil India Limited"
+                                                    title="Title Sponsor"
+                                                    class="sponsors-Titlecard"
+                                                    url="https://www.kubertechnocraft.com/"
+                                                    head="1"
+
+
+                                                />
+                                            </div>
+                                        </article>
+                                    </div>
+                                }
+                            </div>
+                            <div className="sponsors-layer sponsors-layer-base"></div>
+                            <div className="sponsors-layer sponsors-layer-middle"></div>
+                            <div className="sponsors-layer sponsors-layer-front"></div>
+                        </div>
+                    </header>
+                    <div className='sponsor'>
+                        <div className='sponsors-hex' >
+                            {check ?
                                 <div className='sponsors-hex1' >
                                     <article className="sponsors-article">
                                         <h3 className="sponsors-article-title">Gold Sponsor</h3>
@@ -122,25 +194,7 @@ function Sponsors() {
                                         </div>
                                     </article>
                                 </div>
-                            </div>
-                            <div className="sponsors-layer sponsors-layer-base"></div>
-                            <div className="sponsors-layer sponsors-layer-middle"></div>
-                            <div className="sponsors-layer sponsors-layer-front"></div>
-                        </div>
-                    </header>
-                    <div className='sponsor'>
-                        <div className='sponsors-hex' >
-                            <article className="sponsors-article">
-                                <h3 className="sponsors-article-title">Bronze Sponsor</h3>
-                                <div className='sponsors-image' >
-                                    <Card1
-                                        image={royal}
-                                        imageAlt="Royal Enfield"
-                                        title="Bronze Sponsors"
-                                        class="sponsors-card"
-                                        url="https://www.royalenfield.com/in/en/home/" />
-                                </div>
-                            </article>
+                                : null}
                             <article className="sponsors-article">
                                 <h3 className="sponsors-article-title">Television Media Partner</h3>
                                 <div className='sponsors-image' >
@@ -162,6 +216,7 @@ function Sponsors() {
                                         url="https://assamtribune.com/" />
                                 </div>
                             </article>
+
                             <article className="sponsors-article">
                                 <h3 className="sponsors-article-title">Pronite Partner</h3>
                                 <div className='sponsors-image' >
@@ -208,6 +263,23 @@ function Sponsors() {
                                         title="Media Partner"
                                         class="sponsors-card"
                                         url="https://aniwatch.to/watch/mob-psycho-100-101?ep=3094" />
+                                </div>
+                            </article>
+                            <article className="sponsors-article">
+                                <h3 className="sponsors-article-title">Bronze Sponsor</h3>
+                                <div className='sponsors-image' >
+                                    <Card1
+                                        image={royal}
+                                        imageAlt="Royal Enfield"
+                                        title="Bronze Sponsors"
+                                        class="sponsors-card"
+                                        url="https://www.royalenfield.com/in/en/home/" />
+                                    <Card1
+                                        image={canara}
+                                        imageAlt="Canara Bank"
+                                        title="Bronze Sponsors"
+                                        class="sponsors-card"
+                                        url="https://canarabank.com/" />
                                 </div>
                             </article>
                             <article className="sponsors-article">
