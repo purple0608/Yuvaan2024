@@ -44,7 +44,9 @@ const Book = ({ imageSrc, title, ribbon, teamSlug }) => (
       <li></li>
     </ul>
     <figcaption>
-      <h1 className="tp-team-heading" style={{ color: "white"}}>{title}</h1>
+      <h1 className="tp-team-heading" style={{ color: "white" }}>
+        {title}
+      </h1>
     </figcaption>
   </figure>
 );

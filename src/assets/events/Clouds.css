@@ -132,56 +132,56 @@
 
 @media only screen and (max-width: 1224px) {
     .events-map-cloud1-top {
-  width: 67.77vw;
+  width: 300vw;
   transform: translate(-50%, -50%);
-  left: calc(50% - 200px);
-  top: calc(50% + 500px);
+  left: calc(50% - 2vw);
+  top: calc(50% + 50vh);
 }
 
 .events-map-cloud2-top {
-  width: 1500px;
+  width: 300vw;
   transform: translate(-50%, -50%);
-  left: calc(50% - 700px);
-  top: calc(50% + 550px);
+  left: calc(50% - 7vw);
+  top: calc(50% + 55vh);
 }
 
 .events-map-cloud3-top {
-  width: 1500px;
+  width: 300vw;
   transform: translate(-50%, -50%);
-  left: calc(50% - 1000px);
-  top: calc(50% + 550px);
+  left: calc(50% - 5vw);
+  top: calc(50% + 30vh);
 }
 
 .events-map-cloud4-top {
-  width: 1900px;
+  width: 300vw;
   transform: translate(-50%, -50%);
-  left: calc(50% - 500px);
-  top: calc(50% + 700px);
+  left: calc(50% + 55vw);
+  top: calc(50% + 20vh);
 }
 
 .events-map-cloud5-top {
-  width: 1900px;
+  width: 900px;
   transform: translate(-50%, -50%);
   left: calc(50% + 700px);
   top: calc(50% + 650px);
 }
 
 .events-map-cloud6-top {
-  width: 1900px;
+  width: 900px;
   transform: translate(-50%, -50%);
   left: calc(50% + 700px);
   top: calc(50% + 850px);
 }
 
 .events-map-cloud7-top {
-  width: 1900px;
+  width: 900px;
   transform: translate(-50%, -50%);
   left: calc(50% - 300px);
-  top: calc(50% + 800px);
+  top: calc(50% + 800px); 
 }
 
 .events-map-cloud8-top {
-  width: 1900px;
+  width: 900px;
   transform: translate(-50%, -50%);
   left: calc(50%);
   top: calc(50% + 800px);
@@ -205,56 +205,56 @@
   width: 1500px;
   transform: translate(-50%, -50%);
   left: calc(50% - 700px);
-  top: calc(50% + 2200px);
+  top: calc(50% + 2300px);
 }
 
 .events-map-cloud3-bottom {
   width: 1500px;
   transform: translate(-50%, -50%);
   left: calc(50% - 1000px);
-  top: calc(50% + 2200px);
+  top: calc(50% + 2300px);
 }
 
 .events-map-cloud4-bottom {
   width: 1900px;
   transform: translate(-50%, -50%);
   left: calc(50% - 500px);
-  top: calc(50% + 2350px);
+  top: calc(50% + 2450px);
 }
 
 .events-map-cloud5-bottom {
   width: 1900px;
   transform: translate(-50%, -50%);
   left: calc(50% + 700px);
-  top: calc(50% + 2350px);
+  top: calc(50% + 2450px);
 }
 
 .events-map-cloud6-bottom {
   width: calc((1900 * 100 / 1920) vw);
   transform: translate(-50%, -50%);
   left: calc(50% + 700px);
-  top: calc(50% + 2500px);
+  top: calc(50% + 2600px);
 }
 
 .events-map-cloud7-bottom {
   width: 1900px;
   transform: translate(-50%, -50%);
   left: calc(50% - 300px);
-  top: calc(50% + 2550px);
+  top: calc(50% + 2650px);
 }
 
 .events-map-cloud8-bottom {
   width: 1900px;
   transform: translate(-50%, -50%);
   left: calc(50%);
-  top: calc(50% + 2550px);
+  top: calc(50% + 2650px);
 }
 
 .events-map-cloud9-bottom {
   width: 1900px;
   transform: translate(-50%, -50%);
   left: calc(50% - 700px);
-  top: calc(50% + 2650px);
+  top: calc(50% + 2750px);
 }
   .events-map-cloud5-top {
     top: calc(50% + 50.92592593vh);
@@ -272,23 +272,23 @@
 
   .events-map-cloud1-bottom {
     left: calc(50% - 5.208333333vw);
-    top: calc(50% + 208.3333333vh);
+    top: calc(50% + 225vh);
   }
 
   .events-map-cloud2-bottom {
     left: calc(50% - 26.04166667vw);
-    top: calc(50% + 240.7407407vh);
+    top: calc(50% + 255vh);
   }
   .events-map-cloud4-bottom {
-    top: calc(50% + 222.2222222vh);
+    top: calc(50% + 25vh);
   }
   .events-map-cloud5-bottom {
-    top: calc(50% + 245.3703704vh);
+    top: calc(50% + 260vh);
   }
   .events-map-cloud6-bottom {
-    top: calc(50% + 240.7407407vh);
+    top: calc(50% + 255vh);
   }
   .events-map-cloud7-bottom {
-    top: calc(50% + 245.3703704vh);
+    top: calc(50% + 260vh);
   }
 }

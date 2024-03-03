@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Allura&family=Tangerine:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Allura&family=Tangerine:wght@700&display=swap");
 
 .wrapper {
   /* background: linear-gradient(to right, #ea1d6f 0%, #eb466b 100%); */
@@ -29,7 +29,7 @@
   position: relative;
   /* background: #3e3e3e; */
   border: 1px solid #ffd700; /* Thin golden border */
-  padding:0 10px 20px 10px;
+  padding: 0 10px 20px 10px;
   background:
     linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url("path/to/your/image.jpg") center/cover no-repeat;
@@ -130,7 +130,7 @@
   display: flex;
   flex-direction: column;
   position: relative;
-  color: #FFD966;
+  color: #ffd966;
   font-size: 26px;
   margin-bottom: 10px;
 }
@@ -253,9 +253,9 @@
 
 .team-header {
   position: relative;
-  font-family: 'Tangerine', cursive;
+  font-family: "Tangerine", cursive;
   font-size: 1.6rem;
-  color: #FCFFB2;
+  color: #fcffb2;
 }
 
 /* .team-header:after{
@@ -269,15 +269,15 @@
   background: rgba(234, 29, 111, 0.5);
 } */
 
-.span-emoji{
-  font-size:18px;
+.span-emoji {
+  font-size: 18px;
 }
 
-.heads-name{
-  font-family: 'Tangerine', cursive;
+.heads-name {
+  font-family: "Tangerine", cursive;
   font-size: 1rem;
 }
 
-.heads-contact{
+.heads-contact {
   font-weight: 100;
 }

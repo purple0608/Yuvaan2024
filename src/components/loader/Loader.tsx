@@ -5,7 +5,6 @@ type Props = {};
 const Loader = () => {
   return (
     <div id="bg">
-
       <svg width="270" height="270" viewBox="0 0 270 270" fill="none">
         <symbol id="container">
           {" "}
@@ -54,7 +53,6 @@ const Loader = () => {
                 transform="translate(0,175)"
               />
               <use id="bubble2" href="#bubbles" transform="translate(60,100)" />
-
             </g>
           </g>
           <use href="#container" />

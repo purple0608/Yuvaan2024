@@ -26,13 +26,13 @@ function Events() {
     loadData();
   }, []);
 
-  /* if (loading) {
+   if (loading) {
     return <Loader />;
-  }*/
+  }
   return (
     <div className="events-parent">
-      <Mountains />
-      <Cards />
+          <Mountains /> 
+       <Cards /> 
       <button
         onClick={() => {
           goToTimeline();

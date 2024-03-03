@@ -25,7 +25,8 @@ export const GalleryData = [
     content:
       "This year, dive even deeper into the sonic galaxy, Pulse-pounding beats, electrifying DJs, and an unforgettable night awaits. Don't miss the rise of a new legend. ✨",
   },
-  {//Remember last year's sunrise glow?The earth trembling bass, the laser-painted smiles, and the sunrise euphoria?  
+  {
+    //Remember last year's sunrise glow?The earth trembling bass, the laser-painted smiles, and the sunrise euphoria?
     id: "2",
     datatext: "Pronite",
     src: image23,
@@ -119,5 +120,4 @@ export const GalleryData = [
     content:
       "Forge lasting friendships, create unforgettable memories, and build a sense of community. Get ready to connect and bond beyond the events!",
   },
-  
 ];

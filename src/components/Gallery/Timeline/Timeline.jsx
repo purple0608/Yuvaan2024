@@ -24,7 +24,7 @@ const Timeline = () => {
             <img src={downline} alt="" className="preview-divider" />
           </div>
         </div>
-        
+
         <div className="timeline">
           {GalleryData.map((item) => {
             return <Item {...item} key={item.id} />;

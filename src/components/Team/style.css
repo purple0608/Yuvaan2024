@@ -1,4 +1,3 @@
-
 ul {
   margin: 0;
   padding: 0;
@@ -12,7 +11,7 @@ a {
 
 .tp-component {
   background-image: url("../../assets/teams/TeamBG.jpg");
-  background-repeat:no-repeat;
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   display: flex;
@@ -54,7 +53,6 @@ a {
   width: 100%;
   max-width: 1170px;
   text-align: center;
-
 }
 
 .tp-align > li {
@@ -127,7 +125,6 @@ a {
 .tp-book_spine li:last-child:after,
 .tp-book_spine li:last-child:before {
   background: #999;
-
 }
 
 /* page */
@@ -736,7 +733,7 @@ figcaption p {
     padding: 0;
     margin: 15% 0 10% 0;
   }
-  .tp-team-heading{
+  .tp-team-heading {
     margin-right: 20%;
   }
 }

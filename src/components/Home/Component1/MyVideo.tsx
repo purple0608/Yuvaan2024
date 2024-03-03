@@ -65,5 +65,4 @@ const MyVideo: React.FC = () => {
   );
 };
 
-
 export default MyVideo;

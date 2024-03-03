@@ -7,7 +7,7 @@ export const Item = ({ src, datatext, content }) => {
         <div className="timeline_img_div">
           <img className="timeline__img" src={src} alt="image" />
         </div>
-        <p class="timeline__content-desc">{ content }</p>
+        <p class="timeline__content-desc">{content}</p>
       </div>
     </div>
   );

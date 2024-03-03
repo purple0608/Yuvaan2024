@@ -51,11 +51,12 @@ const Contact = () => {
                     Public Relations <span className="span-emoji"></span>
                   </h1>
                   <h2>
-                    <span className="heads-name">Tashyab Raj :</span> <span></span>93342
-                    82666
+                    <span className="heads-name">Tashyab Raj :</span>{" "}
+                    <span></span>93342 82666
                   </h2>
                   <h2>
-                    <span className="heads-name">Prateek :</span> <span></span> 83510 81196
+                    <span className="heads-name">Prateek :</span> <span></span>{" "}
+                    83510 81196
                   </h2>
                 </div>
               </div>

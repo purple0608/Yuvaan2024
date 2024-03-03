@@ -14,10 +14,7 @@ const Team = () => {
 
         <div className="et-card">
           <div className="et-imgBox">
-            <img
-              src={David}
-              alt="some image"
-            />
+            <img src={David} alt="some image" />
           </div>
           <div className="et-details">
             <h2>
@@ -29,14 +26,11 @@ const Team = () => {
 
         <div className="et-card">
           <div className="et-imgBox">
-            <img
-              src={Babita}
-              alt="some image"
-            />
+            <img src={Babita} alt="some image" />
           </div>
           <div className="et-details">
             <h2>
-                Dr. Babita Jajodia <br />
+              Dr. Babita Jajodia <br />
               <span></span>
             </h2>
           </div>
@@ -44,10 +38,7 @@ const Team = () => {
 
         <div className="et-card">
           <div className="et-imgBox">
-            <img
-              src={Arjab}
-              alt="some image"
-            />
+            <img src={Arjab} alt="some image" />
           </div>
           <div className="et-details">
             <h2>

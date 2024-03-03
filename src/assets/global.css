@@ -22,7 +22,8 @@ a:hover {
   cursor: url("./utils/cursor-pointer.png"), auto;
 }
 
-button > *:hover, a > *:hover {
+button > *:hover,
+a > *:hover {
   cursor: url("./utils/cursor-pointer.png"), auto;
 }
 

@@ -17,7 +17,6 @@ import { Link } from "react-router-dom";
 import "/src/assets/gallery/Preview.css";
 
 const Preview = () => {
-
   return (
     <div className="preview-container">
       <div className="container"></div>

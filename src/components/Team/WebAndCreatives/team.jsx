@@ -14,9 +14,7 @@ import "../team.css"; // Make sure to import or include your CSS file
 const Team = () => {
   return (
     <div>
-      <div
-        className="tm-main"
-      >
+      <div className="tm-main">
         <div className="et-box">
           <h1
             className="et-title"
@@ -31,7 +29,8 @@ const Team = () => {
             </div>
             <div className="et-details">
               <h2>
-                Aman Yadav<br />
+                Aman Yadav
+                <br />
                 <span>Team Head</span>
               </h2>
             </div>
@@ -43,7 +42,8 @@ const Team = () => {
             </div>
             <div className="et-details">
               <h2>
-                Nandini Thakur<br />
+                Nandini Thakur
+                <br />
                 <span>Team Head</span>
               </h2>
             </div>
@@ -55,7 +55,8 @@ const Team = () => {
             </div>
             <div className="et-details">
               <h2>
-                Anant Sharma<br />
+                Anant Sharma
+                <br />
                 <span>Team Member</span>
               </h2>
             </div>

@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lilita+One&display=swap");
+
 .events-map-tlparent {
   display: flex;
   flex-direction: column;
@@ -92,4 +93,19 @@
   font-size: 30px;
   font-family: "Lilita One", sans-serif;
   top: -20px;
+}
+
+@media only screen and (max-width: 1224px) {
+    #events-map-ul1 {
+  top: 13vh;
+}
+
+#events-map-ul2 {
+  top: 15vh;
+}
+
+#events-map-ul3 {
+  top: 17vh;
+}
+    
 }

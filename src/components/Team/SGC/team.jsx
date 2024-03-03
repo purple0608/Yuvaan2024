@@ -14,46 +14,42 @@ const Team = () => {
 
         <div className="et-card">
           <div className="et-imgBox">
-            <img
-              src={Ashutosh}
-              alt="some image"
-            />
+            <img src={Ashutosh} alt="some image" />
           </div>
           <div className="et-details">
             <h2>
               Ashutosh Pandey <br />
-              <span><b>President</b></span>
+              <span>
+                <b>President</b>
+              </span>
             </h2>
           </div>
         </div>
 
         <div className="et-card">
           <div className="et-imgBox">
-            <img
-              src={Bhanu}
-              alt="some image"
-            />
+            <img src={Bhanu} alt="some image" />
           </div>
           <div className="et-details">
             <h2>
               Bhanu Prakash <br />
-              <span><b>Vice President</b></span>
+              <span>
+                <b>Vice President</b>
+              </span>
             </h2>
           </div>
         </div>
 
         <div className="et-card">
           <div className="et-imgBox">
-            <img
-              src={Pari}
-              alt="some image"
-            />
+            <img src={Pari} alt="some image" />
           </div>
           <div className="et-details">
             <h2>
               Pari Tiwari <br />
-              <span><b>General Secretary</b> - </span>
-          
+              <span>
+                <b>General Secretary</b> -{" "}
+              </span>
               <span>Cultural Board</span>
             </h2>
           </div>
